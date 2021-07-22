@@ -8,97 +8,76 @@ a {
     text-decoration: none;
 }
 
-li, ul, ol {
+li,
+ul,
+ol {
     list-style: none;
 }
 
 
 /* LAYOUT */
+body ::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+    /* overflow-y: hidden; */
+}
+
+
+.body-wrap {
+    width: 3400px;
+    height: 100vmin;
+}
 
 /* HEADER    */
 header {
-    border: 1px saddlebrown solid;
-    width: 100%;
-    height: 200px;
+    width: 100vmin;
+    height: 100%;
+    border: 1px solid gold;
+    float: left;
+    padding-left: 1rem;
+}
+
+header b {
+    margin-top: 30vh;
+    font-size: 2rem;
 }
 
 header h2 {
-    text-align: center;
-    margin-top: 30px;
+    font-size: 9rem;
+    line-height: 9rem;
 }
 
 header p {
-    text-align: center;
-}
-
-.website-left {
-    border: 1px saddlebrown solid;
-}
-
-.website-right {
-    border: 1px saddlebrown solid;
+    position: absolute;
 }
 
 /* SECTION */
 section {
-    border: 1px saddlebrown solid;
-    width: 100%;
-    height: 600px;
+    float: left;
+    width: 100vmin;
+    height: 100vmin;
+    border: 1px solid gold;
 }
 
-section h2 {
-    text-align: center;
-    margin-bottom: 50px;
-}
-
-/* WEBSITE */
-article {
-    width: 1002px;
-    height: 500px;
-    border: 1px solid rebeccapurple;
+/* BENS */
+#bens article .website-top {
+    border: 1px solid gold;
+    width: 40vmin;
+    height: 60vmin;
     margin: 0 auto;
 }
 
-.website-left {
-    width: 500px;
-    height: 300px;
-    float: left;
-}
-
-.website-left img {
-    border: 1px saddlebrown solid;
-    width: 500px;
-    height: 200px;
-    display: block;
-}
-
-.website-left a {
-    border: 1px saddlebrown solid;
-    display: block;
+#bens article .website-bot {
     text-align: center;
 }
-
-.website-right {
-    width: 500px;
-    height: 500px;
-    float: left;
-}
-
 
 /* BANNER */
-.banner-con {
-    border: 1px saddlebrown solid;
-    width: 1000px;
-    height: 300px;
-    margin: 0 auto;
-}
-
 
 
 /* ICON */
-.icon-con {
-    border: 1px saddlebrown solid;
-    width: 1000px;
-    height: 300px;
-    margin: 0 auto;
-}
