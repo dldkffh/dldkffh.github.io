@@ -68,7 +68,7 @@ section {
 
 /* BENS */
 section .website-top {
-    border: 1px solid gold;
+    border: 10px solid #222;
     width: 40vmin;
     height: 60vmin;
     margin: 0 auto;
@@ -79,7 +79,50 @@ section .website-bot {
     text-align: center;
 }
 
+section a {
+    font-size: 2.5vmin;
+}
+
+section h2 {
+    font-size: 3vmin;
+}
+
+section h3 {
+    font-size: 2.5vmin;
+}
+
 /* BANNER */
+#banner .line {
+    width: 60vmin;
+    border-top: 8px solid #222;
+    position: absolute;
+    margin-left: -10vmin;
+    margin-top: 30vmin;
+}
 
+#banner .line:first-child {
+    width: 70vmin;
+    margin-left: -15vmin;
+    transform: rotate(-30deg);
+}
 
-/* ICON */
+/* MOBILE UI/UX */
+#moblie-uiux .square {
+    width: 25vmin;
+    height: 25vmin;
+    background-color: #222;
+    position: absolute;
+    margin-left: 20vmin;
+    margin-top: 25vmin;
+}
+
+/* ICON.. ETC */
+#etc .round {
+    width: 35vmin;
+    height: 35vmin;
+    border-radius: 50%;
+    border: 8px solid #222;
+    position: absolute;
+    margin-top: 10.5vmin;
+    margin-left: 1.25vmin;
+}
