@@ -30,7 +30,7 @@ body {
 
 
 .body-wrap {
-    width: 3400px;
+    width: 550vmin;
     height: 100vmin;
 }
 
@@ -45,16 +45,17 @@ header {
 
 header b {
     margin-top: 30vh;
-    font-size: 2rem;
+    font-size: 5vmin;
 }
 
 header h2 {
-    font-size: 9rem;
-    line-height: 9rem;
+    font-size: 20vmin;
+    line-height: 20vmin;
 }
 
 header p {
     position: absolute;
+    font-size: 3vmin;
 }
 
 /* SECTION */
@@ -66,14 +67,15 @@ section {
 }
 
 /* BENS */
-#bens article .website-top {
+section .website-top {
     border: 1px solid gold;
     width: 40vmin;
     height: 60vmin;
     margin: 0 auto;
+    margin-top: 10vmin;
 }
 
-#bens article .website-bot {
+section .website-bot {
     text-align: center;
 }
 
