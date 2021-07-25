@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Patua+One&family=Shadows+Into+Light&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
@@ -21,6 +24,7 @@ body ::-webkit-scrollbar {
 }
 
 body {
+    background-color: #FFFFF1;
     -ms-overflow-style: none;
     /* IE and Edge */
     scrollbar-width: none;
@@ -37,25 +41,40 @@ body {
 /* HEADER    */
 header {
     width: 100vmin;
-    height: 100%;
-    border: 1px solid gold;
+    height: 100vmin;
+    /* border: 1px solid gold; */
     float: left;
-    padding-left: 1rem;
+    padding-left: 4rem;
+    padding-top: 19vmin;
+    border-right: 10px #D94E41 dashed;
+    position: relative;
+}
+
+header svg {
+    width: 10vmin;
+    fill: #D94E41;
+    position: absolute;
+    top: 15vmin;
+    right: 15vmin;
 }
 
 header b {
-    margin-top: 30vh;
     font-size: 5vmin;
+    font-family: 'Shadows Into Light', cursive;
 }
 
 header h2 {
     font-size: 20vmin;
     line-height: 20vmin;
+    font-family: 'Patua One', cursive;
+    -webkit-text-stroke: 5px black;
+    color: rgba(225, 1, 1, 0.0);
 }
 
 header p {
     position: absolute;
     font-size: 3vmin;
+    font-family: 'Patua One', cursive;
 }
 
 /* SECTION */
@@ -63,10 +82,9 @@ section {
     float: left;
     width: 100vmin;
     height: 100vmin;
-    border: 1px solid gold;
+    /* border: 1px solid gold; */
 }
 
-/* BENS */
 section .website-top {
     border: 10px solid #222;
     width: 40vmin;
@@ -84,14 +102,29 @@ section a {
 }
 
 section h2 {
-    font-size: 3vmin;
+    font-size: 4vmin;
+    font-family: 'Patua One', cursive;
 }
 
 section h3 {
-    font-size: 2.5vmin;
+    font-size: 4vmin;
+    font-family: 'Nanum Pen Script', cursive;
+}
+
+/* BENS */
+#bens .website-top {
+    overflow: hidden;
+}
+
+#bens img {
+    height: 100%;
 }
 
 /* BANNER */
+#banner .website-top {
+    background-color: #897ABF;
+}
+
 #banner .line {
     width: 60vmin;
     border-top: 8px solid #222;
@@ -107,6 +140,10 @@ section h3 {
 }
 
 /* MOBILE UI/UX */
+#moblie-uiux .website-top {
+    background-color: #F2E085;
+}
+
 #moblie-uiux .square {
     width: 25vmin;
     height: 25vmin;
@@ -117,12 +154,30 @@ section h3 {
 }
 
 /* ICON.. ETC */
+#etc .website-top {
+    background-color: #F2B077;
+}
+
 #etc .round {
     width: 35vmin;
     height: 35vmin;
     border-radius: 50%;
-    border: 8px solid #222;
+    border: 8px double #222;
     position: absolute;
     margin-top: 10.5vmin;
     margin-left: 1.25vmin;
+}
+
+/* 1000px under */
+@media screen and (max-width : 767px) {
+    .body-wrap {
+        width: 100vmin;
+        height: 550vmin;
+        margin: 0 auto;
+    }
+
+    header {
+        border-bottom: 10px #D94E41 dashed;
+        border-right: none;
+    }
 }
