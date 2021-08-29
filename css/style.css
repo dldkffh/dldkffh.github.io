@@ -34,8 +34,9 @@ body {
 
 
 .body-wrap {
-    width: 550vmin;
-    height: 100vmin;
+    width: 100vmin;
+    height: 550vmin;
+    margin: 0 auto;
 }
 
 /* HEADER    */
@@ -46,8 +47,9 @@ header {
     float: left;
     padding-left: 4rem;
     padding-top: 19vmin;
-    border-right: 10px #D94E41 dashed;
-    position: relative;
+    
+    border-bottom: 10px #D94E41 dashed;
+    border-right: none;
 }
 
 header svg {
@@ -166,18 +168,4 @@ section h3 {
     position: absolute;
     margin-top: 10.5vmin;
     margin-left: 1.25vmin;
-}
-
-/* 1000px under */
-@media screen and (max-width : 767px) {
-    .body-wrap {
-        width: 100vmin;
-        height: 550vmin;
-        margin: 0 auto;
-    }
-
-    header {
-        border-bottom: 10px #D94E41 dashed;
-        border-right: none;
-    }
 }
