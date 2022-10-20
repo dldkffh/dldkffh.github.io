@@ -38,7 +38,7 @@ mermaid:
 dayjs:
   js:
     common: https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js
-    locale: https://cdn.jsdelivr.net/npm/dayjs@1/locale/:LOCALE.min.js
+    locale: https://cdn.jsdelivr.net/npm/dayjs@1/locale/assets/extra/ko.js
     relativeTime: https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.min.js
     localizedFormat: https://cdn.jsdelivr.net/npm/dayjs@1/plugin/localizedFormat.min.js
 
