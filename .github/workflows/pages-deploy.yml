@@ -62,8 +62,8 @@ jobs:
   deploy:
     name: "Deploy site"
     environment:
-      name: dldkffh.github.io
-      url: https://dldkffh.github.io/
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     needs: build
     steps:
