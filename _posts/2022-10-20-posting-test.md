@@ -8,3 +8,5 @@ render_with_liquid: false
 ---
 
 # 개발용 블로그 포스팅 테스트
+
+$\sqrt{3x-1}+(1+x)^2$
