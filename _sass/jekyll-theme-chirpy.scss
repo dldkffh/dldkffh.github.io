@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=Source+Sans+Pro:wght@400;600;700;900&display=swap');
+
+@import "colors/light-typography", "colors/dark-typography", "addon/module",
+  "addon/variables", "variables-hook", "addon/syntax", "addon/commons",
+  "layout/home", "layout/post", "layout/tags", "layout/archives",
+  "layout/categories", "layout/category-tag";
+
+body,
+.dynamic-title {
+  font-family: "Source Sans Pro", "Noto Sans KR", "Microsoft Yahei", sans-serif;
+}
