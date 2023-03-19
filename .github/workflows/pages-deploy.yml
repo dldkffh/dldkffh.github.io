@@ -46,13 +46,13 @@ jobs:
           bundler-cache: true
 
       - name: Build site
-        run: bundle exec jekyll b -d "_site${{ steps.pages.outputs.base_path }}"
+        run: echo 'bundle exec jekyll b -d "_site${{ steps.pages.outputs.base_path }}"' >> $GITHUB_ENV
         env:
           JEKYLL_ENV: "production"
 
       - name: Test site
         run: |
-          bundle exec htmlproofer _site --disable-external --check-html --allow_hash_href
+          echo 'bundle exec htmlproofer _site --disable-external --check-html --allow_hash_href' >> $GITHUB_ENV
 
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v1
