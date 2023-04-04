@@ -90,6 +90,21 @@ const config = {
         ],
       },
 
+      algolia: {
+        appId: 'XMULCGBD2O',
+        apiKey: '8d7b93432567efb0da9b1c6dc1a7c6d5',
+        indexName: 'dldkffhio',
+        searchPagePath: 'search',
+        contextualSearch: true,
+        // container: '### REPLACE ME WITH A CONTAINER (e.g. div) ###',
+        debug: false,
+        // externalUrlRegex: 'external\\.com|domain\\.com',
+        // replaceSearchResultPathname: {
+        //   from: '/docs/', // or as RegExp: /\/docs\//
+        //   to: '/',
+        // },
+      },
+
       footer: {
         copyright: `Copyright © ${new Date().getFullYear()} dldkffh. Built with Docusaurus.`,
       },
