@@ -21,7 +21,6 @@
         <category label="알고리즘" term="알고리즘"/>
         <category label="javascript" term="javascript"/>
         <category label="프로그래머스" term="프로그래머스"/>
-        <category label="코딩테스트" term="코딩테스트"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Heap(힙)]]></title>
@@ -37,7 +36,6 @@
         <category label="알고리즘" term="알고리즘"/>
         <category label="javascript" term="javascript"/>
         <category label="프로그래머스" term="프로그래머스"/>
-        <category label="코딩테스트" term="코딩테스트"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Tree(트리)]]></title>
@@ -53,7 +51,6 @@
         <category label="알고리즘" term="알고리즘"/>
         <category label="javascript" term="javascript"/>
         <category label="프로그래머스" term="프로그래머스"/>
-        <category label="코딩테스트" term="코딩테스트"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Graph(그래프)]]></title>
@@ -69,7 +66,6 @@
         <category label="알고리즘" term="알고리즘"/>
         <category label="javascript" term="javascript"/>
         <category label="프로그래머스" term="프로그래머스"/>
-        <category label="코딩테스트" term="코딩테스트"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Queue(큐)]]></title>
@@ -85,7 +81,6 @@
         <category label="알고리즘" term="알고리즘"/>
         <category label="javascript" term="javascript"/>
         <category label="프로그래머스" term="프로그래머스"/>
-        <category label="코딩테스트" term="코딩테스트"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Stack(스택)]]></title>
@@ -101,7 +96,6 @@
         <category label="알고리즘" term="알고리즘"/>
         <category label="javascript" term="javascript"/>
         <category label="프로그래머스" term="프로그래머스"/>
-        <category label="코딩테스트" term="코딩테스트"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Array(배열)]]></title>
@@ -117,6 +111,5 @@
         <category label="알고리즘" term="알고리즘"/>
         <category label="javascript" term="javascript"/>
         <category label="프로그래머스" term="프로그래머스"/>
-        <category label="코딩테스트" term="코딩테스트"/>
     </entry>
 </feed>
