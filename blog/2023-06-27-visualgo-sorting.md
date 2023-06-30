@@ -114,7 +114,7 @@ void insertionSort(int a[], int N) {
 
 #### 속도
 
-$O(N^2)$
+$O(NlogN)$
 
 #### 과정
 
