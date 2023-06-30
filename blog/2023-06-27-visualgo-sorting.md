@@ -135,13 +135,13 @@ $O(NlogN)$
 ```c showLineNumbers title="c++"
 void merge(int a[], int low, int mid, int high) {
   // subarray1 = a[low..mid], subarray2 = a[mid+1..high], 모두 정렬됨
-  int N = high-low +1;
+  int N = high - low +1;
   int b[N]; // 토론: 임시 배열 b가 필요한 이유는?
-  int left = low, right = mid+1, bIdx = 0;
+  int left = low, right = mid + 1, bIdx = 0;
   while (left <= mid && right <= high) // 병합
     b[bIdx++] = (a[left] <= a[right]) ? a[left++] : a[right++];
-  while (left <= mid) b[bIdx++] = a[left++]; // 남은 경우
-  (right <= high) b[bIdx++] = a[right++]; // 남은 경우
+  while (left <= mid) b[bIdx++] = a[left++]; // 남아있는 경우
+  while (right <= high) b[bIdx++] = a[right++]; // 남아있는 경우
   for (int k = 0; k < N; ++k) a[low+k] = b[k]; // 다시 복사
 }
 ```
