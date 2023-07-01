@@ -152,7 +152,7 @@ void merge(int a[], int low, int mid, int high) {
 void mergeSort(int a[], int low, int high) {
   // 정렬할 배열은 a[low..high]
   if (low < high) { // 기본 사례: low >= high (0 또는 1 항목)
-    int mid = (low+high) / 2;
+    int mid = (low + high) / 2;
     mergeSort(a, low , mid); // 두 부분으로 나눕니다.
     mergeSort(a, mid + 1, high); // 그런 다음 재귀적으로 정렬
     merge(a, low, mid, high); // 정복: 병합 서브루틴
