@@ -135,7 +135,7 @@ $O(NlogN)$
 ```c showLineNumbers title="c++"
 void merge(int a[], int low, int mid, int high) {
   // subarray1 = a[low..mid], subarray2 = a[mid+1..high], 모두 정렬됨
-  int N = high - low +1;
+  int N = high - low + 1;
   int b[N]; // 토론: 임시 배열 b가 필요한 이유는?
   int left = low, right = mid + 1, bIdx = 0;
   while (left <= mid && right <= high) // 병합
@@ -154,7 +154,7 @@ void mergeSort(int a[], int low, int high) {
   if (low < high) { // 기본 사례: low >= high (0 또는 1 항목)
     int mid = (low+high) / 2;
     mergeSort(a, low , mid); // 두 부분으로 나눕니다.
-    mergeSort(a, mid+1, high); // 그런 다음 재귀적으로 정렬
+    mergeSort(a, mid + 1, high); // 그런 다음 재귀적으로 정렬
     merge(a, low, mid, high); // 정복: 병합 서브루틴
   }
 }
@@ -213,7 +213,7 @@ void quickSort(int a[], int low, int high) {
     // a[low..high] ~> a[low..m–1], pivot, a[m+1..high]
     quickSort(a, low, m-1); // 왼쪽 하위 배열을 재귀적으로 정렬
     // a[m] = 피벗은 파티션 이후에 이미 정렬되어 있다.
-    quickSort(a, m+1, high); // 그런 다음 오른쪽 하위 배열을 정렬
+    quickSort(a, m + 1, high); // 그런 다음 오른쪽 하위 배열을 정렬
   }
 }
 ```

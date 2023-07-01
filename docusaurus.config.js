@@ -71,7 +71,7 @@ const config = {
         disableSwitch: false,
         respectPrefersColorScheme: false,
       },
-      
+
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
         title: 'dldkffh',
@@ -111,18 +111,24 @@ const config = {
         // },
       },
 
+      metadata: [
+        {name: 'keywords', content: 'programming, coding, blog'},
+        {name: 'google-site-verification', content: 'Y9q4ZVOJlqPzvGdxEvcEabL--dC4Jcqqa2WXuRm50KE'},
+        {name: 'naver-site-verification', content: 'fa085d97fde5f50c2be9d602dfb750ac93838300'},
+      ],
+
       footer: {
         copyright: `Copyright © ${new Date().getFullYear()} dldkffh. Built with Docusaurus.`,
       },
     }),
 
-    scripts: [
-      {
-        src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1720538267262802',
-        async: true,
-        crossorigin: "anonymous",
-      },
-    ],
+  scripts: [
+    {
+      src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1720538267262802',
+      async: true,
+      crossorigin: 'anonymous',
+    },
+  ],
 };
 
 module.exports = config;
