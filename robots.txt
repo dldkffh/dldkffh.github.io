@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /tags
+Disallow: /archive
+Disallow: /search
+Sitemap: https://dldkffh.github.io/sitemap.xml
