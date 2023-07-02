@@ -52,6 +52,7 @@
             <name>dldkffh</name>
             <uri>https://github.com/dldkffh</uri>
         </author>
+        <category label="정렬" term="정렬"/>
         <category label="알고리즘" term="알고리즘"/>
         <category label="c++" term="c++"/>
         <category label="visualgo" term="visualgo"/>
