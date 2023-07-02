@@ -1,7 +1,7 @@
 ---
 title: Sorting(정렬)
 authors: dldkffh
-tags: [알고리즘, c++, visualgo, 개념]
+tags: [정렬, 알고리즘, c++, visualgo, 개념]
 enableComments: true # for Gisqus
 ---
 
