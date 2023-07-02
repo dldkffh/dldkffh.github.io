@@ -1,7 +1,7 @@
 ---
 title: Binary Search(이진 탐색)
 authors: dldkffh
-tags: [알고리즘, javascript, 프로그래머스]
+tags: [이진 탐색, 알고리즘, javascript, 프로그래머스, 개념]
 enableComments: true # for Gisqus
 ---
 
