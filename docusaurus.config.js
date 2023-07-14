@@ -71,9 +71,13 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       colorMode: {
-        defaultMode: 'light',
+        defaultMode: 'dark',
         disableSwitch: false,
         respectPrefersColorScheme: false,
+      },
+
+      prism: {
+        theme: require('prism-react-renderer/themes/vsDark'),
       },
 
       image: 'img/docusaurus-social-card.jpg',
@@ -117,8 +121,14 @@ const config = {
 
       metadata: [
         {name: 'keywords', content: 'programming, coding, blog'},
-        {name: 'google-site-verification', content: 'Y9q4ZVOJlqPzvGdxEvcEabL--dC4Jcqqa2WXuRm50KE'},
-        {name: 'naver-site-verification', content: 'fa085d97fde5f50c2be9d602dfb750ac93838300'},
+        {
+          name: 'google-site-verification',
+          content: 'Y9q4ZVOJlqPzvGdxEvcEabL--dC4Jcqqa2WXuRm50KE',
+        },
+        {
+          name: 'naver-site-verification',
+          content: 'fa085d97fde5f50c2be9d602dfb750ac93838300',
+        },
       ],
 
       footer: {
