@@ -76,9 +76,14 @@ const config = {
         respectPrefersColorScheme: false,
       },
 
-      prism: {
-        theme: require('prism-react-renderer/themes/vsDark'),
+      tableOfContents: {
+        minHeadingLevel: 3,
+        maxHeadingLevel: 5,
       },
+
+      // prism: {
+      //   theme: require('prism-react-renderer/themes/vsDark'),
+      // },
 
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
