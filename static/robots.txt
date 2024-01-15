@@ -1,6 +1,5 @@
 User-agent: *
 Allow: /
-Disallow: /page
 Disallow: /tags
 Disallow: /search
 Sitemap: https://dldkffh.github.io/sitemap.xml

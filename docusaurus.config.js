@@ -45,6 +45,7 @@ const config = {
           showReadingTime: true,
           remarkPlugins: [math],
           rehypePlugins: [katex],
+          postsPerPage: 19,
         },
         theme: {
           customCss: require.resolve('./src/css/custom.scss'),
@@ -56,6 +57,11 @@ const config = {
       }),
     ],
   ],
+  
+  i18n: {
+    defaultLocale: 'ko',
+    locales: ['ko'],
+  },
 
   stylesheets: [
     {
@@ -93,17 +99,17 @@ const config = {
           src: 'https://avatars.githubusercontent.com/u/79070302',
         },
         items: [
-          {to: '/tags', label: 'Tags', position: 'left'},
-          {to: '/archive', label: 'Archive', position: 'left'},
+          {to: '/tags', label: '태그', position: 'left'},
+          {to: '/archive', label: '아카이브', position: 'left'},
           // Please keep GitHub link to the right for consistency.
           {
             href: 'https://twitter.com/dldkffh',
-            label: 'Twitter',
+            label: '트위터',
             position: 'right',
           },
           {
             href: 'https://github.com/dldkffh',
-            label: 'GitHub',
+            label: '깃허브',
             position: 'right',
           },
         ],
@@ -125,7 +131,7 @@ const config = {
       },
 
       metadata: [
-        {name: 'keywords', content: 'programming, coding, blog'},
+        {name: 'description', content: 'Knowledge Notes for Computer Science, IT and Programming'},
         {
           name: 'google-site-verification',
           content: 'Y9q4ZVOJlqPzvGdxEvcEabL--dC4Jcqqa2WXuRm50KE',
