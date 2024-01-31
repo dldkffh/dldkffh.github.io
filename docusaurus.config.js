@@ -8,6 +8,8 @@
  */
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
 const math = require('remark-math');
 const katex = require('rehype-katex');
 
@@ -43,8 +45,8 @@ const config = {
         blog: {
           routeBasePath: '/',
           showReadingTime: true,
-          remarkPlugins: [math],
-          rehypePlugins: [katex],
+          remarkPlugins: [remarkMath],
+          rehypePlugins: [rehypeKatex],
           postsPerPage: 19,
         },
         theme: {
