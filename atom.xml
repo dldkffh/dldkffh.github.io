@@ -2,11 +2,471 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://dldkffh.github.io/</id>
     <title>dldkffh Blog</title>
-    <updated>2023-10-15T00:00:00.000Z</updated>
+    <updated>2024-01-31T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://dldkffh.github.io/"/>
     <subtitle>dldkffh Blog</subtitle>
     <icon>https://dldkffh.github.io/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Flooding(플러딩)]]></title>
+        <id>https://dldkffh.github.io/2024/01/31/flooding</id>
+        <link href="https://dldkffh.github.io/2024/01/31/flooding"/>
+        <updated>2024-01-31T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Flooding(플러딩, 홍수)]]></summary>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="flooding플러딩-홍수">Flooding(플러딩, 홍수)<a href="https://dldkffh.github.io/2024/01/31/flooding#flooding%ED%94%8C%EB%9F%AC%EB%94%A9-%ED%99%8D%EC%88%98" class="hash-link" aria-label="Flooding(플러딩, 홍수)에 대한 직접 링크" title="Flooding(플러딩, 홍수)에 대한 직접 링크">​</a></h3>
+<ul>
+<li>수신되는 링크 만을 제외하고 나머지 모든 링크에 패킷을 단순히 복사 전송<!-- -->
+<ul>
+<li>무제어 포트 배정</li>
+</ul>
+</li>
+<li>MAC Flooding (MAC 플러딩)<!-- -->
+<ul>
+<li>목적지 주소가 멀티캐스트 또는 브로드캐스트 형태일 경우</li>
+<li>목적지 주소가 자신의 MAC 주소 테이블에 존재하지 않은 경우</li>
+<li>미인식 프로토콜</li>
+<li>프레임 버퍼 메모리가 가득찬 경우</li>
+<li>수신 포트를 제외한 나머지 모든 포트로 전달<!-- -->
+<ul>
+<li>폭주 위험</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="출처">출처<a href="https://dldkffh.github.io/2024/01/31/flooding#%EC%B6%9C%EC%B2%98" class="hash-link" aria-label="출처에 대한 직접 링크" title="출처에 대한 직접 링크">​</a></h3>
+<ul>
+<li><a href="http://www.ktword.co.kr/test/view/view.php?m_temp1=1362&amp;id=851" target="_blank" rel="noopener noreferrer">정보통신기술용어해설 - Flooding, Flood Routing, Flooding Algorithm 플러딩, 홍수 라우팅, 플러딩 알고리즘</a></li>
+</ul>]]></content>
+        <author>
+            <name>dldkffh</name>
+            <uri>https://github.com/dldkffh</uri>
+        </author>
+        <category label="flooding" term="flooding"/>
+        <category label="플러딩" term="플러딩"/>
+        <category label="네트워크" term="네트워크"/>
+        <category label="개념" term="개념"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[네트워크 장비 종류 정리]]></title>
+        <id>https://dldkffh.github.io/2024/01/31/network-devices</id>
+        <link href="https://dldkffh.github.io/2024/01/31/network-devices"/>
+        <updated>2024-01-31T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Repeater(리피터) - Layer 1]]></summary>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="repeater리피터---layer-1">Repeater(리피터) - Layer 1<a href="https://dldkffh.github.io/2024/01/31/network-devices#repeater%EB%A6%AC%ED%94%BC%ED%84%B0---layer-1" class="hash-link" aria-label="Repeater(리피터) - Layer 1에 대한 직접 링크" title="Repeater(리피터) - Layer 1에 대한 직접 링크">​</a></h3>
+<ul>
+<li>네트워크를 통해서 전송되는 신호 감쇠 문제를 해결하기 위한 장치<!-- -->
+<ul>
+<li>장거리 전송을 위해 신호를 증폭</li>
+<li>네트워크 규모를 확장</li>
+<li>무제한으로 신호가 연장되는 것은 아님</li>
+</ul>
+</li>
+<li>Hub(허브)중에도 리피터 기능을 가진 것이 있음</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="hub허브---layer-1">Hub(허브) - Layer 1<a href="https://dldkffh.github.io/2024/01/31/network-devices#hub%ED%97%88%EB%B8%8C---layer-1" class="hash-link" aria-label="Hub(허브) - Layer 1에 대한 직접 링크" title="Hub(허브) - Layer 1에 대한 직접 링크">​</a></h3>
+<ul>
+<li>여러 개의 시스템을 연결하는 경우 포트별로 케이블을 연결하여 사용</li>
+<li>분배 장치의 역할<!-- -->
+<ul>
+<li>여러 개의 포트에서 신호를 입력받아 다시 여러 개의 포트로 신호를 송출</li>
+</ul>
+</li>
+<li>기본적으로 물리계층에서 동작하나, 허브 특성에 따라 데이터링크 및 네트워크 계층에서도 동작</li>
+<li>네트워크 상태 모니터링 가능</li>
+<li>리피터 기능을 장착하고 있어 증폭기 역할도 수행</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="허브-종류">허브 종류<a href="https://dldkffh.github.io/2024/01/31/network-devices#%ED%97%88%EB%B8%8C-%EC%A2%85%EB%A5%98" class="hash-link" aria-label="허브 종류에 대한 직접 링크" title="허브 종류에 대한 직접 링크">​</a></h4>
+<ul>
+<li>Dummy Hub(더미허브)<!-- -->
+<ul>
+<li>시스템과 네트워크 장치 연결만 수행</li>
+<li>5대의 시스템을 연겨하면 5대의 시스템이 대역폭을 나누어 사용<!-- -->
+<ul>
+<li>연결 된 시스템의 수가 증가하면 성능이 떨어짐</li>
+</ul>
+</li>
+<li>리피터로 구성</li>
+</ul>
+</li>
+<li>Active Hub(액티브 허브)<!-- -->
+<ul>
+<li>네트워크와 함께 신호를 정리, 증폭 및 중계할 수 있는 허브<!-- -->
+<ul>
+<li>리피터 역할 수행해 연장하는 데 도움</li>
+</ul>
+</li>
+<li>원하는 신호 외에 잡음도 증폭</li>
+<li>패시브 허브에 비해 가격이 매우 비쌈</li>
+<li>전원 공급이 필요</li>
+</ul>
+</li>
+<li>Passive Hub(패시브 허브)<!-- -->
+<ul>
+<li>단순히 네트워크 세그먼트의 신호를 결합<!-- -->
+<ul>
+<li>물리적 매체를 공유하는 데에만 사용</li>
+<li>신호를 정리하고 증폭하지 않아 거리를 연장하는 데 사용할 수 없음</li>
+</ul>
+</li>
+<li>소음을 증폭시키지 않음</li>
+<li>액티브 허브에 비해 가격이 저렴</li>
+<li>전원 공급이 필요하지 않음</li>
+</ul>
+</li>
+<li>Intelligent Hub(지능형 허브)<!-- -->
+<ul>
+<li>SNMP 프로토콜을 사용해서 네트워크 관리 기능이 가능</li>
+<li>마이크로프로세서 칩이 포함</li>
+<li>활성 허브처럼 작동</li>
+<li>원격 관리 기능 포함</li>
+<li>유연한 데이터 속도 제공</li>
+<li>허브를 통과하는 트래픽 모니터링</li>
+<li>진단 기능<!-- -->
+<ul>
+<li>포트에 연결된 네트워크 연결상태를 점검</li>
+<li>네트워크 상태 문제를 해결하는 데 매우 유용</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Switching Hub(스위칭허브)<!-- -->
+<ul>
+<li>스위칭 기능이 추가되어 네트워크 효율을 향상</li>
+<li>여러개의 포트에서 입력을 받아서 특정 포트로만 데이터를 전송할 수 있음</li>
+<li>리피터 내장</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="bridge브리지-브릿지---layer-2">Bridge(브리지, 브릿지) - Layer 2<a href="https://dldkffh.github.io/2024/01/31/network-devices#bridge%EB%B8%8C%EB%A6%AC%EC%A7%80-%EB%B8%8C%EB%A6%BF%EC%A7%80---layer-2" class="hash-link" aria-label="Bridge(브리지, 브릿지) - Layer 2에 대한 직접 링크" title="Bridge(브리지, 브릿지) - Layer 2에 대한 직접 링크">​</a></h3>
+<ul>
+<li>두 개의 LAN을 연결하는 연결장치로 송신 및 수신되는 통신량을 관리<!-- -->
+<ul>
+<li>송신 및 수신 되는 Frame(프레임)을 검사</li>
+</ul>
+</li>
+<li>네트워크 범위를 확장하고 할 때 사용</li>
+<li>서로 다른 물리적 네트워크를 연결할 수 있음<!-- -->
+<ul>
+<li>예시 : 이더넷과 토큰링 네트워크를 연결</li>
+</ul>
+</li>
+<li>네크워크에 많은 컴퓨터를 연결</li>
+<li>네트워크의 병목현상 감소</li>
+<li>하드웨어 주소인 MAC 주소로 관리</li>
+<li>입력 신호를 출력으로 전송하는 Forwarding(포워딩) 기능 수행</li>
+<li>목적지 MAC 주소를 읽어서 필터링을 수행</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="브리지-종류">브리지 종류<a href="https://dldkffh.github.io/2024/01/31/network-devices#%EB%B8%8C%EB%A6%AC%EC%A7%80-%EC%A2%85%EB%A5%98" class="hash-link" aria-label="브리지 종류에 대한 직접 링크" title="브리지 종류에 대한 직접 링크">​</a></h4>
+<ul>
+<li>Transparent Bridges(투명 브리지)<!-- -->
+<ul>
+<li>존재를 전혀 인식하지 못하는 브리지<!-- -->
+<ul>
+<li>각 단말이 브리지의 존재를 전혀 모르게 한다는 의미</li>
+<li>브리지가 네트워크에 추가되거나 삭제되었는지 여부에 관계없이 스테이션을 재구성할 필요 없음</li>
+</ul>
+</li>
+<li>bridge forwarding(브리지 전달)과 bridge learning(브리지 학습)이라는 두 가지 프로세스를 사용</li>
+<li>투명 브리지를 사용하여 LAN을 확장하는 경우에는 Bridging Loop 현상 등에 의하여 한계에 봉착</li>
+</ul>
+</li>
+<li>Source Routing Bridges(소스 라우팅 브리지)<!-- -->
+<ul>
+<li>라우팅 작업이 소스 스테이션에 의해 수행</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="switch스위치---layer-2-3">Switch(스위치) - Layer 2, 3<a href="https://dldkffh.github.io/2024/01/31/network-devices#switch%EC%8A%A4%EC%9C%84%EC%B9%98---layer-2-3" class="hash-link" aria-label="Switch(스위치) - Layer 2, 3에 대한 직접 링크" title="Switch(스위치) - Layer 2, 3에 대한 직접 링크">​</a></h3>
+<ul>
+<li>Switching Hub(스위칭 허브) 혹은 Port Switching Hub(포트 스위칭 허브)라고도 함</li>
+<li>Hub(허브)와 거의 유사하지만 스위치는 허브보다 전송 속도가 빠름</li>
+<li>네트워크의 효율이 향상<!-- -->
+<ul>
+<li>네트워크에서 충돌이 발생하지 않도록 목적지의 포트로 직접 전송함</li>
+</ul>
+</li>
+<li>충돌이 발생하지 않음<!-- -->
+<ul>
+<li>송신자 노드와 수신자 노드를 일대일로 연결</li>
+</ul>
+</li>
+<li>빠른 데이터 전송 가능</li>
+<li>송신 및 수신 노드의 수가 증가해도 네트워크의 속도는 저하되지 않음</li>
+<li>포트별로 일정한 속도를 가지고 전송되는 Packet(패킷)에 대해서 감정이 어려움</li>
+<li>불필요한 네트워크 전송 최소화</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="스위치-종류">스위치 종류<a href="https://dldkffh.github.io/2024/01/31/network-devices#%EC%8A%A4%EC%9C%84%EC%B9%98-%EC%A2%85%EB%A5%98" class="hash-link" aria-label="스위치 종류에 대한 직접 링크" title="스위치 종류에 대한 직접 링크">​</a></h4>
+<ul>
+<li>비관리형 스위치<!-- -->
+<ul>
+<li>이 스위치는 간단한 플러그 앤 플레이 설계</li>
+<li>고급 구성 옵션을 제공하지 않음</li>
+<li>소규모 네트워크에 적합</li>
+<li>대규모 네트워크로의 확장으로 사용하기에 적합</li>
+</ul>
+</li>
+<li>관리형 스위치<!-- -->
+<ul>
+<li>VLAN, QoS 및 링크 집계와 같은 고급 구성 옵션을 제공</li>
+<li>크고 복잡한 네트워크에 적합</li>
+<li>중앙 집중식 관리 가능</li>
+</ul>
+</li>
+<li>스마트 스위치<!-- -->
+<ul>
+<li>관리형 스위치와 유사한 기능</li>
+<li>일반적으로 설정 및 관리가 쉽움</li>
+<li>중소규모 네트워크에 적합</li>
+</ul>
+</li>
+<li>레이어 2 스위치<!-- -->
+<ul>
+<li>동일한 네트워크 세그먼트에 있는 장치 간에 데이터를 전달</li>
+</ul>
+</li>
+<li>레이어 3 스위치<!-- -->
+<ul>
+<li>서로 다른 네트워크 세그먼트 간에 데이터를 라우팅</li>
+<li>크고 복잡한 네트워크에서 자주 사용</li>
+</ul>
+</li>
+<li>PoE 스위치<!-- -->
+<ul>
+<li>PoE(Power over Ethernet) 기능이 있음</li>
+<li>전달하는 동일한 케이블을 통해 네트워크 장치에 전원을 공급</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="router라우터---layer-3">Router(라우터) - Layer 3<a href="https://dldkffh.github.io/2024/01/31/network-devices#router%EB%9D%BC%EC%9A%B0%ED%84%B0---layer-3" class="hash-link" aria-label="Router(라우터) - Layer 3에 대한 직접 링크" title="Router(라우터) - Layer 3에 대한 직접 링크">​</a></h3>
+<ul>
+<li>Internetworking(인터네트워킹) 장비<!-- -->
+<ul>
+<li>둘 이상의 서로 다른 네트워크를 연결<!-- -->
+<ul>
+<li>네트워크 간 하드웨어나 소프트웨어 모두를 연결</li>
+</ul>
+</li>
+<li>IP 주소를 기반으로 데이터 패킷을 라우팅하는 스위치</li>
+</ul>
+</li>
+<li>LAN과 WAN을 연결</li>
+<li>TCP/IP 프로토콜을 지원</li>
+<li>최신의 라우팅 테이블을 유지<!-- -->
+<ul>
+<li>주기적인 라우팅 브로드캐스트를 사용</li>
+<li>동적으로 업데이트</li>
+</ul>
+</li>
+<li>패킷에서 IP주소를 읽어서 경로를 결정</li>
+<li>필터링 수행<!-- -->
+<ul>
+<li>특정 IP에서 유입되는 패킷이나 특정 IP로 전송되는 패킷에 대해 필터링 수행 가능</li>
+</ul>
+</li>
+<li>Forwarding(포워딩) 수행<!-- -->
+<ul>
+<li>Broadcast(브로드캐스트)를 차단하거나 입력 인터페이스로 입력된 패킷을 출력 인터페이스로 전송</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="gateway게이트웨이---all-layer">Gateway(게이트웨이) - All Layer<a href="https://dldkffh.github.io/2024/01/31/network-devices#gateway%EA%B2%8C%EC%9D%B4%ED%8A%B8%EC%9B%A8%EC%9D%B4---all-layer" class="hash-link" aria-label="Gateway(게이트웨이) - All Layer에 대한 직접 링크" title="Gateway(게이트웨이) - All Layer에 대한 직접 링크">​</a></h3>
+<ul>
+<li>다른 네트워크 간의 상호 연결을 위해 사용</li>
+<li>프로토콜이 달라도 통신 가능<!-- -->
+<ul>
+<li>서로 다른 프로토콜 간에 변환을 수행</li>
+</ul>
+</li>
+<li>Message(메시지) 변환<!-- -->
+<ul>
+<li>서로 다른 네트워크에서 사용하는 메시지 포팻 형식을 변환</li>
+<li>예시 : ASCII 코드로 작성된 메시지를 EBCDIC 코드로 변환</li>
+</ul>
+</li>
+<li>Protocol(프로토콜) 변환<!-- -->
+<ul>
+<li>서로 다른 종류의 프로토콜을 변환</li>
+<li>예시 : TCP/IP 프로토콜과 ATM 프로토콜 간의 상호변환 수행</li>
+</ul>
+</li>
+<li>Address(주소) 변환<!-- -->
+<ul>
+<li>서로 다른 주소를 변환</li>
+<li>예시 : IPv4 주소와 IPv6 주소간에 변환을 수행</li>
+</ul>
+</li>
+<li>Firewall(방화벽)<!-- -->
+<ul>
+<li>병화벽 역할 수행<!-- -->
+<ul>
+<li>서로 다른 네트워크를 연결하여 패킷 필터링</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Proxy Server(프록시 서버)<!-- -->
+<ul>
+<li>프록시 서버를 통해 다른 네트워크로 접근<!-- -->
+<ul>
+<li>프록시 서버는 중계기 역할을 수행하는 것</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="brouter브루터---layer-2-3">Brouter(브루터) - Layer 2, 3<a href="https://dldkffh.github.io/2024/01/31/network-devices#brouter%EB%B8%8C%EB%A3%A8%ED%84%B0---layer-2-3" class="hash-link" aria-label="Brouter(브루터) - Layer 2, 3에 대한 직접 링크" title="Brouter(브루터) - Layer 2, 3에 대한 직접 링크">​</a></h3>
+<ul>
+<li>브리징 라우터</li>
+<li>브리지와 라우터의 기능을 모두 결합<!-- -->
+<ul>
+<li>라우터로 작동하여 네트워크 전체에 패킷을 라우팅</li>
+<li>브리지로 작동하여 근거리 통신망 트래픽을 필터링</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="nicnetwork-interface-card---layer-1-2">NIC(Network Interface Card) - Layer 1, 2<a href="https://dldkffh.github.io/2024/01/31/network-devices#nicnetwork-interface-card---layer-1-2" class="hash-link" aria-label="NIC(Network Interface Card) - Layer 1, 2에 대한 직접 링크" title="NIC(Network Interface Card) - Layer 1, 2에 대한 직접 링크">​</a></h3>
+<ul>
+<li>네트워크에 연결하는 데 사용되는 네트워크 어댑터</li>
+<li>LAN을 구축하기 위해 컴퓨터에 설치<!-- -->
+<ul>
+<li>칩에 고유 ID</li>
+<li>케이블을 연결하는 커넥터<!-- -->
+<ul>
+<li>케이블은 컴퓨터와 라우터 또는 모뎀 사이의 인터페이스 역할</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="출처">출처<a href="https://dldkffh.github.io/2024/01/31/network-devices#%EC%B6%9C%EC%B2%98" class="hash-link" aria-label="출처에 대한 직접 링크" title="출처에 대한 직접 링크">​</a></h3>
+<ul>
+<li><a href="http://www.ktword.co.kr/" target="_blank" rel="noopener noreferrer">정보통신기술용어해설</a></li>
+<li><a href="https://www.geeksforgeeks.org/" target="_blank" rel="noopener noreferrer">GeeksforGeeks</a></li>
+<li><a href="https://shop.youngjin.com/goods/view?no=69" target="_blank" rel="noopener noreferrer">이기적 네트워크관리사 1ㆍ2급 필기</a></li>
+</ul>]]></content>
+        <author>
+            <name>dldkffh</name>
+            <uri>https://github.com/dldkffh</uri>
+        </author>
+        <category label="네트워크" term="네트워크"/>
+        <category label="개념" term="개념"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[OSI Layer 1, 2]]></title>
+        <id>https://dldkffh.github.io/2024/01/31/osi12</id>
+        <link href="https://dldkffh.github.io/2024/01/31/osi12"/>
+        <updated>2024-01-31T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Layer 1 - Physical Layer (물리 계층)]]></summary>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="layer-1---physical-layer-물리-계층">Layer 1 - Physical Layer (물리 계층)<a href="https://dldkffh.github.io/2024/01/31/osi12#layer-1---physical-layer-%EB%AC%BC%EB%A6%AC-%EA%B3%84%EC%B8%B5" class="hash-link" aria-label="Layer 1 - Physical Layer (물리 계층)에 대한 직접 링크" title="Layer 1 - Physical Layer (물리 계층)에 대한 직접 링크">​</a></h3>
+<ul>
+<li>전기 및 기계 수준에서 네트워크를 통해 비트 스트림(전기 충격, 빛 또는 무선 신호)을 전달</li>
+<li>케이블, 인터페이스 카드 및 물리적 측면 정의를 포함하여 데이터를 보내고 받는 하드웨어 수단을 제공</li>
+</ul>
+<ul>
+<li>UTP<!-- -->
+<ul>
+<li>동축 케이블(더 이상 사용되지 않음), 연선 구리선 케이블, 광섬유 케이블 또는 무선을 통해 이더넷 LAN 연결 수행</li>
+<li>구리 UTP(비차폐 연선) 케이블은 일반적으로 데스크톱 컴퓨터를 스위치에 연결하는데 사용</li>
+<li>커넥터 유형은 RJ-45이고 최대 길이는 100미터</li>
+<li>Straight-Trough (다이렉트) UTP Cable VS. Crossover (크로스오버) UTP Cable<!-- -->
+<ul>
+<li>UTP 케이블의 수신 및 전송 전선은 직선 또는 교차 방식으로 RJ-45 커넥터에 연결</li>
+<li>다이렉트 케이블은 PC나 라우터와 같은 최종 장치를 스위치에 연결하는 데 사용</li>
+<li>크로스오버 케이블은 장치를 직접 연결하는 데 사용<!-- -->
+<ul>
+<li>동일한 유형의 두 장치를 연결하는 데 가장 자주 사용</li>
+</ul>
+</li>
+<li>최신 스위치는 수신 및 전송 신호가 자동으로 재구성되는 자동 MDIX를 지원<!-- -->
+<ul>
+<li>다이렉트 케이블을 써도 알아서 크로스오버 케이블처럼 작동한다는 뜻</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>광섬유 케이블<!-- -->
+<ul>
+<li>장거리 또는 더 높은 대역폭 요구 사항을 지원하는 데 사용</li>
+<li>예시 : 캠퍼스의 별도 건물 간 또는 건물 내부의 연결 전환을 위한 스위치</li>
+<li>Single Mode Fiber VS. Multi Mode Fiber<!-- -->
+<ul>
+<li>단일 모드는 더 높은 대역폭과 더 먼 거리를 지원하지만 비용이 더 많이 듦</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="layer-2---data-link-layer-데이터-링크-계층">Layer 2 - Data-Link Layer (데이터 링크 계층)<a href="https://dldkffh.github.io/2024/01/31/osi12#layer-2---data-link-layer-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%A7%81%ED%81%AC-%EA%B3%84%EC%B8%B5" class="hash-link" aria-label="Layer 2 - Data-Link Layer (데이터 링크 계층)에 대한 직접 링크" title="Layer 2 - Data-Link Layer (데이터 링크 계층)에 대한 직접 링크">​</a></h3>
+<ul>
+<li>비트로 인코딩 및 디코딩</li>
+<li>물리 계층에 대한 오류 감지 및 수정</li>
+<li>Ethernet(이더넷)<!-- -->
+<ul>
+<li>LAN(Local Area Network)에서 사용되는 2계층 매체</li>
+<li>LAN을 유선으로 구현하는 기술 방식</li>
+<li>IEEE 802.3 규약으로 표준화</li>
+<li>CSMA/CD 기법</li>
+<li>48비트 16진수 MAC 주소를 사용</li>
+</ul>
+</li>
+<li>미디어 액세스 제어 MAC Address<!-- -->
+<ul>
+<li>처음 24비트는 이더넷 포트 제조업체를 고유하게 식별하는 OUI(Organizationally Unique Identifier)<!-- -->
+<ul>
+<li>OUI는 IEEE에 의해 할당</li>
+</ul>
+</li>
+<li>마지막 24비트는 공급업체가 할당</li>
+<li>전 세계 모든 NIC 포트에 저장된 MAC 주소는 전역적으로 고유</li>
+</ul>
+</li>
+</ul>]]></content>
+        <author>
+            <name>dldkffh</name>
+            <uri>https://github.com/dldkffh</uri>
+        </author>
+        <category label="OSI" term="OSI"/>
+        <category label="인프라" term="인프라"/>
+        <category label="네트워크" term="네트워크"/>
+        <category label="개념" term="개념"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[자주보는 TCP, UDP 프로토콜, 포트번호 정리]]></title>
+        <id>https://dldkffh.github.io/2024/01/31/tcp-udp-protocol</id>
+        <link href="https://dldkffh.github.io/2024/01/31/tcp-udp-protocol"/>
+        <updated>2024-01-31T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[TCP]]></summary>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tcp">TCP<a href="https://dldkffh.github.io/2024/01/31/tcp-udp-protocol#tcp" class="hash-link" aria-label="TCP에 대한 직접 링크" title="TCP에 대한 직접 링크">​</a></h3>
+<ul>
+<li>FTP(21)</li>
+<li>SSH(22)</li>
+<li>Telnet(23)</li>
+<li>HTTP(80)</li>
+<li>HTTPS(443)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="udp">UDP<a href="https://dldkffh.github.io/2024/01/31/tcp-udp-protocol#udp" class="hash-link" aria-label="UDP에 대한 직접 링크" title="UDP에 대한 직접 링크">​</a></h3>
+<ul>
+<li>TFTP(69)</li>
+<li>SNMP(161)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tcp--udp">TCP &amp; UDP<a href="https://dldkffh.github.io/2024/01/31/tcp-udp-protocol#tcp--udp" class="hash-link" aria-label="TCP &amp; UDP에 대한 직접 링크" title="TCP &amp; UDP에 대한 직접 링크">​</a></h3>
+<ul>
+<li>DNS(53)</li>
+</ul>]]></content>
+        <author>
+            <name>dldkffh</name>
+            <uri>https://github.com/dldkffh</uri>
+        </author>
+        <category label="TCP" term="TCP"/>
+        <category label="UDP" term="UDP"/>
+        <category label="프로토콜" term="프로토콜"/>
+        <category label="인프라" term="인프라"/>
+        <category label="네트워크" term="네트워크"/>
+        <category label="개념" term="개념"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[DNS로 이름 해결]]></title>
         <id>https://dldkffh.github.io/2023/10/15/dns</id>
@@ -109,7 +569,7 @@
 <li>코니는 하루에 최소 한 개의 의상은 입습니다.</li>
 </ul>
 <p>코니가 가진 의상들이 담긴 2차원 배열 <code>clothes</code>가 주어질 때 서로 다른 옷의 조합의 수를 <code>return</code> 하도록 <code>solution</code> 함수를 작성해주세요.</p>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="제한사항">제한사항<a href="https://dldkffh.github.io/2023/07/13/programmers-42862#%EC%A0%9C%ED%95%9C%EC%82%AC%ED%95%AD" class="hash-link" aria-label="제한사항에 대한 직접 링크" title="제한사항에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="제한사항">제한사항<a href="https://dldkffh.github.io/2023/07/13/programmers-42862#%EF%BF%BD%EF%BF%BD%EC%A0%9C%ED%95%9C%EC%82%AC%ED%95%AD" class="hash-link" aria-label="제한사항에 대한 직접 링크" title="제한사항에 대한 직접 링크">​</a></h4>
 <ul>
 <li>전체 학생의 수는 2명 이상 30명 이하입니다.</li>
 <li>체육복을 도난당한 학생의 수는 1명 이상 <code>n</code>명 이하이고 중복되는 번호는 없습니다.</li>
@@ -139,7 +599,7 @@
         <link href="https://dldkffh.github.io/2023/07/13/programmers-42885"/>
         <updated>2023-07-13T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[프로그래머스 코딩테스트 고득점 Kit 구명보트]]></summary>
-        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="프로그래머스-코딩테스트-고득점-kit-구명보트"><a href="https://school.programmers.co.kr/learn/courses/30/lessons/42885" target="_blank" rel="noopener noreferrer">프로그래머스 코딩테스트 고득점 Kit 구명보트</a><a href="https://dldkffh.github.io/2023/07/13/programmers-42885#%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B3%A0%EB%93%9D%EC%A0%90-kit-%EA%B5%AC%EB%AA%85%EB%B3%B4%ED%8A%B8" class="hash-link" aria-label="프로그래머스-코딩테스트-고득점-kit-구명보트에 대한 직접 링크" title="프로그래머스-코딩테스트-고득점-kit-구명보트에 �대한 직접 링크">​</a></h3>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="프로그래머스-코딩테스트-고득점-kit-구명보트"><a href="https://school.programmers.co.kr/learn/courses/30/lessons/42885" target="_blank" rel="noopener noreferrer">프로그래머스 코딩테스트 고득점 Kit 구명보트</a><a href="https://dldkffh.github.io/2023/07/13/programmers-42885#%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B3%A0%EB%93%9D%EC%A0%90-kit-%EA%B5%AC%EB%AA%85%EB%B3%B4%ED%8A%B8" class="hash-link" aria-label="프로그래머스-코딩테스트-고득점-kit-구명보트에 대한 직접 링크" title="프로그래머스-코딩테스트-고득점-kit-구명보트에 대한 직접 링크">​</a></h3>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="문제-설명">문제 설명<a href="https://dldkffh.github.io/2023/07/13/programmers-42885#%EB%AC%B8%EC%A0%9C-%EC%84%A4%EB%AA%85" class="hash-link" aria-label="문제 설명에 대한 직접 링크" title="문제 설명에 대한 직접 링크">​</a></h4>
 <p>무인도에 갇힌 사람들을 구명보트를 이용하여 구출하려고 합니다. 구명보트는 작아서 한 번에 최대 2명씩 밖에 탈 수 없고, 무게 제한도 있습니다.</p>
 <p>예를 들어, 사람들의 몸무게가 <code>[70kg, 50kg, 80kg, 50kg]</code>이고 구명보트의 무게 제한이 100kg이라면 2번째 사람과 4번째 사람은 같이 탈 수 있지만 1번째 사람과 3번째 사람의 무게의 합은 150kg이므로 구명보트의 무게 제한을 초과하여 같이 탈 수 없습니다.</p>
@@ -152,7 +612,7 @@
 <li>구명보트의 무게 제한은 40kg 이상 240kg 이하입니다.</li>
 <li>구명보트의 무게 제한은 항상 사람들의 몸무게 중 최댓값보다 크게 주어지므로 사람들을 구출할 수 없는 경우는 없습니다.</li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="풀이-포인트">풀이 포인트<a href="https://dldkffh.github.io/2023/07/13/programmers-42885#%ED%92%80%EC%9D%B4-%ED%8F%AC%EC%9D%B8%ED%8A%B8" class="hash-link" aria-label="풀이 포인트에 대한 직접 링크" title="풀이 포인트에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="풀이-포인트">풀이 포인트<a href="https://dldkffh.github.io/2023/07/13/programmers-42885#%ED%92%80%EC%9D%B4-%ED%8F%AC%EC%9D%B8%ED%8A%B8" class="hash-link" aria-label="풀이 포인트에 대한 직접 링크" title="풀이 포인트��에 대한 직접 링크">​</a></h4>
 <ul>
 <li>무거운 사람먼저 태운다.</li>
 <li>무거운 사람과 같이 탈 수 있는 가벼운 사람이 있는지 찾아본다.</li>
@@ -175,7 +635,7 @@
         <link href="https://dldkffh.github.io/2023/07/11/programmers-42577"/>
         <updated>2023-07-11T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[프로그래머스 코딩테스트 고득점 Kit 전화번호 목록]]></summary>
-        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="프로그래머스-코딩테스트-고득점-kit-전화번호-목록"><a href="https://school.programmers.co.kr/learn/courses/30/lessons/42577" target="_blank" rel="noopener noreferrer">프로그래머스 코딩테스트 고득점 Kit 전화번호 목록</a><a href="https://dldkffh.github.io/2023/07/11/programmers-42577#%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B3%A0%EB%93%9D%EC%A0%90-kit-%EC%A0%84%ED%99%94%EB%B2%88%ED%98%B8-%EB%AA%A9%EB%A1%9D" class="hash-link" aria-label="프로그래머스-코딩테스트-고득점-kit-전화번호-목록에 대한 직접 링크" title="프로그래머스-코딩��테스트-고득점-kit-전화번호-목록에 대한 직접 링크">​</a></h3>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="프로그래머스-코딩테스트-고득점-kit-전화번호-목록"><a href="https://school.programmers.co.kr/learn/courses/30/lessons/42577" target="_blank" rel="noopener noreferrer">프로그래머스 코딩테스트 고득점 Kit 전화번호 목록</a><a href="https://dldkffh.github.io/2023/07/11/programmers-42577#%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B3%A0%EB%93%9D%EC%A0%90-kit-%EC%A0%84%ED%99%94%EB%B2%88%ED%98%B8-%EB%AA%A9%EB%A1%9D" class="hash-link" aria-label="프로그래머스-코딩테스트-고득점-kit-전화번호-목록에 대한 직접 링크" title="프로그래머스-코딩테스트-고득점-kit-전�화번호-목록에 대한 직접 링크">​</a></h3>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="문제-설명">문제 설명<a href="https://dldkffh.github.io/2023/07/11/programmers-42577#%EB%AC%B8%EC%A0%9C-%EC%84%A4%EB%AA%85" class="hash-link" aria-label="문제 설명에 대한 직접 링크" title="문제 설명에 대한 직접 링크">​</a></h4>
 <p>전화번호부에 적힌 전화번호 중, 한 번호가 다른 번호의 접두어인 경우가 있는지 확인하려 합니다.
 전화번호가 다음과 같을 경우, 구조대 전화번호는 영석이의 전화번호의 접두사입니다.</p>
@@ -256,7 +716,7 @@
         <summary type="html"><![CDATA[프로그래머스 코딩테스트 고득점 Kit 폰켓몬]]></summary>
         <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="프로그래머스-코딩테스트-고득점-kit-폰켓몬"><a href="https://school.programmers.co.kr/learn/courses/30/lessons/1845" target="_blank" rel="noopener noreferrer">프로그래머스 코딩테스트 고득점 Kit 폰켓몬</a><a href="https://dldkffh.github.io/2023/07/10/programmers-1845#%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B3%A0%EB%93%9D%EC%A0%90-kit-%ED%8F%B0%EC%BC%93%EB%AA%AC" class="hash-link" aria-label="프로그래머스-코딩테스트-고득점-kit-폰켓몬에 대한 직접 링크" title="프로그래머스-코딩테스트-고득점-kit-폰켓몬에 대한 직접 링크">​</a></h3>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="문제-설명">문제 설명<a href="https://dldkffh.github.io/2023/07/10/programmers-1845#%EB%AC%B8%EC%A0%9C-%EC%84%A4%EB%AA%85" class="hash-link" aria-label="문제 설명에 대한 직접 링크" title="문제 설명에 대한 직접 링크">​</a></h4>
-<p>당신은 폰켓몬을 잡기 위한 오랜 여행 끝에, 홍 박사님의 연구실에 도착했습니다. 홍 박사님은 당신에게 자신의 연구실에 있는 총 $N$ 마리의 폰켓몬 중에서 $N/2$마리를 가져가도 좋다고 했습니다. 홍 박사님 연구실의 폰켓몬은 종류에 따라 번호를 붙여 구분합니다. 따라서 같은 종류의 폰켓몬은 같은 번호를 가지고 있습니다. 예를 들어 연구실에 총 4마리의 폰켓몬이 있고, 각 폰켓몬의 종류 번호가 <code>[3번, 1번, 2번, 3번]</code>이라면 이는 3번 폰켓몬 두 마리, 1번 폰켓몬 한 마리, 2번 폰켓몬 한 마리가 있음을 나타냅니다. 이때, 4마리의 폰켓몬 중 2마리를 고르는 방법은 다음과 같이 6가지가 있습니다.</p>
+<p>당신은 폰켓몬을 잡기 위한 오랜 여행 끝에, 홍 박사님의 연구실에 도착했습니다. 홍 박사님은 당신에게 자신의 연구실에 있는 총 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi></mrow><annotation encoding="application/x-tex">N</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em"></span><span class="mord mathnormal" style="margin-right:0.10903em">N</span></span></span></span> 마리의 폰켓몬 중에서 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mi mathvariant="normal">/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">N/2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord mathnormal" style="margin-right:0.10903em">N</span><span class="mord">/2</span></span></span></span>마리를 가져가도 좋다고 했습니다. 홍 박사님 연구실의 폰켓몬은 종류에 따라 번호를 붙여 구분합니다. 따라서 같은 종류의 폰켓몬은 같은 번호를 가지고 있습니다. 예를 들어 연구실에 총 4마리의 폰켓몬이 있고, 각 폰켓몬의 종류 번호가 <code>[3번, 1번, 2번, 3번]</code>이라면 이는 3번 폰켓몬 두 마리, 1번 폰켓몬 한 마리, 2번 폰켓몬 한 마리가 있음을 나타냅니다. 이때, 4마리의 폰켓몬 중 2마리를 고르는 방법은 다음과 같이 6가지가 있습니다.</p>
 <ol>
 <li>첫 번째(3번), 두 번째(1번) 폰켓몬을 선택</li>
 <li>첫 번째(3번), 세 번째(2번) 폰켓몬을 선택</li>
@@ -265,11 +725,11 @@
 <li>두 번째(1번), 네 번째(3번) 폰켓몬을 선택</li>
 <li>세 번째(2번), 네 번째(3번) 폰켓몬을 선택</li>
 </ol>
-<p>이때, 첫 번째(3번) 폰켓몬과 네 번째(3번) 폰켓몬을 선택하는 방법은 한 종류(3번 폰켓몬 두 마리)의 폰켓몬만 가질 수 있지만, 다른 방법들은 모두 두 종류의 폰켓몬을 가질 수 있습니다. 따라서 위 예시에서 가질 수 있는 폰켓몬 종류 수의 최댓값은 2가 됩니다. 당신은 최대한 다양한 종류의 폰켓몬을 가지길 원하기 때문에, 최대한 많은 종류의 폰켓몬을 포함해서 $N/2$마리를 선택하려 합니다. $N$마리 폰켓몬의 종류 번호가 담긴 배열 <code>nums</code>가 매개변수로 주어질 때, $N/2$마리의 폰켓몬을 선택하는 방법 중, 가장 많은 종류의 폰켓몬을 선택하는 방법을 찾아, 그때의 폰켓몬 종류 번호의 개수를 <code>return</code> 하도록 <code>solution</code> 함수를 완성해주세요.</p>
+<p>이때, 첫 번째(3번) 폰켓몬과 네 번째(3번) 폰켓몬을 선택하는 방법은 한 종류(3번 폰켓몬 두 마리)의 폰켓몬만 가질 수 있지만, 다른 방법들은 모두 두 종류의 폰켓몬을 가질 수 있습니다. 따라서 위 예시에서 가질 수 있는 폰켓몬 종류 수의 최댓값은 2가 됩니다. 당신은 최대한 다양한 종류의 폰켓몬을 가지길 원하기 때문에, 최대한 많은 종류의 폰켓몬을 포함해서 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mi mathvariant="normal">/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">N/2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord mathnormal" style="margin-right:0.10903em">N</span><span class="mord">/2</span></span></span></span>마리를 선택하려 합니다. <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi></mrow><annotation encoding="application/x-tex">N</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em"></span><span class="mord mathnormal" style="margin-right:0.10903em">N</span></span></span></span>마리 폰켓몬의 종류 번호가 담긴 배열 <code>nums</code>가 매개변수로 주어질 때, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mi mathvariant="normal">/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">N/2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord mathnormal" style="margin-right:0.10903em">N</span><span class="mord">/2</span></span></span></span>마리의 폰켓몬을 선택하는 방법 중, 가장 많은 종류의 폰켓몬을 선택하는 방법을 찾아, 그때의 폰켓몬 종류 번호의 개수를 <code>return</code> 하도록 <code>solution</code> 함수를 완성해주세요.</p>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="제한사항">제한사항<a href="https://dldkffh.github.io/2023/07/10/programmers-1845#%EC%A0%9C%ED%95%9C%EC%82%AC%ED%95%AD" class="hash-link" aria-label="제한사항에 대한 직접 링크" title="제한사항에 대한 직접 링크">​</a></h4>
 <ul>
 <li><code>nums</code>는 폰켓몬의 종류 번호가 담긴 1차원 배열입니다.</li>
-<li><code>nums</code>의 길이($N$)는 1 이상 10,000 이하의 자연수이며, 항상 짝수로 주어집니다.</li>
+<li><code>nums</code>의 길이(<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi></mrow><annotation encoding="application/x-tex">N</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em"></span><span class="mord mathnormal" style="margin-right:0.10903em">N</span></span></span></span>)는 1 이상 10,000 이하의 자연수이며, 항상 짝수로 주어집니다.</li>
 <li>폰켓몬의 종류 번호는 1 이상 200,000 이하의 자연수로 나타냅니다.</li>
 <li>가장 많은 종류의 폰켓몬을 선택하는 방법이 여러 가지인 경우에도, 선택할 수 있는 폰켓몬 종류 개수의 최댓값 하나만 <code>return</code> 하면 됩니다.</li>
 </ul>
@@ -291,7 +751,7 @@
         <link href="https://dldkffh.github.io/2023/07/10/programmers-42576"/>
         <updated>2023-07-10T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[프로그래머스 코딩테스트 고득점 Kit 완주하지 못한 선수]]></summary>
-        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="프로그래머스-코딩테스트-고득점-kit-완주하지-못한-선수"><a href="https://school.programmers.co.kr/learn/courses/30/lessons/42576" target="_blank" rel="noopener noreferrer">프로그래머스 코딩테스트 고득점 Kit 완주하지 못한 선수</a><a href="https://dldkffh.github.io/2023/07/10/programmers-42576#%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B3%A0%EB%93%9D%EC%A0%90-kit-%EC%99%84%EC%A3%BC%ED%95%98%EC%A7%80-%EB%AA%BB%ED%95%9C-%EC%84%A0%EC%88%98" class="hash-link" aria-label="프로그래머스-코딩테스트-고득점-kit-완주하지-못한-선수에 대한 직접 링크" title="프로그래머스-코딩테스�트-고득점-kit-완주하지-못한-선수에 대한 직접 링크">​</a></h3>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="프로그래머스-코딩테스트-고득점-kit-완주하지-못한-선수"><a href="https://school.programmers.co.kr/learn/courses/30/lessons/42576" target="_blank" rel="noopener noreferrer">프로그래머스 코딩테스트 고득점 Kit 완주하지 못한 선수</a><a href="https://dldkffh.github.io/2023/07/10/programmers-42576#%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B3%A0%EB%93%9D%EC%A0%90-kit-%EC%99%84%EC%A3%BC%ED%95%98%EC%A7%80-%EB%AA%BB%ED%95%9C-%EC%84%A0%EC%88%98" class="hash-link" aria-label="프로그래머스-코딩테스트-고득점-kit-완주하지-못한-선수에 대한 직접 링크" title="프로그��래머스-코딩테스트-고득점-kit-완주하지-못한-선수에 대한 직접 링크">​</a></h3>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="문제-설명">문제 설명<a href="https://dldkffh.github.io/2023/07/10/programmers-42576#%EB%AC%B8%EC%A0%9C-%EC%84%A4%EB%AA%85" class="hash-link" aria-label="문제 설명에 대한 직접 링크" title="문제 설명에 대한 직접 링크">​</a></h4>
 <p>수많은 마라톤 선수들이 마라톤에 참여하였습니다. 단 한 명의 선수를 제외하고는 모든 선수가 마라톤을 완주하였습니다.</p>
 <p>마라톤에 참여한 선수들의 이름이 담긴 배열 <code>participant</code>와 완주한 선수들의 이름이 담긴 배열 <code>completion</code>이 주어질 때, 완주하지 못한 선수의 이름을 <code>return</code> 하도록 <code>solution</code> 함수를 작성해주세요.</p>
@@ -327,7 +787,7 @@
         <link href="https://dldkffh.github.io/2023/07/08/programmers-42583"/>
         <updated>2023-07-08T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[프로그래머스 코딩테스트 고득점 Kit 다리를 지나는 트럭]]></summary>
-        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="프로그래머스-코딩테스트-고득점-kit-다리를-지나는-트럭"><a href="https://school.programmers.co.kr/learn/courses/30/lessons/42583" target="_blank" rel="noopener noreferrer">프로그래머스 코딩테스트 고득점 Kit 다리를 지나는 트럭</a><a href="https://dldkffh.github.io/2023/07/08/programmers-42583#%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B3%A0%EB%93%9D%EC%A0%90-kit-%EB%8B%A4%EB%A6%AC%EB%A5%BC-%EC%A7%80%EB%82%98%EB%8A%94-%ED%8A%B8%EB%9F%AD" class="hash-link" aria-label="프로그래머스-코딩테스트-고득점-kit-다리를-지나는-트럭에 대한 직접 링크" title="프로그래머스-코딩테�스트-고득점-kit-다리를-지나는-트럭에 대한 직접 링크">​</a></h3>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="프로그래머스-코딩테스트-고득점-kit-다리를-지나는-트럭"><a href="https://school.programmers.co.kr/learn/courses/30/lessons/42583" target="_blank" rel="noopener noreferrer">프로그래머스 코딩테스트 고득점 Kit 다리를 지나는 트럭</a><a href="https://dldkffh.github.io/2023/07/08/programmers-42583#%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B3%A0%EB%93%9D%EC%A0%90-kit-%EB%8B%A4%EB%A6%AC%EB%A5%BC-%EC%A7%80%EB%82%98%EB%8A%94-%ED%8A%B8%EB%9F%AD" class="hash-link" aria-label="프로그래머스-코딩테스트-고득점-kit-다리를-지나는-트럭에 대한 직접 링크" title="프로��그래머스-코딩테스트-고득점-kit-다리를-지나는-트럭에 대한 직접 링크">​</a></h3>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="문제-설명">문제 설명<a href="https://dldkffh.github.io/2023/07/08/programmers-42583#%EB%AC%B8%EC%A0%9C-%EC%84%A4%EB%AA%85" class="hash-link" aria-label="문제 설명에 대한 직접 링크" title="문제 설명에 대한 직접 링크">​</a></h4>
 <p>트럭 여러 대가 강을 가로지르는 일차선 다리를 정해진 순으로 건너려 합니다. 모든 트럭이 다리를 건너려면 최소 몇 초가 걸리는지 알아내야 합니다. 다리에는 트럭이 최대 <code>bridge_length</code>대 올라갈 수 있으며, 다리는 <code>weight</code> 이하까지의 무게를 견딜 수 있습니다. 단, 다리에 완전히 오르지 않은 트럭의 무게는 무시합니다.</p>
 <p>예를 들어, 트럭 2대가 올라갈 수 있고 무게를 10kg까지 견디는 다리가 있습니다. 무게가 <code>[7, 4, 5, 6]</code>kg인 트럭이 순서대로 최단 시간 안에 다리를 건너려면 다음과 같이 건너야 합니다.</p>
@@ -491,7 +951,7 @@
         <updated>2023-07-02T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[프로그래머스 코딩테스트 고득점 Kit H-Index]]></summary>
         <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="프로그래머스-코딩테스트-고득점-kit-h-index"><a href="https://school.programmers.co.kr/learn/courses/30/lessons/42747" target="_blank" rel="noopener noreferrer">프로그래머스 코딩테스트 고득점 Kit H-Index</a><a href="https://dldkffh.github.io/2023/07/02/programmers-42747#%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B3%A0%EB%93%9D%EC%A0%90-kit-h-index" class="hash-link" aria-label="프로그래머스-코딩테스트-고득점-kit-h-index에 대한 직접 링크" title="프로그래머스-코딩테스트-고득점-kit-h-index에 대한 직접 링크">​</a></h3>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="�문제-설명">문제 설명<a href="https://dldkffh.github.io/2023/07/02/programmers-42747#%EB%AC%B8%EC%A0%9C-%EC%84%A4%EB%AA%85" class="hash-link" aria-label="문제 설명에 대한 직접 링크" title="문제 설명에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="문제-설명">문제 설명<a href="https://dldkffh.github.io/2023/07/02/programmers-42747#%EB%AC%B8%EC%A0%9C-%EC%84%A4%EB%AA%85" class="hash-link" aria-label="문제 설명에 대한 직접 링크" title="문제 설명에 대한 직접 링크">​</a></h4>
 <p>H-Index는 과학자의 생산성과 영향력을 나타내는 지표입니다. 어느 과학자의 H-Index를 나타내는 값인 <code>h</code>를 구하려고 합니다. 위키백과1에 따르면, H-Index는 다음과 같이 구합니다.</p>
 <p>어떤 과학자가 발표한 논문 <code>n</code>편 중, <code>h</code>번 이상 인용된 논문이 <code>h</code>편 이상이고 나머지 논문이 <code>h</code>번 이하 인용되었다면 <code>h</code>의 최댓값이 이 과학자의 H-Index입니다.</p>
 <p>어떤 과학자가 발표한 논문의 인용 횟수를 담은 배열 <code>citations</code>가 매개변수로 주어질 때, 이 과학자의 H-Index를 <code>return</code> 하도록 <code>solution</code> 함수를 작성해주세요.</p>
@@ -524,7 +984,7 @@
         <link href="https://dldkffh.github.io/2023/06/30/programmers-42746"/>
         <updated>2023-06-30T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[프로그래머스 코딩테스트 고득점 Kit 정렬 가장 큰 수]]></summary>
-        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="프로그래머스-코딩테스트-고득점-kit-정렬-가장-큰-수"><a href="https://school.programmers.co.kr/learn/courses/30/lessons/42746" target="_blank" rel="noopener noreferrer">프로그래머스 코딩테스트 고득점 Kit 정렬 가장 큰 수</a><a href="https://dldkffh.github.io/2023/06/30/programmers-42746#%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B3%A0%EB%93%9D%EC%A0%90-kit-%EC%A0%95%EB%A0%AC-%EA%B0%80%EC%9E%A5-%ED%81%B0-%EC%88%98" class="hash-link" aria-label="프로그래머스-코딩테스트-고득점-kit-정렬-가장-큰-수에 대한 직접 링크" title="프로그래머스-코딩테스트-고득점-kit-정렬-가장-큰-��수에 대한 직접 링크">​</a></h3>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="프로그래머스-코딩테스트-고득점-kit-정렬-가장-큰-수"><a href="https://school.programmers.co.kr/learn/courses/30/lessons/42746" target="_blank" rel="noopener noreferrer">프로그래머스 코딩테스트 고득점 Kit 정렬 가장 큰 수</a><a href="https://dldkffh.github.io/2023/06/30/programmers-42746#%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B3%A0%EB%93%9D%EC%A0%90-kit-%EC%A0%95%EB%A0%AC-%EA%B0%80%EC%9E%A5-%ED%81%B0-%EC%88%98" class="hash-link" aria-label="프로그래머스-코딩테스트-고득점-kit-정렬-가장-큰-수에 대한 직접 링크" title="프로그래머스-코딩테스트-고득점-kit-정렬-가장-큰-수에 대한 직접 링크">​</a></h3>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="문제-설명">문제 설명<a href="https://dldkffh.github.io/2023/06/30/programmers-42746#%EB%AC%B8%EC%A0%9C-%EC%84%A4%EB%AA%85" class="hash-link" aria-label="문제 설명에 대한 직접 링크" title="문제 설명에 대한 직접 링크">​</a></h4>
 <p>0 또는 양의 정수가 주어졌을 때, 정수를 이어 붙여 만들 수 있는 가장 큰 수를 알아내 주세요.</p>
 <p>예를 들어, 주어진 정수가 <code>[6, 10, 2]</code>라면 <code>[6102, 6210, 1062, 1026, 2610, 2106]</code>를 만들 수 있고, 이중 가장 큰 수는 6210입니다.</p>
@@ -543,7 +1003,7 @@
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="테스트-케이스-추가">테스트 케이스 추가<a href="https://dldkffh.github.io/2023/06/30/programmers-42746#%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%BC%80%EC%9D%B4%EC%8A%A4-%EC%B6%94%EA%B0%80" class="hash-link" aria-label="테스트 케이스 추가에 대한 직접 링크" title="테스트 케이스 추가에 대한 직접 링크">​</a></h4>
 <table><thead><tr><th>numbers(int[])</th><th>return</th></tr></thead><tbody><tr><td>[0, 0, 0, 0]</td><td>"0"</td></tr><tr><td>[898, 89]</td><td>"89898"</td></tr><tr><td>[1000, 999]</td><td>"9991000"</td></tr><tr><td>[333, 334, 3, 33, 4, 35, 30, 55, 31]</td><td>"554353343333333130"</td></tr></tbody></table>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="solutionpy">solution.py<a href="https://dldkffh.github.io/2023/06/30/programmers-42746#solutionpy" class="hash-link" aria-label="solution.py에 대한 직접 링크" title="solution.py에 대한 직접 링크">​</a></h4>
-<div class="language-py codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#bfc7d5;--prism-background-color:#292d3e"><div class="codeBlockTitle_Ktv7">python3</div><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-py codeBlock_bY9V thin-scrollbar" style="color:#bfc7d5;background-color:#292d3e"><code class="codeBlockLines_e6Vv codeBlockLinesWithNumbering_o6Pm"><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token keyword" style="font-style:italic">from</span><span class="token plain"> functools </span><span class="token keyword" style="font-style:italic">import</span><span class="token plain"> cmp_to_key</span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain" style="display:inline-block"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain"></span><span class="token keyword" style="font-style:italic">def</span><span class="token plain"> </span><span class="token function" style="color:rgb(130, 170, 255)">sort</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token plain">a</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"> b</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">    </span><span class="token keyword" style="font-style:italic">if</span><span class="token plain"> </span><span class="token builtin" style="color:rgb(130, 170, 255)">int</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token plain">a </span><span class="token operator" style="color:rgb(137, 221, 255)">+</span><span class="token plain"> b</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token plain"> </span><span class="token operator" style="color:rgb(137, 221, 255)">&gt;</span><span class="token plain"> </span><span class="token builtin" style="color:rgb(130, 170, 255)">int</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token plain">b </span><span class="token operator" style="color:rgb(137, 221, 255)">+</span><span class="token plain"> a</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">        </span><span class="token keyword" style="font-style:italic">return</span><span class="token plain"> </span><span class="token operator" style="color:rgb(137, 221, 255)">-</span><span class="token number" style="color:rgb(247, 140, 108)">1</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">    </span><span class="token keyword" style="font-style:italic">else</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">        </span><span class="token keyword" style="font-style:italic">return</span><span class="token plain"> </span><span class="token number" style="color:rgb(247, 140, 108)">1</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain" style="display:inline-block"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain" style="display:inline-block"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain"></span><span class="token keyword" style="font-style:italic">def</span><span class="token plain"> </span><span class="token function" style="color:rgb(130, 170, 255)">solution</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token plain">numbers</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">    answer </span><span class="token operator" style="color:rgb(137, 221, 255)">=</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">''</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain" style="display:inline-block"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">    </span><span class="token keyword" style="font-style:italic">case</span><span class="token plain"> </span><span class="token operator" style="color:rgb(137, 221, 255)">=</span><span class="token plain"> </span><span class="token builtin" style="color:rgb(130, 170, 255)">list</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token builtin" style="color:rgb(130, 170, 255)">map</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token keyword" style="font-style:italic">lambda</span><span class="token plain"> x</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"> </span><span class="token builtin" style="color:rgb(130, 170, 255)">str</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token plain">x</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"> numbers</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">    </span><span class="token keyword" style="font-style:italic">case</span><span class="token plain"> </span><span class="token operator" style="color:rgb(137, 221, 255)">=</span><span class="token plain"> </span><span class="token builtin" style="color:rgb(130, 170, 255)">sorted</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token keyword" style="font-style:italic">case</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"> key</span><span class="token operator" style="color:rgb(137, 221, 255)">=</span><span class="token plain">cmp_to_key</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token plain">sort</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain" style="display:inline-block"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">    </span><span class="token keyword" style="font-style:italic">if</span><span class="token plain"> </span><span class="token keyword" style="font-style:italic">case</span><span class="token punctuation" style="color:rgb(199, 146, 234)">[</span><span class="token number" style="color:rgb(247, 140, 108)">0</span><span class="token punctuation" style="color:rgb(199, 146, 234)">]</span><span class="token plain"> </span><span class="token operator" style="color:rgb(137, 221, 255)">==</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">'0'</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">        </span><span class="token keyword" style="font-style:italic">return</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">'0'</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain" style="display:inline-block"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">    </span><span class="token keyword" style="font-style:italic">for</span><span class="token plain"> i </span><span class="token keyword" style="font-style:italic">in</span><span class="token plain"> </span><span class="token keyword" style="font-style:italic">case</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">        answer </span><span class="token operator" style="color:rgb(137, 221, 255)">+=</span><span class="token plain"> i</span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain" style="display:inline-block"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">    </span><span class="token keyword" style="font-style:italic">return</span><span class="token plain"> answer</span></span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="클립보드에 코드 복사" title="복�사" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<div class="language-py codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#bfc7d5;--prism-background-color:#292d3e"><div class="codeBlockTitle_Ktv7">python3</div><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-py codeBlock_bY9V thin-scrollbar" style="color:#bfc7d5;background-color:#292d3e"><code class="codeBlockLines_e6Vv codeBlockLinesWithNumbering_o6Pm"><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token keyword" style="font-style:italic">from</span><span class="token plain"> functools </span><span class="token keyword" style="font-style:italic">import</span><span class="token plain"> cmp_to_key</span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain" style="display:inline-block"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain"></span><span class="token keyword" style="font-style:italic">def</span><span class="token plain"> </span><span class="token function" style="color:rgb(130, 170, 255)">sort</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token plain">a</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"> b</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">    </span><span class="token keyword" style="font-style:italic">if</span><span class="token plain"> </span><span class="token builtin" style="color:rgb(130, 170, 255)">int</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token plain">a </span><span class="token operator" style="color:rgb(137, 221, 255)">+</span><span class="token plain"> b</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token plain"> </span><span class="token operator" style="color:rgb(137, 221, 255)">&gt;</span><span class="token plain"> </span><span class="token builtin" style="color:rgb(130, 170, 255)">int</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token plain">b </span><span class="token operator" style="color:rgb(137, 221, 255)">+</span><span class="token plain"> a</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">        </span><span class="token keyword" style="font-style:italic">return</span><span class="token plain"> </span><span class="token operator" style="color:rgb(137, 221, 255)">-</span><span class="token number" style="color:rgb(247, 140, 108)">1</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">    </span><span class="token keyword" style="font-style:italic">else</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">        </span><span class="token keyword" style="font-style:italic">return</span><span class="token plain"> </span><span class="token number" style="color:rgb(247, 140, 108)">1</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain" style="display:inline-block"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain" style="display:inline-block"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain"></span><span class="token keyword" style="font-style:italic">def</span><span class="token plain"> </span><span class="token function" style="color:rgb(130, 170, 255)">solution</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token plain">numbers</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">    answer </span><span class="token operator" style="color:rgb(137, 221, 255)">=</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">''</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain" style="display:inline-block"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">    </span><span class="token keyword" style="font-style:italic">case</span><span class="token plain"> </span><span class="token operator" style="color:rgb(137, 221, 255)">=</span><span class="token plain"> </span><span class="token builtin" style="color:rgb(130, 170, 255)">list</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token builtin" style="color:rgb(130, 170, 255)">map</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token keyword" style="font-style:italic">lambda</span><span class="token plain"> x</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"> </span><span class="token builtin" style="color:rgb(130, 170, 255)">str</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token plain">x</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"> numbers</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">    </span><span class="token keyword" style="font-style:italic">case</span><span class="token plain"> </span><span class="token operator" style="color:rgb(137, 221, 255)">=</span><span class="token plain"> </span><span class="token builtin" style="color:rgb(130, 170, 255)">sorted</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token keyword" style="font-style:italic">case</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"> key</span><span class="token operator" style="color:rgb(137, 221, 255)">=</span><span class="token plain">cmp_to_key</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token plain">sort</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain" style="display:inline-block"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">    </span><span class="token keyword" style="font-style:italic">if</span><span class="token plain"> </span><span class="token keyword" style="font-style:italic">case</span><span class="token punctuation" style="color:rgb(199, 146, 234)">[</span><span class="token number" style="color:rgb(247, 140, 108)">0</span><span class="token punctuation" style="color:rgb(199, 146, 234)">]</span><span class="token plain"> </span><span class="token operator" style="color:rgb(137, 221, 255)">==</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">'0'</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">        </span><span class="token keyword" style="font-style:italic">return</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">'0'</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain" style="display:inline-block"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">    </span><span class="token keyword" style="font-style:italic">for</span><span class="token plain"> i </span><span class="token keyword" style="font-style:italic">in</span><span class="token plain"> </span><span class="token keyword" style="font-style:italic">case</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">        answer </span><span class="token operator" style="color:rgb(137, 221, 255)">+=</span><span class="token plain"> i</span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain" style="display:inline-block"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">    </span><span class="token keyword" style="font-style:italic">return</span><span class="token plain"> answer</span></span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="클립보드에 코드 복사" title="복사" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
 <h5 class="anchor anchorWithStickyNavbar_LWe7" id="병합-정렬로-구현시">병합 정렬로 구현시<a href="https://dldkffh.github.io/2023/06/30/programmers-42746#%EB%B3%91%ED%95%A9-%EC%A0%95%EB%A0%AC%EB%A1%9C-%EA%B5%AC%ED%98%84%EC%8B%9C" class="hash-link" aria-label="병합 정렬로 구현시에 대한 직접 링크" title="병합 정렬로 구현시에 대한 직접 링크">​</a></h5>
 <ul>
 <li>통과는 되지만 과정이 복잡하고 <code>functools.cmp_to_key</code>을 사용했을 때보다 느리다.</li>
@@ -577,7 +1037,7 @@
 <li>배열 A에서 고유성 테스트 및 중복 삭제</li>
 <li>특정 값 v가 배열 A에 나타나는 횟수 세기</li>
 <li>배열 A와 다른 정렬된 배열 B 사이에 교집합/합집합을 설정</li>
-<li>$x+y$가 목표 $z$와 같 도록 목표 쌍 $x ∈ A$ 및 $y ∈ A$ 찾기</li>
+<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>+</mo><mi>y</mi></mrow><annotation encoding="application/x-tex">x+y</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6667em;vertical-align:-0.0833em"></span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2222em"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em"></span></span><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em"></span><span class="mord mathnormal" style="margin-right:0.03588em">y</span></span></span></span>가 목표 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi></mrow><annotation encoding="application/x-tex">z</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em"></span><span class="mord mathnormal" style="margin-right:0.04398em">z</span></span></span></span>와 같 도록 목표 쌍 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">x ∈ A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em"></span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2778em"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em"></span></span><span class="base"><span class="strut" style="height:0.6833em"></span><span class="mord mathnormal">A</span></span></span></span> 및 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>∈</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">y ∈ A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7335em;vertical-align:-0.1944em"></span><span class="mord mathnormal" style="margin-right:0.03588em">y</span><span class="mspace" style="margin-right:0.2778em"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em"></span></span><span class="base"><span class="strut" style="height:0.6833em"></span><span class="mord mathnormal">A</span></span></span></span> 찾기</li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="정렬-알고리즘-종류">정렬 알고리즘 종류<a href="https://dldkffh.github.io/2023/06/27/visualgo-sorting#%EC%A0%95%EB%A0%AC-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EC%A2%85%EB%A5%98" class="hash-link" aria-label="정렬 알고리즘 종류에 대한 직접 링크" title="정렬 알고리즘 종류에 대한 직접 링크">​</a></h3>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="비교기반-정렬-알고리즘">비교기반 정렬 알고리즘<a href="https://dldkffh.github.io/2023/06/27/visualgo-sorting#%EB%B9%84%EA%B5%90%EA%B8%B0%EB%B0%98-%EC%A0%95%EB%A0%AC-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98" class="hash-link" aria-label="비교기반 정렬 알고리즘에 대한 직접 링크" title="비교기반 정렬 알고리즘에 대한 직접 링크">​</a></h4>
@@ -598,8 +1058,8 @@
 <br>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="버블-정렬">버블 정렬<a href="https://dldkffh.github.io/2023/06/27/visualgo-sorting#%EB%B2%84%EB%B8%94-%EC%A0%95%EB%A0%AC" class="hash-link" aria-label="버블 정렬에 대한 직접 링크" title="버블 정렬에 대한 직접 링크">​</a></h3>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="속도">속도<a href="https://dldkffh.github.io/2023/06/27/visualgo-sorting#%EC%86%8D%EB%8F%84" class="hash-link" aria-label="속도에 대한 직접 링크" title="속도에 대한 직접 링크">​</a></h4>
-<p>$O(N^2)$</p>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="과정">과정<a href="https://dldkffh.github.io/2023/06/27/visualgo-sorting#%EA%B3%BC%EC%A0%95" class="hash-link" aria-label="과정에 대한 직접 링크" title="과정에 대한 직접 링크">​</a></h4>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><msup><mi>N</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(N^2)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0641em;vertical-align:-0.25em"></span><span class="mord mathnormal" style="margin-right:0.02778em">O</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10903em">N</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em"><span style="top:-3.063em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="과정">과정<a href="https://dldkffh.github.io/2023/06/27/visualgo-sorting#%EA%B3%BC%EC%A0%95" class="hash-link" aria-label="과정에 대한 직접 링크" title="과정에 대한 직접 ��링크">​</a></h4>
 <ol>
 <li>인접한 항목 쌍(a, b)을 비교</li>
 <li>항목의 순서가 잘못된 경우 해당 쌍을 교체(이 경우 a &gt; b인 경우)</li>
@@ -611,7 +1071,7 @@
 <br>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="선택-정렬">선택 정렬<a href="https://dldkffh.github.io/2023/06/27/visualgo-sorting#%EC%84%A0%ED%83%9D-%EC%A0%95%EB%A0%AC" class="hash-link" aria-label="선택 정렬에 대한 직접 링크" title="선택 정렬에 대한 직접 링크">​</a></h3>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="속도-1">속도<a href="https://dldkffh.github.io/2023/06/27/visualgo-sorting#%EC%86%8D%EB%8F%84-1" class="hash-link" aria-label="속도에 대한 직접 링크" title="속도에 대한 직접 링크">​</a></h4>
-<p>$O(N^2)$</p>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><msup><mi>N</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(N^2)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0641em;vertical-align:-0.25em"></span><span class="mord mathnormal" style="margin-right:0.02778em">O</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10903em">N</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em"><span style="top:-3.063em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span></p>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="과정-1">과정<a href="https://dldkffh.github.io/2023/06/27/visualgo-sorting#%EA%B3%BC%EC%A0%95-1" class="hash-link" aria-label="과정에 대한 직접 링크" title="과정에 대한 직접 링크">​</a></h4>
 <ol>
 <li>[ L ... N −1 ] 범위에서 가장 작은 항목의 위치 X를 찾기</li>
@@ -623,13 +1083,13 @@
 <br>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="삽입-정렬">삽입 정렬<a href="https://dldkffh.github.io/2023/06/27/visualgo-sorting#%EC%82%BD%EC%9E%85-%EC%A0%95%EB%A0%AC" class="hash-link" aria-label="삽입 정렬에 대한 직접 링크" title="삽입 정렬에 대한 직접 링크">​</a></h3>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="속도-2">속도<a href="https://dldkffh.github.io/2023/06/27/visualgo-sorting#%EC%86%8D%EB%8F%84-2" class="hash-link" aria-label="속도에 대한 직접 링크" title="속도에 대한 직접 링크">​</a></h4>
-<p>$O( N )$ ~ $O(N^2)$</p>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>N</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O( N )</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord mathnormal" style="margin-right:0.02778em">O</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.10903em">N</span><span class="mclose">)</span></span></span></span> ~ <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><msup><mi>N</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(N^2)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0641em;vertical-align:-0.25em"></span><span class="mord mathnormal" style="margin-right:0.02778em">O</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10903em">N</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em"><span style="top:-3.063em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span></p>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="구현-2">구현<a href="https://dldkffh.github.io/2023/06/27/visualgo-sorting#%EA%B5%AC%ED%98%84-2" class="hash-link" aria-label="구현에 대한 직접 링크" title="구현에 대한 직접 링크">​</a></h4>
 <div class="language-c codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#bfc7d5;--prism-background-color:#292d3e"><div class="codeBlockTitle_Ktv7">c++</div><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-c codeBlock_bY9V thin-scrollbar" style="color:#bfc7d5;background-color:#292d3e"><code class="codeBlockLines_e6Vv codeBlockLinesWithNumbering_o6Pm"><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token keyword" style="font-style:italic">void</span><span class="token plain"> </span><span class="token function" style="color:rgb(130, 170, 255)">insertionSort</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token keyword" style="font-style:italic">int</span><span class="token plain"> a</span><span class="token punctuation" style="color:rgb(199, 146, 234)">[</span><span class="token punctuation" style="color:rgb(199, 146, 234)">]</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"> </span><span class="token keyword" style="font-style:italic">int</span><span class="token plain"> N</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">  </span><span class="token keyword" style="font-style:italic">for</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token keyword" style="font-style:italic">int</span><span class="token plain"> i </span><span class="token operator" style="color:rgb(137, 221, 255)">=</span><span class="token plain"> </span><span class="token number" style="color:rgb(247, 140, 108)">1</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"> i </span><span class="token operator" style="color:rgb(137, 221, 255)">&lt;</span><span class="token plain"> N</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"> </span><span class="token operator" style="color:rgb(137, 221, 255)">++</span><span class="token plain">i</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"> </span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic">// O(N)</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">    </span><span class="token keyword" style="font-style:italic">int</span><span class="token plain"> X </span><span class="token operator" style="color:rgb(137, 221, 255)">=</span><span class="token plain"> a</span><span class="token punctuation" style="color:rgb(199, 146, 234)">[</span><span class="token plain">i</span><span class="token punctuation" style="color:rgb(199, 146, 234)">]</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"> </span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic">// X는 삽입할 항목</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">    </span><span class="token keyword" style="font-style:italic">int</span><span class="token plain"> j </span><span class="token operator" style="color:rgb(137, 221, 255)">=</span><span class="token plain"> i</span><span class="token operator" style="color:rgb(137, 221, 255)">-</span><span class="token number" style="color:rgb(247, 140, 108)">1</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">    </span><span class="token keyword" style="font-style:italic">for</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"> j </span><span class="token operator" style="color:rgb(137, 221, 255)">&gt;=</span><span class="token plain"> </span><span class="token number" style="color:rgb(247, 140, 108)">0</span><span class="token plain"> </span><span class="token operator" style="color:rgb(137, 221, 255)">&amp;&amp;</span><span class="token plain"> a</span><span class="token punctuation" style="color:rgb(199, 146, 234)">[</span><span class="token plain">j</span><span class="token punctuation" style="color:rgb(199, 146, 234)">]</span><span class="token plain"> </span><span class="token operator" style="color:rgb(137, 221, 255)">&gt;</span><span class="token plain"> X</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"> </span><span class="token operator" style="color:rgb(137, 221, 255)">--</span><span class="token plain">j</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token plain"> </span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic">// 빠르거나 느릴 수 있음</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">      a</span><span class="token punctuation" style="color:rgb(199, 146, 234)">[</span><span class="token plain">j</span><span class="token operator" style="color:rgb(137, 221, 255)">+</span><span class="token number" style="color:rgb(247, 140, 108)">1</span><span class="token punctuation" style="color:rgb(199, 146, 234)">]</span><span class="token plain"> </span><span class="token operator" style="color:rgb(137, 221, 255)">=</span><span class="token plain"> a</span><span class="token punctuation" style="color:rgb(199, 146, 234)">[</span><span class="token plain">j</span><span class="token punctuation" style="color:rgb(199, 146, 234)">]</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"> </span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic">// X를 위한 자리 만들기</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">    a</span><span class="token punctuation" style="color:rgb(199, 146, 234)">[</span><span class="token plain">j</span><span class="token operator" style="color:rgb(137, 221, 255)">+</span><span class="token number" style="color:rgb(247, 140, 108)">1</span><span class="token punctuation" style="color:rgb(199, 146, 234)">]</span><span class="token plain"> </span><span class="token operator" style="color:rgb(137, 221, 255)">=</span><span class="token plain"> X</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"> </span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic">// 인덱스 j+1은 삽입점</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">  </span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain"></span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span></span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="클립보드에 코드 복사" title="복사" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
 <br>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="병합-정렬">병합 정렬<a href="https://dldkffh.github.io/2023/06/27/visualgo-sorting#%EB%B3%91%ED%95%A9-%EC%A0%95%EB%A0%AC" class="hash-link" aria-label="병합 정렬에 대한 직접 링크" title="병합 정렬에 대한 직접 링크">​</a></h3>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="속도-3">속도<a href="https://dldkffh.github.io/2023/06/27/visualgo-sorting#%EC%86%8D%EB%8F%84-3" class="hash-link" aria-label="속도에 대한 직접 링크" title="속도에 대한 직접 링크">​</a></h4>
-<p>$O(NlogN)$</p>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>N</mi><mi>l</mi><mi>o</mi><mi>g</mi><mi>N</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(NlogN)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord mathnormal" style="margin-right:0.02778em">O</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.01968em">Nl</span><span class="mord mathnormal">o</span><span class="mord mathnormal" style="margin-right:0.03588em">g</span><span class="mord mathnormal" style="margin-right:0.10903em">N</span><span class="mclose">)</span></span></span></span></p>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="과정-2">과정<a href="https://dldkffh.github.io/2023/06/27/visualgo-sorting#%EA%B3%BC%EC%A0%95-2" class="hash-link" aria-label="과정에 대한 직접 링크" title="과정에 대한 직접 링크">​</a></h4>
 <ol>
 <li>개별 요소의 각 쌍(기본적으로 정렬됨)을 2개 요소의 정렬된 배열로 병합</li>
@@ -643,14 +1103,14 @@
 <li>정복 단계: 더 작은 하위 문제의 결과를 결합하여 더 큰 원래 문제의 결과 도출</li>
 </ol>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="구현-3">구현<a href="https://dldkffh.github.io/2023/06/27/visualgo-sorting#%EA%B5%AC%ED%98%84-3" class="hash-link" aria-label="구현에 대한 직접 링크" title="구현에 대한 직접 링크">​</a></h4>
-<h5 class="anchor anchorWithStickyNavbar_LWe7" id="서브루틴-구현-on">서브루틴 구현 $O(N)$<a href="https://dldkffh.github.io/2023/06/27/visualgo-sorting#%EC%84%9C%EB%B8%8C%EB%A3%A8%ED%8B%B4-%EA%B5%AC%ED%98%84-on" class="hash-link" aria-label="서브루틴 구현 $O(N)$에 대한 직접 링크" title="서브루틴 구현 $O(N)$에 대한 직접 링크">​</a></h5>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="서브루틴-구현-on">서브루틴 구현 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>N</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(N)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord mathnormal" style="margin-right:0.02778em">O</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.10903em">N</span><span class="mclose">)</span></span></span></span><a href="https://dldkffh.github.io/2023/06/27/visualgo-sorting#%EC%84%9C%EB%B8%8C%EB%A3%A8%ED%8B%B4-%EA%B5%AC%ED%98%84-on" class="hash-link" aria-label="서브루틴-구현-on에 대한 직접 링크" title="서브루틴-구현-on에 대한 직접 링크">​</a></h5>
 <div class="language-c codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#bfc7d5;--prism-background-color:#292d3e"><div class="codeBlockTitle_Ktv7">c++</div><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-c codeBlock_bY9V thin-scrollbar" style="color:#bfc7d5;background-color:#292d3e"><code class="codeBlockLines_e6Vv codeBlockLinesWithNumbering_o6Pm"><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token keyword" style="font-style:italic">void</span><span class="token plain"> </span><span class="token function" style="color:rgb(130, 170, 255)">merge</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token keyword" style="font-style:italic">int</span><span class="token plain"> a</span><span class="token punctuation" style="color:rgb(199, 146, 234)">[</span><span class="token punctuation" style="color:rgb(199, 146, 234)">]</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"> </span><span class="token keyword" style="font-style:italic">int</span><span class="token plain"> low</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"> </span><span class="token keyword" style="font-style:italic">int</span><span class="token plain"> mid</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"> </span><span class="token keyword" style="font-style:italic">int</span><span class="token plain"> high</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">  </span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic">// subarray1 = a[low..mid], subarray2 = a[mid+1..high], 모두 정렬됨</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">  </span><span class="token keyword" style="font-style:italic">int</span><span class="token plain"> N </span><span class="token operator" style="color:rgb(137, 221, 255)">=</span><span class="token plain"> high </span><span class="token operator" style="color:rgb(137, 221, 255)">-</span><span class="token plain"> low </span><span class="token operator" style="color:rgb(137, 221, 255)">+</span><span class="token plain"> </span><span class="token number" style="color:rgb(247, 140, 108)">1</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">  </span><span class="token keyword" style="font-style:italic">int</span><span class="token plain"> b</span><span class="token punctuation" style="color:rgb(199, 146, 234)">[</span><span class="token plain">N</span><span class="token punctuation" style="color:rgb(199, 146, 234)">]</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"> </span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic">// 토론: 임시 배열 b가 필요한 이유는?</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">  </span><span class="token keyword" style="font-style:italic">int</span><span class="token plain"> left </span><span class="token operator" style="color:rgb(137, 221, 255)">=</span><span class="token plain"> low</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"> right </span><span class="token operator" style="color:rgb(137, 221, 255)">=</span><span class="token plain"> mid </span><span class="token operator" style="color:rgb(137, 221, 255)">+</span><span class="token plain"> </span><span class="token number" style="color:rgb(247, 140, 108)">1</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"> bIdx </span><span class="token operator" style="color:rgb(137, 221, 255)">=</span><span class="token plain"> </span><span class="token number" style="color:rgb(247, 140, 108)">0</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">  </span><span class="token keyword" style="font-style:italic">while</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token plain">left </span><span class="token operator" style="color:rgb(137, 221, 255)">&lt;=</span><span class="token plain"> mid </span><span class="token operator" style="color:rgb(137, 221, 255)">&amp;&amp;</span><span class="token plain"> right </span><span class="token operator" style="color:rgb(137, 221, 255)">&lt;=</span><span class="token plain"> high</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token plain"> </span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic">// 병합</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">    b</span><span class="token punctuation" style="color:rgb(199, 146, 234)">[</span><span class="token plain">bIdx</span><span class="token operator" style="color:rgb(137, 221, 255)">++</span><span class="token punctuation" style="color:rgb(199, 146, 234)">]</span><span class="token plain"> </span><span class="token operator" style="color:rgb(137, 221, 255)">=</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token plain">a</span><span class="token punctuation" style="color:rgb(199, 146, 234)">[</span><span class="token plain">left</span><span class="token punctuation" style="color:rgb(199, 146, 234)">]</span><span class="token plain"> </span><span class="token operator" style="color:rgb(137, 221, 255)">&lt;=</span><span class="token plain"> a</span><span class="token punctuation" style="color:rgb(199, 146, 234)">[</span><span class="token plain">right</span><span class="token punctuation" style="color:rgb(199, 146, 234)">]</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token plain"> </span><span class="token operator" style="color:rgb(137, 221, 255)">?</span><span class="token plain"> a</span><span class="token punctuation" style="color:rgb(199, 146, 234)">[</span><span class="token plain">left</span><span class="token operator" style="color:rgb(137, 221, 255)">++</span><span class="token punctuation" style="color:rgb(199, 146, 234)">]</span><span class="token plain"> </span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> a</span><span class="token punctuation" style="color:rgb(199, 146, 234)">[</span><span class="token plain">right</span><span class="token operator" style="color:rgb(137, 221, 255)">++</span><span class="token punctuation" style="color:rgb(199, 146, 234)">]</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">  </span><span class="token keyword" style="font-style:italic">while</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token plain">left </span><span class="token operator" style="color:rgb(137, 221, 255)">&lt;=</span><span class="token plain"> mid</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token plain"> b</span><span class="token punctuation" style="color:rgb(199, 146, 234)">[</span><span class="token plain">bIdx</span><span class="token operator" style="color:rgb(137, 221, 255)">++</span><span class="token punctuation" style="color:rgb(199, 146, 234)">]</span><span class="token plain"> </span><span class="token operator" style="color:rgb(137, 221, 255)">=</span><span class="token plain"> a</span><span class="token punctuation" style="color:rgb(199, 146, 234)">[</span><span class="token plain">left</span><span class="token operator" style="color:rgb(137, 221, 255)">++</span><span class="token punctuation" style="color:rgb(199, 146, 234)">]</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"> </span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic">// 남아있는 경우</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">  </span><span class="token keyword" style="font-style:italic">while</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token plain">right </span><span class="token operator" style="color:rgb(137, 221, 255)">&lt;=</span><span class="token plain"> high</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token plain"> b</span><span class="token punctuation" style="color:rgb(199, 146, 234)">[</span><span class="token plain">bIdx</span><span class="token operator" style="color:rgb(137, 221, 255)">++</span><span class="token punctuation" style="color:rgb(199, 146, 234)">]</span><span class="token plain"> </span><span class="token operator" style="color:rgb(137, 221, 255)">=</span><span class="token plain"> a</span><span class="token punctuation" style="color:rgb(199, 146, 234)">[</span><span class="token plain">right</span><span class="token operator" style="color:rgb(137, 221, 255)">++</span><span class="token punctuation" style="color:rgb(199, 146, 234)">]</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"> </span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic">// 남아있는 경우</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">  </span><span class="token keyword" style="font-style:italic">for</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token keyword" style="font-style:italic">int</span><span class="token plain"> k </span><span class="token operator" style="color:rgb(137, 221, 255)">=</span><span class="token plain"> </span><span class="token number" style="color:rgb(247, 140, 108)">0</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"> k </span><span class="token operator" style="color:rgb(137, 221, 255)">&lt;</span><span class="token plain"> N</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"> </span><span class="token operator" style="color:rgb(137, 221, 255)">++</span><span class="token plain">k</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token plain"> a</span><span class="token punctuation" style="color:rgb(199, 146, 234)">[</span><span class="token plain">low</span><span class="token operator" style="color:rgb(137, 221, 255)">+</span><span class="token plain">k</span><span class="token punctuation" style="color:rgb(199, 146, 234)">]</span><span class="token plain"> </span><span class="token operator" style="color:rgb(137, 221, 255)">=</span><span class="token plain"> b</span><span class="token punctuation" style="color:rgb(199, 146, 234)">[</span><span class="token plain">k</span><span class="token punctuation" style="color:rgb(199, 146, 234)">]</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"> </span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic">// 다시 복사</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain"></span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span></span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="클립보드에 코드 복사" title="복사" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
 <h5 class="anchor anchorWithStickyNavbar_LWe7" id="병합-정렬-구현">병합 정렬 구현<a href="https://dldkffh.github.io/2023/06/27/visualgo-sorting#%EB%B3%91%ED%95%A9-%EC%A0%95%EB%A0%AC-%EA%B5%AC%ED%98%84" class="hash-link" aria-label="병합 정렬 구현에 대한 직접 링크" title="병합 정렬 구현에 대한 직접 링크">​</a></h5>
 <div class="language-c codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#bfc7d5;--prism-background-color:#292d3e"><div class="codeBlockTitle_Ktv7">c++</div><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-c codeBlock_bY9V thin-scrollbar" style="color:#bfc7d5;background-color:#292d3e"><code class="codeBlockLines_e6Vv codeBlockLinesWithNumbering_o6Pm"><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token keyword" style="font-style:italic">void</span><span class="token plain"> </span><span class="token function" style="color:rgb(130, 170, 255)">mergeSort</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token keyword" style="font-style:italic">int</span><span class="token plain"> a</span><span class="token punctuation" style="color:rgb(199, 146, 234)">[</span><span class="token punctuation" style="color:rgb(199, 146, 234)">]</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"> </span><span class="token keyword" style="font-style:italic">int</span><span class="token plain"> low</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"> </span><span class="token keyword" style="font-style:italic">int</span><span class="token plain"> high</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">  </span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic">// 정렬할 배열은 a[low..high]</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">  </span><span class="token keyword" style="font-style:italic">if</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token plain">low </span><span class="token operator" style="color:rgb(137, 221, 255)">&lt;</span><span class="token plain"> high</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"> </span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic">// 기본 사례: low &gt;= high (0 또는 1 항목)</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">    </span><span class="token keyword" style="font-style:italic">int</span><span class="token plain"> mid </span><span class="token operator" style="color:rgb(137, 221, 255)">=</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token plain">low </span><span class="token operator" style="color:rgb(137, 221, 255)">+</span><span class="token plain"> high</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token plain"> </span><span class="token operator" style="color:rgb(137, 221, 255)">/</span><span class="token plain"> </span><span class="token number" style="color:rgb(247, 140, 108)">2</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">    </span><span class="token function" style="color:rgb(130, 170, 255)">mergeSort</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token plain">a</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"> low </span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"> mid</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"> </span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic">// 두 부분으로 나눕니다.</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">    </span><span class="token function" style="color:rgb(130, 170, 255)">mergeSort</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token plain">a</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"> mid </span><span class="token operator" style="color:rgb(137, 221, 255)">+</span><span class="token plain"> </span><span class="token number" style="color:rgb(247, 140, 108)">1</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"> high</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"> </span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic">// 그런 다음 재귀적으로 정렬</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">    </span><span class="token function" style="color:rgb(130, 170, 255)">merge</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token plain">a</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"> low</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"> mid</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"> high</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"> </span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic">// 정복: 병합 서브루틴</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">  </span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain"></span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span></span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="클립보드에 코드 복사" title="복사" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
 <br>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="퀵-정렬">퀵 정렬<a href="https://dldkffh.github.io/2023/06/27/visualgo-sorting#%ED%80%B5-%EC%A0%95%EB%A0%AC" class="hash-link" aria-label="퀵 정렬에 대한 직접 링크" title="퀵 정렬에 대한 직접 링크">​</a></h3>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="속도-4">속도<a href="https://dldkffh.github.io/2023/06/27/visualgo-sorting#%EC%86%8D%EB%8F%84-4" class="hash-link" aria-label="속도에 대한 직접 링크" title="속도에 대한 직접 링크">​</a></h4>
-<p>$O(NlogN)$ ~ $O(N^2)$</p>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>N</mi><mi>l</mi><mi>o</mi><mi>g</mi><mi>N</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(NlogN)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord mathnormal" style="margin-right:0.02778em">O</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.01968em">Nl</span><span class="mord mathnormal">o</span><span class="mord mathnormal" style="margin-right:0.03588em">g</span><span class="mord mathnormal" style="margin-right:0.10903em">N</span><span class="mclose">)</span></span></span></span> ~ <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><msup><mi>N</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(N^2)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0641em;vertical-align:-0.25em"></span><span class="mord mathnormal" style="margin-right:0.02778em">O</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10903em">N</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em"><span style="top:-3.063em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span></p>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="과정-3">과정<a href="https://dldkffh.github.io/2023/06/27/visualgo-sorting#%EA%B3%BC%EC%A0%95-3" class="hash-link" aria-label="과정에 대한 직접 링크" title="과정에 대한 직접 링크">​</a></h4>
 <h5 class="anchor anchorWithStickyNavbar_LWe7" id="분할-단계">분할 단계<a href="https://dldkffh.github.io/2023/06/27/visualgo-sorting#%EB%B6%84%ED%95%A0-%EB%8B%A8%EA%B3%84" class="hash-link" aria-label="분할 단계에 대한 직접 링크" title="분할 단계에 대한 직접 링크">​</a></h5>
 <ol>
@@ -679,14 +1139,14 @@
 <li>항상 a[i] (또는 [i..j] 사이의 다른 고정 인덱스)를 선택하는 대신 a[i..j] 사이의 피벗을 무작위로 선택</li>
 </ul>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="속도-5">속도<a href="https://dldkffh.github.io/2023/06/27/visualgo-sorting#%EC%86%8D%EB%8F%84-5" class="hash-link" aria-label="속도에 대한 직접 링크" title="속도에 대한 직접 링크">​</a></h4>
-<p>$O(NlogN)$</p>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>N</mi><mi>l</mi><mi>o</mi><mi>g</mi><mi>N</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(NlogN)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord mathnormal" style="margin-right:0.02778em">O</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.01968em">Nl</span><span class="mord mathnormal">o</span><span class="mord mathnormal" style="margin-right:0.03588em">g</span><span class="mord mathnormal" style="margin-right:0.10903em">N</span><span class="mclose">)</span></span></span></span></p>
 <br>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="카운팅-정렬">카운팅 정렬<a href="https://dldkffh.github.io/2023/06/27/visualgo-sorting#%EC%B9%B4%EC%9A%B4%ED%8C%85-%EC%A0%95%EB%A0%AC" class="hash-link" aria-label="카운팅 정렬에 대한 직접 링크" title="카운팅 정렬에 대한 직접 링크">​</a></h3>
 <ul>
 <li>정렬할 항목이 작은 범위의 정수인 경우 각 정수의 발생 빈도(작은 범위)를 계산한 다음 해당 작은 범위를 반복하여 항목을 정렬된 순서로 출력할 수 있다.</li>
 </ul>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="속도-6">속도<a href="https://dldkffh.github.io/2023/06/27/visualgo-sorting#%EC%86%8D%EB%8F%84-6" class="hash-link" aria-label="속도에 대한 직접 링크" title="속도에 대한 직접 링크">​</a></h4>
-<p>$O(N+k)$</p>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>N</mi><mo>+</mo><mi>k</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(N+k)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord mathnormal" style="margin-right:0.02778em">O</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.10903em">N</span><span class="mspace" style="margin-right:0.2222em"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord mathnormal" style="margin-right:0.03148em">k</span><span class="mclose">)</span></span></span></span></p>
 <br>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="기수-정렬">기수 정렬<a href="https://dldkffh.github.io/2023/06/27/visualgo-sorting#%EA%B8%B0%EC%88%98-%EC%A0%95%EB%A0%AC" class="hash-link" aria-label="기수 정렬에 대한 직접 링크" title="기수 정렬에 대한 직접 링크">​</a></h3>
 <ul>
@@ -719,7 +1179,7 @@
         <link href="https://dldkffh.github.io/2023/06/25/programmers-43238"/>
         <updated>2023-06-25T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[프로그래머스 코딩테스트 고득점 Kit 이분탐색 입국심사]]></summary>
-        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="프로그래머스-코딩테스트-고득점-kit-이분탐색-입국심사"><a href="https://school.programmers.co.kr/learn/courses/30/lessons/43238" target="_blank" rel="noopener noreferrer">프로그래머스 코딩테스트 고득점 Kit 이분탐색 입국심사</a><a href="https://dldkffh.github.io/2023/06/25/programmers-43238#%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B3%A0%EB%93%9D%EC%A0%90-kit-%EC%9D%B4%EB%B6%84%ED%83%90%EC%83%89-%EC%9E%85%EA%B5%AD%EC%8B%AC%EC%82%AC" class="hash-link" aria-label="프로그래머스-코딩테스트-고득점-kit-이분탐색-입국심사에 대한 직접 링크" title="프로그래머스-코딩테스트-고득점-kit-이분탐색-입국심사에 대한 직접 링크">​</a></h3>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="프로그래머스-코딩테스트-고득점-kit-이분탐색-입국심사"><a href="https://school.programmers.co.kr/learn/courses/30/lessons/43238" target="_blank" rel="noopener noreferrer">프로그래머스 코딩테스트 고득점 Kit 이분탐색 입국심사</a><a href="https://dldkffh.github.io/2023/06/25/programmers-43238#%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B3%A0%EB%93%9D%EC%A0%90-kit-%EC%9D%B4%EB%B6%84%ED%83%90%EC%83%89-%EC%9E%85%EA%B5%AD%EC%8B%AC%EC%82%AC" class="hash-link" aria-label="프로그래머스-코딩테스트-고득점-kit-이분탐색-입국심사에 대한 직접 링크" title="프로그래머스-코��딩테스트-고득점-kit-이분탐색-입국심사에 대한 직접 링크">​</a></h3>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="문제-설명">문제 설명<a href="https://dldkffh.github.io/2023/06/25/programmers-43238#%EB%AC%B8%EC%A0%9C-%EC%84%A4%EB%AA%85" class="hash-link" aria-label="문제 설명에 대한 직접 링크" title="문제 설명에 대한 직접 링크">​</a></h4>
 <p><code>n</code>명이 입국심사를 위해 줄을 서서 기다리고 있습니다. 각 입국심사대에 있는 심사관마다 심사하는데 걸리는 시간은 다릅니다.</p>
 <p>처음에 모든 심사대는 비어있습니다. 한 심사대에서는 동시에 한 명만 심사를 할 수 있습니다. 가장 앞에 서 있는 사람은 비어 있는 심사대로 가서 심사를 받을 수 있습니다. 하지만 더 빨리 끝나는 심사대가 있으면 기다렸다가 그곳으로 가서 심사를 받을 수도 있습니다.</p>
@@ -754,153 +1214,5 @@
         <category label="python3" term="python3"/>
         <category label="프로그래머스" term="프로그래머스"/>
         <category label="문제" term="문제"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[BFS, DFS]]></title>
-        <id>https://dldkffh.github.io/2023/04/06/bfs-dfs</id>
-        <link href="https://dldkffh.github.io/2023/04/06/bfs-dfs"/>
-        <updated>2023-04-06T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[BFS(Bread-First Search) 너비 우선 탐색]]></summary>
-        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="bfsbread-first-search-너비-우선-탐색">BFS(Bread-First Search) 너비 우선 탐색<a href="https://dldkffh.github.io/2023/04/06/bfs-dfs#bfsbread-first-search-%EB%84%88%EB%B9%84-%EC%9A%B0%EC%84%A0-%ED%83%90%EC%83%89" class="hash-link" aria-label="BFS(Bread-First Search) 너비 우선 탐색에 대한 직접 링크" title="BFS(Bread-First Search) 너비 우선 탐색에 대한 직접 링크">​</a></h3>
-<ul>
-<li>같은 깊이에 해당하는 정점부터 탐색하는 알고리즘</li>
-<li>Queue를 이용하여 구현</li>
-<li>시작 지점에서 가까운 정점부터 탐색</li>
-<li>$V$가 정점의 수, $E$가 간선의 수 일 떄 BFS의 시간복잡도는 $O(V + E)$다.</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="dfsdepth-first-search-깊이-우선-탐색">DFS(Depth-First Search) 깊이 우선 탐색<a href="https://dldkffh.github.io/2023/04/06/bfs-dfs#dfsdepth-first-search-%EA%B9%8A%EC%9D%B4-%EC%9A%B0%EC%84%A0-%ED%83%90%EC%83%89" class="hash-link" aria-label="DFS(Depth-First Search) 깊이 우선 탐색에 대한 직접 링크" title="DFS(Depth-First Search) 깊이 우선 탐색에 대한 직접 링크">​</a></h3>
-<ul>
-<li>최대한 깊은 정점부터 탐색하는 알고리즘</li>
-<li>Stack을 이용하여 구현</li>
-<li>시작 정점에서 깊은 것부터 찾는다.</li>
-<li>$V$가 정점의 수, $E$가 간선의 수 일 떄 DFS의 시간복잡도는 $O(V + E)$다.</li>
-</ul>]]></content>
-        <author>
-            <name>dldkffh</name>
-            <uri>https://github.com/dldkffh</uri>
-        </author>
-        <category label="BFS" term="BFS"/>
-        <category label="DFS" term="DFS"/>
-        <category label="알고리즘" term="알고리즘"/>
-        <category label="javascript" term="javascript"/>
-        <category label="프로그래머스" term="프로그래머스"/>
-        <category label="개념" term="개념"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Greedy(그리디)]]></title>
-        <id>https://dldkffh.github.io/2023/04/06/greedy</id>
-        <link href="https://dldkffh.github.io/2023/04/06/greedy"/>
-        <updated>2023-04-06T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[그리디]]></summary>
-        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="그리디">그리디<a href="https://dldkffh.github.io/2023/04/06/greedy#%EA%B7%B8%EB%A6%AC%EB%94%94" class="hash-link" aria-label="그리디에 대한 직접 링크" title="그리디에 대한 직접 링크">​</a></h3>
-<ul>
-<li>매 선택에서 지금 이 순간 가장 최적인 답을 선택하는 알고리즘</li>
-<li>최적해를 보장해주지 않는다.</li>
-<li>보통 최적해를 구하는 알고리즘 보다 빠른 경우가 많다.</li>
-<li>크루스칼, 다익스트라 알고리즘 등에 사용</li>
-<li>직관적인 문제 풀이에 적합</li>
-<li>예) 동전(거스름돈) 반환 문제</li>
-</ul>]]></content>
-        <author>
-            <name>dldkffh</name>
-            <uri>https://github.com/dldkffh</uri>
-        </author>
-        <category label="그리디" term="그리디"/>
-        <category label="알고리즘" term="알고리즘"/>
-        <category label="javascript" term="javascript"/>
-        <category label="프로그래머스" term="프로그래머스"/>
-        <category label="개념" term="개념"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Binary Search(이진 탐색)]]></title>
-        <id>https://dldkffh.github.io/2023/04/05/binary-search</id>
-        <link href="https://dldkffh.github.io/2023/04/05/binary-search"/>
-        <updated>2023-04-05T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[선형 탐색]]></summary>
-        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="선형-탐색">선형 탐색<a href="https://dldkffh.github.io/2023/04/05/binary-search#%EC%84%A0%ED%98%95-%ED%83%90%EC%83%89" class="hash-link" aria-label="선형 탐색에 대한 직접 링크" title="선형 탐색에 대한 직접 링크">​</a></h3>
-<ul>
-<li>순서대로 하나씩 찾는 탐색 알고리즘</li>
-<li>$O(N)$ 시간 복잡도가 걸린다.</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="이진-탐색">이진 탐색<a href="https://dldkffh.github.io/2023/04/05/binary-search#%EC%9D%B4%EC%A7%84-%ED%83%90%EC%83%89" class="hash-link" aria-label="이진 탐색에 대한 직접 링크" title="이진 탐색에 대한 직접 링크">​</a></h3>
-<ul>
-<li>정렬이 되어있는 요소들을 반씩 제외하며 찾는 알고리즘</li>
-<li>$O(logN)$ 시간 복잡도가 걸린다.</li>
-<li>배열 혹은 이진 트리를 이용하여 구현할 수 있다.</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="이진-탐색-트리">이진 탐색 트리<a href="https://dldkffh.github.io/2023/04/05/binary-search#%EC%9D%B4%EC%A7%84-%ED%83%90%EC%83%89-%ED%8A%B8%EB%A6%AC" class="hash-link" aria-label="이진 탐색 트리에 대한 직접 링크" title="이진 탐색 트리에 대한 직접 링크">​</a></h3>
-<ul>
-<li>이진 탐색을 위한 이진 트리</li>
-<li>왼쪽 서브 트리는 루트보다 작은 값이 모여있다.</li>
-<li>오른쪽 서브트리는 루트보다 큰 값이 모였있다.</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="이진-탐색-트리-요소-삭제">이진 탐색 트리 요소 삭제<a href="https://dldkffh.github.io/2023/04/05/binary-search#%EC%9D%B4%EC%A7%84-%ED%83%90%EC%83%89-%ED%8A%B8%EB%A6%AC-%EC%9A%94%EC%86%8C-%EC%82%AD%EC%A0%9C" class="hash-link" aria-label="이진 탐색 트리 요소 삭제에 대한 직접 링크" title="이진 탐색 트리 요소 삭제에 대한 직접 링크">​</a></h3>
-<ul>
-<li>단말 정점을 삭제하는 경우<!-- -->
-<ul>
-<li>별다른 처리 없이 부모 정점과 연결을 끊는다.</li>
-</ul>
-</li>
-<li>하나의 서브 트리를 가지는 경우<!-- -->
-<ul>
-<li>제거되는 정점의 부모 간선을 자식 정점을 가르키게 바꾸면 된다.</li>
-</ul>
-</li>
-<li>두개의 서브 트리를 가지는 경우<!-- -->
-<ul>
-<li>"왼쪽 서브트리의 가장 큰 값" 혹은 "오른쪽 서브 트리의 가장 작은 값"과 교체한다.</li>
-<li>교체된 정점의 좌우 자식이 없다면 제거되는 정점의 링크로 대체된다.</li>
-</ul>
-</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="이진-탐색-트리-문제점">이진 탐색 트리 문제점<a href="https://dldkffh.github.io/2023/04/05/binary-search#%EC%9D%B4%EC%A7%84-%ED%83%90%EC%83%89-%ED%8A%B8%EB%A6%AC-%EB%AC%B8%EC%A0%9C%EC%A0%90" class="hash-link" aria-label="이진 탐색 트리 문제점에 대한 직접 링크" title="이진 탐색 트리 문제점에 대한 직접 링크">​</a></h3>
-<ul>
-<li>최악의 경우 한쪽으로 편향된 트리가 될 수 있다.</li>
-<li>최악의 경우에는 순차 탐색과 동일한 시간복잡도를 가진다.</li>
-<li>문제점을 해결하기 위해 AVL 트리, 레드-블랙 트리와 같은 자료구조를 이용할 수 있다.</li>
-</ul>]]></content>
-        <author>
-            <name>dldkffh</name>
-            <uri>https://github.com/dldkffh</uri>
-        </author>
-        <category label="이진 탐색" term="이진 탐색"/>
-        <category label="알고리즘" term="알고리즘"/>
-        <category label="javascript" term="javascript"/>
-        <category label="프로그래머스" term="프로그래머스"/>
-        <category label="개념" term="개념"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Trie(트라이)]]></title>
-        <id>https://dldkffh.github.io/2023/04/04/trie</id>
-        <link href="https://dldkffh.github.io/2023/04/04/trie"/>
-        <updated>2023-04-04T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[트라이]]></summary>
-        <content type="html"><![CDATA[<h4 class="anchor anchorWithStickyNavbar_LWe7" id="트라이">트라이<a href="https://dldkffh.github.io/2023/04/04/trie#%ED%8A%B8%EB%9D%BC%EC%9D%B4" class="hash-link" aria-label="트라이에 대한 직접 링크" title="트라이에 대한 직접 링크">​</a></h4>
-<ul>
-<li>문자열을 저장하고 효율적으로 탐색하기 위한 트리 형태의 자료구조</li>
-<li>검색어 자동완성, 사전 찾기 등에 응용될 수 있다.</li>
-<li>문자열을 탐색할 때 단순하게 비교하는 것보다 효율적으로 찾을 수 있다.</li>
-<li>$L$이 문자열의 길이일 때 탐색, 삽입은 $O(L)$만큼 걸린다.</li>
-<li>각 정점이 자식에 대한 링크를 전부 가지고 있어 저장 공간을 더 많이 사용</li>
-</ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="트라이-구조">트라이 구조<a href="https://dldkffh.github.io/2023/04/04/trie#%ED%8A%B8%EB%9D%BC%EC%9D%B4-%EA%B5%AC%EC%A1%B0" class="hash-link" aria-label="트라이 구조에 대한 직접 링크" title="트라이 구조에 대한 직접 링크">​</a></h4>
-<ul>
-<li>루트는 비어있다.</li>
-<li>각 간선(링크)은 추가될 문자를 키로 가진다.</li>
-<li>각 정점은 $이전 정점의 값 + 간선의 키$를 값으로 가진다.</li>
-<li>해시 테이블과 연결 리스트를 이용하여 구현할 수 있다.</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="trie-구현">Trie 구현<a href="https://dldkffh.github.io/2023/04/04/trie#trie-%EA%B5%AC%ED%98%84" class="hash-link" aria-label="Trie 구현에 대한 직접 링크" title="Trie 구현에 대한 직접 링크">​</a></h3>
-<div class="language-javascript codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#bfc7d5;--prism-background-color:#292d3e"><div class="codeBlockTitle_Ktv7">javascript</div><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-javascript codeBlock_bY9V thin-scrollbar" style="color:#bfc7d5;background-color:#292d3e"><code class="codeBlockLines_e6Vv codeBlockLinesWithNumbering_o6Pm"><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token keyword" style="font-style:italic">class</span><span class="token plain"> </span><span class="token class-name" style="color:rgb(255, 203, 107)">Node</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">  </span><span class="token function" style="color:rgb(130, 170, 255)">constructor</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token plain">value </span><span class="token operator" style="color:rgb(137, 221, 255)">=</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">''</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">    </span><span class="token keyword" style="font-style:italic">this</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token property-access">value</span><span class="token plain"> </span><span class="token operator" style="color:rgb(137, 221, 255)">=</span><span class="token plain"> value</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">    </span><span class="token keyword" style="font-style:italic">this</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token property-access">children</span><span class="token plain"> </span><span class="token operator" style="color:rgb(137, 221, 255)">=</span><span class="token plain"> </span><span class="token keyword" style="font-style:italic">new</span><span class="token plain"> </span><span class="token class-name" style="color:rgb(255, 203, 107)">Map</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">  </span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain"></span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain" style="display:inline-block"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain"></span><span class="token keyword" style="font-style:italic">class</span><span class="token plain"> </span><span class="token class-name" style="color:rgb(255, 203, 107)">Trie</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">  </span><span class="token function" style="color:rgb(130, 170, 255)">constructor</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">    </span><span class="token keyword" style="font-style:italic">this</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token property-access">root</span><span class="token plain"> </span><span class="token operator" style="color:rgb(137, 221, 255)">=</span><span class="token plain"> </span><span class="token keyword" style="font-style:italic">new</span><span class="token plain"> </span><span class="token class-name" style="color:rgb(255, 203, 107)">Node</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">  </span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain" style="display:inline-block"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">  </span><span class="token function" style="color:rgb(130, 170, 255)">insert</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token parameter">string</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">    </span><span class="token keyword" style="font-style:italic">let</span><span class="token plain"> currentNode </span><span class="token operator" style="color:rgb(137, 221, 255)">=</span><span class="token plain"> </span><span class="token keyword" style="font-style:italic">this</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token property-access">root</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain" style="display:inline-block"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">    </span><span class="token keyword control-flow" style="font-style:italic">for</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token keyword" style="font-style:italic">const</span><span class="token plain"> char </span><span class="token keyword" style="font-style:italic">of</span><span class="token plain"> string</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">      </span><span class="token keyword control-flow" style="font-style:italic">if</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token operator" style="color:rgb(137, 221, 255)">!</span><span class="token plain">currentNode</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token property-access">children</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token method function property-access" style="color:rgb(130, 170, 255)">has</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token plain">char</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">        currentNode</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token property-access">children</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token method function property-access" style="color:rgb(130, 170, 255)">set</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token plain">char</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"> </span><span class="token keyword" style="font-style:italic">new</span><span class="token plain"> </span><span class="token class-name" style="color:rgb(255, 203, 107)">Node</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token plain">currentNode</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token property-access">value</span><span class="token plain"> </span><span class="token operator" style="color:rgb(137, 221, 255)">+</span><span class="token plain"> char</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">      </span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">      currentNode </span><span class="token operator" style="color:rgb(137, 221, 255)">=</span><span class="token plain"> currentNode</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token property-access">children</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token method function property-access" style="color:rgb(130, 170, 255)">get</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token plain">char</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">    </span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">  </span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain" style="display:inline-block"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">  </span><span class="token function" style="color:rgb(130, 170, 255)">has</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token parameter">string</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">    </span><span class="token keyword" style="font-style:italic">let</span><span class="token plain"> currentNode </span><span class="token operator" style="color:rgb(137, 221, 255)">=</span><span class="token plain"> </span><span class="token keyword" style="font-style:italic">this</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token property-access">root</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain" style="display:inline-block"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">    </span><span class="token keyword control-flow" style="font-style:italic">for</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token keyword" style="font-style:italic">const</span><span class="token plain"> char </span><span class="token keyword" style="font-style:italic">of</span><span class="token plain"> string</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">      </span><span class="token keyword control-flow" style="font-style:italic">if</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token operator" style="color:rgb(137, 221, 255)">!</span><span class="token plain">currentNode</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token property-access">children</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token method function property-access" style="color:rgb(130, 170, 255)">has</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token plain">char</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">        </span><span class="token keyword control-flow" style="font-style:italic">return</span><span class="token plain"> </span><span class="token boolean" style="color:rgb(255, 88, 116)">false</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">      </span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">      currentNode </span><span class="token operator" style="color:rgb(137, 221, 255)">=</span><span class="token plain"> currentNode</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token property-access">children</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token method function property-access" style="color:rgb(130, 170, 255)">get</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token plain">char</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">    </span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain" style="display:inline-block"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">    </span><span class="token keyword control-flow" style="font-style:italic">return</span><span class="token plain"> </span><span class="token boolean" style="color:rgb(255, 88, 116)">true</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">  </span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain"></span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain" style="display:inline-block"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain"></span><span class="token keyword" style="font-style:italic">const</span><span class="token plain"> trie </span><span class="token operator" style="color:rgb(137, 221, 255)">=</span><span class="token plain"> </span><span class="token keyword" style="font-style:italic">new</span><span class="token plain"> </span><span class="token class-name" style="color:rgb(255, 203, 107)">Trie</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">trie</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token method function property-access" style="color:rgb(130, 170, 255)">insert</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token string" style="color:rgb(195, 232, 141)">'cat'</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">trie</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token method function property-access" style="color:rgb(130, 170, 255)">insert</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token string" style="color:rgb(195, 232, 141)">'can'</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain"></span><span class="token console class-name" style="color:rgb(255, 203, 107)">console</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token method function property-access" style="color:rgb(130, 170, 255)">log</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token plain">trie</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token method function property-access" style="color:rgb(130, 170, 255)">has</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token string" style="color:rgb(195, 232, 141)">'cat'</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain"></span><span class="token console class-name" style="color:rgb(255, 203, 107)">console</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token method function property-access" style="color:rgb(130, 170, 255)">log</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token plain">trie</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token method function property-access" style="color:rgb(130, 170, 255)">has</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token string" style="color:rgb(195, 232, 141)">'can'</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain"></span><span class="token console class-name" style="color:rgb(255, 203, 107)">console</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token method function property-access" style="color:rgb(130, 170, 255)">log</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token plain">trie</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token method function property-access" style="color:rgb(130, 170, 255)">has</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token string" style="color:rgb(195, 232, 141)">'cap'</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span></span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="클립보드에 코드 복사" title="복사" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
-<div class="language-powershell codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#bfc7d5;--prism-background-color:#292d3e"><div class="codeBlockTitle_Ktv7">powershell</div><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-powershell codeBlock_bY9V thin-scrollbar" style="color:#bfc7d5;background-color:#292d3e"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#bfc7d5"><span class="token plain">true</span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">true</span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">false</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="클립보드에 코드 복사" title="복사" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>]]></content>
-        <author>
-            <name>dldkffh</name>
-            <uri>https://github.com/dldkffh</uri>
-        </author>
-        <category label="트라이" term="트라이"/>
-        <category label="알고리즘" term="알고리즘"/>
-        <category label="javascript" term="javascript"/>
-        <category label="프로그래머스" term="프로그래머스"/>
-        <category label="개념" term="개념"/>
     </entry>
 </feed>
