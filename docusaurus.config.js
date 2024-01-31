@@ -103,12 +103,8 @@ const config = {
         items: [
           {to: '/tags', label: '태그', position: 'left'},
           {to: '/archive', label: '아카이브', position: 'left'},
+          {to: '/1969/10/29/guestbook', label: '방명록', position: 'left'},
           // Please keep GitHub link to the right for consistency.
-          {
-            href: 'https://twitter.com/dldkffh',
-            label: '트위터',
-            position: 'right',
-          },
           {
             href: 'https://github.com/dldkffh',
             label: '깃허브',
