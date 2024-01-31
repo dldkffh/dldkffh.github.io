@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdldkffh_github_io=self.webpackChunkdldkffh_github_io||[]).push([[8595],{5904:s=>{s.exports=JSON.parse('{"label":"Wi-Fi","permalink":"/tags/wi-fi","allTagsPath":"/tags","count":1,"unlisted":false}')}}]);
