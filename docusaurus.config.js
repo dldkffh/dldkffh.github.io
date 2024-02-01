@@ -144,14 +144,6 @@ const config = {
         copyright: `Copyright © ${new Date().getFullYear()} dldkffh. Built with Docusaurus.`,
       },
     }),
-
-  scripts: [
-    {
-      src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1720538267262802',
-      async: true,
-      crossorigin: 'anonymous',
-    },
-  ],
 };
 
 module.exports = config;
