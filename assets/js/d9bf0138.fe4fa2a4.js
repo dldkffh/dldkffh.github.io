@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdldkffh_github_io=self.webpackChunkdldkffh_github_io||[]).push([[898],{5213:e=>{e.exports=JSON.parse('{"permalink":"/tags/wi-fi","page":1,"postsPerPage":19,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);
