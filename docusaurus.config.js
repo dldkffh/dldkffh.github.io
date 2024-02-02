@@ -43,6 +43,8 @@ const config = {
       ({
         docs: false,
         blog: {
+          blogTitle: 'dldkffh',
+          blogDescription: '마구잡이 IT 노트',
           routeBasePath: '/',
           showReadingTime: true,
           remarkPlugins: [remarkMath],
