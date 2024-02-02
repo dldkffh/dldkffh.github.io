@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdldkffh_github_io=self.webpackChunkdldkffh_github_io||[]).push([[4425],{724:s=>{s.exports=JSON.parse('{"label":"IPv6","permalink":"/tags/i-pv-6","allTagsPath":"/tags","count":1,"unlisted":false}')}}]);
