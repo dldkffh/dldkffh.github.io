@@ -44,7 +44,7 @@ const config = {
         docs: false,
         blog: {
           blogTitle: 'dldkffh',
-          blogDescription: '마구잡이 IT 노트',
+          blogDescription: '마구잡이 IT 노트 - 컴퓨터 과학, 네트워크, 프로그래밍',
           routeBasePath: '/',
           showReadingTime: true,
           remarkPlugins: [remarkMath],
