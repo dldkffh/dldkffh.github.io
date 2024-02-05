@@ -58,6 +58,10 @@ const config = {
           trackingID: 'G-BRGD3FYKV9',
           anonymizeIP: false,
         },
+        sitemap: {
+          ignorePatterns: ['/tags/**','/search/**'],
+          filename: 'sitemap.xml',
+        },
       }),
     ],
   ],
