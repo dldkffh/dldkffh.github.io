@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdldkffh_github_io=self.webpackChunkdldkffh_github_io||[]).push([[9716],{9997:s=>{s.exports=JSON.parse('{"label":"CDP","permalink":"/tags/cdp","allTagsPath":"/tags","count":1,"unlisted":false}')}}]);
