@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdldkffh_github_io=self.webpackChunkdldkffh_github_io||[]).push([[1727],{746:a=>{a.exports=JSON.parse('{"label":"LAG","permalink":"/tags/lag","allTagsPath":"/tags","count":1,"unlisted":false}')}}]);
