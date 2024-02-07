@@ -72,13 +72,22 @@ enableComments: true # for Gisqus
 - IPv6에는 브로드캐스트가 없음
 - 브로드캐스트 기능은 멀티캐스트 주소를 사용해 구현됨
 
-
 ### EUI-64 인터페이스 생성시
 
 중간에 **FFFE** 넣는거임
 
+### IPv4 - IPv6 전환기술
+
+- dual stack(듀얼스택)
+  - IPv4와 IPv6를 동시설정하여 통신상태에 따라 선택적으로 사용
+- tunneling(터널링)
+  - IPv4 네트워크를 경유하여 IPv6간 통신을 위한 방식으로 가상의 경로(터널)를 만들어 통신
+  - IPv6패킷은 그 영역에 들어갈 때 IPv4패킷 내에 캡슐화되며 그 영역을 나올때 역캡슐
+- translation(주소변환)
+  - 변환 헤더를 추가하여IPv4 주소와 IPv6 주소를 상호변환 하는 방식
 
 ### 출처
 
 - [networkacademy - IPv6 Address Types](https://www.networkacademy.io/ccna/ipv6/ipv6-address-types)
 - [시스코 네트워크 CCNA 자격증 공인 학습 가이드 CCENT/CCNA ICND1 100-105](https://www.cyber.co.kr/book/item/5604)
+- [IT Net Tech - 네트워크 기초 - IPv6](https://daengsik.tistory.com/9)
