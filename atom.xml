@@ -8,46 +8,6 @@
     <subtitle>dldkffh Blog</subtitle>
     <icon>https://dldkffh.github.io/img/favicon.ico</icon>
     <entry>
-        <title type="html"><![CDATA[CDP]]></title>
-        <id>https://dldkffh.github.io/2024/02/06/cdp</id>
-        <link href="https://dldkffh.github.io/2024/02/06/cdp"/>
-        <updated>2024-02-06T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Cisco Discovery Protocol(CDP, 시스코 디스커버리 프로토콜)]]></summary>
-        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="cisco-discovery-protocolcdp-시스코-디스커버리-프로토콜">Cisco Discovery Protocol(CDP, 시스코 디스커버리 프로토콜)<a href="https://dldkffh.github.io/2024/02/06/cdp#cisco-discovery-protocolcdp-%EC%8B%9C%EC%8A%A4%EC%BD%94-%EB%94%94%EC%8A%A4%EC%BB%A4%EB%B2%84%EB%A6%AC-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C" class="hash-link" aria-label="Cisco Discovery Protocol(CDP, 시스코 디스커버리 프로토콜)에 대한 직접 링크" title="Cisco Discovery Protocol(CDP, 시스코 디스커버리 프로토콜)에 대한 직접 링크">​</a></h3>
-<ul>
-<li>2계층&nbsp;<a href="https://ko.m.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C" target="_blank" rel="noopener noreferrer">프로토콜</a></li>
-<li>멀티캐스트 주소로 사용해 이웃 시스코 장비에 정보를 파악<!-- -->
-<ul>
-<li>시스코&nbsp;<a href="https://ko.m.wikipedia.org/wiki/%EB%9D%BC%EC%9A%B0%ED%84%B0" target="_blank" rel="noopener noreferrer">라우터</a>와 스위치에 직접 연결된 장비를 찾아냄</li>
-<li>인접 장비에게 자신의 정보를 알려줄 때 사용</li>
-</ul>
-</li>
-</ul>
-<ul>
-<li>Hold Time<!-- -->
-<ul>
-<li>호스트명 변경 &amp; 구성 정보 업데이트 시 180초 까지만 저장</li>
-</ul>
-</li>
-<li>Update Time<!-- -->
-<ul>
-<li>60초 마다 자신의 정보를 다른 장비에게 알림</li>
-</ul>
-</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="출처">출처<a href="https://dldkffh.github.io/2024/02/06/cdp#%EC%B6%9C%EC%B2%98" class="hash-link" aria-label="출처에 대한 직접 링크" title="출처에 대한 직접 링크">​</a></h3>
-<ul>
-<li><a href="https://ko.m.wikipedia.org/wiki/%EC%8B%9C%EC%8A%A4%EC%BD%94_%EB%94%94%EC%8A%A4%EC%BB%A4%EB%B2%84%EB%A6%AC_%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C" target="_blank" rel="noopener noreferrer">https://ko.m.wikipedia.org/wiki/시스코_디스커버리_프로토콜</a></li>
-</ul>]]></content>
-        <author>
-            <name>dldkffh</name>
-            <uri>https://github.com/dldkffh</uri>
-        </author>
-        <category label="CDP" term="CDP"/>
-        <category label="네트워크" term="네트워크"/>
-        <category label="개념" term="개념"/>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[DHCP VS. DNS]]></title>
         <id>https://dldkffh.github.io/2024/02/06/dhcp-vs-dns</id>
         <link href="https://dldkffh.github.io/2024/02/06/dhcp-vs-dns"/>
@@ -90,14 +50,14 @@
         <category label="개념" term="개념"/>
     </entry>
     <entry>
-        <title type="html"><![CDATA[LAG]]></title>
-        <id>https://dldkffh.github.io/2024/02/06/lag</id>
-        <link href="https://dldkffh.github.io/2024/02/06/lag"/>
+        <title type="html"><![CDATA[LAG, LACP]]></title>
+        <id>https://dldkffh.github.io/2024/02/06/lag-lacp</id>
+        <link href="https://dldkffh.github.io/2024/02/06/lag-lacp"/>
         <updated>2024-02-06T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[LAG(Link Aggregation Group, 링크 애그리게이션)]]></summary>
-        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="laglink-aggregation-group-링크-애그리게이션">LAG(Link Aggregation Group, 링크 애그리게이션)<a href="https://dldkffh.github.io/2024/02/06/lag#laglink-aggregation-group-%EB%A7%81%ED%81%AC-%EC%95%A0%EA%B7%B8%EB%A6%AC%EA%B2%8C%EC%9D%B4%EC%85%98" class="hash-link" aria-label="LAG(Link Aggregation Group, 링크 애그리게이션)에 대한 직접 링크" title="LAG(Link Aggregation Group, 링크 애그리게이션)에 대한 직접 링크">​</a></h3>
+        <summary type="html"><![CDATA[LAG(Link Aggregation Group, 링크 애그리게이션 그룹)]]></summary>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="laglink-aggregation-group-링크-애그리게이션-그룹">LAG(Link Aggregation Group, 링크 애그리게이션 그룹)<a href="https://dldkffh.github.io/2024/02/06/lag-lacp#laglink-aggregation-group-%EB%A7%81%ED%81%AC-%EC%95%A0%EA%B7%B8%EB%A6%AC%EA%B2%8C%EC%9D%B4%EC%85%98-%EA%B7%B8%EB%A3%B9" class="hash-link" aria-label="LAG(Link Aggregation Group, 링크 애그리게이션 그룹)에 대한 직접 링크" title="LAG(Link Aggregation Group, 링크 애그리게이션 그룹)에 대한 직접 링크">​</a></h3>
 <ul>
-<li>컴퓨터 네트워크에서 하나의 연결이 지탱할 수 있는 것 이상으로 스루풋을 증가시키기 위해, 또는 링크 중 하나가 실패할 것을 대비하여 다중화(redundancy)를 제공하기 위해, 여러 네트워크 연결을 병렬로 연결하는 여러 가지 방식</li>
+<li>컴퓨터 네트워크에서 하나의 연결이 지탱할 수 있는 것 이상으로 <a href="https://ko.wikipedia.org/wiki/%EC%8A%A4%EB%A3%A8%ED%92%8B" target="_blank" rel="noopener noreferrer">스루풋</a>을 증가시키기 위해, 또는 링크 중 하나가 실패할 것을 대비하여 다중화(redundancy)를 제공하기 위해, 여러 네트워크 연결을 병렬로 연결하는 여러 가지 방식</li>
 <li>링크 애그리게이션 그룹(LAG)은 수많은 물리적 포트를 하나로 병합하여 하나의 고대역 데이터 경로를 만들어주며 그룹 내 멤버 포트들 간에 트래픽 부하 분산을 구현하고 연결의 신뢰성을 강화</li>
 </ul>
 <ul>
@@ -131,8 +91,12 @@
 </li>
 </ul>
 </li>
+<li>대역폭 증가</li>
+<li>회선 이중화</li>
+<li>로드밸런싱</li>
+<li>박스 구성에서 STP의 영향을 최소화</li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="lacp-link-aggregation-control-protocol-링크-애그리게이션-컨트롤-프로토콜">LACP (Link Aggregation Control Protocol, 링크 애그리게이션 컨트롤 프로토콜)<a href="https://dldkffh.github.io/2024/02/06/lag#lacp-link-aggregation-control-protocol-%EB%A7%81%ED%81%AC-%EC%95%A0%EA%B7%B8%EB%A6%AC%EA%B2%8C%EC%9D%B4%EC%85%98-%EC%BB%A8%ED%8A%B8%EB%A1%A4-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C" class="hash-link" aria-label="LACP (Link Aggregation Control Protocol, 링크 애그리게이션 컨트롤 프로토콜)에 대한 직접 링크" title="LACP (Link Aggregation Control Protocol, 링크 애그리게이션 컨트롤 프로토콜)에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="lacp-link-aggregation-control-protocol-링크-애그리게이션-컨트롤-프로토콜">LACP (Link Aggregation Control Protocol, 링크 애그리게이션 컨트롤 프로토콜)<a href="https://dldkffh.github.io/2024/02/06/lag-lacp#lacp-link-aggregation-control-protocol-%EB%A7%81%ED%81%AC-%EC%95%A0%EA%B7%B8%EB%A6%AC%EA%B2%8C%EC%9D%B4%EC%85%98-%EC%BB%A8%ED%8A%B8%EB%A1%A4-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C" class="hash-link" aria-label="LACP (Link Aggregation Control Protocol, 링크 애그리게이션 컨트롤 프로토콜)에 대한 직접 링크" title="LACP (Link Aggregation Control Protocol, 링크 애그리게이션 컨트롤 프로토콜)에 대한 직접 링크">​</a></h4>
 <ul>
 <li>IEEE 링크 애그리게이션 표준화 작업</li>
 <li>IEEE 802.3 그룹은 스터디 그룹을 구성하여 1997년 11월 미팅에서 상호 운용 가능한 링크 계층 표준을 만듦<!-- -->
@@ -142,7 +106,7 @@
 </ul>
 </li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="다른-우산-용어들">다른 우산 용어들<a href="https://dldkffh.github.io/2024/02/06/lag#%EB%8B%A4%EB%A5%B8-%EC%9A%B0%EC%82%B0-%EC%9A%A9%EC%96%B4%EB%93%A4" class="hash-link" aria-label="다른 우산 용어들에 대한 직접 링크" title="다른 우산 용어들에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="다른-우산-용어들">다른 우산 용어들<a href="https://dldkffh.github.io/2024/02/06/lag-lacp#%EB%8B%A4%EB%A5%B8-%EC%9A%B0%EC%82%B0-%EC%9A%A9%EC%96%B4%EB%93%A4" class="hash-link" aria-label="다른 우산 용어들에 대한 직접 링크" title="다른 우산 용어들에 대한 직접 링크">​</a></h4>
 <ul>
 <li>포트 트렁킹(port trunking)</li>
 <li>링크 번들링(link bundling)</li>
@@ -150,8 +114,61 @@
 <li>NIC 티밍(NIC teaming)</li>
 <li>네트워크 이중화</li>
 <li>네트워크 다중화</li>
+<li>이더채널 (EtherChannel)</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="cisco-장비-lag-사용시-가이드라인">Cisco 장비 LAG 사용시 가이드라인<a href="https://dldkffh.github.io/2024/02/06/lag#cisco-%EC%9E%A5%EB%B9%84-lag-%EC%82%AC%EC%9A%A9%EC%8B%9C-%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8" class="hash-link" aria-label="Cisco 장비 LAG 사용시 가이드라인에 대한 직접 링크" title="Cisco 장비 LAG 사용시 가이드라인에 대한 직접 링크">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="모드">모드<a href="https://dldkffh.github.io/2024/02/06/lag-lacp#%EB%AA%A8%EB%93%9C" class="hash-link" aria-label="모드에 대한 직접 링크" title="모드에 대한 직접 링크">​</a></h4>
+<ul>
+<li>active<!-- -->
+<ul>
+<li>상대방 인터페이스로 LACP 패킷을 정기적으로 전송하며 협상을 시작</li>
+</ul>
+</li>
+<li>passive<!-- -->
+<ul>
+<li>상대방이 전송하는 LACP 패킷을 수신할때까지 대기하며, 협상이 성공하면 채널링</li>
+</ul>
+</li>
+<li>on<!-- -->
+<ul>
+<li>협상 기능을 사용하지 않고 이더채널 포트를 활성화</li>
+<li>협상과정이 없기 때문에 패킷 손실과 프레임 루프가 발생할 가능성이 존재</li>
+</ul>
+</li>
+<li>passive - passive 의 경우 연결 불가</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="pagp-port-aggregation-protocol-팩피">PAgP (Port Aggregation Protocol, 팩피)<a href="https://dldkffh.github.io/2024/02/06/lag-lacp#pagp-port-aggregation-protocol-%ED%8C%A9%ED%94%BC" class="hash-link" aria-label="PAgP (Port Aggregation Protocol, 팩피)에 대한 직접 링크" title="PAgP (Port Aggregation Protocol, 팩피)에 대한 직접 링크">​</a></h3>
+<ul>
+<li>Cisco 독점 이더채널 모드</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="모드-1">모드<a href="https://dldkffh.github.io/2024/02/06/lag-lacp#%EB%AA%A8%EB%93%9C-1" class="hash-link" aria-label="모드에 대한 직접 링크" title="모드에 대한 직접 링크">​</a></h4>
+<ul>
+<li>desirable<!-- -->
+<ul>
+<li>상대방 인터페이스로 PAGP 패킷을 정기적으로 전송하며 협상을 시작</li>
+</ul>
+</li>
+<li>auto<!-- -->
+<ul>
+<li>상대방이 전송하는 PAGP 패킷을 수신할때까지 대기하며, 협상이 성공하면 채널링</li>
+</ul>
+</li>
+<li>on<!-- -->
+<ul>
+<li>협상 기능을 사용하지 않고 이더채널 포트를 활성화</li>
+<li>협상과정이 없기 때문에 패킷 손실과 프레임 루프가 발생할 가능성이 존재</li>
+</ul>
+</li>
+<li>auto - auto 의 경우 연결 불가</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="사용조건-및-주의사항">사용조건 및 주의사항<a href="https://dldkffh.github.io/2024/02/06/lag-lacp#%EC%82%AC%EC%9A%A9%EC%A1%B0%EA%B1%B4-%EB%B0%8F-%EC%A3%BC%EC%9D%98%EC%82%AC%ED%95%AD" class="hash-link" aria-label="사용조건 및 주의사항에 대한 직접 링크" title="사용조건 및 주의사항에 대한 직접 링크">​</a></h3>
+<ul>
+<li>Vlan, Speed, Duplex, STP 설정값이 모두 동일해야 설정가능하다.</li>
+<li>Trunk port를 이더채널로 구성하려면 모든 Port가 같은 Trunk mode로 구성되어야 한다.</li>
+<li>Switched port analyzer(SPAN, 포트 미러링) 에서는 사용할 수 없다.</li>
+<li>Port-security 설정시 구성 불가능하다.</li>
+<li>Fast, Gigabit Ethernet 에서는 구성 가능하지만 Ethernet(10Mbps)은 지원하지 않는다.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="cisco-장비-lag-사용시-가이드라인">Cisco 장비 LAG 사용시 가이드라인<a href="https://dldkffh.github.io/2024/02/06/lag-lacp#cisco-%EC%9E%A5%EB%B9%84-lag-%EC%82%AC%EC%9A%A9%EC%8B%9C-%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8" class="hash-link" aria-label="Cisco 장비 LAG 사용시 가이드라인에 대한 직접 링크" title="Cisco 장비 LAG 사용시 가이드라인에 대한 직접 링크">​</a></h3>
 <ul>
 <li>컨트롤러의 포트를 별도의 LAG 그룹으로 구성할 수 없습니다. 컨트롤러당 하나의 LAG 그룹만 지원됩니다. 따라서 LAG 모드에서 컨트롤러를 하나의 이웃 장치에만 연결할 수 있습니다.</li>
 <li>LAG가 활성화되면 LAG 구성에 대한 변경은 컨트롤러 재부팅이 필요합니다.</li>
@@ -161,16 +178,58 @@
 <li>LAG를 활성화하면 모든 포트가 기본적으로 LAG에 참여합니다. 따라서, 당신은 이웃 스위치에 있는 모든 연결된 포트에 대해 LAG를 구성해야 합니다.</li>
 <li>LAG를 활성화하면 포트 미러링이 지원되지 않습니다.</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="출처">출처<a href="https://dldkffh.github.io/2024/02/06/lag#%EC%B6%9C%EC%B2%98" class="hash-link" aria-label="출처에 대한 직접 링크" title="출처에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="출처">출처<a href="https://dldkffh.github.io/2024/02/06/lag-lacp#%EC%B6%9C%EC%B2%98" class="hash-link" aria-label="출처에 대한 직접 링크" title="출처에 대한 직접 링크">​</a></h3>
 <ul>
-<li><a href="https://community.cisco.com/t5/wireless-mobility-knowledge-base/lag-link-aggregation/ta-p/3128669" target="_blank" rel="noopener noreferrer">CISCO community - LAG - Link Aggregation</a></li>
 <li><a href="https://ko.m.wikipedia.org/wiki/%EB%A7%81%ED%81%AC_%EC%95%A0%EA%B7%B8%EB%A6%AC%EA%B2%8C%EC%9D%B4%EC%85%98" target="_blank" rel="noopener noreferrer">위키백과 - 링크 애그리게이션</a></li>
+<li><a href="https://community.cisco.com/t5/wireless-mobility-knowledge-base/lag-link-aggregation/ta-p/3128669" target="_blank" rel="noopener noreferrer">CISCO community - LAG - Link Aggregation</a></li>
+<li><a href="https://daengsik.tistory.com/41" target="_blank" rel="noopener noreferrer">IT Net Tech - 네트워크 - 이더채널 (EtherChannel)</a></li>
 </ul>]]></content>
         <author>
             <name>dldkffh</name>
             <uri>https://github.com/dldkffh</uri>
         </author>
         <category label="LAG" term="LAG"/>
+        <category label="LACP" term="LACP"/>
+        <category label="네트워크" term="네트워크"/>
+        <category label="개념" term="개념"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[LLDP, CDP]]></title>
+        <id>https://dldkffh.github.io/2024/02/06/lldp-cdp</id>
+        <link href="https://dldkffh.github.io/2024/02/06/lldp-cdp"/>
+        <updated>2024-02-06T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Cisco Discovery Protocol(CDP, 시스코 디스커버리 프로토콜)]]></summary>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="cisco-discovery-protocolcdp-시스코-디스커버리-프로토콜">Cisco Discovery Protocol(CDP, 시스코 디스커버리 프로토콜)<a href="https://dldkffh.github.io/2024/02/06/lldp-cdp#cisco-discovery-protocolcdp-%EC%8B%9C%EC%8A%A4%EC%BD%94-%EB%94%94%EC%8A%A4%EC%BB%A4%EB%B2%84%EB%A6%AC-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C" class="hash-link" aria-label="Cisco Discovery Protocol(CDP, 시스코 디스커버리 프로토콜)에 대한 직접 링크" title="Cisco Discovery Protocol(CDP, 시스코 디스커버리 프로토콜)에 대한 직접 링크">​</a></h3>
+<ul>
+<li>2계층&nbsp;<a href="https://ko.m.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C" target="_blank" rel="noopener noreferrer">프로토콜</a></li>
+<li>멀티캐스트 주소로 사용해 이웃 시스코 장비에 정보를 파악<!-- -->
+<ul>
+<li>시스코&nbsp;<a href="https://ko.m.wikipedia.org/wiki/%EB%9D%BC%EC%9A%B0%ED%84%B0" target="_blank" rel="noopener noreferrer">라우터</a>와 스위치에 직접 연결된 장비를 찾아냄</li>
+<li>인접 장비에게 자신의 정보를 알려줄 때 사용</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Hold Time<!-- -->
+<ul>
+<li>호스트명 변경 &amp; 구성 정보 업데이트 시 180초 까지만 저장</li>
+</ul>
+</li>
+<li>Update Time<!-- -->
+<ul>
+<li>60초 마다 자신의 정보를 다른 장비에게 알림</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="출처">출처<a href="https://dldkffh.github.io/2024/02/06/lldp-cdp#%EC%B6%9C%EC%B2%98" class="hash-link" aria-label="출처에 대한 직접 링크" title="출처에 대한 직접 링크">​</a></h3>
+<ul>
+<li><a href="https://ko.m.wikipedia.org/wiki/%EC%8B%9C%EC%8A%A4%EC%BD%94_%EB%94%94%EC%8A%A4%EC%BB%A4%EB%B2%84%EB%A6%AC_%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C" target="_blank" rel="noopener noreferrer">https://ko.m.wikipedia.org/wiki/시스코_디스커버리_프로토콜</a></li>
+</ul>]]></content>
+        <author>
+            <name>dldkffh</name>
+            <uri>https://github.com/dldkffh</uri>
+        </author>
+        <category label="CDP" term="CDP"/>
         <category label="네트워크" term="네트워크"/>
         <category label="개념" term="개념"/>
     </entry>
@@ -347,10 +406,30 @@
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="eui-64-인터페이스-생성시">EUI-64 인터페이스 생성시<a href="https://dldkffh.github.io/2024/02/02/ipv6-address-type#eui-64-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4-%EC%83%9D%EC%84%B1%EC%8B%9C" class="hash-link" aria-label="EUI-64 인터페이스 생성시에 대한 직접 링크" title="EUI-64 인터페이스 생성시에 대한 직접 링크">​</a></h3>
 <p>중간에 <strong>FFFE</strong> 넣는거임</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="ipv4---ipv6-전환기술">IPv4 - IPv6 전환기술<a href="https://dldkffh.github.io/2024/02/02/ipv6-address-type#ipv4---ipv6-%EC%A0%84%ED%99%98%EA%B8%B0%EC%88%A0" class="hash-link" aria-label="IPv4 - IPv6 전환기술에 대한 직접 링크" title="IPv4 - IPv6 전환기술에 대한 직접 링크">​</a></h3>
+<ul>
+<li>dual stack(듀얼스택)<!-- -->
+<ul>
+<li>IPv4와 IPv6를 동시설정하여 통신상태에 따라 선택적으로 사용</li>
+</ul>
+</li>
+<li>tunneling(터널링)<!-- -->
+<ul>
+<li>IPv4 네트워크를 경유하여 IPv6간 통신을 위한 방식으로 가상의 경로(터널)를 만들어 통신</li>
+<li>IPv6패킷은 그 영역에 들어갈 때 IPv4패킷 내에 캡슐화되며 그 영역을 나올때 역캡슐</li>
+</ul>
+</li>
+<li>translation(주소변환)<!-- -->
+<ul>
+<li>변환 헤더를 추가하여IPv4 주소와 IPv6 주소를 상호변환 하는 방식</li>
+</ul>
+</li>
+</ul>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="출처">출처<a href="https://dldkffh.github.io/2024/02/02/ipv6-address-type#%EC%B6%9C%EC%B2%98" class="hash-link" aria-label="출처에 대한 직접 링크" title="출처에 대한 직접 링크">​</a></h3>
 <ul>
 <li><a href="https://www.networkacademy.io/ccna/ipv6/ipv6-address-types" target="_blank" rel="noopener noreferrer">networkacademy - IPv6 Address Types</a></li>
 <li><a href="https://www.cyber.co.kr/book/item/5604" target="_blank" rel="noopener noreferrer">시스코 네트워크 CCNA 자격증 공인 학습 가이드 CCENT/CCNA ICND1 100-105</a></li>
+<li><a href="https://daengsik.tistory.com/9" target="_blank" rel="noopener noreferrer">IT Net Tech - 네트워크 기초 - IPv6</a></li>
 </ul>]]></content>
         <author>
             <name>dldkffh</name>
@@ -809,7 +888,7 @@
 <li>TFTP(69)</li>
 <li>SNMP(161)</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tcp--udp">TCP &amp; UDP<a href="https://dldkffh.github.io/2024/01/31/tcp-udp-protocol#tcp--udp" class="hash-link" aria-label="TCP &amp; UDP에 대한 직접 링크" title="TCP &amp; UDP에 �대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tcp--udp">TCP &amp; UDP<a href="https://dldkffh.github.io/2024/01/31/tcp-udp-protocol#tcp--udp" class="hash-link" aria-label="TCP &amp; UDP에 대한 직접 링크" title="TCP &amp; UDP에 대한 직접 링크">​</a></h3>
 <ul>
 <li>DNS(53)</li>
 </ul>]]></content>
@@ -1005,7 +1084,7 @@
 <li>코니는 하루에 최소 한 개의 의상은 입습니다.</li>
 </ul>
 <p>코니가 가진 의상들이 담긴 2차원 배열 <code>clothes</code>가 주어질 때 서로 다른 옷의 조합의 수를 <code>return</code> 하도록 <code>solution</code> 함수를 작성해주세요.</p>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="제한사항">제한사항<a href="https://dldkffh.github.io/2023/07/13/programmers-42862#%EC%A0%9C%ED%95%9C%EC%82%AC%ED%95%AD" class="hash-link" aria-label="제한사항에 대한 직접 링크" title="제한�사항에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="제한사항">제한사항<a href="https://dldkffh.github.io/2023/07/13/programmers-42862#%EC%A0%9C%ED%95%9C%EC%82%AC%ED%95%AD" class="hash-link" aria-label="제한사항에 대한 직접 링크" title="제한사항에 대한 직접 링크">​</a></h4>
 <ul>
 <li>전체 학생의 수는 2명 이상 30명 이하입니다.</li>
 <li>체육복을 도난당한 학생의 수는 1명 이상 <code>n</code>명 이하이고 중복되는 번호는 없습니다.</li>
@@ -1187,7 +1266,7 @@
         <link href="https://dldkffh.github.io/2023/07/10/programmers-42576"/>
         <updated>2023-07-10T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[프로그래머스 코딩테스트 고득점 Kit 완주하지 못한 선수]]></summary>
-        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="프로그래머스-코딩테스트-고득점-kit-완주하지-못한-선수"><a href="https://school.programmers.co.kr/learn/courses/30/lessons/42576" target="_blank" rel="noopener noreferrer">프로그래머스 코딩테스트 고득점 Kit 완주하지 못한 선수</a><a href="https://dldkffh.github.io/2023/07/10/programmers-42576#%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B3%A0%EB%93%9D%EC%A0%90-kit-%EC%99%84%EC%A3%BC%ED%95%98%EC%A7%80-%EB%AA%BB%ED%95%9C-%EC%84%A0%EC%88%98" class="hash-link" aria-label="프로그래머스-코딩테스트-고득점-kit-완주하지-못한-선수에 대한 직접 링크" title="프로그래머스-코딩테스트-고득점-kit-완주하지-못한-선수에 대한 직접 링크">​</a></h3>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="프로그래머스-코딩테스트-고득점-kit-완주하지-못한-선수"><a href="https://school.programmers.co.kr/learn/courses/30/lessons/42576" target="_blank" rel="noopener noreferrer">프로그래머스 코딩테스트 고득점 Kit 완주하지 못한 선수</a><a href="https://dldkffh.github.io/2023/07/10/programmers-42576#%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B3%A0%EB%93%9D%EC%A0%90-kit-%EC%99%84%EC%A3%BC%ED%95%98%EC%A7%80-%EB%AA%BB%ED%95%9C-%EC%84%A0%EC%88%98" class="hash-link" aria-label="프로그래머스-코딩테스트-고득점-kit-완주하지-못한-선수에 대한 직접 링크" title="프로그래머스-코딩테스트-고득점-kit-완주하지-못한-선수에 대�한 직접 링크">​</a></h3>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="문제-설명">문제 설명<a href="https://dldkffh.github.io/2023/07/10/programmers-42576#%EB%AC%B8%EC%A0%9C-%EC%84%A4%EB%AA%85" class="hash-link" aria-label="문제 설명에 대한 직접 링크" title="문제 설명에 대한 직접 링크">​</a></h4>
 <p>수많은 마라톤 선수들이 마라톤에 참여하였습니다. 단 한 명의 선수를 제외하고는 모든 선수가 마라톤을 완주하였습니다.</p>
 <p>마라톤에 참여한 선수들의 이름이 담긴 배열 <code>participant</code>와 완주한 선수들의 이름이 담긴 배열 <code>completion</code>이 주어질 때, 완주하지 못한 선수의 이름을 <code>return</code> 하도록 <code>solution</code> 함수를 작성해주세요.</p>
@@ -1223,7 +1302,7 @@
         <link href="https://dldkffh.github.io/2023/07/08/programmers-42583"/>
         <updated>2023-07-08T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[프로그래머스 코딩테스트 고득점 Kit 다리를 지나는 트럭]]></summary>
-        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="프로그래머스-코딩테스트-고득점-kit-다리를-지나는-트럭"><a href="https://school.programmers.co.kr/learn/courses/30/lessons/42583" target="_blank" rel="noopener noreferrer">프로그래머스 코딩테스트 고득점 Kit 다리를 지나는 트럭</a><a href="https://dldkffh.github.io/2023/07/08/programmers-42583#%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B3%A0%EB%93%9D%EC%A0%90-kit-%EB%8B%A4%EB%A6%AC%EB%A5%BC-%EC%A7%80%EB%82%98%EB%8A%94-%ED%8A%B8%EB%9F%AD" class="hash-link" aria-label="프로그래머스-코딩테스트-고득점-kit-다리를-지나는-트럭에 대한 직접 링크" title="프로그래머스-코딩테스트-고득점-kit-다리를-지나는-트럭에 대한 직접 링크">​</a></h3>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="프로그래머스-코딩테스트-고득점-kit-다리를-지나는-트럭"><a href="https://school.programmers.co.kr/learn/courses/30/lessons/42583" target="_blank" rel="noopener noreferrer">프로그래머스 코딩테스트 고득점 Kit 다리를 지나는 트럭</a><a href="https://dldkffh.github.io/2023/07/08/programmers-42583#%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B3%A0%EB%93%9D%EC%A0%90-kit-%EB%8B%A4%EB%A6%AC%EB%A5%BC-%EC%A7%80%EB%82%98%EB%8A%94-%ED%8A%B8%EB%9F%AD" class="hash-link" aria-label="프로그래머스-코딩테스트-고득점-kit-다리를-지나는-트럭에 대한 직접 링크" title="프로그래머스-코딩테스트-고득점-kit-다리를-지나는-트럭에 �대한 직접 링크">​</a></h3>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="문제-설명">문제 설명<a href="https://dldkffh.github.io/2023/07/08/programmers-42583#%EB%AC%B8%EC%A0%9C-%EC%84%A4%EB%AA%85" class="hash-link" aria-label="문제 설명에 대한 직접 링크" title="문제 설명에 대한 직접 링크">​</a></h4>
 <p>트럭 여러 대가 강을 가로지르는 일차선 다리를 정해진 순으로 건너려 합니다. 모든 트럭이 다리를 건너려면 최소 몇 초가 걸리는지 알아내야 합니다. 다리에는 트럭이 최대 <code>bridge_length</code>대 올라갈 수 있으며, 다리는 <code>weight</code> 이하까지의 무게를 견딜 수 있습니다. 단, 다리에 완전히 오르지 않은 트럭의 무게는 무시합니다.</p>
 <p>예를 들어, 트럭 2대가 올라갈 수 있고 무게를 10kg까지 견디는 다리가 있습니다. 무게가 <code>[7, 4, 5, 6]</code>kg인 트럭이 순서대로 최단 시간 안에 다리를 건너려면 다음과 같이 건너야 합니다.</p>
