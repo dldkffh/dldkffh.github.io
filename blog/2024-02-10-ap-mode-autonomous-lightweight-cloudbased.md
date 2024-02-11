@@ -1,7 +1,7 @@
 ---
 title: AP 모드 종류 - autonomous, lightweight, cloudbased
 authors: dldkffh
-tags: [private, IPv4, 네트워크, 개념]
+tags: [AP, autonomous, lightweight, cloudbased, 네트워크, 개념]
 enableComments: true # for Gisqus
 ---
 
