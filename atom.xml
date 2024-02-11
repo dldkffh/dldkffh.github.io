@@ -2,11 +2,299 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://dldkffh.github.io/</id>
     <title>dldkffh Blog</title>
-    <updated>2024-02-07T00:00:00.000Z</updated>
+    <updated>2024-02-10T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://dldkffh.github.io/"/>
     <subtitle>dldkffh Blog</subtitle>
     <icon>https://dldkffh.github.io/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[IEEE 802]]></title>
+        <id>https://dldkffh.github.io/2024/02/10/ieee-802</id>
+        <link href="https://dldkffh.github.io/2024/02/10/ieee-802"/>
+        <updated>2024-02-10T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[IEEE 802]]></summary>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="ieee-802">IEEE 802<a href="https://dldkffh.github.io/2024/02/10/ieee-802#ieee-802" class="hash-link" aria-label="IEEE 802에 대한 직접 링크" title="IEEE 802에 대한 직접 링크">​</a></h3>
+<ul>
+<li>근거리 통신망과 도시권 통신망을 관할하는 전기 전자 기술자 협회(IEEE) 표준 규칙들의 계열</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="ieee-802-워킹-그룹">IEEE 802 워킹 그룹<a href="https://dldkffh.github.io/2024/02/10/ieee-802#ieee-802-%EC%9B%8C%ED%82%B9-%EA%B7%B8%EB%A3%B9" class="hash-link" aria-label="IEEE 802 워킹 그룹에 대한 직접 링크" title="IEEE 802 워킹 그룹에 대한 직접 링크">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="ieee-8021">IEEE 802.1<a href="https://dldkffh.github.io/2024/02/10/ieee-802#ieee-8021" class="hash-link" aria-label="IEEE 802.1에 대한 직접 링크" title="IEEE 802.1에 대한 직접 링크">​</a></h4>
+<ul>
+<li>802 LAN/MAN 아키텍처</li>
+<li>802 LAN, MAN, WAN 사이의 네트워킹</li>
+<li>802 연결 보안</li>
+<li>802 전체 네트워크 관리</li>
+<li>MAC &amp; LLC 계층 위의 프로토콜 계층</li>
+</ul>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="8021d">802.1D<a href="https://dldkffh.github.io/2024/02/10/ieee-802#8021d" class="hash-link" aria-label="802.1D에 대한 직접 링크" title="802.1D에 대한 직접 링크">​</a></h5>
+<ul>
+<li>브리징, 신장 트리 프로토콜 등을 포함하는 <strong>이더넷 MAC 브리지 표준</strong></li>
+<li>802.3(이더넷), 802.11(무선 LAN) 및 802.16(WiMax) 표준을 포함</li>
+<li>다른 많은 802 프로젝트를 연결하는 것과 관련된 세부 정보가 포함</li>
+<li>802.1D는 2022년에 공식적으로 폐지될 것으로 예상</li>
+</ul>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="8021q">802.1Q<a href="https://dldkffh.github.io/2024/02/10/ieee-802#8021q" class="hash-link" aria-label="802.1Q에 대한 직접 링크" title="802.1Q에 대한 직접 링크">​</a></h5>
+<ul>
+<li>하나의 이더넷 네트워크에서 <strong>가상 랜(VLAN)을 지원하는 네트워크 표준</strong></li>
+<li>이더넷 프레임을 위한 VLAN 태그 추가 시스템과 더불어, 이러한 프레임을 관리하는데 동반되는 브리지와 스위치에 쓰이는 절차들을 정의</li>
+<li>IEEE 802.1p라는 QoS 우선 순위 스키마를 위한 예비를 포함하고 있으며 GARP를 정의</li>
+<li>이후 개정판 : IEEE 802.1ak, IEEE 802.1Qat, IEEE 802.1Qay</li>
+</ul>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="8021aq">802.1aq<a href="https://dldkffh.github.io/2024/02/10/ieee-802#8021aq" class="hash-link" aria-label="802.1aq에 대한 직접 링크" title="802.1aq에 대한 직접 링크">​</a></h5>
+<ul>
+<li><strong>SPB(Shortest Path Bridging, 최단 경로 브리징)</strong></li>
+<li>다중 경로 기술을 가능하게 하면서, 인간의 오류를 거의 제거해주는 캐리어, 기업, 클라우드 네트워크의 개발과 설정을 획기적으로 간편하게 만들어주는 기술</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="ieee-8023">IEEE 802.3<a href="https://dldkffh.github.io/2024/02/10/ieee-802#ieee-8023" class="hash-link" aria-label="IEEE 802.3에 대한 직접 링크" title="IEEE 802.3에 대한 직접 링크">​</a></h4>
+<ul>
+<li>연결된 이더넷에서 물리 계층, 데이터 링크 계층의 매체 접근 제어를 정의</li>
+<li>광역 통신망 기술에도 활용되지만 일반적으로 근거리 통신망 기술</li>
+<li>물리 연결은 <strong>동축케이블과 광케이블</strong> 등 다양한 형태의 케이블을 통해 노드와 인프라스트럭쳐 장치(허브, 스위치, 라우터) 사이에서 이루어짐</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="ieee-80211-abgnacadax">IEEE 802.11 a/b/g/n/ac/ad/ax<a href="https://dldkffh.github.io/2024/02/10/ieee-802#ieee-80211-abgnacadax" class="hash-link" aria-label="IEEE 802.11 a/b/g/n/ac/ad/ax에 대한 직접 링크" title="IEEE 802.11 a/b/g/n/ac/ad/ax에 대한 직접 링크">​</a></h4>
+<ul>
+<li><strong>무선랜, 와이파이(Wi-Fi)라고 부르는 무선 근거리 통신망(LAN) 또는 무선 네트워크</strong>에 사용되는 표준 규격</li>
+<li>802.11과 와이파이라는 용어가 번갈아 사용되기도 하지만 802.11과 와이파이는 동의어가 아님</li>
+<li>유선 LAN 형태인 이더넷의 단점을 보완하기 위해 고안된 기술<!-- -->
+<ul>
+<li>이더넷 네트워크의 말단에 위치해 필요 없는 배선 작업과 유지관리 비용을 최소화하기 위해 널리 쓰임</li>
+<li>사무실의 컴퓨터는 무선으로 연결함으로써 사무실 내에 번거로이 케이블을 설치하고 유지보수를 하지 않아도 됨</li>
+</ul>
+</li>
+</ul>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="80211-초기-버전">802.11 (초기 버전)<a href="https://dldkffh.github.io/2024/02/10/ieee-802#80211-%EC%B4%88%EA%B8%B0-%EB%B2%84%EC%A0%84" class="hash-link" aria-label="802.11 (초기 버전)에 대한 직접 링크" title="802.11 (초기 버전)에 대한 직접 링크">​</a></h5>
+<ul>
+<li>최고속도가 2Mbps</li>
+<li>적외선 신호나 ISM 대역인 2.4GHz 대역 전파를 사용</li>
+<li>CSMA/CA 기술을 사용</li>
+</ul>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="80211a">802.11a<a href="https://dldkffh.github.io/2024/02/10/ieee-802#80211a" class="hash-link" aria-label="802.11a에 대한 직접 링크" title="802.11a에 대한 직접 링크">​</a></h5>
+<ul>
+<li>최고 54Mbps까지의 전송 속도를 지원</li>
+<li>5GHz 대역의 전파를 사용</li>
+<li>OFDM 기술을 사용</li>
+</ul>
+<blockquote>
+<p><strong>5GHz 대역이란?</strong></p>
+<ul>
+<li>2.4GHz 대역에 비해 다른 통신기기(무선 전화기, 블루투스 기기 등)와의 간섭이 적고, 더 넓은 전파 대역을 사용할 수 있음</li>
+<li>신호의 특성상 장애물이나 도심 건물 등 주변 환경의 영향을 쉽게 받음</li>
+<li>2.4GHz 대역에서 54Mbps 속도를 지원하는 802.11g 규격이 등장하면서 현재는 널리 쓰이지 않고 있음</li>
+</ul>
+</blockquote>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="80211b">802.11b<a href="https://dldkffh.github.io/2024/02/10/ieee-802#80211b" class="hash-link" aria-label="802.11b에 대한 직접 링크" title="802.11b에 대한 직접 링크">​</a></h5>
+<ul>
+<li>최고 전송속도는 11Mbps<!-- -->
+<ul>
+<li>6-7Mbps 정도의 효율</li>
+</ul>
+</li>
+<li>CSMA/CA 기술</li>
+<li>현실적인 속도를 지원</li>
+<li>기업이나 가정 등에 유선 네트워크를 대체하기 위한 목적으로 폭넓게 보급</li>
+</ul>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="80211g">802.11g<a href="https://dldkffh.github.io/2024/02/10/ieee-802#80211g" class="hash-link" aria-label="802.11g에 대한 직접 링크" title="802.11g에 대한 직접 링크">​</a></h5>
+<ul>
+<li>최고 54Mbps까지의 전송 속도를 지원</li>
+<li>2.4GHz 대역 전파를 사용</li>
+<li>802.11b 규격과 쉽게 호환</li>
+<li>CSMA/CA 기술을 사용</li>
+</ul>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="80211n">802.11n<a href="https://dldkffh.github.io/2024/02/10/ieee-802#80211n" class="hash-link" aria-label="802.11n에 대한 직접 링크" title="802.11n에 대한 직접 링크">​</a></h5>
+<ul>
+<li>최고 600Mbps 까지의 속도를 지원</li>
+<li>2.4GHz 대역과 5GHz 대역을 사용</li>
+</ul>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="80211ac">802.11ac<a href="https://dldkffh.github.io/2024/02/10/ieee-802#80211ac" class="hash-link" aria-label="802.11ac에 대한 직접 링크" title="802.11ac에 대한 직접 링크">​</a></h5>
+<ul>
+<li>최소 1 Gbit/s, 최대 단일 링크 속도는 최소 500 Mbit/s까지 가능</li>
+<li>802.11n에서 받아들인 무선 인터페이스 개념을 확장<!-- -->
+<ul>
+<li>더 넓은 무선 주파수 대역폭(최대 160 MHz)</li>
+<li>더 많은 MIMO 공간적 스트림(최대 8 개)</li>
+<li>다중 사용자 MIMO</li>
+<li>높은 밀도의 변조(최대 256 QAM)</li>
+</ul>
+</li>
+</ul>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="80211ad">802.11ad<a href="https://dldkffh.github.io/2024/02/10/ieee-802#80211ad" class="hash-link" aria-label="802.11ad에 대한 직접 링크" title="802.11ad에 대한 직접 링크">​</a></h5>
+<ul>
+<li>최대 7Gb/s의 속도를 제공하는 전송규격</li>
+<li>기존 2.4GHz/5GHz 대신 60GHz 대역을 사용</li>
+</ul>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="80211ax">802.11ax<a href="https://dldkffh.github.io/2024/02/10/ieee-802#80211ax" class="hash-link" aria-label="802.11ax에 대한 직접 링크" title="802.11ax에 대한 직접 링크">​</a></h5>
+<ul>
+<li>두 가지 새로운 Wi-Fi 사양 표준 중의 하나<!-- -->
+<ul>
+<li>다른 하나는 IEEE 802.11ay</li>
+</ul>
+</li>
+<li>2.4GHz~5GHz 대역<!-- -->
+<ul>
+<li>1GHz ~ 6GHz 사이의 모든 ISM 대역과 함께 작동</li>
+</ul>
+</li>
+<li>11Gbit/s의 이론적 데이터 속도를 주장</li>
+</ul>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="핫스팟">핫스팟<a href="https://dldkffh.github.io/2024/02/10/ieee-802#%ED%95%AB%EC%8A%A4%ED%8C%9F" class="hash-link" aria-label="핫스팟에 대한 직접 링크" title="핫스팟에 대한 직접 링크">​</a></h5>
+<ul>
+<li>다른말로 AP(Access Point)</li>
+<li>이더넷 허브와 비슷한 역할을 하는 장비</li>
+<li>하부구조(인프라스트럭처) 네트워크 모델에서 핫스팟 주변에 위치한 무선 클라이언트들을 하나의 네트워크로 묶어 서로 통신할 수 있게 함</li>
+<li>핫스팟에 연결된 이더넷 회선을 통해 다른 핫스팟, 백본이나 WAN 망으로 연결할 수 있도록 해줌</li>
+<li>핫스팟에는 고유의 SSID와 BSSID가 부여되어 있음<!-- -->
+<ul>
+<li>클라이언트가 특정한 핫스팟에 연결할 수 있게 도와줌</li>
+</ul>
+</li>
+<li>하나의 핫스팟은 장애물이 없는 지역에서 최대 100미터, 최대 20여대까지 네트워크를 구성 가능</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="ieee-80215">IEEE 802.15<a href="https://dldkffh.github.io/2024/02/10/ieee-802#ieee-80215" class="hash-link" aria-label="IEEE 802.15에 대한 직접 링크" title="IEEE 802.15에 대한 직접 링크">​</a></h4>
+<ul>
+<li>일곱 가지 태스크 그룹<!-- -->
+<ol>
+<li><strong>WPAN/블루투스</strong></li>
+<li>공존(Coexsistence)</li>
+<li>고속 WPAN</li>
+<li><strong>저속 WPAN</strong></li>
+<li>메쉬 네트워킹</li>
+<li>보디 에어리어 네트워크</li>
+<li>가시광선 통신</li>
+</ol>
+</li>
+</ul>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="ieee-802151">IEEE 802.15.1<a href="https://dldkffh.github.io/2024/02/10/ieee-802#ieee-802151" class="hash-link" aria-label="IEEE 802.15.1에 대한 직접 링크" title="IEEE 802.15.1에 대한 직접 링크">​</a></h5>
+<ul>
+<li>블루투스</li>
+<li>디지털 통신 기기를 위한 개인 근거리 무선 통신 산업 표준</li>
+<li>수 미터에서 수십 미터 정도의 거리를 둔 정보기기 사이에, 전파를 이용해서 간단한 정보를 교환하는데 사용</li>
+<li>개인용 컴퓨터에 이용되는 마우스, 키보드를 비롯해, 휴대전화 및 스마트폰, 태블릿, 스피커 등에서 문자 정보 및 음성 정보를 비교적 낮은 속도로 디지털 정보를 무선 통신을 통해 주고 받는 용도로 사용</li>
+</ul>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="ieee-802154">IEEE 802.15.4<a href="https://dldkffh.github.io/2024/02/10/ieee-802#ieee-802154" class="hash-link" aria-label="IEEE 802.15.4에 대한 직접 링크" title="IEEE 802.15.4에 대한 직접 링크">​</a></h5>
+<ul>
+<li>물리 계층(PHY)과 미디어 액세스 콘트롤 계층(MAC)을 정의하는 표준</li>
+<li>저속도 무선 개인 통신망(Low Rate Wireless Personal Area Networks, LR-WPANs)를 위한 표준 가운데 하나</li>
+<li>지그비 Zigbee</li>
+<li>와이어리스하트(WirelessHART), 마이와이(MiWi) 표준의 기저 계층</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="ieee-80216">IEEE 802.16<a href="https://dldkffh.github.io/2024/02/10/ieee-802#ieee-80216" class="hash-link" aria-label="IEEE 802.16에 대한 직접 링크" title="IEEE 802.16에 대한 직접 링크">​</a></h4>
+<ul>
+<li>무선 브로드밴드 표준</li>
+<li>광역 무선 도시권 통신망의 범용적인 이용을 위해 개발한 표준</li>
+<li>WirelessMAN, 와이맥스</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="ieee-80218">IEEE 802.18<a href="https://dldkffh.github.io/2024/02/10/ieee-802#ieee-80218" class="hash-link" aria-label="IEEE 802.18에 대한 직접 링크" title="IEEE 802.18에 대한 직접 링크">​</a></h4>
+<ul>
+<li>전파 조정 기술 권고 그룹(Radio Regulatory Technical Advisory Group, RR-TAG)</li>
+<li>6가지 전파 기반 시스템에 관한 프로젝트를 진행<!-- -->
+<ul>
+<li>IEEE 802.11: 무선 근거리 통신망(WLAN)</li>
+<li>IEEE 802.15: 무선 개인 통신망(WPAN)</li>
+<li>IEEE 802.16: 무선 도시권 통신망(WMAN)</li>
+<li>IEEE 802.20: 무선 이동성</li>
+<li>IEEE 802.21: 네트워크 간의 핸드오프/상호운용성</li>
+<li>IEEE 802.22: 무선 국소 지역 네트워크(WRAN)</li>
+</ul>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="ieee-80219">IEEE 802.19<a href="https://dldkffh.github.io/2024/02/10/ieee-802#ieee-80219" class="hash-link" aria-label="IEEE 802.19에 대한 직접 링크" title="IEEE 802.19에 대한 직접 링크">​</a></h4>
+<ul>
+<li>IEEE 802 LAN/MAN 표준 위원회 소속인 무선 공존 기술 권고 그룹(WC-TAG)</li>
+<li>라이선스 없는 무선 네트워크 간의 공존 기술을 담당</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="ieee-80220">IEEE 802.20<a href="https://dldkffh.github.io/2024/02/10/ieee-802#ieee-80220" class="hash-link" aria-label="IEEE 802.20에 대한 직접 링크" title="IEEE 802.20에 대�한 직접 링크">​</a></h4>
+<ul>
+<li>모바일 광역 무선 액세스(Mobile Broadband Wireless Access, MBWA)</li>
+<li>모바일 무선 인터넷 액세스 네트워크를 위한 표준</li>
+<li>MBWA는 더 이상 개발되지 않고 있음</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="ieee-80221">IEEE 802.21<a href="https://dldkffh.github.io/2024/02/10/ieee-802#ieee-80221" class="hash-link" aria-label="IEEE 802.21에 대한 직접 링크" title="IEEE 802.21에 대한 직접 링크">​</a></h4>
+<ul>
+<li>다른 네트워크 간의 끊김 없는 핸드오버 기능을 가능하게 하는 알고리즘을 지원</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="ieee-80222">IEEE 802.22<a href="https://dldkffh.github.io/2024/02/10/ieee-802#ieee-80222" class="hash-link" aria-label="IEEE 802.22에 대한 직접 링크" title="IEEE 802.22에 대한 직접 링크">​</a></h4>
+<ul>
+<li>텔레비전 주파수 대역의 화이트 스페이스 대역을 사용하는 무선 국소 지역 네트워크(WRAN)를 위한 표준</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="출처">출처<a href="https://dldkffh.github.io/2024/02/10/ieee-802#%EC%B6%9C%EC%B2%98" class="hash-link" aria-label="출처에 대한 직접 링크" title="출처에 대한 직접 링크">​</a></h3>
+<ul>
+<li><a href="https://ko.wikipedia.org/wiki/IEEE_802.1" target="_blank" rel="noopener noreferrer">https://ko.wikipedia.org/wiki/IEEE_802.1</a></li>
+<li><a href="https://ko.wikipedia.org/wiki/IEEE_802.1D" target="_blank" rel="noopener noreferrer">https://ko.wikipedia.org/wiki/IEEE_802.1D</a></li>
+<li><a href="https://ko.wikipedia.org/wiki/IEEE_802.1Q" target="_blank" rel="noopener noreferrer">https://ko.wikipedia.org/wiki/IEEE_802.1Q</a></li>
+<li><a href="https://ko.wikipedia.org/wiki/IEEE_802.1aq" target="_blank" rel="noopener noreferrer">https://ko.wikipedia.org/wiki/IEEE_802.1aq</a></li>
+<li><a href="https://ko.wikipedia.org/wiki/IEEE_802.3" target="_blank" rel="noopener noreferrer">https://ko.wikipedia.org/wiki/IEEE_802.3</a></li>
+<li><a href="https://ko.wikipedia.org/wiki/IEEE_802.15" target="_blank" rel="noopener noreferrer">https://ko.wikipedia.org/wiki/IEEE_802.15</a></li>
+<li><a href="https://ko.wikipedia.org/wiki/%EB%B8%94%EB%A3%A8%ED%88%AC%EC%8A%A4" target="_blank" rel="noopener noreferrer">https://ko.wikipedia.org/wiki/%EB%B8%94%EB%A3%A8%ED%88%AC%EC%8A%A4</a></li>
+<li><a href="https://ko.wikipedia.org/wiki/IEEE_802.15.4" target="_blank" rel="noopener noreferrer">https://ko.wikipedia.org/wiki/IEEE_802.15.4</a></li>
+<li><a href="https://ko.wikipedia.org/wiki/IEEE_802.16" target="_blank" rel="noopener noreferrer">https://ko.wikipedia.org/wiki/IEEE_802.16</a></li>
+<li><a href="https://ko.wikipedia.org/wiki/IEEE_802.18" target="_blank" rel="noopener noreferrer">https://ko.wikipedia.org/wiki/IEEE_802.18</a></li>
+<li><a href="https://ko.wikipedia.org/wiki/IEEE_802.19" target="_blank" rel="noopener noreferrer">https://ko.wikipedia.org/wiki/IEEE_802.19</a></li>
+<li><a href="https://ko.wikipedia.org/wiki/IEEE_802.20" target="_blank" rel="noopener noreferrer">https://ko.wikipedia.org/wiki/IEEE_802.20</a></li>
+<li><a href="https://ko.wikipedia.org/wiki/IEEE_802.21" target="_blank" rel="noopener noreferrer">https://ko.wikipedia.org/wiki/IEEE_802.21</a></li>
+<li><a href="https://ko.wikipedia.org/wiki/IEEE_802.22" target="_blank" rel="noopener noreferrer">https://ko.wikipedia.org/wiki/IEEE_802.22</a></li>
+</ul>]]></content>
+        <author>
+            <name>dldkffh</name>
+            <uri>https://github.com/dldkffh</uri>
+        </author>
+        <category label="IEEE" term="IEEE"/>
+        <category label="802" term="802"/>
+        <category label="네트워크" term="네트워크"/>
+        <category label="개념" term="개념"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[LWAPP, CAPWAP]]></title>
+        <id>https://dldkffh.github.io/2024/02/10/lwapp-capwap</id>
+        <link href="https://dldkffh.github.io/2024/02/10/lwapp-capwap"/>
+        <updated>2024-02-10T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[CAPWAP(Control And Provisioning of Wireless Access Points, 무선 액세스 포인트 제어 및 프로비저닝)]]></summary>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="capwapcontrol-and-provisioning-of-wireless-access-points-무선-액세스-포인트-제어-및-프로비저닝">CAPWAP(Control And Provisioning of Wireless Access Points, 무선 액세스 포인트 제어 및 프로비저닝)<a href="https://dldkffh.github.io/2024/02/10/lwapp-capwap#capwapcontrol-and-provisioning-of-wireless-access-points-%EB%AC%B4%EC%84%A0-%EC%95%A1%EC%84%B8%EC%8A%A4-%ED%8F%AC%EC%9D%B8%ED%8A%B8-%EC%A0%9C%EC%96%B4-%EB%B0%8F-%ED%94%84%EB%A1%9C%EB%B9%84%EC%A0%80%EB%8B%9D" class="hash-link" aria-label="CAPWAP(Control And Provisioning of Wireless Access Points, 무선 액세스 포인트 제어 및 프로비저닝)에 대한 직접 링��크" title="CAPWAP(Control And Provisioning of Wireless Access Points, 무선 액세스 포인트 제어 및 프로비저닝)에 대한 직접 링크">​</a></h3>
+<ul>
+<li>AP와 WLC간의 통신 프로토콜<!-- -->
+<ul>
+<li>WLC - CAPWAP - AP - 802.11 - CLIENT</li>
+<li>WLC - LWAPP - AP - 802.11 - CLIENT</li>
+</ul>
+</li>
+<li>AP와 네트워크 인프라간의 상호작동을 표준화하는데 목표를 둔 IETF 이니셔티<!-- -->
+<ul>
+<li>AP와 무선 스위치간의 상호운용성을 향상</li>
+</ul>
+</li>
+<li>중앙 무선 LAN 액세스 컨트롤러(AC)가 일반적으로 무선 액세스 포인트로 알려진 WTP(Wireless Termination Points, 무선 종료 포인트) 모음을 관리할 수 있도록 하는 상호 운용 가능한 표준 네트워킹 프로토콜</li>
+</ul>
+<ul>
+<li>LWAPP(Lightweight Access Point Protocol)을 기반<!-- -->
+<ul>
+<li>LWAPP와 유사</li>
+<li>LWAPP는 CISCO 전용 프로토콜</li>
+<li>CAPWAP은 표준 기술로 IETF standard로 지정됨</li>
+</ul>
+</li>
+<li>LWAPP과 다르게 DTLS(Datagram Transport Layer Security, 데이터그램 전송 계층 보안) 터널 설정이 추가되어 있음</li>
+<li>UDP 포트 5246(제어 채널) 및 5247(데이터 채널)을 사용</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="capwap-검색의-작동-방식">CAPWAP 검색의 작동 방식<a href="https://dldkffh.github.io/2024/02/10/lwapp-capwap#capwap-%EA%B2%80%EC%83%89%EC%9D%98-%EC%9E%91%EB%8F%99-%EB%B0%A9%EC%8B%9D" class="hash-link" aria-label="CAPWAP 검색의 작동 방식에 대한 직접 링크" title="CAPWAP 검색의 작동 방식에 대한 직접 링크">​</a></h4>
+<ol>
+<li>무선 액세스 포인트의 전원이 켜지면 연결할 CAPWAP 컨트롤러를 찾는다.</li>
+<li>액세스 포인트는 로컬 네트워크에서 CAPWAP 검색 메시지를 브로드캐스트한다.</li>
+<li>APWAP 컨트롤러는 검색 메시지를 수신하면 구성 정보로 응답한다.</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="출처">출처<a href="https://dldkffh.github.io/2024/02/10/lwapp-capwap#%EC%B6%9C%EC%B2%98" class="hash-link" aria-label="출처에 대한 직접 링크" title="출처에 대한 직접 링크">​</a></h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/CAPWAP" target="_blank" rel="noopener noreferrer">https://en.wikipedia.org/wiki/CAPWAP</a></li>
+<li>데이터넷(<a href="https://www.datanet.co.kr/" target="_blank" rel="noopener noreferrer">https://www.datanet.co.kr</a>)</li>
+<li><a href="https://www.linkedin.com/pulse/capwap-explained-briefly-mark-pinchen" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/pulse/capwap-explained-briefly-mark-pinchen</a></li>
+</ul>]]></content>
+        <author>
+            <name>dldkffh</name>
+            <uri>https://github.com/dldkffh</uri>
+        </author>
+        <category label="LWAPP" term="LWAPP"/>
+        <category label="CAPWAP" term="CAPWAP"/>
+        <category label="네트워크" term="네트워크"/>
+        <category label="개념" term="개념"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[forwarding, routing]]></title>
         <id>https://dldkffh.github.io/2024/02/07/forwarding-routing</id>
@@ -18,19 +306,31 @@
 <li>송신 호스트에서 수신 호스트로 패킷을 전달하는 것</li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="forwarding포워딩-전송-전달">forwarding(포워딩, 전송, 전달)<a href="https://dldkffh.github.io/2024/02/07/forwarding-routing#forwarding%ED%8F%AC%EC%9B%8C%EB%94%A9-%EC%A0%84%EC%86%A1-%EC%A0%84%EB%8B%AC" class="hash-link" aria-label="forwarding(포워딩, 전송, 전달)에 대한 직접 링크" title="forwarding(포워딩, 전송, 전달)에 대한 직접 링크">​</a></h3>
-<p>패킷이 라우터의 입력 링크에 도달했을 때 라우터는 그 패킷을 적절한 출력 링크로 이동시켜야 함
-포워딩은 데이터 평면에 구현된 하나의 기능
-매우 짧은 시간(보통 몇 나노초) 단위를 갖기에 대표적으로 하드웨어에서 실행</p>
+<ul>
+<li>패킷이 라우터의 입력 링크에 도달했을 때 라우터는 그 패킷을 적절한 출력 링크로 이동시켜야 함</li>
+<li>포워딩은 데이터 평면에 구현된 하나의 기능</li>
+<li>매우 짧은 시간(보통 몇 나노초) 단위를 갖기에 대표적으로 하드웨어에서 실행</li>
+</ul>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="forwarding-table포워딩-테이블">forwarding table(포워딩 테이블)<a href="https://dldkffh.github.io/2024/02/07/forwarding-routing#forwarding-table%ED%8F%AC%EC%9B%8C%EB%94%A9-%ED%85%8C%EC%9D%B4%EB%B8%94" class="hash-link" aria-label="forwarding table(포워딩 테이블)에 대한 직접 링크" title="forwarding table(포워딩 테이블)에 대한 직접 링크">​</a></h4>
-<p>라우터는 도착하는 패킷 헤더의 필드 값을 조사하여 패킷을 포워딩
-이 값을 라우터의 포워딩 테이블의 내부 색인으로 사용
-포워딩 테이블 엔트리에 저장되어있는 헤더의 값은 해당 패킷이 전달되어야 할 라우터의 외부 링크 인터페이스를 나타냄
-라우터는 자신의 포워딩 테이블을 보고 이 패킷에 대한 출력 링크 인터페이스를 결정</p>
+<ul>
+<li>라우터는 도착하는 패킷 헤더의 필드 값을 조사하여 패킷을 포워딩<!-- -->
+<ul>
+<li>필드 값을 라우터의 포워딩 테이블의 내부 색인으로 사용</li>
+</ul>
+</li>
+<li>포워딩 테이블 엔트리에 저장되어있는 헤더의 값은 해당 패킷이 전달되어야 할 라우터의 외부 링크 인터페이스를 나타냄</li>
+<li>라우터는 자신의 포워딩 테이블을 보고 이 패킷에 대한 출력 링크 인터페이스를 결정</li>
+</ul>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="routing라우팅">routing(라우팅)<a href="https://dldkffh.github.io/2024/02/07/forwarding-routing#routing%EB%9D%BC%EC%9A%B0%ED%8C%85" class="hash-link" aria-label="routing(라우팅)에 대한 직접 링크" title="routing(라우팅)에 대한 직접 링크">​</a></h3>
-<p>송신자가 수신자에게 패킷을 전송할 때 네트워크 계층은 패킷 경로를 결정해야 함
-이러한 경로 알고리즘은 routing algorithm(라우팅 알고리즘)이라 함
-네트워크 전반에 걸처 출발지에서 목적지까지 데이터그램의 종단간 경로를 결정하는 것
-보통 초 단위를 갖기에 소프트웨어에서 보통 실행</p>
+<ul>
+<li>송신자가 수신자에게 패킷을 전송할 때 네트워크 계층은 패킷 경로를 결정해야 함<!-- -->
+<ul>
+<li>이러한 경로 알고리즘은 routing algorithm(라우팅 알고리즘)이라 함</li>
+</ul>
+</li>
+<li>네트워크 전반에 걸처 출발지에서 목적지까지 데이터그램의 종단간 경로를 결정하는 것</li>
+<li>보통 초 단위를 갖기에 소프트웨어에서 보통 실행</li>
+</ul>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="출처">출처<a href="https://dldkffh.github.io/2024/02/07/forwarding-routing#%EC%B6%9C%EC%B2%98" class="hash-link" aria-label="출처에 대한 직접 링크" title="출처에 대한 직접 링크">​</a></h3>
 <ul>
 <li><a href="https://lib.seoul.go.kr/search/detail/CATTOT000001130839" target="_blank" rel="noopener noreferrer">컴퓨터 네트워킹 : 하양식 접근 7판</a></li>
@@ -1295,78 +1595,6 @@
         <category label="해시" term="해시"/>
         <category label="알고리즘" term="알고리즘"/>
         <category label="javascrpt" term="javascrpt"/>
-        <category label="프로그래머스" term="프로그래머스"/>
-        <category label="문제" term="문제"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[해시 완주하지 못한 선수]]></title>
-        <id>https://dldkffh.github.io/2023/07/10/programmers-42576</id>
-        <link href="https://dldkffh.github.io/2023/07/10/programmers-42576"/>
-        <updated>2023-07-10T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[프로그래머스 코딩테스트 고득점 Kit 완주하지 못한 선수]]></summary>
-        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="프로그래머스-코딩테스트-고득점-kit-완주하지-못한-선수"><a href="https://school.programmers.co.kr/learn/courses/30/lessons/42576" target="_blank" rel="noopener noreferrer">프로그래머스 코딩테스트 고득점 Kit 완주하지 못한 선수</a><a href="https://dldkffh.github.io/2023/07/10/programmers-42576#%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B3%A0%EB%93%9D%EC%A0%90-kit-%EC%99%84%EC%A3%BC%ED%95%98%EC%A7%80-%EB%AA%BB%ED%95%9C-%EC%84%A0%EC%88%98" class="hash-link" aria-label="프로그래머스-코딩테스트-고득점-kit-완주하지-못한-선수에 대한 직접 링크" title="프로그래머스-코딩테스트-고득점-kit-완주하지-못한-선수에 ��대한 직접 링크">​</a></h3>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="문제-설명">문제 설명<a href="https://dldkffh.github.io/2023/07/10/programmers-42576#%EB%AC%B8%EC%A0%9C-%EC%84%A4%EB%AA%85" class="hash-link" aria-label="문제 설명에 대한 직접 링크" title="문제 설명에 대한 직접 링크">​</a></h4>
-<p>수많은 마라톤 선수들이 마라톤에 참여하였습니다. 단 한 명의 선수를 제외하고는 모든 선수가 마라톤을 완주하였습니다.</p>
-<p>마라톤에 참여한 선수들의 이름이 담긴 배열 <code>participant</code>와 완주한 선수들의 이름이 담긴 배열 <code>completion</code>이 주어질 때, 완주하지 못한 선수의 이름을 <code>return</code> 하도록 <code>solution</code> 함수를 작성해주세요.</p>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="제한사항">제한사항<a href="https://dldkffh.github.io/2023/07/10/programmers-42576#%EC%A0%9C%ED%95%9C%EC%82%AC%ED%95%AD" class="hash-link" aria-label="제한사항에 대한 직접 링크" title="제한사항에 대한 직접 링크">​</a></h4>
-<ul>
-<li>마라톤 경기에 참여한 선수의 수는 1명 이상 100,000명 이하입니다.</li>
-<li><code>completion</code>의 길이는 <code>participant</code>의 길이보다 1 작습니다.</li>
-<li>참가자의 이름은 1개 이상 20개 이하의 알파벳 소문자로 이루어져 있습니다.</li>
-<li>참가자 중에는 동명이인이 있을 수 있습니다.</li>
-</ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="풀이-포인트">풀이 포인트<a href="https://dldkffh.github.io/2023/07/10/programmers-42576#%ED%92%80%EC%9D%B4-%ED%8F%AC%EC%9D%B8%ED%8A%B8" class="hash-link" aria-label="풀이 포인트에 대한 직접 링크" title="풀이 포인트에 대한 직접 링크">​</a></h4>
-<ul>
-<li><code>key</code>와 <code>value</code> 설정이 중요하다.</li>
-</ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="solutionjs">solution.js<a href="https://dldkffh.github.io/2023/07/10/programmers-42576#solutionjs" class="hash-link" aria-label="solution.js에 대한 직접 링크" title="solution.js에 대한 직접 링크">​</a></h4>
-<ul>
-<li>이것보다 좋은 방법이 있다.</li>
-</ul>
-<div class="language-js codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#bfc7d5;--prism-background-color:#292d3e"><div class="codeBlockTitle_Ktv7">javascrpt</div><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-js codeBlock_bY9V thin-scrollbar" style="color:#bfc7d5;background-color:#292d3e"><code class="codeBlockLines_e6Vv codeBlockLinesWithNumbering_o6Pm"><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token keyword" style="font-style:italic">function</span><span class="token plain"> </span><span class="token function" style="color:rgb(130, 170, 255)">solution</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token parameter">participant</span><span class="token parameter punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token parameter"> completion</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">    </span><span class="token keyword" style="font-style:italic">var</span><span class="token plain"> answer </span><span class="token operator" style="color:rgb(137, 221, 255)">=</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">''</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain" style="display:inline-block"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">    participant</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token method function property-access" style="color:rgb(130, 170, 255)">sort</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">    completion</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token method function property-access" style="color:rgb(130, 170, 255)">sort</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain" style="display:inline-block"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">    </span><span class="token keyword control-flow" style="font-style:italic">while</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token plain">completion</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token property-access">length</span><span class="token plain"> </span><span class="token operator" style="color:rgb(137, 221, 255)">&gt;</span><span class="token plain"> </span><span class="token number" style="color:rgb(247, 140, 108)">0</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">        </span><span class="token keyword control-flow" style="font-style:italic">if</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token plain">participant</span><span class="token punctuation" style="color:rgb(199, 146, 234)">[</span><span class="token plain">participant</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token property-access">length</span><span class="token operator" style="color:rgb(137, 221, 255)">-</span><span class="token number" style="color:rgb(247, 140, 108)">1</span><span class="token punctuation" style="color:rgb(199, 146, 234)">]</span><span class="token plain"> </span><span class="token operator" style="color:rgb(137, 221, 255)">==</span><span class="token plain"> completion</span><span class="token punctuation" style="color:rgb(199, 146, 234)">[</span><span class="token plain">completion</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token property-access">length</span><span class="token operator" style="color:rgb(137, 221, 255)">-</span><span class="token number" style="color:rgb(247, 140, 108)">1</span><span class="token punctuation" style="color:rgb(199, 146, 234)">]</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">            participant</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token method function property-access" style="color:rgb(130, 170, 255)">pop</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">            completion</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token method function property-access" style="color:rgb(130, 170, 255)">pop</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">        </span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><span class="token plain"> </span><span class="token keyword control-flow" style="font-style:italic">else</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">            participant</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token method function property-access" style="color:rgb(130, 170, 255)">splice</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token number" style="color:rgb(247, 140, 108)">0</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"> </span><span class="token number" style="color:rgb(247, 140, 108)">0</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"> participant</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token method function property-access" style="color:rgb(130, 170, 255)">pop</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">        </span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">    </span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain" style="display:inline-block"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">    </span><span class="token keyword control-flow" style="font-style:italic">return</span><span class="token plain"> participant</span><span class="token punctuation" style="color:rgb(199, 146, 234)">[</span><span class="token number" style="color:rgb(247, 140, 108)">0</span><span class="token punctuation" style="color:rgb(199, 146, 234)">]</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain"></span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span></span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="클립보드에 코드 복사" title="복사" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>]]></content>
-        <author>
-            <name>dldkffh</name>
-            <uri>https://github.com/dldkffh</uri>
-        </author>
-        <category label="해시" term="해시"/>
-        <category label="알고리즘" term="알고리즘"/>
-        <category label="javascrpt" term="javascrpt"/>
-        <category label="프로그래머스" term="프로그래머스"/>
-        <category label="문제" term="문제"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[스택/큐 다리를 지나는 트럭]]></title>
-        <id>https://dldkffh.github.io/2023/07/08/programmers-42583</id>
-        <link href="https://dldkffh.github.io/2023/07/08/programmers-42583"/>
-        <updated>2023-07-08T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[프로그래머스 코딩테스트 고득점 Kit 다리를 지나는 트럭]]></summary>
-        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="프로그래머스-코딩테스트-고득점-kit-다리를-지나는-트럭"><a href="https://school.programmers.co.kr/learn/courses/30/lessons/42583" target="_blank" rel="noopener noreferrer">프로그래머스 코딩테스트 고득점 Kit 다리를 지나는 트럭</a><a href="https://dldkffh.github.io/2023/07/08/programmers-42583#%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B3%A0%EB%93%9D%EC%A0%90-kit-%EB%8B%A4%EB%A6%AC%EB%A5%BC-%EC%A7%80%EB%82%98%EB%8A%94-%ED%8A%B8%EB%9F%AD" class="hash-link" aria-label="프로그래머스-코딩테스트-고득점-kit-다리를-지나는-트럭에 대한 직접 링크" title="프로그래머스-코딩테스트-고득점-kit-다리를-지나는-트럭에 대한 직접 링크">​</a></h3>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="문제-설명">문제 설명<a href="https://dldkffh.github.io/2023/07/08/programmers-42583#%EB%AC%B8%EC%A0%9C-%EC%84%A4%EB%AA%85" class="hash-link" aria-label="문제 설명에 대한 직접 링크" title="문제 설명에 대한 직접 링크">​</a></h4>
-<p>트럭 여러 대가 강을 가로지르는 일차선 다리를 정해진 순으로 건너려 합니다. 모든 트럭이 다리를 건너려면 최소 몇 초가 걸리는지 알아내야 합니다. 다리에는 트럭이 최대 <code>bridge_length</code>대 올라갈 수 있으며, 다리는 <code>weight</code> 이하까지의 무게를 견딜 수 있습니다. 단, 다리에 완전히 오르지 않은 트럭의 무게는 무시합니다.</p>
-<p>예를 들어, 트럭 2대가 올라갈 수 있고 무게를 10kg까지 견디는 다리가 있습니다. 무게가 <code>[7, 4, 5, 6]</code>kg인 트럭이 순서대로 최단 시간 안에 다리를 건너려면 다음과 같이 건너야 합니다.</p>
-<table><thead><tr><th>경과 시간</th><th>다리를 지난 트럭</th><th>다리를 건너는 트럭</th><th>대기 트럭</th></tr></thead><tbody><tr><td>0</td><td>[]</td><td>[]</td><td>[7,4,5,6]</td></tr><tr><td>1~2</td><td>[]</td><td>[7]</td><td>[4,5,6]</td></tr><tr><td>3</td><td>[7]</td><td>[4]</td><td>[5,6]</td></tr><tr><td>4</td><td>[7]</td><td>[4,5]</td><td>[6]</td></tr><tr><td>5</td><td>[7,4]</td><td>[5]</td><td>[6]</td></tr><tr><td>6~7</td><td>[7,4,5]</td><td>[6]</td><td>[]</td></tr><tr><td>8</td><td>[7,4,5,6]</td><td>[]</td><td>[]</td></tr></tbody></table>
-<p>따라서, 모든 트럭이 다리를 지나려면 최소 8초가 걸립니다.</p>
-<p><code>solution</code> 함수의 매개변수로 다리에 올라갈 수 있는 트럭 수 <code>bridge_length</code>, 다리가 견딜 수 있는 무게 <code>weight</code>, 트럭 별 무게 <code>truck_weights</code>가 주어집니다. 이때 모든 트럭이 다리를 건너려면 최소 몇 초가 걸리는지 <code>return</code> 하도록 <code>solution</code> 함수를 완성하세요.</p>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="제한사항">제한사항<a href="https://dldkffh.github.io/2023/07/08/programmers-42583#%EC%A0%9C%ED%95%9C%EC%82%AC%ED%95%AD" class="hash-link" aria-label="제한사항에 대한 직접 링크" title="제한사항에 대한 직접 링크">​</a></h4>
-<ul>
-<li><code>bridge_length</code>는 1 이상 10,000 이하입니다.</li>
-<li><code>weight</code>는 1 이상 10,000 이하입니다.</li>
-<li><code>truck_weights</code>의 길이는 1 이상 10,000 이하입니다.</li>
-<li>모든 트럭의 무게는 1 이상 <code>weight</code> 이하입니다.</li>
-</ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="solutionpy">solution.py<a href="https://dldkffh.github.io/2023/07/08/programmers-42583#solutionpy" class="hash-link" aria-label="solution.py에 대한 직접 링크" title="solution.py에 대한 직접 링크">​</a></h4>
-<ul>
-<li>이것보다 훨씬 더 빠른 방법이 있다.</li>
-</ul>
-<div class="language-py codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#bfc7d5;--prism-background-color:#292d3e"><div class="codeBlockTitle_Ktv7">python3</div><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-py codeBlock_bY9V thin-scrollbar" style="color:#bfc7d5;background-color:#292d3e"><code class="codeBlockLines_e6Vv codeBlockLinesWithNumbering_o6Pm"><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token keyword" style="font-style:italic">def</span><span class="token plain"> </span><span class="token function" style="color:rgb(130, 170, 255)">solution</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token plain">bridge_length</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"> weight</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"> truck_weights</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">    answer </span><span class="token operator" style="color:rgb(137, 221, 255)">=</span><span class="token plain"> bridge_length</span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">    bridge </span><span class="token operator" style="color:rgb(137, 221, 255)">=</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">[</span><span class="token number" style="color:rgb(247, 140, 108)">0</span><span class="token punctuation" style="color:rgb(199, 146, 234)">]</span><span class="token plain"> </span><span class="token operator" style="color:rgb(137, 221, 255)">*</span><span class="token plain"> bridge_length</span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">    bridge_weight </span><span class="token operator" style="color:rgb(137, 221, 255)">=</span><span class="token plain"> </span><span class="token number" style="color:rgb(247, 140, 108)">0</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">    </span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">    </span><span class="token keyword" style="font-style:italic">while</span><span class="token plain"> truck_weights</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">        bridge_weight </span><span class="token operator" style="color:rgb(137, 221, 255)">-=</span><span class="token plain"> bridge</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token plain">pop</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token number" style="color:rgb(247, 140, 108)">0</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">        </span><span class="token keyword" style="font-style:italic">if</span><span class="token plain"> bridge_weight </span><span class="token operator" style="color:rgb(137, 221, 255)">+</span><span class="token plain"> truck_weights</span><span class="token punctuation" style="color:rgb(199, 146, 234)">[</span><span class="token number" style="color:rgb(247, 140, 108)">0</span><span class="token punctuation" style="color:rgb(199, 146, 234)">]</span><span class="token plain"> </span><span class="token operator" style="color:rgb(137, 221, 255)">&lt;=</span><span class="token plain"> weight</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">            bridge</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token plain">append</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token plain">truck_weights</span><span class="token punctuation" style="color:rgb(199, 146, 234)">[</span><span class="token number" style="color:rgb(247, 140, 108)">0</span><span class="token punctuation" style="color:rgb(199, 146, 234)">]</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">            bridge_weight </span><span class="token operator" style="color:rgb(137, 221, 255)">+=</span><span class="token plain"> truck_weights</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token plain">pop</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token number" style="color:rgb(247, 140, 108)">0</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">        </span><span class="token keyword" style="font-style:italic">else</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">            bridge</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token plain">append</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token number" style="color:rgb(247, 140, 108)">0</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">        answer </span><span class="token operator" style="color:rgb(137, 221, 255)">+=</span><span class="token plain"> </span><span class="token number" style="color:rgb(247, 140, 108)">1</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">    </span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">    </span><span class="token keyword" style="font-style:italic">return</span><span class="token plain"> answer</span></span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="클립보드에 코드 복사" title="복사" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>]]></content>
-        <author>
-            <name>dldkffh</name>
-            <uri>https://github.com/dldkffh</uri>
-        </author>
-        <category label="스택" term="스택"/>
-        <category label="큐" term="큐"/>
-        <category label="알고리즘" term="알고리즘"/>
-        <category label="python3" term="python3"/>
         <category label="프로그래머스" term="프로그래머스"/>
         <category label="문제" term="문제"/>
     </entry>
