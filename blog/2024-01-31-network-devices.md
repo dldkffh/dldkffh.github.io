@@ -1,7 +1,7 @@
 ---
 title: 네트워크 장비 종류 정리
 authors: dldkffh
-tags: [네트워크, 개념]
+tags: [네트워크, 인프라, 개념]
 enableComments: true # for Gisqus
 ---
 
