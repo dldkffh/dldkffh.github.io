@@ -2,11 +2,87 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://dldkffh.github.io/</id>
     <title>dldkffh Blog</title>
-    <updated>2024-02-14T00:00:00.000Z</updated>
+    <updated>2024-02-15T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://dldkffh.github.io/"/>
     <subtitle>dldkffh Blog</subtitle>
     <icon>https://dldkffh.github.io/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[HSRP States/Configuration]]></title>
+        <id>https://dldkffh.github.io/2024/02/15/hsrp-states-configuration</id>
+        <link href="https://dldkffh.github.io/2024/02/15/hsrp-states-configuration"/>
+        <updated>2024-02-15T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[HSRP States]]></summary>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="hsrp-states">HSRP States<a href="https://dldkffh.github.io/2024/02/15/hsrp-states-configuration#hsrp-states" class="hash-link" aria-label="HSRP States에 대한 직접 링크" title="HSRP States에 대한 직접 링크">​</a></h3>
+<ul>
+<li>Initial : HSRP 동작 않함</li>
+<li>Learn : Hello 패킷 교환 진행중</li>
+<li>Listen : Hello 패킷 완료 및 주기적 교환</li>
+<li>Speak : Hello 패킷 주기적으로 교환, Active 라우터와 Standby 라우터 비교중</li>
+<li>Standby : Hello 패킷 주기적으로 교환, Standby 라우터 선출</li>
+<li>Active : Hello 패킷 주기적으로 교환, Active 라우터 선출</li>
+</ul>
+<ul>
+<li>Speak 상태에서 라우터끼리 서로 경쟁<!-- -->
+<ul>
+<li>자신의 값이 좋다면 Active</li>
+<li>경쟁에서 진 라우터는 Standby 상태로 넘어감</li>
+</ul>
+</li>
+<li>Active 과정 예시<!-- -->
+<ul>
+<li>Listen -&gt; Speak -&gt; Standby -&gt; Active</li>
+</ul>
+</li>
+<li>Standby 과정 예시<!-- -->
+<ul>
+<li>Listen -&gt; Speak -&gt; Listen -&gt; Speak -&gt; Standby</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="hsrp-configuration">HSRP Configuration<a href="https://dldkffh.github.io/2024/02/15/hsrp-states-configuration#hsrp-configuration" class="hash-link" aria-label="HSRP Configuration에 대한 직접 링크" title="HSRP Configuration에 대한 직접 링크">​</a></h3>
+<ul>
+<li>priority<!-- -->
+<ul>
+<li>가장 높은 값을 갖는 라우터가 Active 라우터가 됨</li>
+<li>기본값 : 100</li>
+<li>우선 순위 범위 : 1-255 사이</li>
+<li>값이 동일한 경우 가장 높은 ip를 가진 라우터가 Active 라우터가 됨</li>
+</ul>
+</li>
+<li>preempt<!-- -->
+<ul>
+<li>본래 Active 라우터가 죽었다가 다시 살아난 대기 상태에서 Active 상태로 변환을 하기 위해 사용하는 기능</li>
+<li>딜레이 타임 필요</li>
+<li>Standby에서 바로 Active가 되면 라우팅 테이블을 학습하지 못하여 통신장애 발생</li>
+</ul>
+</li>
+<li>timer<!-- -->
+<ul>
+<li>default hello time 3초, hold time 10초 설정 가능</li>
+<li>hold 타임 값은 hello 타임 값의 3배 이상 되어야 함</li>
+</ul>
+</li>
+<li>tracking<!-- -->
+<ul>
+<li>외부에서는 HSRP가 구성되어 있지 않아 상단으로 가는 인터페이스 장애시 priority 값을 줄여줌으로서 Standby 라우터가 Active 라우터로 변하게 하여 통신이 되게 하는 설정</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="출처">출처<a href="https://dldkffh.github.io/2024/02/15/hsrp-states-configuration#%EC%B6%9C%EC%B2%98" class="hash-link" aria-label="출처에 대한 직접 링크" title="출처에 대한 직접 링크">​</a></h3>
+<ul>
+<li><a href="https://blog.naver.com/gaegurijump/110185200763" target="_blank" rel="noopener noreferrer">https://blog.naver.com/gaegurijump/110185200763</a></li>
+<li><a href="https://feelsogoodcamp.tistory.com/48" target="_blank" rel="noopener noreferrer">https://feelsogoodcamp.tistory.com/48</a></li>
+</ul>]]></content>
+        <author>
+            <name>dldkffh</name>
+            <uri>https://github.com/dldkffh</uri>
+        </author>
+        <category label="HSRP" term="HSRP"/>
+        <category label="프로토콜" term="프로토콜"/>
+        <category label="네트워크" term="네트워크"/>
+        <category label="개념" term="개념"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[FHRPs - HSRP, VRRP, GLBP]]></title>
         <id>https://dldkffh.github.io/2024/02/14/fhrps-hsrp-vrrp-glbp</id>
@@ -197,7 +273,7 @@
 <li>VLAN 구성이 변경 되었을 때나 VTP client로부터 Advertisement Request를 수신했을 때 전송</li>
 <li>실제 VLAN 정보를 담고 있는 메시지</li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="advertisement-request">Advertisement Request<a href="https://dldkffh.github.io/2024/02/14/vtp#advertisement-request" class="hash-link" aria-label="Advertisement Request에 대한 직접 링크" title="Advertisement Request에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="advertisement-request">Advertisement Request<a href="https://dldkffh.github.io/2024/02/14/vtp#advertisement-request" class="hash-link" aria-label="Advertisement Request에 대한 직접 링크" title="Advertisement Request��에 대한 직접 링크">​</a></h4>
 <ul>
 <li>VTP client가 VTP server에게 Summary Advertisement 혹은 Subset Adverisement를 요청하는 경우 사용하는 메시지</li>
 <li>client가 자신이 가지고 있는 Revision number보다 높은 Revision number를 가지고 있는 Summary Advertisement를 수신하거나 VTP domain 변경, 스위치 리셋 등 여러 변화가 생겼을 경우 이 메시지를 VTP server에 전송</li>
@@ -487,7 +563,7 @@
 <li>802.11b 규격과 쉽게 호환</li>
 <li>CSMA/CA 기술을 사용</li>
 </ul>
-<h5 class="anchor anchorWithStickyNavbar_LWe7" id="80211n">802.11n<a href="https://dldkffh.github.io/2024/02/10/ieee-802#80211n" class="hash-link" aria-label="802.11n에 대한 직��접 링크" title="802.11n에 대한 직접 링크">​</a></h5>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="80211n">802.11n<a href="https://dldkffh.github.io/2024/02/10/ieee-802#80211n" class="hash-link" aria-label="802.11n에 대한 직접 링크" title="802.11n에 대한 직접 링크">​</a></h5>
 <ul>
 <li>최고 600Mbps 까지의 속도를 지원</li>
 <li>2.4GHz 대역과 5GHz 대역을 사용</li>
@@ -692,7 +768,7 @@
 <ul>
 <li>송신 호스트에서 수신 호스트로 패킷을 전달하는 것</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="forwarding포워딩-전송-전달">forwarding(포워딩, 전송, 전달)<a href="https://dldkffh.github.io/2024/02/07/forwarding-routing#forwarding%ED%8F%AC%EC%9B%8C%EB%94%A9-%EC%A0%84%EC%86%A1-%EC%A0%84%EB%8B%AC" class="hash-link" aria-label="forwarding(포워딩, 전송, 전�달)에 대한 직접 링크" title="forwarding(포워딩, 전송, 전달)에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="forwarding포워딩-전송-전달">forwarding(포워딩, 전송, 전달)<a href="https://dldkffh.github.io/2024/02/07/forwarding-routing#forwarding%ED%8F%AC%EC%9B%8C%EB%94%A9-%EC%A0%84%EC%86%A1-%EC%A0%84%EB%8B%AC" class="hash-link" aria-label="forwarding(포워딩, 전송, 전달)에 대한 직접 링크" title="forwarding(포워딩, 전송, 전달)에 대한 직접 링크">​</a></h3>
 <ul>
 <li>패킷이 라우터의 입력 링크에 도달했을 때 라우터는 그 패킷을 적절한 출력 링크로 이동시켜야 함</li>
 <li>포워딩은 데이터 평면에 구현된 하나의 기능</li>
@@ -737,7 +813,7 @@
         <link href="https://dldkffh.github.io/2024/02/06/dhcp-vs-dns"/>
         <updated>2024-02-06T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[DHCP(Dynamic Host Configuration Protocol, 동적 호스트 구성 프로토콜)]]></summary>
-        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="dhcpdynamic-host-configuration-protocol-동적-호스트-구성-프로토콜">DHCP(Dynamic Host Configuration Protocol, 동적 호스트 구성 프로토콜)<a href="https://dldkffh.github.io/2024/02/06/dhcp-vs-dns#dhcpdynamic-host-configuration-protocol-%EB%8F%99%EC%A0%81-%ED%98%B8%EC%8A%A4%ED%8A%B8-%EA%B5%AC%EC%84%B1-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C" class="hash-link" aria-label="DHCP(Dynamic Host Configuration Protocol, 동적 호스트 구성 프로토콜)에 대한 직접 링크" title="DHCP(Dynamic Host Configuration Protocol, 동적 호스트 구성 프로토콜)에 대한 직접 링크">​</a></h3>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="dhcpdynamic-host-configuration-protocol-동적-호스트-구성-프로토콜">DHCP(Dynamic Host Configuration Protocol, 동적 호스트 구성 프로토콜)<a href="https://dldkffh.github.io/2024/02/06/dhcp-vs-dns#dhcpdynamic-host-configuration-protocol-%EB%8F%99%EC%A0%81-%ED%98%B8%EC%8A%A4%ED%8A%B8-%EA%B5%AC%EC%84%B1-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C" class="hash-link" aria-label="DHCP(Dynamic Host Configuration Protocol, 동적 호스트 구성 프로토콜)에 대한 직접 링크" title="DHCP(Dynamic Host Configuration Protocol, 동적 호스트 구성 프로토콜)에 대한 직접 링�크">​</a></h3>
 <ul>
 <li><a href="https://ko.m.wikipedia.org/wiki/%ED%98%B8%EC%8A%A4%ED%8A%B8" target="_blank" rel="noopener noreferrer">호스트</a>&nbsp;<a href="https://ko.m.wikipedia.org/wiki/IP" target="_blank" rel="noopener noreferrer">IP</a>&nbsp;구성 관리를 단순화하는 IP 표준</li>
 <li>IP 주소의 일률적 관리 서비스를 제공<!-- -->
@@ -759,7 +835,7 @@
 <li>특정 컴퓨터(또는 네트워크로 연결된 임의의 장치)의 주소를 찾기 위해, 사람이 이해하기 쉬운 도메인 이름을 숫자로 된 식별 번호(IP 주소)로 변환</li>
 <li>분산형&nbsp;<a href="https://ko.m.wikipedia.org/wiki/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4" target="_blank" rel="noopener noreferrer">데이터베이스</a>&nbsp;시스템</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="출처">출처<a href="https://dldkffh.github.io/2024/02/06/dhcp-vs-dns#%EC%B6%9C%EC%B2%98" class="hash-link" aria-label="출처에 대한 ��직접 링크" title="출처에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="출처">출처<a href="https://dldkffh.github.io/2024/02/06/dhcp-vs-dns#%EC%B6%9C%EC%B2%98" class="hash-link" aria-label="출처에 대한 직접 링크" title="출처에 대한 직접 링크">​</a></h3>
 <ul>
 <li><a href="https://ko.m.wikipedia.org/wiki/%EB%8F%99%EC%A0%81_%ED%98%B8%EC%8A%A4%ED%8A%B8_%EA%B5%AC%EC%84%B1_%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C" target="_blank" rel="noopener noreferrer">https://ko.m.wikipedia.org/wiki/동적_호스트_구성_프로토콜</a></li>
 <li><a href="https://ko.m.wikipedia.org/wiki/%EB%8F%84%EB%A9%94%EC%9D%B8_%EB%84%A4%EC%9E%84_%EC%8B%9C%EC%8A%A4%ED%85%9C" target="_blank" rel="noopener noreferrer">https://ko.m.wikipedia.org/wiki/도메인_네임_시스템</a></li>
@@ -820,7 +896,7 @@
 <li>로드밸런싱</li>
 <li>박스 구성에서 STP의 영향을 최소화</li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="lacp-link-aggregation-control-protocol-링크-애그리게이션-컨트롤-프로토콜">LACP (Link Aggregation Control Protocol, 링크 애그리게이션 컨트롤 프로토콜)<a href="https://dldkffh.github.io/2024/02/06/lag-lacp#lacp-link-aggregation-control-protocol-%EB%A7%81%ED%81%AC-%EC%95%A0%EA%B7%B8%EB%A6%AC%EA%B2%8C%EC%9D%B4%EC%85%98-%EC%BB%A8%ED%8A%B8%EB%A1%A4-%ED%94%84%EF%BF%BD%EB%A1%9C%ED%86%A0%EC%BD%9C" class="hash-link" aria-label="LACP (Link Aggregation Control Protocol, 링크 애그리게이션 컨트롤 프로토콜)에 대한 직접 링크" title="LACP (Link Aggregation Control Protocol, 링크 애그리게이션 컨트롤 프로토콜)에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="lacp-link-aggregation-control-protocol-링크-애그리게이션-컨트롤-프로토콜">LACP (Link Aggregation Control Protocol, 링크 애그리게이션 컨트롤 프로토콜)<a href="https://dldkffh.github.io/2024/02/06/lag-lacp#lacp-link-aggregation-control-protocol-%EB%A7%81%EF%BF%BD%ED%81%AC-%EC%95%A0%EA%B7%B8%EB%A6%AC%EA%B2%8C%EC%9D%B4%EC%85%98-%EC%BB%A8%ED%8A%B8%EB%A1%A4-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C" class="hash-link" aria-label="LACP (Link Aggregation Control Protocol, 링크 애그리게이션 컨트롤 프로토콜)에 대한 직접 링크" title="LACP (Link Aggregation Control Protocol, 링크 애그리게이션 컨트롤 프로토콜)에 대한 직접 링크">​</a></h4>
 <ul>
 <li>IEEE 링크 애그리게이션 표준화 작업</li>
 <li>IEEE 802.3 그룹은 스터디 그룹을 구성하여 1997년 11월 미팅에서 상호 운용 가능한 링크 계층 표준을 만듦<!-- -->
@@ -1828,45 +1904,5 @@
         <category label="개념" term="개념"/>
         <category label="인프라/네트워크 엔지니어를 위한 네트워크 이해 및 설계 가이드" term="인프라/네트워크 엔지니어를 위한 네트워크 이해 및 설계 가이드"/>
         <category label="책" term="책"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[그리디 체육복]]></title>
-        <id>https://dldkffh.github.io/2023/07/13/programmers-42862</id>
-        <link href="https://dldkffh.github.io/2023/07/13/programmers-42862"/>
-        <updated>2023-07-13T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[프로그래머스 코딩테스트 고득점 Kit 체육복]]></summary>
-        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="프로그래머스-코딩테스트-고득점-kit-체육복"><a href="https://school.programmers.co.kr/learn/courses/30/lessons/42862" target="_blank" rel="noopener noreferrer">프로그래머스 코딩테스트 고득점 Kit 체육복</a><a href="https://dldkffh.github.io/2023/07/13/programmers-42862#%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B3%A0%EB%93%9D%EC%A0%90-kit-%EC%B2%B4%EC%9C%A1%EB%B3%B5" class="hash-link" aria-label="프로그래머스-코딩테스트-고득점-kit-체육복에 대한 직접 링크" title="프로그래머스-코딩테스트-고득점-kit-체육복에 대한 직접 링크">​</a></h3>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="문제-설명">문제 설명<a href="https://dldkffh.github.io/2023/07/13/programmers-42862#%EB%AC%B8%EC%A0%9C-%EC%84%A4%EB%AA%85" class="hash-link" aria-label="문제 설명에 대한 직접 링크" title="문제 설명에 대한 직접 링크">​</a></h4>
-<p>점심시간에 도둑이 들어, 일부 학생이 체육복을 도난당했습니다. 다행히 여벌 체육복이 있는 학생이 이들에게 체육복을 빌려주려 합니다. 학생들의 번호는 체격 순으로 매겨져 있어, 바로 앞번호의 학생이나 바로 뒷번호의 학생에게만 체육복을 빌려줄 수 있습니다. 예를 들어, 4번 학생은 3번 학생이나 5번 학생에게만 체육복을 빌려줄 수 있습니다. 체육복이 없으면 수업을 들을 수 없기 때문에 체육복을 적절히 빌려 최대한 많은 학생이 체육수업을 들어야 합니다.</p>
-<p>전체 학생의 수 <code>n</code>, 체육복을 도난당한 학생들의 번호가 담긴 배열 <code>lost</code>, 여벌의 체육복을 가져온 학생들의 번호가 담긴 배열 <code>reserve</code>가 매개변수로 주어질 때, 체육수업을 들을 수 있는 학생의 최댓값을 <code>return</code> 하도록 <code>solution</code> 함수를 작성해주세요.</p>
-<ul>
-<li>코니는 각 종류별로 최대 1가지 의상만 착용할 수 있습니다. 예를 들어 위 예시의 경우 동그란 안경과 검정 선글라스를 동시에 착용할 수는 없습니다.</li>
-<li>착용한 의상의 일부가 겹치더라도, 다른 의상이 겹치지 않거나, 혹은 의상을 추가로 더 착용한 경우에는 서로 다른 방법으로 옷을 착용한 것으로 계산합니다.</li>
-<li>코니는 하루에 최소 한 개의 의상은 입습니다.</li>
-</ul>
-<p>코니가 가진 의상들이 담긴 2차원 배열 <code>clothes</code>가 주어질 때 서로 다른 옷의 조합의 수를 <code>return</code> 하도록 <code>solution</code> 함수를 작성해주세요.</p>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="제한사항">제한사항<a href="https://dldkffh.github.io/2023/07/13/programmers-42862#%EC%A0%9C%ED%95%9C%EC%82%AC%ED%95%AD" class="hash-link" aria-label="제한사항에 대한 직접 링크" title="제한사항에 대한 직접 링크">​</a></h4>
-<ul>
-<li>전체 학생의 수는 2명 이상 30명 이하입니다.</li>
-<li>체육복을 도난당한 학생의 수는 1명 이상 <code>n</code>명 이하이고 중복되는 번호는 없습니다.</li>
-<li>여벌의 체육복을 가져온 학생의 수는 1명 이상 <code>n</code>명 이하이고 중복되는 번호는 없습니다.</li>
-<li>여벌 체육복이 있는 학생만 다른 학생에게 체육복을 빌려줄 수 있습니다.</li>
-<li>여벌 체육복을 가져온 학생이 체육복을 도난당했을 수 있습니다. 이때 이 학생은 체육복을 하나만 도난당했다고 가정하며, 남은 체육복이 하나이기에 다른 학생에게는 체육복을 빌려줄 수 없습니다.</li>
-</ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="풀이-포인트">풀이 포인트<a href="https://dldkffh.github.io/2023/07/13/programmers-42862#%ED%92%80%EC%9D%B4-%ED%8F%AC%EC%9D%B8%ED%8A%B8" class="hash-link" aria-label="풀이 포인트에 대한 직접 링크" title="풀이 포인트에 대한 직접 링크">​</a></h4>
-<ul>
-<li>직관적으로 코드를 짠다.</li>
-</ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="solutionjs">solution.js<a href="https://dldkffh.github.io/2023/07/13/programmers-42862#solutionjs" class="hash-link" aria-label="solution.js에 대한 직접 링크" title="solution.js에 대한 직접 링크">​</a></h4>
-<div class="language-js codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#bfc7d5;--prism-background-color:#292d3e"><div class="codeBlockTitle_Ktv7">javascrpt</div><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-js codeBlock_bY9V thin-scrollbar" style="color:#bfc7d5;background-color:#292d3e"><code class="codeBlockLines_e6Vv codeBlockLinesWithNumbering_o6Pm"><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token keyword" style="font-style:italic">function</span><span class="token plain"> </span><span class="token function" style="color:rgb(130, 170, 255)">solution</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token parameter">n</span><span class="token parameter punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token parameter"> lost</span><span class="token parameter punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token parameter"> reserve</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">  </span><span class="token keyword" style="font-style:italic">var</span><span class="token plain"> answer </span><span class="token operator" style="color:rgb(137, 221, 255)">=</span><span class="token plain"> </span><span class="token number" style="color:rgb(247, 140, 108)">0</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain" style="display:inline-block"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">  </span><span class="token keyword" style="font-style:italic">const</span><span class="token plain"> student_list </span><span class="token operator" style="color:rgb(137, 221, 255)">=</span><span class="token plain"> </span><span class="token known-class-name class-name" style="color:rgb(255, 203, 107)">Array</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token keyword module" style="font-style:italic">from</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token literal-property property">length</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> n</span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token plain"> </span><span class="token arrow operator" style="color:rgb(137, 221, 255)">=&gt;</span><span class="token plain"> </span><span class="token number" style="color:rgb(247, 140, 108)">0</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">  </span><span class="token keyword control-flow" style="font-style:italic">for</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token keyword" style="font-style:italic">const</span><span class="token plain"> i </span><span class="token keyword" style="font-style:italic">of</span><span class="token plain"> lost</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">    student_list</span><span class="token punctuation" style="color:rgb(199, 146, 234)">[</span><span class="token plain">i </span><span class="token operator" style="color:rgb(137, 221, 255)">-</span><span class="token plain"> </span><span class="token number" style="color:rgb(247, 140, 108)">1</span><span class="token punctuation" style="color:rgb(199, 146, 234)">]</span><span class="token plain"> </span><span class="token operator" style="color:rgb(137, 221, 255)">-=</span><span class="token plain"> </span><span class="token number" style="color:rgb(247, 140, 108)">1</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">  </span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">  </span><span class="token keyword control-flow" style="font-style:italic">for</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token keyword" style="font-style:italic">const</span><span class="token plain"> i </span><span class="token keyword" style="font-style:italic">of</span><span class="token plain"> reserve</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">    student_list</span><span class="token punctuation" style="color:rgb(199, 146, 234)">[</span><span class="token plain">i </span><span class="token operator" style="color:rgb(137, 221, 255)">-</span><span class="token plain"> </span><span class="token number" style="color:rgb(247, 140, 108)">1</span><span class="token punctuation" style="color:rgb(199, 146, 234)">]</span><span class="token plain"> </span><span class="token operator" style="color:rgb(137, 221, 255)">+=</span><span class="token plain"> </span><span class="token number" style="color:rgb(247, 140, 108)">1</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">  </span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain" style="display:inline-block"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">  </span><span class="token keyword control-flow" style="font-style:italic">for</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token keyword" style="font-style:italic">let</span><span class="token plain"> i </span><span class="token operator" style="color:rgb(137, 221, 255)">=</span><span class="token plain"> </span><span class="token number" style="color:rgb(247, 140, 108)">0</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"> i </span><span class="token operator" style="color:rgb(137, 221, 255)">&lt;</span><span class="token plain"> student_list</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token property-access">length</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"> i</span><span class="token operator" style="color:rgb(137, 221, 255)">++</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">    </span><span class="token keyword control-flow" style="font-style:italic">if</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token plain">student_list</span><span class="token punctuation" style="color:rgb(199, 146, 234)">[</span><span class="token plain">i</span><span class="token punctuation" style="color:rgb(199, 146, 234)">]</span><span class="token plain"> </span><span class="token operator" style="color:rgb(137, 221, 255)">&lt;</span><span class="token plain"> </span><span class="token number" style="color:rgb(247, 140, 108)">0</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">      </span><span class="token keyword control-flow" style="font-style:italic">if</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token plain">student_list</span><span class="token punctuation" style="color:rgb(199, 146, 234)">[</span><span class="token plain">i </span><span class="token operator" style="color:rgb(137, 221, 255)">-</span><span class="token plain"> </span><span class="token number" style="color:rgb(247, 140, 108)">1</span><span class="token punctuation" style="color:rgb(199, 146, 234)">]</span><span class="token plain"> </span><span class="token operator" style="color:rgb(137, 221, 255)">&gt;</span><span class="token plain"> </span><span class="token number" style="color:rgb(247, 140, 108)">0</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">        student_list</span><span class="token punctuation" style="color:rgb(199, 146, 234)">[</span><span class="token plain">i</span><span class="token punctuation" style="color:rgb(199, 146, 234)">]</span><span class="token plain"> </span><span class="token operator" style="color:rgb(137, 221, 255)">=</span><span class="token plain"> </span><span class="token number" style="color:rgb(247, 140, 108)">0</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">        student_list</span><span class="token punctuation" style="color:rgb(199, 146, 234)">[</span><span class="token plain">i </span><span class="token operator" style="color:rgb(137, 221, 255)">-</span><span class="token plain"> </span><span class="token number" style="color:rgb(247, 140, 108)">1</span><span class="token punctuation" style="color:rgb(199, 146, 234)">]</span><span class="token plain"> </span><span class="token operator" style="color:rgb(137, 221, 255)">=</span><span class="token plain"> </span><span class="token number" style="color:rgb(247, 140, 108)">0</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">      </span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><span class="token plain"> </span><span class="token keyword control-flow" style="font-style:italic">else</span><span class="token plain"> </span><span class="token keyword control-flow" style="font-style:italic">if</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token plain">student_list</span><span class="token punctuation" style="color:rgb(199, 146, 234)">[</span><span class="token plain">i </span><span class="token operator" style="color:rgb(137, 221, 255)">+</span><span class="token plain"> </span><span class="token number" style="color:rgb(247, 140, 108)">1</span><span class="token punctuation" style="color:rgb(199, 146, 234)">]</span><span class="token plain"> </span><span class="token operator" style="color:rgb(137, 221, 255)">&gt;</span><span class="token plain"> </span><span class="token number" style="color:rgb(247, 140, 108)">0</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">        student_list</span><span class="token punctuation" style="color:rgb(199, 146, 234)">[</span><span class="token plain">i</span><span class="token punctuation" style="color:rgb(199, 146, 234)">]</span><span class="token plain"> </span><span class="token operator" style="color:rgb(137, 221, 255)">=</span><span class="token plain"> </span><span class="token number" style="color:rgb(247, 140, 108)">0</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">        student_list</span><span class="token punctuation" style="color:rgb(199, 146, 234)">[</span><span class="token plain">i </span><span class="token operator" style="color:rgb(137, 221, 255)">+</span><span class="token plain"> </span><span class="token number" style="color:rgb(247, 140, 108)">1</span><span class="token punctuation" style="color:rgb(199, 146, 234)">]</span><span class="token plain"> </span><span class="token operator" style="color:rgb(137, 221, 255)">=</span><span class="token plain"> </span><span class="token number" style="color:rgb(247, 140, 108)">0</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">      </span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">    </span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">  </span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain" style="display:inline-block"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">  answer </span><span class="token operator" style="color:rgb(137, 221, 255)">=</span><span class="token plain"> student_list</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token method function property-access" style="color:rgb(130, 170, 255)">filter</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token parameter">x</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token plain"> </span><span class="token arrow operator" style="color:rgb(137, 221, 255)">=&gt;</span><span class="token plain"> x </span><span class="token operator" style="color:rgb(137, 221, 255)">&gt;=</span><span class="token plain"> </span><span class="token number" style="color:rgb(247, 140, 108)">0</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token property-access">length</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain" style="display:inline-block"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">  </span><span class="token keyword control-flow" style="font-style:italic">return</span><span class="token plain"> answer</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#bfc7d5"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain"></span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span></span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="클립보드에 코드 복사" title="복사" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>]]></content>
-        <author>
-            <name>dldkffh</name>
-            <uri>https://github.com/dldkffh</uri>
-        </author>
-        <category label="그리디" term="그리디"/>
-        <category label="알고리즘" term="알고리즘"/>
-        <category label="javascrpt" term="javascrpt"/>
-        <category label="프로그래머스" term="프로그래머스"/>
-        <category label="문제" term="문제"/>
     </entry>
 </feed>
