@@ -84,10 +84,84 @@
 <li>VTP 광고는 전달되지 않음</li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="vtp-message">VTP Message<a href="https://dldkffh.github.io/2024/02/14/vtp#vtp-message" class="hash-link" aria-label="VTP Message에 대한 직접 링크" title="VTP Message에 대한 직접 링크">​</a></h3>
+<ul>
+<li>VTP 패킷은 ISL(Inter-Switch Link) 프레임 또는 IEEE 802.1Q(dot1q) 프레임으로 전송</li>
+<li>패킷은 AAAA(Subnetwork Access Protocol)의 LLC(Logical Link Control) 코드 및 SNAP 헤더의 2003 유형과 함께 대상 MAC 주소 01-00-0C-CC-CC-CC로 전송</li>
+<li>ISL 프레임으로 캡슐화되는 VTP 패킷의 형식</li>
+</ul>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="summary-advertisement">Summary Advertisement<a href="https://dldkffh.github.io/2024/02/14/vtp#summary-advertisement" class="hash-link" aria-label="Summary Advertisement에 대한 직접 링크" title="Summary Advertisement에 대한 직접 링크">​</a></h4>
+<ul>
+<li>VTP server가 자신과 연결된 스위치에게 5분 주기로 전달하는 메시지</li>
+<li>자신의 관리하는 VTP domain에 대한 Revision number를 전송</li>
+<li>각 스위치들은 이러한 Revision number를 보고 자신의 VLAN 정보가 최신인지 아닌지를 구분</li>
+<li>VLAN 구성에 변화가 발생시에도 전송되는데 이 경우는 5분 주기가 아니라 변화 즉시 전송</li>
+</ul>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="subset-adverisement">Subset Adverisement<a href="https://dldkffh.github.io/2024/02/14/vtp#subset-adverisement" class="hash-link" aria-label="Subset Adverisement에 대한 직접 링크" title="Subset Adverisement에 대한 직접 링크">​</a></h4>
+<ul>
+<li>VLAN 구성이 변경 되었을 때나 VTP client로부터 Advertisement Request를 수신했을 때 전송</li>
+<li>실제 VLAN 정보를 담고 있는 메시지</li>
+</ul>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="advertisement-request">Advertisement Request<a href="https://dldkffh.github.io/2024/02/14/vtp#advertisement-request" class="hash-link" aria-label="Advertisement Request에 대한 직접 링크" title="Advertisement Request에 대한 직접 링크">​</a></h4>
+<ul>
+<li>VTP client가 VTP server에게 Summary Advertisement 혹은 Subset Adverisement를 요청하는 경우 사용하는 메시지</li>
+<li>client가 자신이 가지고 있는 Revision number보다 높은 Revision number를 가지고 있는 Summary Advertisement를 수신하거나 VTP domain 변경, 스위치 리셋 등 여러 변화가 생겼을 경우 이 메시지를 VTP server에 전송</li>
+</ul>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="vtp조건">VTP&nbsp;조건<a href="https://dldkffh.github.io/2024/02/14/vtp#vtp%EC%A1%B0%EA%B1%B4" class="hash-link" aria-label="VTP&nbsp;조건에 대한 직접 링크" title="VTP&nbsp;조건에 대한 직접 링크">​</a></h3>
+<ul>
+<li>VTP Domain Name&nbsp;설정<!-- -->
+<ul>
+<li>스위치에&nbsp;VTP는&nbsp;기본적으로&nbsp;동작이&nbsp;되고&nbsp;있는&nbsp;상태이며&nbsp;끌&nbsp;수가&nbsp;없는&nbsp;프로토콜</li>
+<li>초기에&nbsp;아무&nbsp;설정도&nbsp;하지&nbsp;않으면&nbsp;VLAN정보를&nbsp;동기화&nbsp;하지&nbsp;않음<!-- -->
+<ul>
+<li>스위치간&nbsp;도메인&nbsp;이름이&nbsp;설정되어&nbsp;있지&nbsp;않기&nbsp;때문</li>
+</ul>
+</li>
+<li>VTP를&nbsp;사용하여&nbsp;VLAN정보를&nbsp;동기화&nbsp;하기&nbsp;위해서는&nbsp;스위치들의&nbsp;VTP&nbsp;도메인&nbsp;이름을&nbsp;같도록&nbsp;설정해야&nbsp;함
+&nbsp;</li>
+</ul>
+</li>
+<li>스위치간&nbsp;Trunk Port&nbsp;설정<!-- -->
+<ul>
+<li>VTP&nbsp;메시지는&nbsp;Trunk에서만&nbsp;전달될&nbsp;수&nbsp;있음</li>
+<li>스위치간&nbsp;링크가&nbsp;만약&nbsp;Access로&nbsp;설정이&nbsp;되어있거나 Trunk&nbsp;설정이&nbsp;아직&nbsp;되지&nbsp;않은&nbsp;경우,&nbsp;VTP&nbsp;메시지를&nbsp;주고&nbsp;받을&nbsp;수&nbsp;없음
+&nbsp;</li>
+</ul>
+</li>
+<li>VTP Password&nbsp;일치<!-- -->
+<ul>
+<li>안전장치인&nbsp;비밀번호를&nbsp;설정해놓는&nbsp;경우가&nbsp;있음<!-- -->
+<ul>
+<li>VTP&nbsp;프로토콜을&nbsp;이용하여&nbsp;무분별하게&nbsp;정보를&nbsp;받아올&nbsp;수&nbsp;있기&nbsp;때문에&nbsp;</li>
+</ul>
+</li>
+<li>만약&nbsp;도메인&nbsp;이름은&nbsp;동일한데&nbsp;비밀번호가&nbsp;같지&nbsp;않다면&nbsp;VTP메시지를&nbsp;통한&nbsp;동기화를&nbsp;할&nbsp;수가&nbsp;없음&nbsp;<!-- -->
+<ul>
+<li>비밀번호를&nbsp;설정해놓은&nbsp;경우에는&nbsp;동기화를&nbsp;할&nbsp;모든&nbsp;스위치에&nbsp;비밀번호가&nbsp;같도록&nbsp;해야함</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="vtp유의사항">VTP&nbsp;유의사항<a href="https://dldkffh.github.io/2024/02/14/vtp#vtp%EC%9C%A0%EC%9D%98%EC%82%AC%ED%95%AD" class="hash-link" aria-label="VTP&nbsp;유의사항에 대한 직접 링크" title="VTP&nbsp;유의사항에 대한 직접 링크">​</a></h3>
+<ul>
+<li>확장&nbsp;VLAN인&nbsp;1006~4094번은&nbsp;VTP&nbsp;버전&nbsp;1 , 2&nbsp;모두&nbsp;지원하지&nbsp;않기&nbsp;때문에&nbsp;Transparent&nbsp;모드에서만&nbsp;만들&nbsp;수&nbsp;있음</li>
+<li>스위치의&nbsp;기본설정으로&nbsp;Server로&nbsp;되어&nbsp;있으며&nbsp;Domain은&nbsp;비어있음<!-- -->
+<ul>
+<li>공격자가&nbsp;하나의&nbsp;스위치에서&nbsp;Domain을&nbsp;설정하면&nbsp;모든&nbsp;스위치가&nbsp;하나의&nbsp;VTP로&nbsp;묶이게&nbsp;되어&nbsp;마음대로&nbsp;설정이&nbsp;가능해짐</li>
+</ul>
+</li>
+<li>VTP&nbsp;를&nbsp;사용하고&nbsp;싶지&nbsp;않을&nbsp;때에는&nbsp;따로&nbsp;끄는&nbsp;기능이&nbsp;없어&nbsp;Transparent&nbsp;모드로&nbsp;변경해주어야&nbsp;함<!-- -->
+<ul>
+<li>시스코에서도&nbsp;VTP Transparent&nbsp;모드를&nbsp;권장함</li>
+</ul>
+</li>
+<li>설정&nbsp;순서로&nbsp;인한&nbsp;문제가&nbsp;발생할&nbsp;수도&nbsp;있기&nbsp;때문에&nbsp;<strong>패스워드-&gt;도메인이름-&gt;모드변경</strong>&nbsp;순으로&nbsp;해줘야&nbsp;함<!-- -->
+<ul>
+<li>단, 12.2버전에서는&nbsp;도메인이름&nbsp;부터&nbsp;설정해야&nbsp;패스워드&nbsp;설정이&nbsp;되며, 12.3&nbsp;이상부터는&nbsp;패스워드설정부터&nbsp;가능</li>
+</ul>
+</li>
+<li>새&nbsp;장비&nbsp;또는&nbsp;수리한&nbsp;사용하던&nbsp;장비를&nbsp;네트워크에&nbsp;추가&nbsp;시키려고&nbsp;할&nbsp;경우,&nbsp;리비전&nbsp;넘버를&nbsp;초기화&nbsp;시킨&nbsp;후&nbsp;추가&nbsp;해야&nbsp;다른&nbsp;장비의&nbsp;VLAN정보에&nbsp;영향을&nbsp;미치지&nbsp;않음</li>
+</ul>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="vtp-pruning">VTP pruning<a href="https://dldkffh.github.io/2024/02/14/vtp#vtp-pruning" class="hash-link" aria-label="VTP pruning에 대한 직접 링크" title="VTP pruning에 대한 직접 링크">​</a></h3>
 <ul>
 <li>pruning의 뜻은 가지치기</li>
