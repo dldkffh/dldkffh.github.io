@@ -24,19 +24,19 @@ enableComments: true # for Gisqus
 
 ### HSRP Configuration
 
-- priority
+- priority(우선 사항)
   - 가장 높은 값을 갖는 라우터가 Active 라우터가 됨
   - 기본값 : 100
   - 우선 순위 범위 : 1-255 사이
   - 값이 동일한 경우 가장 높은 ip를 가진 라우터가 Active 라우터가 됨
-- preempt
+- preempt(선점하다)
   - 본래 Active 라우터가 죽었다가 다시 살아난 대기 상태에서 Active 상태로 변환을 하기 위해 사용하는 기능
   - 딜레이 타임 필요
   - Standby에서 바로 Active가 되면 라우팅 테이블을 학습하지 못하여 통신장애 발생
 - timer
   - default hello time 3초, hold time 10초 설정 가능
   - hold 타임 값은 hello 타임 값의 3배 이상 되어야 함
-- tracking
+- tracking(추적)
   - 외부에서는 HSRP가 구성되어 있지 않아 상단으로 가는 인터페이스 장애시 priority 값을 줄여줌으로서 Standby 라우터가 Active 라우터로 변하게 하여 통신이 되게 하는 설정
 
 ### 출처

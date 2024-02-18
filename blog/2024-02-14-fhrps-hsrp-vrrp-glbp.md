@@ -37,6 +37,10 @@ enableComments: true # for Gisqus
 - 가상 IP는 서브넷의 다른 장치 또는 두 중복 라우터에 구성된 인터페이스로부터 고유해야 함
 - 클리어 텍스트 및 MD5 인증을 지원
 
+|      | 액티브 | 스탠바이 |
+| ---- | ------ | -------- |
+| 명칭 | Active | Standby  |
+
 #### Active 선출 조건
 
 - 높은 priority를 갖는 router를 active device로 선출한다. (기본값 : 100, 우선 순위 범위 : 1-255 사이)
@@ -58,6 +62,10 @@ enableComments: true # for Gisqus
 - IOS 객체 추적을 사용하여 인터페이스 상태를 추적
 - **VRRP Master**는 **HSRP Active**와 동일함
 - VRRP 그룹 IP는 VRRP 라우터 중 하나의 인터페이스 주소이며 가상 IP가 아님
+
+|      | 액티브 | 스탠바이 |
+| ---- | ------ | -------- |
+| 명칭 | Master | Backup   |
 
 #### Master 선출 조건
 
@@ -93,6 +101,14 @@ enableComments: true # for Gisqus
 - GLBP Priority 값이 높은 장비가 선출 (기본값: 100)
 - GLBP Priority 값이 동일한 경우 실제 IP 주소의 숫자가 큰 장비가 선출
 
+### FHRP 옵션
+
+| 약어 | 정식 명칭 | 출처 | 이중화 방법 | 부하 분산 |
+| --- | --- | --- | --- | --- |
+| HSRP | Hot Standby Router Protocol | 시스코 | 액티브/스탠바이 | 서브넷별 |
+| VRRP | Virtual Router Redundancy Protocol | RFC 5798 | 액티브/스탠바이 | 서브넷별 |
+| GLBP | Gateway Load Balancing Protocol | 시스코 | 액티브/액티브 | 호스트별 |
+
 ### 출처
 
 - https://ethan-world.tistory.com/
@@ -101,3 +117,4 @@ enableComments: true # for Gisqus
 - https://www.nwkings.com/what-is-fhrp-in-networking
 - https://peemangit.tistory.com/24
 - https://limvo.tistory.com/13
+- [시스코 네트워크 CCNA 자격증 공인 학습 가이드 CCENT/CCNA ICND1 100-105](https://www.cyber.co.kr/book/item/5604)
