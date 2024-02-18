@@ -2,11 +2,47 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://dldkffh.github.io/</id>
     <title>dldkffh Blog</title>
-    <updated>2024-02-15T00:00:00.000Z</updated>
+    <updated>2024-02-18T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://dldkffh.github.io/"/>
     <subtitle>dldkffh Blog</subtitle>
     <icon>https://dldkffh.github.io/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[native & blackhole VLAN]]></title>
+        <id>https://dldkffh.github.io/2024/02/18/native-vlan-blackhole</id>
+        <link href="https://dldkffh.github.io/2024/02/18/native-vlan-blackhole"/>
+        <updated>2024-02-18T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[native VLAN]]></summary>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="native-vlan">native VLAN<a href="https://dldkffh.github.io/2024/02/18/native-vlan-blackhole#native-vlan" class="hash-link" aria-label="native VLAN에 대한 직접 링크" title="native VLAN에 대한 직접 링크">​</a></h3>
+<ul>
+<li>native VLAN 태그 지정 기능이 없는 장치를 지원하는 VLAN 서비스</li>
+<li>트렁크 포트에서 태그가 지정되지 않은 트래픽을 전달하는 데 사용</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="blackhole-vlan">blackhole VLAN<a href="https://dldkffh.github.io/2024/02/18/native-vlan-blackhole#blackhole-vlan" class="hash-link" aria-label="blackhole VLAN에 대한 직접 링크" title="blackhole VLAN에 대한 직접 링크">​</a></h3>
+<ul>
+<li>사용되지 않고 죽은 VLAN으로 생성된 VLAN</li>
+<li>특정 포트나 장치를 격리 또는 격리하거나, 네트워크에 대한 무단 액세스나 트래픽을 방지</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="네트워크-블랙홀blackhole">네트워크 블랙홀(blackhole)<a href="https://dldkffh.github.io/2024/02/18/native-vlan-blackhole#%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EB%B8%94%EB%9E%99%ED%99%80blackhole" class="hash-link" aria-label="네트워크 블랙홀(blackhole)에 대한 직접 링크" title="네트워크 블랙홀(blackhole)에 대한 직접 링크">​</a></h4>
+<ul>
+<li>블랙홀은 네트워크에서 데이터가 의도한 수신자에게 도달하지 못했다는 사실을 소스에 알리지 않고 들어오거나 나가는 트래픽이 자동으로 삭제되는 장소</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="출처">출처<a href="https://dldkffh.github.io/2024/02/18/native-vlan-blackhole#%EC%B6%9C%EC%B2%98" class="hash-link" aria-label="출처에 대한 직접 링크" title="출처에 대한 직접 링크">​</a></h3>
+<ul>
+<li><a href="https://www.ruijienetworks.com/support/tech-gallery/what-is-native-vlan#:~:text=Native%20VLAN%20is%20a%20VLAN,when%20trunk%20links%20are%20transmitted" target="_blank" rel="noopener noreferrer">https://www.ruijienetworks.com/support/tech-gallery/what-is-native-vlan#:~:text=Native%20VLAN%20is%20a%20VLAN,when%20trunk%20links%20are%20transmitted</a></li>
+<li><a href="https://www.examtopics.com/discussions/cisco/view/71351-exam-200-301-topic-1-question-655-discussion/#:~:text=Traffic%20that%20is%20sent%20to%20a%20port,traffic%20on%20a%20network.%20upvoted%2011%20times" target="_blank" rel="noopener noreferrer">https://www.examtopics.com/discussions/cisco/view/71351-exam-200-301-topic-1-question-655-discussion/#:~:text=Traffic%20that%20is%20sent%20to%20a%20port,traffic%20on%20a%20network.%20upvoted%2011%20times</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Black_hole_(networking)#:~:text=In%20networking%2C%20a%20black%20hole%2C%20also%20known,of%20the%20network%2C%20the%20black%20holes%20themselves" target="_blank" rel="noopener noreferrer">https://en.wikipedia.org/wiki/Black_hole_(networking)#:~:text=In%20networking%2C%20a%20black%20hole%2C%20also%20known,of%20the%20network%2C%20the%20black%20holes%20themselves</a></li>
+</ul>]]></content>
+        <author>
+            <name>dldkffh</name>
+            <uri>https://github.com/dldkffh</uri>
+        </author>
+        <category label="vlan" term="vlan"/>
+        <category label="native" term="native"/>
+        <category label="blackhole" term="blackhole"/>
+        <category label="네트워크" term="네트워크"/>
+        <category label="개념" term="개념"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[HSRP States/Configuration]]></title>
         <id>https://dldkffh.github.io/2024/02/15/hsrp-states-configuration</id>
@@ -42,7 +78,7 @@
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="hsrp-configuration">HSRP Configuration<a href="https://dldkffh.github.io/2024/02/15/hsrp-states-configuration#hsrp-configuration" class="hash-link" aria-label="HSRP Configuration에 대한 직접 링크" title="HSRP Configuration에 대한 직접 링크">​</a></h3>
 <ul>
-<li>priority<!-- -->
+<li>priority(우선 사항)<!-- -->
 <ul>
 <li>가장 높은 값을 갖는 라우터가 Active 라우터가 됨</li>
 <li>기본값 : 100</li>
@@ -50,7 +86,7 @@
 <li>값이 동일한 경우 가장 높은 ip를 가진 라우터가 Active 라우터가 됨</li>
 </ul>
 </li>
-<li>preempt<!-- -->
+<li>preempt(선점하다)<!-- -->
 <ul>
 <li>본래 Active 라우터가 죽었다가 다시 살아난 대기 상태에서 Active 상태로 변환을 하기 위해 사용하는 기능</li>
 <li>딜레이 타임 필요</li>
@@ -63,7 +99,7 @@
 <li>hold 타임 값은 hello 타임 값의 3배 이상 되어야 함</li>
 </ul>
 </li>
-<li>tracking<!-- -->
+<li>tracking(추적)<!-- -->
 <ul>
 <li>외부에서는 HSRP가 구성되어 있지 않아 상단으로 가는 인터페이스 장애시 priority 값을 줄여줌으로서 Standby 라우터가 Active 라우터로 변하게 하여 통신이 되게 하는 설정</li>
 </ul>
@@ -129,6 +165,7 @@
 <li>가상 IP는 서브넷의 다른 장치 또는 두 중복 라우터에 구성된 인터페이스로부터 고유해야 함</li>
 <li>클리어 텍스트 및 MD5 인증을 지원</li>
 </ul>
+<table><thead><tr><th></th><th>액티브</th><th>스탠바이</th></tr></thead><tbody><tr><td>명칭</td><td>Active</td><td>Standby</td></tr></tbody></table>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="active-선출-조건">Active 선출 조건<a href="https://dldkffh.github.io/2024/02/14/fhrps-hsrp-vrrp-glbp#active-%EC%84%A0%EC%B6%9C-%EC%A1%B0%EA%B1%B4" class="hash-link" aria-label="Active 선출 조건에 대한 직접 링크" title="Active 선출 조건에 대한 직접 링크">​</a></h4>
 <ul>
 <li>높은 priority를 갖는 router를 active device로 선출한다. (기본값 : 100, 우선 순위 범위 : 1-255 사이)</li>
@@ -145,6 +182,7 @@
 <li><strong>VRRP Master</strong>는 <strong>HSRP Active</strong>와 동일함</li>
 <li>VRRP 그룹 IP는 VRRP 라우터 중 하나의 인터페이스 주소이며 가상 IP가 아님</li>
 </ul>
+<table><thead><tr><th></th><th>액티브</th><th>스탠바이</th></tr></thead><tbody><tr><td>명칭</td><td>Master</td><td>Backup</td></tr></tbody></table>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="master-선출-조건">Master 선출 조건<a href="https://dldkffh.github.io/2024/02/14/fhrps-hsrp-vrrp-glbp#master-%EC%84%A0%EC%B6%9C-%EC%A1%B0%EA%B1%B4" class="hash-link" aria-label="Master 선출 조건에 대한 직접 링크" title="Master 선출 조건에 대한 직접 링크">​</a></h4>
 <ul>
 <li>VIP와 RIP가 같은 장비</li>
@@ -197,6 +235,8 @@
 <li>GLBP Priority 값이 높은 장비가 선출 (기본값: 100)</li>
 <li>GLBP Priority 값이 동일한 경우 실제 IP 주소의 숫자가 큰 장비가 선출</li>
 </ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="fhrp-옵션-요약">FHRP 옵션 요약<a href="https://dldkffh.github.io/2024/02/14/fhrps-hsrp-vrrp-glbp#fhrp-%EC%98%B5%EC%85%98-%EC%9A%94%EC%95%BD" class="hash-link" aria-label="FHRP 옵션 요약에 대한 직접 링크" title="FHRP 옵션 요약에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>약어</th><th>정식 명칭</th><th>출처</th><th>이중화 방법</th><th>부하 분산</th></tr></thead><tbody><tr><td>HSRP</td><td>Hot Standby Router Protocol</td><td>시스코</td><td>액티브/스탠바이</td><td>서브넷별</td></tr><tr><td>VRRP</td><td>Virtual Router Redundancy Protocol</td><td>RFC 5798</td><td>액티브/스탠바이</td><td>서브넷별</td></tr><tr><td>GLBP</td><td>Gateway Load Balancing Protocol</td><td>시스코</td><td>액티브/액티브</td><td>호스트별</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="출처">출처<a href="https://dldkffh.github.io/2024/02/14/fhrps-hsrp-vrrp-glbp#%EC%B6%9C%EC%B2%98" class="hash-link" aria-label="출처에 대한 직접 링크" title="출처에 대한 직접 링크">​</a></h3>
 <ul>
 <li><a href="https://ethan-world.tistory.com/" target="_blank" rel="noopener noreferrer">https://ethan-world.tistory.com/</a></li>
@@ -205,6 +245,7 @@
 <li><a href="https://www.nwkings.com/what-is-fhrp-in-networking" target="_blank" rel="noopener noreferrer">https://www.nwkings.com/what-is-fhrp-in-networking</a></li>
 <li><a href="https://peemangit.tistory.com/24" target="_blank" rel="noopener noreferrer">https://peemangit.tistory.com/24</a></li>
 <li><a href="https://limvo.tistory.com/13" target="_blank" rel="noopener noreferrer">https://limvo.tistory.com/13</a></li>
+<li><a href="https://www.cyber.co.kr/book/item/5604" target="_blank" rel="noopener noreferrer">시스코 네트워크 CCNA 자격증 공인 학습 가이드 CCENT/CCNA ICND1 100-105</a></li>
 </ul>]]></content>
         <author>
             <name>dldkffh</name>
@@ -223,8 +264,17 @@
         <id>https://dldkffh.github.io/2024/02/14/vtp</id>
         <link href="https://dldkffh.github.io/2024/02/14/vtp"/>
         <updated>2024-02-14T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[VTP (VLAN Trunking Protocol)]]></summary>
-        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="vtp-vlan-trunking-protocol">VTP (VLAN Trunking Protocol)<a href="https://dldkffh.github.io/2024/02/14/vtp#vtp-vlan-trunking-protocol" class="hash-link" aria-label="VTP (VLAN Trunking Protocol)에 대한 직접 링크" title="VTP (VLAN Trunking Protocol)에 대한 직접 링크">​</a></h3>
+        <summary type="html"><![CDATA[VLAN (Virtual Local Area Network)]]></summary>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="vlan-virtual-local-area-network">VLAN (Virtual Local Area Network)<a href="https://dldkffh.github.io/2024/02/14/vtp#vlan-virtual-local-area-network" class="hash-link" aria-label="VLAN (Virtual Local Area Network)에 대한 직접 링크" title="VLAN (Virtual Local Area Network)에 대한 직접 링크">​</a></h3>
+<ul>
+<li>컴퓨터 그룹을 별도의 네트워크로 논리적으로 분리하는 방법</li>
+<li>일반적으로 일부 인터페이스를 하나의 브로드캐스트 도메인에 배치하고 일부 인터페이스를 다른 브로드캐스트 도메인에 배치하여 스위치에 구성됨</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="vtp-vlan-trunking-protocol">VTP (VLAN Trunking Protocol)<a href="https://dldkffh.github.io/2024/02/14/vtp#vtp-vlan-trunking-protocol" class="hash-link" aria-label="VTP (VLAN Trunking Protocol)에 대한 직접 링크" title="VTP (VLAN Trunking Protocol)에 대한 직접 링크">​</a></h3>
+<ul>
+<li>VTP는 네트워크에서 VLAN 구성을 관리하는 데 사용</li>
+<li>워크스테이션이 DHCP 주소를 수신하는 것을 막지는 않음</li>
+</ul>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="vtp-mode">VTP Mode<a href="https://dldkffh.github.io/2024/02/14/vtp#vtp-mode" class="hash-link" aria-label="VTP Mode에 대한 직접 링크" title="VTP Mode에 대한 직접 링크">​</a></h3>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="server-mode">Server mode<a href="https://dldkffh.github.io/2024/02/14/vtp#server-mode" class="hash-link" aria-label="Server mode에 대한 직접 링크" title="Server mode에 대한 직접 링크">​</a></h4>
 <ul>
@@ -261,6 +311,13 @@
 <li>패킷은 AAAA(Subnetwork Access Protocol)의 LLC(Logical Link Control) 코드 및 SNAP 헤더의 2003 유형과 함께 대상 MAC 주소 01-00-0C-CC-CC-CC로 전송</li>
 <li>ISL 프레임으로 캡슐화되는 VTP 패킷의 형식</li>
 </ul>
+<blockquote>
+<p><strong>802.1Q</strong></p>
+<ul>
+<li>VLAN의 프레임 태그 지정에 대한 표준</li>
+<li>스위치 포트가 802.1Q 트렁크 포트로 구성되고 워크스테이션이 VLAN 태그 지정을 처리하도록 구성되지 않은 경우, 워크스테이션은 올바른 VLAN에 있지 않기 때문에 DHCP 주소를 수신하지 못할 수 있음</li>
+</ul>
+</blockquote>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="summary-advertisement">Summary Advertisement<a href="https://dldkffh.github.io/2024/02/14/vtp#summary-advertisement" class="hash-link" aria-label="Summary Advertisement에 대한 직접 링크" title="Summary Advertisement에 대한 직접 링크">​</a></h4>
 <ul>
 <li>VTP server가 자신과 연결된 스위치에게 5분 주기로 전달하는 메시지</li>
@@ -273,14 +330,15 @@
 <li>VLAN 구성이 변경 되었을 때나 VTP client로부터 Advertisement Request를 수신했을 때 전송</li>
 <li>실제 VLAN 정보를 담고 있는 메시지</li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="advertisement-request">Advertisement Request<a href="https://dldkffh.github.io/2024/02/14/vtp#advertisement-request" class="hash-link" aria-label="Advertisement Request에 대한 직접 링크" title="Advertisement Request��에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="advertisement-request">Advertisement Request<a href="https://dldkffh.github.io/2024/02/14/vtp#advertisement-request" class="hash-link" aria-label="Advertisement Request에 대한 직접 링크" title="Advertisement Request에 대한 직접 링크">​</a></h4>
 <ul>
 <li>VTP client가 VTP server에게 Summary Advertisement 혹은 Subset Adverisement를 요청하는 경우 사용하는 메시지</li>
 <li>client가 자신이 가지고 있는 Revision number보다 높은 Revision number를 가지고 있는 Summary Advertisement를 수신하거나 VTP domain 변경, 스위치 리셋 등 여러 변화가 생겼을 경우 이 메시지를 VTP server에 전송</li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="vtp조건">VTP&nbsp;조건<a href="https://dldkffh.github.io/2024/02/14/vtp#vtp%EC%A1%B0%EA%B1%B4" class="hash-link" aria-label="VTP&nbsp;조건에 대한 직접 링크" title="VTP&nbsp;조건에 대한 직접 링크">​</a></h3>
 <ul>
-<li>VTP Domain Name&nbsp;설정<!-- -->
+<li>
+<p>VTP Domain Name&nbsp;설정</p>
 <ul>
 <li>스위치에&nbsp;VTP는&nbsp;기본적으로&nbsp;동작이&nbsp;되고&nbsp;있는&nbsp;상태이며&nbsp;끌&nbsp;수가&nbsp;없는&nbsp;프로토콜</li>
 <li>초기에&nbsp;아무&nbsp;설정도&nbsp;하지&nbsp;않으면&nbsp;VLAN정보를&nbsp;동기화&nbsp;하지&nbsp;않음<!-- -->
@@ -288,25 +346,25 @@
 <li>스위치간&nbsp;도메인&nbsp;이름이&nbsp;설정되어&nbsp;있지&nbsp;않기&nbsp;때문</li>
 </ul>
 </li>
-<li>VTP를&nbsp;사용하여&nbsp;VLAN정보를&nbsp;동기화&nbsp;하기&nbsp;위해서는&nbsp;스위치들의&nbsp;VTP&nbsp;도메인&nbsp;이름을&nbsp;같도록&nbsp;설정해야&nbsp;함
-&nbsp;</li>
+<li>VTP를&nbsp;사용하여&nbsp;VLAN정보를&nbsp;동기화&nbsp;하기&nbsp;위해서는&nbsp;스위치들의&nbsp;VTP&nbsp;도메인&nbsp;이름을&nbsp;같도록&nbsp;설정해야&nbsp;함</li>
 </ul>
 </li>
-<li>스위치간&nbsp;Trunk Port&nbsp;설정<!-- -->
+<li>
+<p>스위치간&nbsp;Trunk Port&nbsp;설정</p>
 <ul>
 <li>VTP&nbsp;메시지는&nbsp;Trunk에서만&nbsp;전달될&nbsp;수&nbsp;있음</li>
-<li>스위치간&nbsp;링크가&nbsp;만약&nbsp;Access로&nbsp;설정이&nbsp;되어있거나 Trunk&nbsp;설정이&nbsp;아직&nbsp;되지&nbsp;않은&nbsp;경우,&nbsp;VTP&nbsp;메시지를&nbsp;주고&nbsp;받을&nbsp;수&nbsp;없음
-&nbsp;</li>
+<li>스위치간&nbsp;링크가&nbsp;만약&nbsp;Access로&nbsp;설정이&nbsp;되어있거나 Trunk&nbsp;설정이&nbsp;아직&nbsp;되지&nbsp;않은&nbsp;경우,&nbsp;VTP&nbsp;메시지를&nbsp;주고&nbsp;받을&nbsp;수&nbsp;없음</li>
 </ul>
 </li>
-<li>VTP Password&nbsp;일치<!-- -->
+<li>
+<p>VTP Password&nbsp;일치</p>
 <ul>
 <li>안전장치인&nbsp;비밀번호를&nbsp;설정해놓는&nbsp;경우가&nbsp;있음<!-- -->
 <ul>
-<li>VTP&nbsp;프로토콜을&nbsp;이용하여&nbsp;무분별하게&nbsp;정보를&nbsp;받아올&nbsp;수&nbsp;있기&nbsp;때문에&nbsp;</li>
+<li>VTP&nbsp;프로토콜을&nbsp;이용하여&nbsp;무분별하게&nbsp;정보를&nbsp;받아올&nbsp;수&nbsp;있기&nbsp;때문에</li>
 </ul>
 </li>
-<li>만약&nbsp;도메인&nbsp;이름은&nbsp;동일한데&nbsp;비밀번호가&nbsp;같지&nbsp;않다면&nbsp;VTP메시지를&nbsp;통한&nbsp;동기화를&nbsp;할&nbsp;수가&nbsp;없음&nbsp;<!-- -->
+<li>만약&nbsp;도메인&nbsp;이름은&nbsp;동일한데&nbsp;비밀번호가&nbsp;같지&nbsp;않다면&nbsp;VTP메시지를&nbsp;통한&nbsp;동기화를&nbsp;할&nbsp;수가&nbsp;없음<!-- -->
 <ul>
 <li>비밀번호를&nbsp;설정해놓은&nbsp;경우에는&nbsp;동기화를&nbsp;할&nbsp;모든&nbsp;스위치에&nbsp;비밀번호가&nbsp;같도록&nbsp;해야함</li>
 </ul>
@@ -525,7 +583,7 @@
 </ul>
 </li>
 </ul>
-<h5 class="anchor anchorWithStickyNavbar_LWe7" id="80211-초기-버전">802.11 (초기 버전)<a href="https://dldkffh.github.io/2024/02/10/ieee-802#80211-%EC%B4%88%EA%B8%B0-%EB%B2%84%EC%A0%84" class="hash-link" aria-label="802.11 (초기 버전)에 대한 직접 링크" title="802.11 (초기 버전)에 대한 직접 링크">​</a></h5>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="80211-초기-버전">802.11 (초기 버전)<a href="https://dldkffh.github.io/2024/02/10/ieee-802#80211-%EC%B4%88%EA%B8%B0-%EB%B2%84%EC%A0%84" class="hash-link" aria-label="802.11 (초기 버전)에 대한 직접 링크" title="802.11 (초기 버전)에 대한 직접 링��크">​</a></h5>
 <ul>
 <li>최고속도가 2Mbps</li>
 <li>적외선 신호나 ISM 대역인 2.4GHz 대역 전파를 사용</li>
@@ -711,7 +769,7 @@
         <link href="https://dldkffh.github.io/2024/02/10/lwapp-capwap"/>
         <updated>2024-02-10T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[CAPWAP(Control And Provisioning of Wireless Access Points, 무선 액세스 포인트 제어 및 프로비저닝)]]></summary>
-        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="capwapcontrol-and-provisioning-of-wireless-access-points-무선-액세스-포인트-제어-및-프로비저닝">CAPWAP(Control And Provisioning of Wireless Access Points, 무선 액세스 포인트 제어 및 프로비저닝)<a href="https://dldkffh.github.io/2024/02/10/lwapp-capwap#capwapcontrol-and-provisioning-of-wireless-access-points-%EB%AC%B4%EC%84%A0-%EC%95%A1%EC%84%B8%EC%8A%A4-%ED%8F%AC%EC%9D%B8%ED%8A%B8-%EC%A0%9C%EC%96%B4-%EB%B0%8F-%ED%94%84%EB%A1%9C%EB%B9%84%EC%A0%80%EB%8B%9D" class="hash-link" aria-label="CAPWAP(Control And Provisioning of Wireless Access Points, 무선 액세스 포인트 제어 및 프로비저닝)에 대한 직접 링크" title="CAPWAP(Control And Provisioning of Wireless Access Points, 무선 액세스 포인트 제어 및 프로비저닝)에 대한 직접 링크">​</a></h3>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="capwapcontrol-and-provisioning-of-wireless-access-points-무선-액세스-포인트-제어-및-프로비저닝">CAPWAP(Control And Provisioning of Wireless Access Points, 무선 액세스 포인트 제어 및 프로비저닝)<a href="https://dldkffh.github.io/2024/02/10/lwapp-capwap#capwapcontrol-and-provisioning-of-wireless-access-points-%EB%AC%B4%EC%84%A0-%EC%95%A1%EC%84%B8%EC%8A%A4-%ED%8F%AC%EC%9D%B8%ED%8A%B8-%EC%A0%9C%EC%96%B4-%EB%B0%8F-%ED%94%84%EB%A1%9C%EB%B9%84%EC%A0%80%EB%8B%9D" class="hash-link" aria-label="CAPWAP(Control And Provisioning of Wireless Access Points, 무선 액세스 포인트 제어 및 프로비저닝)에 대��한 직접 링크" title="CAPWAP(Control And Provisioning of Wireless Access Points, 무선 액세스 포인트 제어 및 프로비저닝)에 대한 직접 링크">​</a></h3>
 <ul>
 <li>AP와 WLC간의 통신 프로토콜<!-- -->
 <ul>
@@ -813,7 +871,7 @@
         <link href="https://dldkffh.github.io/2024/02/06/dhcp-vs-dns"/>
         <updated>2024-02-06T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[DHCP(Dynamic Host Configuration Protocol, 동적 호스트 구성 프로토콜)]]></summary>
-        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="dhcpdynamic-host-configuration-protocol-동적-호스트-구성-프로토콜">DHCP(Dynamic Host Configuration Protocol, 동적 호스트 구성 프로토콜)<a href="https://dldkffh.github.io/2024/02/06/dhcp-vs-dns#dhcpdynamic-host-configuration-protocol-%EB%8F%99%EC%A0%81-%ED%98%B8%EC%8A%A4%ED%8A%B8-%EA%B5%AC%EC%84%B1-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C" class="hash-link" aria-label="DHCP(Dynamic Host Configuration Protocol, 동적 호스트 구성 프로토콜)에 대한 직접 링크" title="DHCP(Dynamic Host Configuration Protocol, 동적 호스트 구성 프로토콜)에 대한 직접 링�크">​</a></h3>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="dhcpdynamic-host-configuration-protocol-동적-호스트-구성-프로토콜">DHCP(Dynamic Host Configuration Protocol, 동적 호스트 구성 프로토콜)<a href="https://dldkffh.github.io/2024/02/06/dhcp-vs-dns#dhcpdynamic-host-configuration-protocol-%EB%8F%99%EC%A0%81-%ED%98%B8%EC%8A%A4%ED%8A%B8-%EA%B5%AC%EC%84%B1-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C" class="hash-link" aria-label="DHCP(Dynamic Host Configuration Protocol, 동적 호스트 구성 프로토콜)에 대한 직접 링크" title="DHCP(Dynamic Host Configuration Protocol, 동적 호스트 구성 프로토콜)에 대한 직접 링크">​</a></h3>
 <ul>
 <li><a href="https://ko.m.wikipedia.org/wiki/%ED%98%B8%EC%8A%A4%ED%8A%B8" target="_blank" rel="noopener noreferrer">호스트</a>&nbsp;<a href="https://ko.m.wikipedia.org/wiki/IP" target="_blank" rel="noopener noreferrer">IP</a>&nbsp;구성 관리를 단순화하는 IP 표준</li>
 <li>IP 주소의 일률적 관리 서비스를 제공<!-- -->
@@ -896,7 +954,7 @@
 <li>로드밸런싱</li>
 <li>박스 구성에서 STP의 영향을 최소화</li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="lacp-link-aggregation-control-protocol-링크-애그리게이션-컨트롤-프로토콜">LACP (Link Aggregation Control Protocol, 링크 애그리게이션 컨트롤 프로토콜)<a href="https://dldkffh.github.io/2024/02/06/lag-lacp#lacp-link-aggregation-control-protocol-%EB%A7%81%EF%BF%BD%ED%81%AC-%EC%95%A0%EA%B7%B8%EB%A6%AC%EA%B2%8C%EC%9D%B4%EC%85%98-%EC%BB%A8%ED%8A%B8%EB%A1%A4-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C" class="hash-link" aria-label="LACP (Link Aggregation Control Protocol, 링크 애그리게이션 컨트롤 프로토콜)에 대한 직접 링크" title="LACP (Link Aggregation Control Protocol, 링크 애그리게이션 컨트롤 프로토콜)에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="lacp-link-aggregation-control-protocol-링크-애그리게이션-컨트롤-프로토콜">LACP (Link Aggregation Control Protocol, 링크 애그리게이션 컨트롤 프로토콜)<a href="https://dldkffh.github.io/2024/02/06/lag-lacp#lacp-link-aggregation-control-protocol-%EB%A7%81%ED%81%AC-%EC%95%A0%EA%B7%B8%EB%A6%AC%EA%B2%8C%EC%9D%B4%EC%85%98-%EC%BB%A8%ED%8A%B8%EB%A1%A4-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C" class="hash-link" aria-label="LACP (Link Aggregation Control Protocol, 링크 애그리게이션 컨트롤 프로토콜)에 대한 직접 링크" title="LACP (Link Aggregation Control Protocol, 링크 애그리게이션 컨트롤 프로토콜)에 대한 직접 링크">​</a></h4>
 <ul>
 <li>IEEE 링크 애그리게이션 표준화 작업</li>
 <li>IEEE 802.3 그룹은 스터디 그룹을 구성하여 1997년 11월 미팅에서 상호 운용 가능한 링크 계층 표준을 만듦<!-- -->
@@ -1849,56 +1907,6 @@
             <uri>https://github.com/dldkffh</uri>
         </author>
         <category label="DNS" term="DNS"/>
-        <category label="인프라" term="인프라"/>
-        <category label="네트워크" term="네트워크"/>
-        <category label="개념" term="개념"/>
-        <category label="인프라/네트워크 엔지니어를 위한 네트워크 이해 및 설계 가이드" term="인프라/네트워크 엔지니어를 위한 네트워크 이해 및 설계 가이드"/>
-        <category label="책" term="책"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[NTP로 시각 맞추기]]></title>
-        <id>https://dldkffh.github.io/2023/10/15/ntp</id>
-        <link href="https://dldkffh.github.io/2023/10/15/ntp"/>
-        <updated>2023-10-15T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[NTP (Network Time Protocol)]]></summary>
-        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="ntp-network-time-protocol">NTP (Network Time Protocol)<a href="https://dldkffh.github.io/2023/10/15/ntp#ntp-network-time-protocol" class="hash-link" aria-label="NTP (Network Time Protocol)에 대한 직접 링크" title="NTP (Network Time Protocol)에 대한 직접 링크">​</a></h3>
-<p>장비의 시간 동기화를 위한 프로토콜</p>
-<ul>
-<li>여러 장비가 얽히는 문제점을 트러블슈팅해 나갈때 문제의 흐름을 시간 순으로 이해라는 것이 중요</li>
-<li>'Stratum'이라는 값을 이용한 계층구조</li>
-<li>Stratum은 최상위의 시간 생성원으로부터의 NTP 홉 수</li>
-</ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="udp의-유니캐스트">UDP의 유니캐스트<a href="https://dldkffh.github.io/2023/10/15/ntp#udp%EC%9D%98-%EC%9C%A0%EB%8B%88%EC%BA%90%EC%8A%A4%ED%8A%B8" class="hash-link" aria-label="UDP의 유니캐스트에 대한 직접 링크" title="UDP의 유니캐스트에 대한 직접 링크">​</a></h4>
-<ul>
-<li>유니캐스트, 멀티캐스트, 브로드캐스트 모든 통신 유형에서 동작</li>
-<li>서버 시스템에서 사용하는 NTP는 유니캐스트뿐!</li>
-</ul>
-<h5 class="anchor anchorWithStickyNavbar_LWe7" id="ntp-query">NTP Query<a href="https://dldkffh.github.io/2023/10/15/ntp#ntp-query" class="hash-link" aria-label="NTP Query에 대한 직접 링크" title="NTP Query에 대한 직접 링크">​</a></h5>
-<h5 class="anchor anchorWithStickyNavbar_LWe7" id="ntp-reply">NTP Reply<a href="https://dldkffh.github.io/2023/10/15/ntp#ntp-reply" class="hash-link" aria-label="NTP Reply에 대한 직접 링크" title="NTP Reply에 대한 직접 링크">​</a></h5>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="동기화-간격은-변동">동기화 간격은 변동<a href="https://dldkffh.github.io/2023/10/15/ntp#%EB%8F%99%EA%B8%B0%ED%99%94-%EA%B0%84%EA%B2%A9%EC%9D%80-%EB%B3%80%EB%8F%99" class="hash-link" aria-label="동기화 간격은 변동에 대한 직접 링크" title="동기화 간격은 변동에 대한 직접 링크">​</a></h4>
-<p>NTP 서버에 대한 동기화 간격은 사용하는 NTP 애플리케이션에 따라 다름</p>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="두-가지-모드">두 가지 모드<a href="https://dldkffh.github.io/2023/10/15/ntp#%EB%91%90-%EA%B0%80%EC%A7%80-%EB%AA%A8%EB%93%9C" class="hash-link" aria-label="두 가지 모드에 대한 직접 링크" title="두 가지 모드에 대한 직접 링크">​</a></h4>
-<ul>
-<li>
-<p>단번에 맞추는 step 모드</p>
-<ul>
-<li>NTP 클라이언트의 시간이 진행하더라도 목표 시간으로 되돌림</li>
-<li>스위치나 라우터 등 시간 정보를 중요한 부분으로 사용하지 않는 기기에 사용</li>
-</ul>
-</li>
-<li>
-<p>천천히 맞추는 slew 모드</p>
-<ul>
-<li>1초에 0.5밀리초씩 시간을 보정</li>
-<li>클라이언트의 시간이 진행하더라도 시간을 되돌리지 않음</li>
-</ul>
-</li>
-</ul>]]></content>
-        <author>
-            <name>dldkffh</name>
-            <uri>https://github.com/dldkffh</uri>
-        </author>
-        <category label="NTP" term="NTP"/>
         <category label="인프라" term="인프라"/>
         <category label="네트워크" term="네트워크"/>
         <category label="개념" term="개념"/>
