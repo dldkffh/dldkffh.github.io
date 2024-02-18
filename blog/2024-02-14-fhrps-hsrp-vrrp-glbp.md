@@ -101,7 +101,7 @@ enableComments: true # for Gisqus
 - GLBP Priority 값이 높은 장비가 선출 (기본값: 100)
 - GLBP Priority 값이 동일한 경우 실제 IP 주소의 숫자가 큰 장비가 선출
 
-### FHRP 옵션
+### FHRP 옵션 요약
 
 | 약어 | 정식 명칭 | 출처 | 이중화 방법 | 부하 분산 |
 | --- | --- | --- | --- | --- |
