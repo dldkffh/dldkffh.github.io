@@ -1,7 +1,7 @@
 ---
 title: native & blackhole VLAN
 authors: dldkffh
-tags: [vlan, native, blackhole, 네트워크, 개념]
+tags: [VLAN, native, blackhole, 네트워크, 개념]
 enableComments: true # for Gisqus
 ---
 
