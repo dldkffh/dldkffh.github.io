@@ -9,6 +9,27 @@
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
         <item>
+            <title><![CDATA[DTP]]></title>
+            <link>https://dldkffh.github.io/2024/02/19/dtp</link>
+            <guid>https://dldkffh.github.io/2024/02/19/dtp</guid>
+            <pubDate>Mon, 19 Feb 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[DTP (Dynamic Trunking Protocol)]]></description>
+            <content:encoded><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="dtp-dynamic-trunking-protocol">DTP (Dynamic Trunking Protocol)<a href="https://dldkffh.github.io/2024/02/19/dtp#dtp-dynamic-trunking-protocol" class="hash-link" aria-label="DTP (Dynamic Trunking Protocol)에 대한 직접 링크" title="DTP (Dynamic Trunking Protocol)에 대한 직접 링크">​</a></h3>
+<ul>
+<li>스위치 간 트렁킹을 협상하는 데 사용</li>
+<li>Cisco 독점 프로토콜</li>
+<li>워크스테이션이 DHCP 주소를 수신하는 것을 막지는 않음<!-- -->
+<ul>
+<li>VLAN 태깅을 다루는 802.1Q는 VLAN 환경에서 DHCP 주소를 수신하지 못하는 워크스테이션과 관련된 문제를 고려할 때 가장 관련성이 높은 옵션</li>
+</ul>
+</li>
+</ul>]]></content:encoded>
+            <category>DTP</category>
+            <category>프로토콜</category>
+            <category>네트워크</category>
+            <category>개념</category>
+        </item>
+        <item>
             <title><![CDATA[STP, BPDUs]]></title>
             <link>https://dldkffh.github.io/2024/02/19/stp-bpdus</link>
             <guid>https://dldkffh.github.io/2024/02/19/stp-bpdus</guid>
@@ -73,7 +94,7 @@
 </ul>
 </li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="4-각-네트워크-세그먼트에서의-최��소-비용-경로">4. 각 네트워크 세그먼트에서의 최소 비용 경로<a href="https://dldkffh.github.io/2024/02/19/stp-bpdus#4-%EA%B0%81-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EC%84%B8%EA%B7%B8%EB%A8%BC%ED%8A%B8%EC%97%90%EC%84%9C%EC%9D%98-%EC%B5%9C%EC%86%8C-%EB%B9%84%EC%9A%A9-%EA%B2%BD%EB%A1%9C" class="hash-link" aria-label="4. 각 네트워크 세그먼트에서의 최소 비용 경로에 대한 직접 링크" title="4. 각 네트워크 세그먼트에서의 최소 비용 경로에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="4-각-네트워크-세그먼트에서의-최소-비용-경로">4. 각 네트워크 세그먼트에서의 최소 비용 경로<a href="https://dldkffh.github.io/2024/02/19/stp-bpdus#4-%EA%B0%81-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EC%84%B8%EA%B7%B8%EB%A8%BC%ED%8A%B8%EC%97%90%EC%84%9C%EC%9D%98-%EC%B5%9C%EC%86%8C-%EB%B9%84%EC%9A%A9-%EA%B2%BD%EB%A1%9C" class="hash-link" aria-label="4. 각 네트워크 세그먼트에서의 최소 비용 경로에 대한 직접 링크" title="4. 각 네트워크 세그먼트에서의 최소 비용 경로에 대한 직접 링크">​</a></h4>
 <ul>
 <li>네트워크 세그먼트 상의 브리지들은 해당 네트워크 세그먼트에서 루트로의 최소 비용 경로를 갖는 브리지를 결정<!-- -->
 <ul>
@@ -289,7 +310,7 @@
 </ul>
 </li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="native-vlan">Native VLAN<a href="https://dldkffh.github.io/2024/02/19/vlan#native-vlan" class="hash-link" aria-label="Native VLAN에 대한 직접 링크" title="Native VLAN에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="native-vlan">Native VLAN<a href="https://dldkffh.github.io/2024/02/19/vlan#native-vlan" class="hash-link" aria-label="Native VLAN��에 대한 직접 링크" title="Native VLAN에 대한 직접 링크">​</a></h4>
 <ul>
 <li>태그가 지정되지 않은 트래픽을 전달하는 VLAN</li>
 <li>일반적으로 스위치의 새 포트에 대한 기본 VLAN 상태</li>
@@ -317,7 +338,7 @@
 <li>포트 기반 VLAN보다 유연</li>
 <li>엔터프라이즈 네트워크에서 사용</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="vtp-vlan-트렁킹">VTP (VLAN 트렁킹)<a href="https://dldkffh.github.io/2024/02/19/vlan#vtp-vlan-%ED%8A%B8%EB%A0%81%ED%82%B9" class="hash-link" aria-label="VTP (VLAN 트렁킹)에 대한 직접 링크" title="VTP (VLAN 트렁킹)에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="vtp-vlan-트렁킹">VTP (VLAN 트렁킹)<a href="https://dldkffh.github.io/2024/02/19/vlan#vtp-vlan-%ED%8A%B8%EB%A0%81%EF%BF%BD%ED%82%B9" class="hash-link" aria-label="VTP (VLAN 트렁킹)에 대한 직접 링크" title="VTP (VLAN 트렁킹)에 대한 직접 링크">​</a></h3>
 <ul>
 <li>VLAN 트렁킹은 단일 물리적 링크를 통해 여러 VLAN에서 트래픽을 전송하는 프로세스<!-- -->
 <ul>
@@ -342,7 +363,7 @@
 <li>각 VLAN의 ID는 고유해야 하며 네트워크의 다른 부분에서 재사용해서는 안 됨</li>
 <li>프로덕션 환경에 배포하기 전에 구성을 테스트하는 것이 중요</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="출처">출처<a href="https://dldkffh.github.io/2024/02/19/vlan#%EC%B6%9C%EC%B2%98" class="hash-link" aria-label="출처에 대한 직접 링크" title="출처�에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="출처">출처<a href="https://dldkffh.github.io/2024/02/19/vlan#%EC%B6%9C%EC%B2%98" class="hash-link" aria-label="출처에 대한 직접 링크" title="출처에 대한 직접 링크">​</a></h3>
 <ul>
 <li><a href="https://fiberroad.com/ko/resources/glossary/vlan-explained-what-is-vlan-how-does-it-work/" target="_blank" rel="noopener noreferrer">https://fiberroad.com/ko/resources/glossary/vlan-explained-what-is-vlan-how-does-it-work/</a></li>
 <li><a href="http://www.ktword.co.kr/test/view/view.php?no=2022" target="_blank" rel="noopener noreferrer">http://www.ktword.co.kr/test/view/view.php?no=2022</a></li>
@@ -430,7 +451,7 @@
 <li><code>show ip access-list</code> : ACL를 설정한 내용</li>
 <li><code>show ip access-list</code> : ACL를 설정한 내용 확인</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="네��트워크-액세스-제어-보안-프로토콜">네트워크 액세스 제어 보안 프로토콜<a href="https://dldkffh.github.io/2024/02/18/it-security-terms#%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EC%95%A1%EC%84%B8%EC%8A%A4-%EC%A0%9C%EC%96%B4-%EB%B3%B4%EC%95%88-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C" class="hash-link" aria-label="네트워크 액세스 제어 보안 프로토콜에 대한 직접 링크" title="네트워크 액세스 제어 보안 프로토콜에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="네트워크-액세스-제어-보안-프로토콜">네트워크 액세스 제어 보안 프로토콜<a href="https://dldkffh.github.io/2024/02/18/it-security-terms#%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EC%95%A1%EC%84%B8%EC%8A%A4-%EC%A0%9C%EC%96%B4-%EB%B3%B4%EC%95%88-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C" class="hash-link" aria-label="네트워크 액세스 제어 보안 프로토콜에 대한 직접 링크" title="네트워크 액세스 제어 보안 프로토콜에 대한 직접 링크">​</a></h3>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="radiusremote-authentication-dial-in-user-service">RADIUS(Remote Authentication Dial-In User Service)<a href="https://dldkffh.github.io/2024/02/18/it-security-terms#radiusremote-authentication-dial-in-user-service" class="hash-link" aria-label="RADIUS(Remote Authentication Dial-In User Service)에 대한 직접 링크" title="RADIUS(Remote Authentication Dial-In User Service)에 대한 직접 링크">​</a></h4>
 <ul>
 <li>네트워크 서비스에 연결하고 사용하는 사용자에게 중앙 집중식 AAA를 제공하는 네트워킹 프로토콜</li>
@@ -512,7 +533,7 @@
 <li>두 당사자가 안전한 채널을 통해 사전에 공유한 비밀 키를 이용해 암호화</li>
 <li>거의 항상 대칭 키 암호화 알고리즘을 사용</li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="sae-simultaneous-authentication-of-equals-동일-동시-인증">SAE (Simultaneous Authentication of Equals, 동일 동시 인증)<a href="https://dldkffh.github.io/2024/02/18/it-security-terms#sae-simultaneous-authentication-of-equals-%EB%8F%99%EC%9D%BC-%EB%8F%99%EC%8B%9C-%EC%9D%B8%EC%A6%9D" class="hash-link" aria-label="SAE (Simultaneous Authentication of Equals, 동일 동시 인증)에 대한 직접 링크" title="SAE (Simultaneous Authentication of Equals, 동일 동시 인증)에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="sae-simultaneous-authentication-of-equals-동일-동시-인증">SAE (Simultaneous Authentication of Equals, 동일 동시 인증)<a href="https://dldkffh.github.io/2024/02/18/it-security-terms#sae-simultaneous-authentication-of-equals-%EB%8F%99%EC%9D%BC-%EB%8F%99%EC%8B%9C-%EC%9D%B8%EC%A6%9D" class="hash-link" aria-label="SAE (Simultaneous Authentication of Equals, 동일 동시 ��인증)에 대한 직접 링크" title="SAE (Simultaneous Authentication of Equals, 동일 동시 인증)에 대한 직접 링크">​</a></h4>
 <ul>
 <li>비밀번호 기반 인증이자 암호 인증된 키 합의 방법</li>
 <li>공격자가 추가적인 네트워크 상호작용 없이 암호 추측을 시도하는 오프라인 사전 공격(dictionary attack)을 방어</li>
@@ -616,7 +637,7 @@
 <li>native VLAN 태그 지정 기능이 없는 장치를 지원하는 VLAN 서비스</li>
 <li>트렁크 포트에서 태그가 지정되지 않은 트래픽을 전달하는 데 사용</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="blackhole-vlan">blackhole VLAN<a href="https://dldkffh.github.io/2024/02/18/native-vlan-blackhole%20copy#blackhole-vlan" class="hash-link" aria-label="blackhole VLAN에 대한 직접 링크" title="blackhole VLAN에 대한 직접 ��링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="blackhole-vlan">blackhole VLAN<a href="https://dldkffh.github.io/2024/02/18/native-vlan-blackhole%20copy#blackhole-vlan" class="hash-link" aria-label="blackhole VLAN에 대한 직접 링크" title="blackhole VLAN에 대한 직접 링크">​</a></h3>
 <ul>
 <li>사용되지 않고 죽은 VLAN으로 생성된 VLAN</li>
 <li>특정 포트나 장치를 격리 또는 격리하거나, 네트워크에 대한 무단 액세스나 트래픽을 방지</li>
@@ -1339,7 +1360,7 @@
             <guid>https://dldkffh.github.io/2024/02/10/lwapp-capwap</guid>
             <pubDate>Sat, 10 Feb 2024 00:00:00 GMT</pubDate>
             <description><![CDATA[CAPWAP(Control And Provisioning of Wireless Access Points, 무선 액세스 포인트 제어 및 프로비저닝)]]></description>
-            <content:encoded><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="capwapcontrol-and-provisioning-of-wireless-access-points-무선-액세스-포인트-제어-및-프로비저닝">CAPWAP(Control And Provisioning of Wireless Access Points, 무선 액세스 포인트 제어 및 프로비저닝)<a href="https://dldkffh.github.io/2024/02/10/lwapp-capwap#capwapcontrol-and-provisioning-of-wireless-access-points-%EB%AC%B4%EC%84%A0-%EC%95%A1%EC%84%B8%EC%8A%A4-%ED%8F%AC%EC%9D%B8%ED%8A%B8-%EC%A0%9C%EC%96%B4-%EB%B0%8F-%ED%94%84%EB%A1%9C%EB%B9%84%EC%A0%80%EB%8B%9D" class="hash-link" aria-label="CAPWAP(Control And Provisioning of Wireless Access Points, 무선 액세스 포인트 제어 및 프로비저닝)에 대한 직접 링크" title="CAPWAP(Control And Provisioning of Wireless Access Points, 무선 액세스 포인트 제어 및 프로비저닝)에 대한 직접 링크">​</a></h3>
+            <content:encoded><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="capwapcontrol-and-provisioning-of-wireless-access-points-무선-액세스-포인트-제어-및-프로비저닝">CAPWAP(Control And Provisioning of Wireless Access Points, 무선 액세스 포인트 제어 및 프로비저닝)<a href="https://dldkffh.github.io/2024/02/10/lwapp-capwap#capwapcontrol-and-provisioning-of-wireless-access-points-%EB%AC%B4%EC%84%A0-%EC%95%A1%EC%84%B8%EC%8A%A4-%ED%8F%AC%EC%9D%B8%ED%8A%B8-%EC%A0%9C%EC%96%B4-%EB%B0%8F-%ED%94%84%EB%A1%9C%EB%B9%84%EC%A0%80%EB%8B%9D" class="hash-link" aria-label="CAPWAP(Control And Provisioning of Wireless Access Points, 무선 액세스 포인트 제어 및 프로비저닝)에 대한 직접 링크" title="CAPWAP(Control And Provisioning of Wireless Access Points, 무선 액세��스 포인트 제어 및 프로비저닝)에 대한 직접 링크">​</a></h3>
 <ul>
 <li>AP와 WLC간의 통신 프로토콜<!-- -->
 <ul>
@@ -1392,7 +1413,7 @@
 <ul>
 <li>송신 호스트에서 수신 호스트로 패킷을 전달하는 것</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="forwarding포워딩-전송-전달">forwarding(포워딩, 전송, 전달)<a href="https://dldkffh.github.io/2024/02/07/forwarding-routing#forwarding%ED%8F%AC%EC%9B%8C%EB%94%A9-%EC%A0%84%EC%86%A1-%EC%A0%84%EB%8B%AC" class="hash-link" aria-label="forwarding(포워딩, 전송, 전달)에 대한 직접 링크" title="forwarding(포워딩, 전�송, 전달)에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="forwarding포워딩-전송-전달">forwarding(포워딩, 전송, 전달)<a href="https://dldkffh.github.io/2024/02/07/forwarding-routing#forwarding%ED%8F%AC%EC%9B%8C%EB%94%A9-%EC%A0%84%EC%86%A1-%EC%A0%84%EB%8B%AC" class="hash-link" aria-label="forwarding(포워딩, 전송, 전달)에 대한 직접 링크" title="forwarding(포워딩, 전송, 전달)에 대한 직접 링크">​</a></h3>
 <ul>
 <li>패킷이 라우터의 입력 링크에 도달했을 때 라우터는 그 패킷을 적절한 출력 링크로 이동시켜야 함</li>
 <li>포워딩은 데이터 평면에 구현된 하나의 기능</li>
@@ -1512,7 +1533,7 @@
 <li>로드밸런싱</li>
 <li>박스 구성에서 STP의 영향을 최소화</li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="lacp-link-aggregation-control-protocol-링크-애그리게이션-컨트롤-프로토콜">LACP (Link Aggregation Control Protocol, 링크 애그리게이션 컨트롤 프로토콜)<a href="https://dldkffh.github.io/2024/02/06/lag-lacp#lacp-link-aggregation-control-protocol-%EB%A7%81%ED%81%AC-%EC%95%A0%EA%B7%B8%EB%A6%AC%EA%B2%8C%EC%9D%B4%EC%85%98-%EC%BB%A8%ED%8A%B8%EB%A1%A4-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C" class="hash-link" aria-label="LACP (Link Aggregation Control Protocol, 링크 애그리게이션 컨트롤 프로토콜)에 대한 직접 링크" title="LACP (Link Aggregation Control Protocol, 링크 애그리게이션 컨트롤 프로토콜)에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="lacp-link-aggregation-control-protocol-링크-애그리게이션-컨트롤-프로토콜">LACP (Link Aggregation Control Protocol, 링크 애그리게이션 컨트롤 프로토콜)<a href="https://dldkffh.github.io/2024/02/06/lag-lacp#lacp-link-aggregation-control-protocol-%EB%A7%81%ED%81%AC-%EC%95%A0%EA%B7%B8%EB%A6%AC%EA%B2%8C%EC%9D%B4%EC%85%98-%EC%BB%A8%ED%8A%B8%EB%A1%A4-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C" class="hash-link" aria-label="LACP (Link Aggregation Control Protocol, 링크 애그리게이션 컨�트롤 프로토콜)에 대한 직접 링크" title="LACP (Link Aggregation Control Protocol, 링크 애그리게이션 컨트롤 프로토콜)에 대한 직접 링크">​</a></h4>
 <ul>
 <li>IEEE 링크 애그리게이션 표준화 작업</li>
 <li>IEEE 802.3 그룹은 스터디 그룹을 구성하여 1997년 11월 미팅에서 상호 운용 가능한 링크 계층 표준을 만듦<!-- -->
@@ -1845,7 +1866,7 @@
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="eui-64-인터페이스-생성시">EUI-64 인터페이스 생성시<a href="https://dldkffh.github.io/2024/02/02/ipv6-address-type#eui-64-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4-%EC%83%9D%EC%84%B1%EC%8B%9C" class="hash-link" aria-label="EUI-64 인터페이스 생성시에 대한 직접 링크" title="EUI-64 인터페이스 생성시에 대한 직접 링크">​</a></h3>
 <p>중간에 <strong>FFFE</strong> 넣는거임</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="ipv4---ipv6-전환기술">IPv4 - IPv6 전환기술<a href="https://dldkffh.github.io/2024/02/02/ipv6-address-type#ipv4---ipv6-%EC%A0%84%ED%99%98%EA%B8%B0%EC%88%A0" class="hash-link" aria-label="IPv4 - IPv6 전환기술에 대한 직접 링크" title="IPv4 - IPv6 전환기��술에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="ipv4---ipv6-전환기술">IPv4 - IPv6 전환기술<a href="https://dldkffh.github.io/2024/02/02/ipv6-address-type#ipv4---ipv6-%EC%A0%84%ED%99%98%EA%B8%B0%EC%88%A0" class="hash-link" aria-label="IPv4 - IPv6 전환기술에 대한 직접 링크" title="IPv4 - IPv6 전환기술에 대한 직접 링크">​</a></h3>
 <ul>
 <li>dual stack(듀얼스택)<!-- -->
 <ul>
@@ -1912,308 +1933,6 @@
             <category>flooding</category>
             <category>플러딩</category>
             <category>네트워크</category>
-            <category>개념</category>
-        </item>
-        <item>
-            <title><![CDATA[네트워크 장비 종류 정리]]></title>
-            <link>https://dldkffh.github.io/2024/01/31/network-devices</link>
-            <guid>https://dldkffh.github.io/2024/01/31/network-devices</guid>
-            <pubDate>Wed, 31 Jan 2024 00:00:00 GMT</pubDate>
-            <description><![CDATA[Repeater(리피터) - Layer 1]]></description>
-            <content:encoded><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="repeater리피터---layer-1">Repeater(리피터) - Layer 1<a href="https://dldkffh.github.io/2024/01/31/network-devices#repeater%EB%A6%AC%ED%94%BC%ED%84%B0---layer-1" class="hash-link" aria-label="Repeater(리피터) - Layer 1에 대한 직접 링크" title="Repeater(리피터) - Layer 1에 대한 직접 링크">​</a></h3>
-<ul>
-<li>네트워크를 통해서 전송되는 신호 감쇠 문제를 해결하기 위한 장치<!-- -->
-<ul>
-<li>장거리 전송을 위해 신호를 증폭</li>
-<li>네트워크 규모를 확장</li>
-<li>무제한으로 신호가 연장되는 것은 아님</li>
-</ul>
-</li>
-<li>Hub(허브)중에도 리피터 기능을 가진 것이 있음</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="hub허브---layer-1">Hub(허브) - Layer 1<a href="https://dldkffh.github.io/2024/01/31/network-devices#hub%ED%97%88%EB%B8%8C---layer-1" class="hash-link" aria-label="Hub(허브) - Layer 1에 대한 직접 링크" title="Hub(허브) - Layer 1에 대한 직접 링크">​</a></h3>
-<ul>
-<li>여러 개의 시스템을 연결하는 경우 포트별로 케이블을 연결하여 사용</li>
-<li>분배 장치의 역할<!-- -->
-<ul>
-<li>여러 개의 포트에서 신호를 입력받아 다시 여러 개의 포트로 신호를 송출</li>
-</ul>
-</li>
-<li>기본적으로 물리계층에서 동작하나, 허브 특성에 따라 데이터링크 및 네트워크 계층에서도 동작</li>
-<li>네트워크 상태 모니터링 가능</li>
-<li>리피터 기능을 장착하고 있어 증폭기 역할도 수행</li>
-</ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="허브-종류">허브 종류<a href="https://dldkffh.github.io/2024/01/31/network-devices#%ED%97%88%EB%B8%8C-%EC%A2%85%EB%A5%98" class="hash-link" aria-label="허브 종류에 대한 직접 링크" title="허브 종류에 대한 직접 링크">​</a></h4>
-<ul>
-<li>Dummy Hub(더미허브)<!-- -->
-<ul>
-<li>시스템과 네트워크 장치 연결만 수행</li>
-<li>5대의 시스템을 연겨하면 5대의 시스템이 대역폭을 나누어 사용<!-- -->
-<ul>
-<li>연결 된 시스템의 수가 증가하면 성능이 떨어짐</li>
-</ul>
-</li>
-<li>리피터로 구성</li>
-</ul>
-</li>
-<li>Active Hub(액티브 허브)<!-- -->
-<ul>
-<li>네트워크와 함께 신호를 정리, 증폭 및 중계할 수 있는 허브<!-- -->
-<ul>
-<li>리피터 역할 수행해 연장하는 데 도움</li>
-</ul>
-</li>
-<li>원하는 신호 외에 잡음도 증폭</li>
-<li>패시브 허브에 비해 가격이 매우 비쌈</li>
-<li>전원 공급이 필요</li>
-</ul>
-</li>
-<li>Passive Hub(패시브 허브)<!-- -->
-<ul>
-<li>단순히 네트워크 세그먼트의 신호를 결합<!-- -->
-<ul>
-<li>물리적 매체를 공유하는 데에만 사용</li>
-<li>신호를 정리하고 증폭하지 않아 거리를 연장하는 데 사용할 수 없음</li>
-</ul>
-</li>
-<li>소음을 증폭시키지 않음</li>
-<li>액티브 허브에 비해 가격이 저렴</li>
-<li>전원 공급이 필요하지 않음</li>
-</ul>
-</li>
-<li>Intelligent Hub(지능형 허브)<!-- -->
-<ul>
-<li>SNMP 프로토콜을 사용해서 네트워크 관리 기능이 가능</li>
-<li>마이크로프로세서 칩이 포함</li>
-<li>활성 허브처럼 작동</li>
-<li>원격 관리 기능 포함</li>
-<li>유연한 데이터 속도 제공</li>
-<li>허브를 통과하는 트래픽 모니터링</li>
-<li>진단 기능<!-- -->
-<ul>
-<li>포트에 연결된 네트워크 연결상태를 점검</li>
-<li>네트워크 상태 문제를 해결하는 데 매우 유용</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Switching Hub(스위칭허브)<!-- -->
-<ul>
-<li>스위칭 기능이 추가되어 네트워크 효율을 향상</li>
-<li>여러개의 포트에서 입력을 받아서 특정 포트로만 데이터를 전송할 수 있음</li>
-<li>리피터 내장</li>
-</ul>
-</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="bridge브리지-브릿지---layer-2">Bridge(브리지, 브릿지) - Layer 2<a href="https://dldkffh.github.io/2024/01/31/network-devices#bridge%EB%B8%8C%EB%A6%AC%EC%A7%80-%EB%B8%8C%EB%A6%BF%EC%A7%80---layer-2" class="hash-link" aria-label="Bridge(브리지, 브릿지) - Layer 2에 대한 직접 링크" title="Bridge(브리지, 브릿지) - Layer 2에 대한 직접 링크">​</a></h3>
-<ul>
-<li>두 개의 LAN을 연결하는 연결장치로 송신 및 수신되는 통신량을 관리<!-- -->
-<ul>
-<li>송신 및 수신 되는 Frame(프레임)을 검사</li>
-</ul>
-</li>
-<li>네트워크 범위를 확장하고 할 때 사용</li>
-<li>서로 다른 물리적 네트워크를 연결할 수 있음<!-- -->
-<ul>
-<li>예시 : 이더넷과 토큰링 네트워크를 연결</li>
-</ul>
-</li>
-<li>네크워크에 많은 컴퓨터를 연결</li>
-<li>네트워크의 병목현상 감소</li>
-<li>하드웨어 주소인 MAC 주소로 관리</li>
-<li>입력 신호를 출력으로 전송하는 Forwarding(포워딩) 기능 수행</li>
-<li>목적지 MAC 주소를 읽어서 필터링을 수행</li>
-</ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="브리지-종류">브리지 종류<a href="https://dldkffh.github.io/2024/01/31/network-devices#%EB%B8%8C%EB%A6%AC%EC%A7%80-%EC%A2%85%EB%A5%98" class="hash-link" aria-label="브리지 종류에 대한 직접 링크" title="브리지 종류에 대한 직접 링크">​</a></h4>
-<ul>
-<li>Transparent Bridges(투명 브리지)<!-- -->
-<ul>
-<li>존재를 전혀 인식하지 못하는 브리지<!-- -->
-<ul>
-<li>각 단말이 브리지의 존재를 전혀 모르게 한다는 의미</li>
-<li>브리지가 네트워크에 추가되거나 삭제되었는지 여부에 관계없이 스테이션을 재구성할 필요 없음</li>
-</ul>
-</li>
-<li>bridge forwarding(브리지 전달)과 bridge learning(브리지 학습)이라는 두 가지 프로세스를 사용</li>
-<li>투명 브리지를 사용하여 LAN을 확장하는 경우에는 Bridging Loop 현상 등에 의하여 한계에 봉착</li>
-</ul>
-</li>
-<li>Source Routing Bridges(소스 라우팅 브리지)<!-- -->
-<ul>
-<li>라우팅 작업이 소스 스테이션에 의해 수행</li>
-</ul>
-</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="switch스위치---layer-2-3">Switch(스위치) - Layer 2, 3<a href="https://dldkffh.github.io/2024/01/31/network-devices#switch%EC%8A%A4%EC%9C%84%EC%B9%98---layer-2-3" class="hash-link" aria-label="Switch(스위치) - Layer 2, 3에 대한 직접 링크" title="Switch(스위치) - Layer 2, 3에 대한 직접 링크">​</a></h3>
-<ul>
-<li>Switching Hub(스위칭 허브) 혹은 Port Switching Hub(포트 스위칭 허브)라고도 함</li>
-<li>Hub(허브)와 거의 유사하지만 스위치는 허브보다 전송 속도가 빠름</li>
-<li>네트워크의 효율이 향상<!-- -->
-<ul>
-<li>네트워크에서 충돌이 발생하지 않도록 목적지의 포트로 직접 전송함</li>
-</ul>
-</li>
-<li>충돌이 발생하지 않음<!-- -->
-<ul>
-<li>송신자 노드와 수신자 노드를 일대일로 연결</li>
-</ul>
-</li>
-<li>빠른 데이터 전송 가능</li>
-<li>송신 및 수신 노드의 수가 증가해도 네트워크의 속도는 저하되지 않음</li>
-<li>포트별로 일정한 속도를 가지고 전송되는 Packet(패킷)에 대해서 감정이 어려움</li>
-<li>불필요한 네트워크 전송 최소화</li>
-</ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="스위치-종류">스위치 종류<a href="https://dldkffh.github.io/2024/01/31/network-devices#%EC%8A%A4%EC%9C%84%EC%B9%98-%EC%A2%85%EB%A5%98" class="hash-link" aria-label="스위치 종류에 대한 직접 링크" title="스위치 종류에 대한 직접 링크">​</a></h4>
-<ul>
-<li>비관리형 스위치<!-- -->
-<ul>
-<li>이 스위치는 간단한 플러그 앤 플레이 설계</li>
-<li>고급 구성 옵션을 제공하지 않음</li>
-<li>소규모 네트워크에 적합</li>
-<li>대규모 네트워크로의 확장으로 사용하기에 적합</li>
-</ul>
-</li>
-<li>관리형 스위치<!-- -->
-<ul>
-<li>VLAN, QoS 및 링크 집계와 같은 고급 구성 옵션을 제공</li>
-<li>크고 복잡한 네트워크에 적합</li>
-<li>중앙 집중식 관리 가능</li>
-</ul>
-</li>
-<li>스마트 스위치<!-- -->
-<ul>
-<li>관리형 스위치와 유사한 기능</li>
-<li>일반적으로 설정 및 관리가 쉽움</li>
-<li>중소규모 네트워크에 적합</li>
-</ul>
-</li>
-<li>레이어 2 스위치<!-- -->
-<ul>
-<li>동일한 네트워크 세그먼트에 있는 장치 간에 데이터를 전달</li>
-</ul>
-</li>
-<li>레이어 3 스위치<!-- -->
-<ul>
-<li>서로 다른 네트워크 세그먼트 간에 데이터를 라우팅</li>
-<li>크고 복잡한 네트워크에서 자주 사용</li>
-</ul>
-</li>
-<li>PoE 스위치<!-- -->
-<ul>
-<li>PoE(Power over Ethernet) 기능이 있음</li>
-<li>전달하는 동일한 케이블을 통해 네트워크 장치에 전원을 공급</li>
-</ul>
-</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="router라우터---layer-3">Router(라우터) - Layer 3<a href="https://dldkffh.github.io/2024/01/31/network-devices#router%EB%9D%BC%EC%9A%B0%ED%84%B0---layer-3" class="hash-link" aria-label="Router(라우터) - Layer 3에 대한 직접 링크" title="Router(라우터) - Layer 3에 대한 직접 링크">​</a></h3>
-<ul>
-<li>Internetworking(인터네트워킹) 장비<!-- -->
-<ul>
-<li>둘 이상의 서로 다른 네트워크를 연결<!-- -->
-<ul>
-<li>네트워크 간 하드웨어나 소프트웨어 모두를 연결</li>
-</ul>
-</li>
-<li>IP 주소를 기반으로 데이터 패킷을 라우팅하는 스위치</li>
-</ul>
-</li>
-<li>LAN과 WAN을 연결</li>
-<li>TCP/IP 프로토콜을 지원</li>
-<li>최신의 라우팅 테이블을 유지<!-- -->
-<ul>
-<li>주기적인 라우팅 브로드캐스트를 사용</li>
-<li>동적으로 업데이트</li>
-</ul>
-</li>
-<li>패킷에서 IP주소를 읽어서 경로를 결정</li>
-<li>필터링 수행<!-- -->
-<ul>
-<li>특정 IP에서 유입되는 패킷이나 특정 IP로 전송되는 패킷에 대해 필터링 수행 가능</li>
-</ul>
-</li>
-<li>Forwarding(포워딩) 수행<!-- -->
-<ul>
-<li>Broadcast(브로드캐스트)를 차단하거나 입력 인터페이스로 입력된 패킷을 출력 인터페이스로 전송</li>
-</ul>
-</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="gateway게이트웨이---all-layer">Gateway(게이트웨이) - All Layer<a href="https://dldkffh.github.io/2024/01/31/network-devices#gateway%EA%B2%8C%EC%9D%B4%ED%8A%B8%EC%9B%A8%EC%9D%B4---all-layer" class="hash-link" aria-label="Gateway(게이트웨이) - All Layer에 대한 직접 링크" title="Gateway(게이트웨이) - All Layer에 대한 직접 링크">​</a></h3>
-<ul>
-<li>다른 네트워크 간의 상호 연결을 위해 사용</li>
-<li>프로토콜이 달라도 통신 가능<!-- -->
-<ul>
-<li>서로 다른 프로토콜 간에 변환을 수행</li>
-</ul>
-</li>
-<li>Message(메시지) 변환<!-- -->
-<ul>
-<li>서로 다른 네트워크에서 사용하는 메시지 포팻 형식을 변환</li>
-<li>예시 : ASCII 코드로 작성된 메시지를 EBCDIC 코드로 변환</li>
-</ul>
-</li>
-<li>Protocol(프로토콜) 변환<!-- -->
-<ul>
-<li>서로 다른 종류의 프로토콜을 변환</li>
-<li>예시 : TCP/IP 프로토콜과 ATM 프로토콜 간의 상호변환 수행</li>
-</ul>
-</li>
-<li>Address(주소) 변환<!-- -->
-<ul>
-<li>서로 다른 주소를 변환</li>
-<li>예시 : IPv4 주소와 IPv6 주소간에 변환을 수행</li>
-</ul>
-</li>
-<li>Firewall(방화벽)<!-- -->
-<ul>
-<li>병화벽 역할 수행<!-- -->
-<ul>
-<li>서로 다른 네트워크를 연결하여 패킷 필터링</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Proxy Server(프록시 서버)<!-- -->
-<ul>
-<li>프록시 서버를 통해 다른 네트워크로 접근<!-- -->
-<ul>
-<li>프록시 서버는 중계기 역할을 수행하는 것</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="brouter브루터---layer-2-3">Brouter(브루터) - Layer 2, 3<a href="https://dldkffh.github.io/2024/01/31/network-devices#brouter%EB%B8%8C%EB%A3%A8%ED%84%B0---layer-2-3" class="hash-link" aria-label="Brouter(브루터) - Layer 2, 3에 대한 직접 링크" title="Brouter(브루터) - Layer 2, 3에 대한 직접 링크">​</a></h3>
-<ul>
-<li>브리징 라우터</li>
-<li>브리지와 라우터의 기능을 모두 결합<!-- -->
-<ul>
-<li>라우터로 작동하여 네트워크 전체에 패킷을 라우팅</li>
-<li>브리지로 작동하여 근거리 통신망 트래픽을 필터링</li>
-</ul>
-</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="nicnetwork-interface-card---layer-1-2">NIC(Network Interface Card) - Layer 1, 2<a href="https://dldkffh.github.io/2024/01/31/network-devices#nicnetwork-interface-card---layer-1-2" class="hash-link" aria-label="NIC(Network Interface Card) - Layer 1, 2에 대한 직접 링크" title="NIC(Network Interface Card) - Layer 1, 2에 대한 직접 링크">​</a></h3>
-<ul>
-<li>네트워크에 연결하는 데 사용되는 네트워크 어댑터</li>
-<li>LAN을 구축하기 위해 컴퓨터에 설치<!-- -->
-<ul>
-<li>칩에 고유 ID</li>
-<li>케이블을 연결하는 커넥터<!-- -->
-<ul>
-<li>케이블은 컴퓨터와 라우터 또는 모뎀 사이의 인터페이스 역할</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="출처">출처<a href="https://dldkffh.github.io/2024/01/31/network-devices#%EC%B6%9C%EC%B2%98" class="hash-link" aria-label="출처에 대한 직접 링크" title="출처에 대한 직접 링크">​</a></h3>
-<ul>
-<li><a href="http://www.ktword.co.kr/" target="_blank" rel="noopener noreferrer">정보통신기술용어해설</a></li>
-<li><a href="https://www.geeksforgeeks.org/" target="_blank" rel="noopener noreferrer">GeeksforGeeks</a></li>
-<li><a href="https://shop.youngjin.com/goods/view?no=69" target="_blank" rel="noopener noreferrer">이기적 네트워크관리사 1ㆍ2급 필기</a></li>
-</ul>]]></content:encoded>
-            <category>네트워크</category>
-            <category>인프라</category>
             <category>개념</category>
         </item>
     </channel>
