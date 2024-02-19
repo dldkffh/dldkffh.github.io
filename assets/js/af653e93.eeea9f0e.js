@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdldkffh_github_io=self.webpackChunkdldkffh_github_io||[]).push([[1054],{8328:e=>{e.exports=JSON.parse('{"label":"WEP","permalink":"/tags/wep","allTagsPath":"/tags","count":1,"unlisted":false}')}}]);

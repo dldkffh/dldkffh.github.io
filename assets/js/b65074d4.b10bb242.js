@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdldkffh_github_io=self.webpackChunkdldkffh_github_io||[]).push([[8321],{7553:s=>{s.exports=JSON.parse('{"label":"TKIP","permalink":"/tags/tkip","allTagsPath":"/tags","count":1,"unlisted":false}')}}]);
