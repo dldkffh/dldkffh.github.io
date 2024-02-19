@@ -4,10 +4,183 @@
         <title>dldkffh Blog</title>
         <link>https://dldkffh.github.io/</link>
         <description>dldkffh Blog</description>
-        <lastBuildDate>Sun, 18 Feb 2024 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 19 Feb 2024 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[VLAN]]></title>
+            <link>https://dldkffh.github.io/2024/02/19/vlan</link>
+            <guid>https://dldkffh.github.io/2024/02/19/vlan</guid>
+            <pubDate>Mon, 19 Feb 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[VLAN (Virtual LAN, 가상랜, Virtual Local Area Network, 가상 근거리 통신망)]]></description>
+            <content:encoded><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="vlan-virtual-lan-가상랜-virtual-local-area-network-가상-근거리-통신망">VLAN (Virtual LAN, 가상랜, Virtual Local Area Network, 가상 근거리 통신망)<a href="https://dldkffh.github.io/2024/02/19/vlan#vlan-virtual-lan-%EA%B0%80%EC%83%81%EB%9E%9C-virtual-local-area-network-%EA%B0%80%EC%83%81-%EA%B7%BC%EA%B1%B0%EB%A6%AC-%ED%86%B5%EC%8B%A0%EB%A7%9D" class="hash-link" aria-label="VLAN (Virtual LAN, 가상랜, Virtual Local Area Network, 가상 근거리 통신망)에 대한 직접 링크" title="VLAN (Virtual LAN, 가상랜, Virtual Local Area Network, 가상 �근거리 통신망)에 대한 직접 링크">​</a></h3>
+<ul>
+<li>물리적으로 분할할 필요 없이 논리적으로 네트워크를 분할</li>
+<li>VLAN ID가 포함된 VLAN 헤더로 이더넷 프레임을 캡슐화<!-- -->
+<ul>
+<li>ID는 어떤 장치가 어떤 VLAN에 있는지 식별하는 데 사용</li>
+</ul>
+</li>
+<li>특정 VLAN에 스위치 포트를 추가하여 생성</li>
+<li>동일한 VLAN에 있는 장치는 라우터 없이도 서로 통신<!-- -->
+<ul>
+<li>VLAN을 매우 효율적이고 관리하기 쉽게 만듦</li>
+<li>VLAN을 장치 간에 격리를 제공하는 가상 스위치로 생각</li>
+</ul>
+</li>
+<li>종종 음성, 비디오 및 데이터와 같은 다양한 유형의 트래픽을 분리하는 데 사용<!-- -->
+<ul>
+<li>데이터 트래픽은 일반적으로 자체 VLAN으로 분리됨<!-- -->
+<ul>
+<li>음성 및 비디오와 같은 실시간 트래픽을 방해하지 않음</li>
+</ul>
+</li>
+<li>음성 트래픽은 일반적으로 네트워크에서 우선 순위가 부여<!-- -->
+<ul>
+<li>지연이나 패킷 손실이 발생하지 않음</li>
+</ul>
+</li>
+<li>비디오 트래픽도 네트워크에서 우선 순위를 부여받아 중단 없이 원활하게 스트리밍</li>
+</ul>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="vlan을-사용하는-이유">VLAN을 사용하는 이유<a href="https://dldkffh.github.io/2024/02/19/vlan#vlan%EC%9D%84-%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94-%EC%9D%B4%EC%9C%A0" class="hash-link" aria-label="VLAN을 사용하는 이유에 대한 직접 링크" title="VLAN을 사용하는 이유에 대한 직접 링크">​</a></h4>
+<ul>
+<li>네트워크를 더 작고 관리하기 쉬운 섹션으로 분할</li>
+<li>트래픽을 격리하고 다른 유형의 트래픽과 분리하여 보안을 향상</li>
+<li>브로드캐스트 트래픽 및 충돌 도메인을 줄여 성능을 향상</li>
+<li>가상 네트워크를 만드는 데 사용<!-- -->
+<ul>
+<li>테스트 또는 교육 목적으로 유용</li>
+</ul>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="작동-방식">작동 방식<a href="https://dldkffh.github.io/2024/02/19/vlan#%EC%9E%91%EB%8F%99-%EB%B0%A9%EC%8B%9D" class="hash-link" aria-label="작동 방식에 대한 직접 링크" title="작동 방식에 대한 직접 링크">​</a></h4>
+<ul>
+<li>가상 LAN(VLAN)은 스위치에 의해 생성된 논리적 네트워크</li>
+<li>VLAN에는 VLAN에 할당되고 VLAN ID라는 고유 식별자가 있는 스위치 포트가 포함되어 있음</li>
+<li>대부분의 경우 단일 물리적 스위치에 여러 VLAN이 구성<!-- -->
+<ul>
+<li>네트워크의 트래픽을 더 잘 구성하고 보안도 향상</li>
+</ul>
+</li>
+<li>장치가 네트워크로 데이터를 보낼 때 데이터를 보낼 VLAN을 식별하는 태그라는 필드가 포함<!-- -->
+<ul>
+<li>스위치는 이 태그를 확인한 다음 해당 VLAN의 모든 장치에 데이터를 전달</li>
+</ul>
+</li>
+<li>VLAN 사용의 한 가지 이점은 네트워크에서 브로드캐스트 트래픽을 줄이는 데 도움이 된다는 것</li>
+<li>장치를 서로 다른 VLAN으로 분리하면 각 장치가 수신하는 브로드캐스트를 제어<!-- -->
+<ul>
+<li>네트워크 성능을 개선하는 데 도움이 됨</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="vlan-유형">VLAN 유형<a href="https://dldkffh.github.io/2024/02/19/vlan#vlan-%EC%9C%A0%ED%98%95" class="hash-link" aria-label="VLAN 유형에 대한 직접 링크" title="VLAN 유형에 대한 직접 링크">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="data-vlan">Data VLAN<a href="https://dldkffh.github.io/2024/02/19/vlan#data-vlan" class="hash-link" aria-label="Data VLAN에 대한 직접 링크" title="Data VLAN에 대한 직접 링크">​</a></h4>
+<ul>
+<li>사용자 데이터 트래픽을 전달</li>
+<li>사용자 VLAN이라고도 함</li>
+<li>Data VLAN의 구성원인 모든 스위치 포트에는 동일한 VLAN ID가 할당</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="voice-vlan">Voice VLAN<a href="https://dldkffh.github.io/2024/02/19/vlan#voice-vlan" class="hash-link" aria-label="Voice VLAN에 대한 직접 링크" title="Voice VLAN에 대한 직접 링크">​</a></h4>
+<ul>
+<li>실시간 Voice 트래픽을 전달하도록 구성된 특수한 유형의 데이터 VLAN</li>
+<li>다른 유형의 트래픽보다 Voice 트래픽에 우선 순위를 부여<!-- -->
+<ul>
+<li>Voice VLAN의 구성원인 모든 스위치 포트에는 동일한 Voice CoS(서비스 등급) 값이 할당</li>
+</ul>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="surveillance감시-vlan">Surveillance(감시) VLAN<a href="https://dldkffh.github.io/2024/02/19/vlan#surveillance%EA%B0%90%EC%8B%9C-vlan" class="hash-link" aria-label="Surveillance(감시) VLAN에 대한 직접 링크" title="Surveillance(감시) VLAN에 대한 직접 링크">​</a></h4>
+<ul>
+<li>실시간 비디오 트래픽을 전달하도록 구성된 특수한 유형의 데이터 VLAN</li>
+<li>다른 유형의 트래픽보다 Voice 트래픽에 우선 순위를 부여<!-- -->
+<ul>
+<li>Surveillance VLAN의 구성원인 모든 스위치 포트에는 동일한 Voice CoS(서비스 등급) 값이 할당</li>
+</ul>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="management-vlan">Management VLAN<a href="https://dldkffh.github.io/2024/02/19/vlan#management-vlan" class="hash-link" aria-label="Management VLAN에 대한 직접 링크" title="Management VLAN에 대한 직접 링크">​</a></h4>
+<ul>
+<li>스위치, 라우터 및 방화벽과 같은 네트워크의 장치에 대한 대역 외 관리 트래픽을 수행하는 데 사용되는 특수 유형의 데이터 VLAN</li>
+<li>일반적으로 공용 인터넷에서 라우팅할 수 없는 IP 주소 사용</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="default-vlan">Default VLAN<a href="https://dldkffh.github.io/2024/02/19/vlan#default-vlan" class="hash-link" aria-label="Default VLAN에 대한 직접 링크" title="Default VLAN에 대한 직접 링크">​</a></h4>
+<ul>
+<li>모든 포트가 단일 VLAN에 할당되는 네트워크 스위치 구성</li>
+<li>별도의 VLAN을 구성할 필요 없이 동일한 VLAN의 모든 장치가 서로 통신할 수 있도록 하여 스위치 관리를 단순화<!-- -->
+<ul>
+<li>승인되지 않은 장치가 중요한 데이터에 액세스하도록 허용하여 보안 위험을 초래할 수도 있음</li>
+</ul>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="native-vlan">Native VLAN<a href="https://dldkffh.github.io/2024/02/19/vlan#native-vlan" class="hash-link" aria-label="Native VLAN에 대한 직접 링크" title="Native VLAN에 대한 직접 링크">​</a></h4>
+<ul>
+<li>태그가 지정되지 않은 트래픽을 전달하는 VLAN</li>
+<li>일반적으로 스위치의 새 포트에 대한 기본 VLAN 상태</li>
+<li>Native VLAN의 모든 장치는 트래픽에 태그를 지정하지 않고 서로 통신</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="포트-기반-vlan과-태그-기반-vlan의-차이점">포트 기반 VLAN과 태그 기반 VLAN의 차이점<a href="https://dldkffh.github.io/2024/02/19/vlan#%ED%8F%AC%ED%8A%B8-%EA%B8%B0%EB%B0%98-vlan%EA%B3%BC-%ED%83%9C%EA%B7%B8-%EA%B8%B0%EB%B0%98-vlan%EC%9D%98-%EC%B0%A8%EC%9D%B4%EC%A0%90" class="hash-link" aria-label="포트 기반 VLAN과 태그 기반 VLAN의 차이점에 대한 직접 링크" title="포트 기반 VLAN과 태그 기반 VLAN의 차이점에 대한 직접 링크">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="포트-기반-vlan">포트 기반 VLAN<a href="https://dldkffh.github.io/2024/02/19/vlan#%ED%8F%AC%ED%8A%B8-%EA%B8%B0%EB%B0%98-vlan" class="hash-link" aria-label="포트 기반 VLAN에 대한 직접 링크" title="포트 기반 VLAN에 대한 직접 링크">​</a></h4>
+<ul>
+<li>VLAN에서 각 포트는 특정 VLAN에 할당<!-- -->
+<ul>
+<li>서로 다른 VLAN 간에 트래픽을 격리</li>
+</ul>
+</li>
+<li>네트워크 스위치의 각 포트가 특정 VLAN에 할당되는 가장 일반적인 유형</li>
+<li>소규모 사무실/홈 오피스(SOHO) 네트워크에서 사용</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="tag-기반-vlan">TAG 기반 VLAN<a href="https://dldkffh.github.io/2024/02/19/vlan#tag-%EA%B8%B0%EB%B0%98-vlan" class="hash-link" aria-label="TAG 기반 VLAN에 대한 직접 링크" title="TAG 기반 VLAN에 대한 직접 링크">​</a></h4>
+<ul>
+<li>태그를 사용하여 어떤 패킷이 어떤 VLAN에 속하는지 식별<!-- -->
+<ul>
+<li>여러 VLAN을 단일 포트에 할당</li>
+</ul>
+</li>
+<li>특수 태그를 사용하여 다른 VLAN에 속하는 패킷을 식별</li>
+<li>포트 기반 VLAN보다 유연</li>
+<li>엔터프라이즈 네트워크에서 사용</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="vtp-vlan-트렁킹">VTP (VLAN 트렁킹)<a href="https://dldkffh.github.io/2024/02/19/vlan#vtp-vlan-%ED%8A%B8%EB%A0%81%ED%82%B9" class="hash-link" aria-label="VTP (VLAN 트렁킹)에 대한 직접 링크" title="VTP (VLAN 트렁킹)에 대한 직접 링크">​</a></h3>
+<ul>
+<li>VLAN 트렁킹은 단일 물리적 링크를 통해 여러 VLAN에서 트래픽을 전송하는 프로세스<!-- -->
+<ul>
+<li>네트워크 장치를 구성할 때 유연성과 효율성이 향상</li>
+</ul>
+</li>
+<li>대부분의 경우 각 VLAN에는 고유한 식별자(ID)가 할당</li>
+<li>VLAN 트렁킹을 구성할 때 ID는 트렁크 링크를 통해 전송되어야 하는 트래픽을 지정하는 데 사용</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="vlan-트렁킹을-사용시-주요-이점">VLAN 트렁킹을 사용시 주요 이점<a href="https://dldkffh.github.io/2024/02/19/vlan#vlan-%ED%8A%B8%EB%A0%81%ED%82%B9%EC%9D%84-%EC%82%AC%EC%9A%A9%EC%8B%9C-%EC%A3%BC%EC%9A%94-%EC%9D%B4%EC%A0%90" class="hash-link" aria-label="VLAN 트렁킹을 사용시 주요 이점에 대한 직접 링크" title="VLAN 트렁킹을 사용시 주요 이점에 대한 직접 링크">​</a></h4>
+<ul>
+<li>네트워크의 혼잡을 줄임으로써 네트워크 성능을 향상</li>
+<li>서로 다른 VLAN의 트래픽을 격리하여 더 큰 보안을 제공<!-- -->
+<ul>
+<li>중요한 데이터에 대한 무단 액세스를 방지</li>
+</ul>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="구성시-염두에-두어야-사항">구성시 염두에 두어야 사항<a href="https://dldkffh.github.io/2024/02/19/vlan#%EA%B5%AC%EC%84%B1%EC%8B%9C-%EC%97%BC%EB%91%90%EC%97%90-%EB%91%90%EC%96%B4%EC%95%BC-%EC%82%AC%ED%95%AD" class="hash-link" aria-label="구성시 염두에 두어야 사항에 대한 직접 링크" title="구성시 염두에 두어야 사항에 대한 직접 링크">​</a></h4>
+<ul>
+<li>스위치 포트가 올바르게 구성되었는지 확인</li>
+<li>각 VLAN의 ID는 고유해야 하며 네트워크의 다른 부분에서 재사용해서는 안 됨</li>
+<li>프로덕션 환경에 배포하기 전에 구성을 테스트하는 것이 중요</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="출처">출처<a href="https://dldkffh.github.io/2024/02/19/vlan#%EC%B6%9C%EC%B2%98" class="hash-link" aria-label="출처에 대한 직접 링크" title="출처에 대한 직접 링크">​</a></h3>
+<ul>
+<li><a href="https://fiberroad.com/ko/resources/glossary/vlan-explained-what-is-vlan-how-does-it-work/" target="_blank" rel="noopener noreferrer">https://fiberroad.com/ko/resources/glossary/vlan-explained-what-is-vlan-how-does-it-work/</a></li>
+<li><a href="http://www.ktword.co.kr/test/view/view.php?no=2022" target="_blank" rel="noopener noreferrer">http://www.ktword.co.kr/test/view/view.php?no=2022</a></li>
+<li><a href="https://www.fibermall.com/ko/blog/what-is-vlan-and-how-it-work.htm" target="_blank" rel="noopener noreferrer">https://www.fibermall.com/ko/blog/what-is-vlan-and-how-it-work.htm</a></li>
+</ul>]]></content:encoded>
+            <category>VLAN</category>
+            <category>TAG</category>
+            <category>VTP</category>
+            <category>네트워크</category>
+            <category>개념</category>
+        </item>
         <item>
             <title><![CDATA[IT 보안 용어 정리]]></title>
             <link>https://dldkffh.github.io/2024/02/18/it-security-terms</link>
@@ -180,7 +353,7 @@
 <ul>
 <li>리소스 및 데이터에 액세스할 때 두 가지 형태의 인증이 요구되는 ID 및 액세스 관리 보안 방법</li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="과정">과정<a href="https://dldkffh.github.io/2024/02/18/it-security-terms#%EA%B3%BC%EC%A0%95" class="hash-link" aria-label="과정에 대한 직�접 링크" title="과정에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="과정">과정<a href="https://dldkffh.github.io/2024/02/18/it-security-terms#%EA%B3%BC%EC%A0%95" class="hash-link" aria-label="과정에 대�한 직접 링크" title="과정에 대한 직접 링크">​</a></h4>
 <ol>
 <li>사용자는 자신의 사용자 이름과 비밀번호를 사용하여 웹사이트 또는 서비스에 로그인</li>
 <li>비밀번호는 인증 서버에 의해 검증되며, 정확할 경우 사용자는 두 번째 요소에 대한 자격을 얻게 됨</li>
@@ -228,31 +401,31 @@
         </item>
         <item>
             <title><![CDATA[native & blackhole VLAN]]></title>
-            <link>https://dldkffh.github.io/2024/02/18/native-vlan-blackhole</link>
-            <guid>https://dldkffh.github.io/2024/02/18/native-vlan-blackhole</guid>
+            <link>https://dldkffh.github.io/2024/02/18/native-vlan-blackhole copy</link>
+            <guid>https://dldkffh.github.io/2024/02/18/native-vlan-blackhole copy</guid>
             <pubDate>Sun, 18 Feb 2024 00:00:00 GMT</pubDate>
             <description><![CDATA[native VLAN]]></description>
-            <content:encoded><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="native-vlan">native VLAN<a href="https://dldkffh.github.io/2024/02/18/native-vlan-blackhole#native-vlan" class="hash-link" aria-label="native VLAN에 대한 직접 링크" title="native VLAN에 대한 직접 링크">​</a></h3>
+            <content:encoded><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="native-vlan">native VLAN<a href="https://dldkffh.github.io/2024/02/18/native-vlan-blackhole%20copy#native-vlan" class="hash-link" aria-label="native VLAN에 대한 직접 링크" title="native VLAN에 대한 직접 링크">​</a></h3>
 <ul>
 <li>native VLAN 태그 지정 기능이 없는 장치를 지원하는 VLAN 서비스</li>
 <li>트렁크 포트에서 태그가 지정되지 않은 트래픽을 전달하는 데 사용</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="blackhole-vlan">blackhole VLAN<a href="https://dldkffh.github.io/2024/02/18/native-vlan-blackhole#blackhole-vlan" class="hash-link" aria-label="blackhole VLAN에 대��한 직접 링크" title="blackhole VLAN에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="blackhole-vlan">blackhole VLAN<a href="https://dldkffh.github.io/2024/02/18/native-vlan-blackhole%20copy#blackhole-vlan" class="hash-link" aria-label="blackhole VLAN��에 대한 직접 링크" title="blackhole VLAN에 대한 직접 링크">​</a></h3>
 <ul>
 <li>사용되지 않고 죽은 VLAN으로 생성된 VLAN</li>
 <li>특정 포트나 장치를 격리 또는 격리하거나, 네트워크에 대한 무단 액세스나 트래픽을 방지</li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="네트워크-블랙홀blackhole">네트워크 블랙홀(blackhole)<a href="https://dldkffh.github.io/2024/02/18/native-vlan-blackhole#%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EB%B8%94%EB%9E%99%ED%99%80blackhole" class="hash-link" aria-label="네트워크 블랙홀(blackhole)에 대한 직접 링크" title="네트워크 블랙홀(blackhole)에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="네트워크-블랙홀blackhole">네트워크 블랙홀(blackhole)<a href="https://dldkffh.github.io/2024/02/18/native-vlan-blackhole%20copy#%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EB%B8%94%EB%9E%99%ED%99%80blackhole" class="hash-link" aria-label="네트워크 블랙홀(blackhole)에 대한 직접 링크" title="네트워크 블랙홀(blackhole)에 대한 직접 링크">​</a></h4>
 <ul>
 <li>블랙홀은 네트워크에서 데이터가 의도한 수신자에게 도달하지 못했다는 사실을 소스에 알리지 않고 들어오거나 나가는 트래픽이 자동으로 삭제되는 장소</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="출처">출처<a href="https://dldkffh.github.io/2024/02/18/native-vlan-blackhole#%EC%B6%9C%EC%B2%98" class="hash-link" aria-label="출처에 대한 직접 링크" title="출처에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="출처">출처<a href="https://dldkffh.github.io/2024/02/18/native-vlan-blackhole%20copy#%EC%B6%9C%EC%B2%98" class="hash-link" aria-label="출처에 대한 직접 링크" title="출처에 대한 직접 링크">​</a></h3>
 <ul>
 <li><a href="https://www.ruijienetworks.com/support/tech-gallery/what-is-native-vlan#:~:text=Native%20VLAN%20is%20a%20VLAN,when%20trunk%20links%20are%20transmitted" target="_blank" rel="noopener noreferrer">https://www.ruijienetworks.com/support/tech-gallery/what-is-native-vlan#:~:text=Native%20VLAN%20is%20a%20VLAN,when%20trunk%20links%20are%20transmitted</a></li>
 <li><a href="https://www.examtopics.com/discussions/cisco/view/71351-exam-200-301-topic-1-question-655-discussion/#:~:text=Traffic%20that%20is%20sent%20to%20a%20port,traffic%20on%20a%20network.%20upvoted%2011%20times" target="_blank" rel="noopener noreferrer">https://www.examtopics.com/discussions/cisco/view/71351-exam-200-301-topic-1-question-655-discussion/#:~:text=Traffic%20that%20is%20sent%20to%20a%20port,traffic%20on%20a%20network.%20upvoted%2011%20times</a></li>
 <li><a href="https://en.wikipedia.org/wiki/Black_hole_(networking)#:~:text=In%20networking%2C%20a%20black%20hole%2C%20also%20known,of%20the%20network%2C%20the%20black%20holes%20themselves" target="_blank" rel="noopener noreferrer">https://en.wikipedia.org/wiki/Black_hole_(networking)#:~:text=In%20networking%2C%20a%20black%20hole%2C%20also%20known,of%20the%20network%2C%20the%20black%20holes%20themselves</a></li>
 </ul>]]></content:encoded>
-            <category>vlan</category>
+            <category>VLAN</category>
             <category>native</category>
             <category>blackhole</category>
             <category>네트워크</category>
@@ -665,7 +838,7 @@
 </ul>
 <p>Autonomous AP와 Lightweight AP는 일반적으로 동일한 네트워크에서 함께 작동할 수 없음</p>
 </blockquote>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="autonomous-ap-자율-엑세스-포인트">Autonomous AP (자율 엑세스 포인트)<a href="https://dldkffh.github.io/2024/02/10/ap-mode-autonomous-lightweight-cloudbased#autonomous-ap-%EC%9E%90%EC%9C%A8-%EC%97%91%EC%84%B8%EC%8A%A4-%ED%8F%AC%EC%9D%B8%EF%BF%BD%EF%BF%BD%ED%8A%B8" class="hash-link" aria-label="Autonomous AP (자율 엑세스 포인트)에 대한 직접 링크" title="Autonomous AP (자율 엑세스 포인트)에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="autonomous-ap-자율-엑세스-포인트">Autonomous AP (자율 엑세스 포인트)<a href="https://dldkffh.github.io/2024/02/10/ap-mode-autonomous-lightweight-cloudbased#autonomous-ap-%EC%9E%90%EC%9C%A8-%EC%97%91%EC%84%B8%EC%8A%A4-%EF%BF%BD%ED%8F%AC%EC%9D%B8%ED%8A%B8" class="hash-link" aria-label="Autonomous AP (자율 엑세스 포인트)에 대한 직접 링크" title="Autonomous AP (자율 엑세스 포인트)에 대한 직접 링크">​</a></h3>
 <ul>
 <li>자율 액세스 포인트는 경량 액세스 포인트보다 훨씬 더 흔함</li>
 <li>최초의 자율 액세스 포인트는 가능한 한 무선 장치를 연결하기 위해 개발</li>
@@ -816,7 +989,7 @@
 <li>802.11b 규격과 쉽게 호환</li>
 <li>CSMA/CA 기술을 사용</li>
 </ul>
-<h5 class="anchor anchorWithStickyNavbar_LWe7" id="80211n">802.11n<a href="https://dldkffh.github.io/2024/02/10/ieee-802#80211n" class="hash-link" aria-label="802.11n에 대한 직접 링크" title="802.11n에 대한 직접 링크">​</a></h5>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="80211n">802.11n<a href="https://dldkffh.github.io/2024/02/10/ieee-802#80211n" class="hash-link" aria-label="802.11n에 대한 직접 링크" title="802.11n에 대한 직접 ��링크">​</a></h5>
 <ul>
 <li>최고 600Mbps 까지의 속도를 지원</li>
 <li>2.4GHz 대역과 5GHz 대역을 사용</li>
@@ -992,7 +1165,7 @@
 <li>액세스 포인트는 로컬 네트워크에서 CAPWAP 검색 메시지를 브로드캐스트한다.</li>
 <li>APWAP 컨트롤러는 검색 메시지를 수신하면 구성 정보로 응답한다.</li>
 </ol>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="출처">출처<a href="https://dldkffh.github.io/2024/02/10/lwapp-capwap#%EC%B6%9C%EC%B2%98" class="hash-link" aria-label="출처에 대한 직접 링크" title="��출처에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="출처">출처<a href="https://dldkffh.github.io/2024/02/10/lwapp-capwap#%EC%B6%9C%EC%B2%98" class="hash-link" aria-label="출처에 대한 직접 링크" title="출처에 대한 직접 링크">​</a></h3>
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/CAPWAP" target="_blank" rel="noopener noreferrer">https://en.wikipedia.org/wiki/CAPWAP</a></li>
 <li>데이터넷(<a href="https://www.datanet.co.kr/" target="_blank" rel="noopener noreferrer">https://www.datanet.co.kr</a>)</li>
@@ -1013,7 +1186,7 @@
 <ul>
 <li>송신 호스트에서 수신 호스트로 패킷을 전달하는 것</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="forwarding포워딩-전송-전달">forwarding(포워딩, 전송, 전달)<a href="https://dldkffh.github.io/2024/02/07/forwarding-routing#forwarding%ED%8F%AC%EC%9B%8C%EB%94%A9-%EC%A0%84%EC%86%A1-%EC%A0%84%EB%8B%AC" class="hash-link" aria-label="forwarding(포워딩, 전송, 전달)�에 대한 직접 링크" title="forwarding(포워딩, 전송, 전달)에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="forwarding포워딩-전송-전달">forwarding(포워딩, 전송, 전달)<a href="https://dldkffh.github.io/2024/02/07/forwarding-routing#forwarding%ED%8F%AC%EC%9B%8C%EB%94%A9-%EC%A0%84%EC%86%A1-%EC%A0%84%EB%8B%AC" class="hash-link" aria-label="forwarding(포워딩, 전송, �전달)에 대한 직접 링크" title="forwarding(포워딩, 전송, 전달)에 대한 직접 링크">​</a></h3>
 <ul>
 <li>패킷이 라우터의 입력 링크에 도달했을 때 라우터는 그 패킷을 적절한 출력 링크로 이동시켜야 함</li>
 <li>포워딩은 데이터 평면에 구현된 하나의 기능</li>
@@ -1133,7 +1306,7 @@
 <li>로드밸런싱</li>
 <li>박스 구성에서 STP의 영향을 최소화</li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="lacp-link-aggregation-control-protocol-링크-애그리게이션-컨트롤-프로토콜">LACP (Link Aggregation Control Protocol, 링크 애그리게이션 컨트롤 프로토콜)<a href="https://dldkffh.github.io/2024/02/06/lag-lacp#lacp-link-aggregation-control-protocol-%EB%A7%81%ED%81%AC-%EC%95%A0%EA%B7%B8%EB%A6%AC%EA%B2%8C%EC%9D%B4%EC%85%98-%EC%BB%A8%ED%8A%B8%EB%A1%A4-%ED%94%84%EB%A1%9C%EF%BF%BD%EF%BF%BD%ED%86%A0%EC%BD%9C" class="hash-link" aria-label="LACP (Link Aggregation Control Protocol, 링크 애그리게이션 컨트롤 프로토콜)에 대한 직접 링크" title="LACP (Link Aggregation Control Protocol, 링크 애그리게이션 컨트롤 프로토콜)에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="lacp-link-aggregation-control-protocol-링크-애그리게이션-컨트롤-프로토콜">LACP (Link Aggregation Control Protocol, 링크 애그리게이션 컨트롤 프로토콜)<a href="https://dldkffh.github.io/2024/02/06/lag-lacp#lacp-link-aggregation-control-protocol-%EB%A7%81%ED%81%AC-%EC%95%A0%EA%B7%B8%EB%A6%AC%EA%B2%8C%EC%9D%B4%EC%85%98-%EC%BB%A8%ED%8A%B8%EB%A1%A4-%EF%BF%BD%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C" class="hash-link" aria-label="LACP (Link Aggregation Control Protocol, 링크 애그리게이션 컨트롤 프로토콜)에 대한 직접 링크" title="LACP (Link Aggregation Control Protocol, 링크 애그리게이션 컨트롤 프로토콜)에 대한 직접 링크">​</a></h4>
 <ul>
 <li>IEEE 링크 애그리게이션 표준화 작업</li>
 <li>IEEE 802.3 그룹은 스터디 그룹을 구성하여 1997년 11월 미팅에서 상호 운용 가능한 링크 계층 표준을 만듦<!-- -->
@@ -1466,7 +1639,7 @@
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="eui-64-인터페이스-생성시">EUI-64 인터페이스 생성시<a href="https://dldkffh.github.io/2024/02/02/ipv6-address-type#eui-64-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4-%EC%83%9D%EC%84%B1%EC%8B%9C" class="hash-link" aria-label="EUI-64 인터페이스 생성시에 대한 직접 링크" title="EUI-64 인터페이스 생성시에 대한 직접 링크">​</a></h3>
 <p>중간에 <strong>FFFE</strong> 넣는거임</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="ipv4---ipv6-전환기술">IPv4 - IPv6 전환기술<a href="https://dldkffh.github.io/2024/02/02/ipv6-address-type#ipv4---ipv6-%EC%A0%84%ED%99%98%EA%B8%B0%EC%88%A0" class="hash-link" aria-label="IPv4 - IPv6 전환기�술에 대한 직접 링크" title="IPv4 - IPv6 전환기술에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="ipv4---ipv6-전환기술">IPv4 - IPv6 전환기술<a href="https://dldkffh.github.io/2024/02/02/ipv6-address-type#ipv4---ipv6-%EC%A0%84%ED%99%98%EA%B8%B0%EC%88%A0" class="hash-link" aria-label="IPv4 - IPv6 전환기술에 대한 직접 링크" title="IPv4 - IPv6 전환기술에 대한 직접 링크">​</a></h3>
 <ul>
 <li>dual stack(듀얼스택)<!-- -->
 <ul>
@@ -1940,82 +2113,6 @@
             <category>TCP</category>
             <category>UDP</category>
             <category>프로토콜</category>
-            <category>인프라</category>
-            <category>네트워크</category>
-            <category>개념</category>
-        </item>
-        <item>
-            <title><![CDATA[Wi-Fi 기초]]></title>
-            <link>https://dldkffh.github.io/2024/01/31/wifi</link>
-            <guid>https://dldkffh.github.io/2024/01/31/wifi</guid>
-            <pubDate>Wed, 31 Jan 2024 00:00:00 GMT</pubDate>
-            <description><![CDATA[Wi-Fi(Wireless Fidelity, 와이파이)]]></description>
-            <content:encoded><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="wi-fiwireless-fidelity-와이파이">Wi-Fi(Wireless Fidelity, 와이파이)<a href="https://dldkffh.github.io/2024/01/31/wifi#wi-fiwireless-fidelity-%EC%99%80%EC%9D%B4%ED%8C%8C%EC%9D%B4" class="hash-link" aria-label="Wi-Fi(Wireless Fidelity, 와이파이)에 대한 직접 링크" title="Wi-Fi(Wireless Fidelity, 와이파이)에 대한 직접 링크">​</a></h3>
-<ul>
-<li>IEEE 802.11 표준을 기반</li>
-<li>무선 근거리 네트워킹을 위한 기술</li>
-</ul>
-<ul>
-<li>WLAN 네트워크와 AP(wireless access point, 무선 액세스 포인트)를 통해 인터넷에 연결<!-- -->
-<ul>
-<li>액세스 포인트(AP)는 하나 이상의 무선 장치를 동시에 인터넷에 연결</li>
-<li>무선 LAN 기지국</li>
-</ul>
-</li>
-<li>BSS(Basic Service Set)<!-- -->
-<ul>
-<li>WLAN의 기본 구성 요소</li>
-<li>무선 이동국과 AP라고 불리는 선택적 중앙 기지국으로 구성<!-- -->
-<ul>
-<li>AP 없이 네트워크를 형성 가능</li>
-<li>AP가 없는 BSS는 다른 BSS로 데이터를 보낼 수 없음<!-- -->
-<ul>
-<li>독립형 네트워크</li>
-</ul>
-</li>
-<li>Ad-hoc 네트워크 또는 독립 BSS(IBSS)라고 합</li>
-<li>AP가 없는 BSS는 임시 네트워크</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>ESS(Extended Service Set)<!-- -->
-<ul>
-<li>2개 이상의 BSS와 AP로 구성</li>
-</ul>
-</li>
-</ul>
-<br>
-<ul>
-<li>물리적 케이블을 사용하지 않고도 장치를 네트워크에 연결<!-- -->
-<ul>
-<li>이동성과 유연성이 향상</li>
-</ul>
-</li>
-<li>고속 인터넷 액세스를 제공</li>
-<li>최소한의 기술 지식만으로 설정 및 구성 가능<!-- -->
-<ul>
-<li>대부분의 최신 장치에는 Wi-Fi 연결이 내장</li>
-</ul>
-</li>
-<li>스마트폰, 노트북, 태블릿, 스마트 홈 장치를 포함한 다양한 장치와 호환</li>
-<li>동시에 여러 장치를 지원<!-- -->
-<ul>
-<li>여러 사용자가 동일한 네트워크에 연결하고 동시에 인터넷에 액세스</li>
-</ul>
-</li>
-<li>라우터 유형과 사용 환경에 따라 광범위한 거리를 지원</li>
-<li>다른 무선 장치 및 벽, 건물과 같은 물리적 장벽의 간섭 받음<!-- -->
-<ul>
-<li>네트워크 성능에 영향</li>
-</ul>
-</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="출처">출처<a href="https://dldkffh.github.io/2024/01/31/wifi#%EC%B6%9C%EC%B2%98" class="hash-link" aria-label="출처에 대한 직접 링크" title="출처에 대한 직접 링크">​</a></h3>
-<ul>
-<li><a href="https://www.geeksforgeeks.org/" target="_blank" rel="noopener noreferrer">GeeksforGeeks</a></li>
-</ul>]]></content:encoded>
-            <category>Wi-Fi</category>
             <category>인프라</category>
             <category>네트워크</category>
             <category>개념</category>
