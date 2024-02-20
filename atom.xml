@@ -2,11 +2,94 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://dldkffh.github.io/</id>
     <title>dldkffh Blog</title>
-    <updated>2024-02-19T00:00:00.000Z</updated>
+    <updated>2024-02-20T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://dldkffh.github.io/"/>
     <subtitle>dldkffh Blog</subtitle>
     <icon>https://dldkffh.github.io/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[PoE]]></title>
+        <id>https://dldkffh.github.io/2024/02/20/poe</id>
+        <link href="https://dldkffh.github.io/2024/02/20/poe"/>
+        <updated>2024-02-20T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[PoE (Power over Ethernet, 이더넷 전원 장치)]]></summary>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="poe-power-over-ethernet-이더넷-전원-장치">PoE (Power over Ethernet, 이더넷 전원 장치)<a href="https://dldkffh.github.io/2024/02/20/poe#poe-power-over-ethernet-%EC%9D%B4%EB%8D%94%EB%84%B7-%EC%A0%84%EC%9B%90-%EC%9E%A5%EC%B9%98" class="hash-link" aria-label="PoE (Power over Ethernet, 이더넷 전원 장치)에 대한 직접 링크" title="PoE (Power over Ethernet, 이더넷 전원 장치)에 대한 직접 링크">​</a></h3>
+<ul>
+<li>IEEE 802.3af 및 802.3at 표준에 의해 정의된 네트워킹 기능</li>
+<li>기존 데이터 연결 상에서 이더넷 케이블을 통해 네트워크 장치에 전원을 공급할 가능</li>
+<li>PoE 기능을 사용할 수 있는 장치<!-- -->
+<ul>
+<li>전원을 공급하는 장비(PSE)<!-- -->
+<ul>
+<li>네트워크 스위치</li>
+<li>PoE가 아닌 스위치와 함께 사용하는 PoE 인젝터</li>
+</ul>
+</li>
+<li>전원을 공급받는 장치(PD)<!-- -->
+<ul>
+<li>VoIP 전화</li>
+<li>무선 액세스 포인트</li>
+<li>IP 카메라</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="장점">장점<a href="https://dldkffh.github.io/2024/02/20/poe#%EC%9E%A5%EC%A0%90" class="hash-link" aria-label="장점에 대한 직접 링크" title="장점에 대한 직접 링크">​</a></h4>
+<ul>
+<li>네트워킹 장비와 VoIP 전화를 위한 케이블을 구입하고 관리하는 데 소요되는 비용을 절약<!-- -->
+<ul>
+<li>전력과 데이터 전송에 하나의 케이블만 사용</li>
+</ul>
+</li>
+<li>네트워크 설치와 확장이 간편하고 저렴해짐</li>
+<li>전원을 설치하기에 적합하지 않은 장소에 장치를 장착 가능</li>
+<li>복잡한 장비실 또는 배선실에 필요한 케이블과 전기 콘센트 수가 줄음</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="poe-monitoring--policing">PoE monitoring &amp; policing<a href="https://dldkffh.github.io/2024/02/20/poe#poe-monitoring--policing" class="hash-link" aria-label="PoE monitoring &amp; policing에 대한 직접 링크" title="PoE monitoring &amp; policing에 대한 직접 링크">​</a></h4>
+<ul>
+<li>포트의 전력 소비를 관리 최대값(구성된 최대값 또는 포트의 기본값)과 비교</li>
+<li>모니터링되는 포트의 전력 소비가 관리 최대값을 초과하는 경우 다음 작업이 발생<!-- -->
+<ul>
+<li>syslog 메시지가 발생</li>
+<li>모니터링되는 포트가 종료되고 오류가 비활성화</li>
+<li>할당된 전력 해제</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="poe">PoE+<a href="https://dldkffh.github.io/2024/02/20/poe#poe" class="hash-link" aria-label="PoE+에 대한 직접 링크" title="PoE+에 대한 직접 링크">​</a></h3>
+<ul>
+<li>PoE의 최신 버전</li>
+<li>IEEE 802.3at 표준<!-- -->
+<ul>
+<li>802.3af(PoE), 802.3at(PoE+)</li>
+</ul>
+</li>
+<li>PoE와의 주요 차이점은 PoE+ PSE는 이더넷 케이블을 통해 거의 두 배 더 많은 전력을 공급 가능<!-- -->
+<ul>
+<li>PoE+ PD에는 PoE PSE가 제공할 수 있는 양보다 더 많은 전력이 필요</li>
+</ul>
+</li>
+<li>PoE+ PSE는 PoE와 PoE+ PD 모두에 전력을 공급 가능<!-- -->
+<ul>
+<li>PoE PSE는 PoE PD에만 전력을 공급 가능</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="출처">출처<a href="https://dldkffh.github.io/2024/02/20/poe#%EC%B6%9C%EC%B2%98" class="hash-link" aria-label="출처에 대한 직접 링크" title="출처에 대한 직접 링크">​</a></h3>
+<ul>
+<li><a href="https://kb.netgear.com/ko/209/PoE%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9E%85%EB%8B%88%EA%B9%8C-%EC%9D%B4%EB%8D%94%EB%84%B7-%EC%A0%84%EC%9B%90-%EC%9E%A5%EC%B9%98-Power-over-Ethernet?language=ko" target="_blank" rel="noopener noreferrer">https://kb.netgear.com/ko/209/PoE%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9E%85%EB%8B%88%EA%B9%8C-%EC%9D%B4%EB%8D%94%EB%84%B7-%EC%A0%84%EC%9B%90-%EC%9E%A5%EC%B9%98-Power-over-Ethernet?language=ko</a></li>
+<li><a href="https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst6500/ios/12-2SX/configuration/guide/book/power_over_ethernet.pdf" target="_blank" rel="noopener noreferrer">https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst6500/ios/12-2SX/configuration/guide/book/power_over_ethernet.pdf</a></li>
+</ul>]]></content>
+        <author>
+            <name>dldkffh</name>
+            <uri>https://github.com/dldkffh</uri>
+        </author>
+        <category label="PoE" term="PoE"/>
+        <category label="네트워크" term="네트워크"/>
+        <category label="인프라" term="인프라"/>
+        <category label="개념" term="개념"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[DTP]]></title>
         <id>https://dldkffh.github.io/2024/02/19/dtp</id>
@@ -317,7 +400,7 @@
 </ul>
 </li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="native-vlan">Native VLAN<a href="https://dldkffh.github.io/2024/02/19/vlan#native-vlan" class="hash-link" aria-label="Native VLAN��에 대한 직접 링크" title="Native VLAN에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="native-vlan">Native VLAN<a href="https://dldkffh.github.io/2024/02/19/vlan#native-vlan" class="hash-link" aria-label="Native VLAN에 대한 직접 링크" title="Native VLAN에 대한 직접 링크">​</a></h4>
 <ul>
 <li>태그가 지정되지 않은 트래픽을 전달하는 VLAN</li>
 <li>일반적으로 스위치의 새 포트에 대한 기본 VLAN 상태</li>
@@ -345,7 +428,7 @@
 <li>포트 기반 VLAN보다 유연</li>
 <li>엔터프라이즈 네트워크에서 사용</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="vtp-vlan-트렁킹">VTP (VLAN 트렁킹)<a href="https://dldkffh.github.io/2024/02/19/vlan#vtp-vlan-%ED%8A%B8%EB%A0%81%EF%BF%BD%ED%82%B9" class="hash-link" aria-label="VTP (VLAN 트렁킹)에 대한 직접 링크" title="VTP (VLAN 트렁킹)에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="vtp-vlan-트렁킹">VTP (VLAN 트렁킹)<a href="https://dldkffh.github.io/2024/02/19/vlan#vtp-vlan-%ED%8A%B8%EB%A0%81%ED%82%B9" class="hash-link" aria-label="VTP (VLAN 트렁킹)에 대한 직접 링크" title="VTP (VLAN 트렁킹)에 대한 직접 링크">​</a></h3>
 <ul>
 <li>VLAN 트렁킹은 단일 물리적 링크를 통해 여러 VLAN에서 트래픽을 전송하는 프로세스<!-- -->
 <ul>
@@ -548,7 +631,7 @@
 <li>두 당사자가 안전한 채널을 통해 사전에 공유한 비밀 키를 이용해 암호화</li>
 <li>거의 항상 대칭 키 암호화 알고리즘을 사용</li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="sae-simultaneous-authentication-of-equals-동일-동시-인증">SAE (Simultaneous Authentication of Equals, 동일 동시 인증)<a href="https://dldkffh.github.io/2024/02/18/it-security-terms#sae-simultaneous-authentication-of-equals-%EB%8F%99%EC%9D%BC-%EB%8F%99%EC%8B%9C-%EC%9D%B8%EC%A6%9D" class="hash-link" aria-label="SAE (Simultaneous Authentication of Equals, 동일 동시 ��인증)에 대한 직접 링크" title="SAE (Simultaneous Authentication of Equals, 동일 동시 인증)에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="sae-simultaneous-authentication-of-equals-동일-동시-인증">SAE (Simultaneous Authentication of Equals, 동일 동시 인증)<a href="https://dldkffh.github.io/2024/02/18/it-security-terms#sae-simultaneous-authentication-of-equals-%EB%8F%99%EC%9D%BC-%EB%8F%99%EC%8B%9C-%EC%9D%B8%EC%A6%9D" class="hash-link" aria-label="SAE (Simultaneous Authentication of Equals, 동일 동시 인증)에 대한 직접 링크" title="SAE (Simultaneous Authentication of Equals, 동일 동시 인증)에 대한 직접 링크">​</a></h4>
 <ul>
 <li>비밀번호 기반 인증이자 암호 인증된 키 합의 방법</li>
 <li>공격자가 추가적인 네트워크 상호작용 없이 암호 추측을 시도하는 오프라인 사전 공격(dictionary attack)을 방어</li>
@@ -1104,7 +1187,7 @@
 </ul>
 <p>Autonomous AP와 Lightweight AP는 일반적으로 동일한 네트워크에서 함께 작동할 수 없음</p>
 </blockquote>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="autonomous-ap-자율-엑세스-포인트">Autonomous AP (자율 엑세스 포인트)<a href="https://dldkffh.github.io/2024/02/10/ap-mode-autonomous-lightweight-cloudbased#autonomous-ap-%EC%9E%90%EC%9C%A8-%EC%97%91%EC%84%B8%EC%8A%A4-%ED%8F%AC%EC%9D%B8%ED%8A%B8" class="hash-link" aria-label="Autonomous AP (자율 엑세스 포인트)에 대한 직접 링크" title="Autonomous AP (자율 엑세스 포인트)에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="autonomous-ap-자율-엑세스-포인트">Autonomous AP (자율 엑세스 포인트)<a href="https://dldkffh.github.io/2024/02/10/ap-mode-autonomous-lightweight-cloudbased#autonomous-ap-%EC%9E%90%EC%9C%A8-%EC%97%91%EC%84%B8%EC%8A%A4-%ED%8F%AC%EC%9D%B8%ED%8A%B8" class="hash-link" aria-label="Autonomous AP (자율 엑세스 포인트)에 대한 직접 링크" title="Autonomous AP (자율 엑세스 �포인트)에 대한 직접 링크">​</a></h3>
 <ul>
 <li>자율 액세스 포인트는 경량 액세스 포인트보다 훨씬 더 흔함</li>
 <li>최초의 자율 액세스 포인트는 가능한 한 무선 장치를 연결하기 위해 개발</li>
@@ -1407,7 +1490,7 @@
         <link href="https://dldkffh.github.io/2024/02/10/lwapp-capwap"/>
         <updated>2024-02-10T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[CAPWAP(Control And Provisioning of Wireless Access Points, 무선 액세스 포인트 제어 및 프로비저닝)]]></summary>
-        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="capwapcontrol-and-provisioning-of-wireless-access-points-무선-액세스-포인트-제어-및-프로비저닝">CAPWAP(Control And Provisioning of Wireless Access Points, 무선 액세스 포인트 제어 및 프로비저닝)<a href="https://dldkffh.github.io/2024/02/10/lwapp-capwap#capwapcontrol-and-provisioning-of-wireless-access-points-%EB%AC%B4%EC%84%A0-%EC%95%A1%EC%84%B8%EC%8A%A4-%ED%8F%AC%EC%9D%B8%ED%8A%B8-%EC%A0%9C%EC%96%B4-%EB%B0%8F-%ED%94%84%EB%A1%9C%EB%B9%84%EC%A0%80%EB%8B%9D" class="hash-link" aria-label="CAPWAP(Control And Provisioning of Wireless Access Points, 무선 액세스 포인트 제어 및 프로비저닝)에 대한 직접 링크" title="CAPWAP(Control And Provisioning of Wireless Access Points, 무선 액세��스 포인트 제어 및 프로비저닝)에 대한 직접 링크">​</a></h3>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="capwapcontrol-and-provisioning-of-wireless-access-points-무선-액세스-포인트-제어-및-프로비저닝">CAPWAP(Control And Provisioning of Wireless Access Points, 무선 액세스 포인트 제어 및 프로비저닝)<a href="https://dldkffh.github.io/2024/02/10/lwapp-capwap#capwapcontrol-and-provisioning-of-wireless-access-points-%EB%AC%B4%EC%84%A0-%EC%95%A1%EC%84%B8%EC%8A%A4-%ED%8F%AC%EC%9D%B8%ED%8A%B8-%EC%A0%9C%EC%96%B4-%EB%B0%8F-%ED%94%84%EB%A1%9C%EB%B9%84%EC%A0%80%EB%8B%9D" class="hash-link" aria-label="CAPWAP(Control And Provisioning of Wireless Access Points, 무선 액세스 포인트 제어 및 프로비저닝)에 대한 직접 링크" title="CAPWAP(Control And Provisioning of Wireless Access Points, 무선 액세스 포인트 제어 및 프로비��저닝)에 대한 직접 링크">​</a></h3>
 <ul>
 <li>AP와 WLC간의 통신 프로토콜<!-- -->
 <ul>
@@ -1592,7 +1675,7 @@
 <li>로드밸런싱</li>
 <li>박스 구성에서 STP의 영향을 최소화</li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="lacp-link-aggregation-control-protocol-링크-애그리게이션-컨트롤-프로토콜">LACP (Link Aggregation Control Protocol, 링크 애그리게이션 컨트롤 프로토콜)<a href="https://dldkffh.github.io/2024/02/06/lag-lacp#lacp-link-aggregation-control-protocol-%EB%A7%81%ED%81%AC-%EC%95%A0%EA%B7%B8%EB%A6%AC%EA%B2%8C%EC%9D%B4%EC%85%98-%EC%BB%A8%ED%8A%B8%EB%A1%A4-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C" class="hash-link" aria-label="LACP (Link Aggregation Control Protocol, 링크 애그리게이션 컨�트롤 프로토콜)에 대한 직접 링크" title="LACP (Link Aggregation Control Protocol, 링크 애그리게이션 컨트롤 프로토콜)에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="lacp-link-aggregation-control-protocol-링크-애그리게이션-컨트롤-프로토콜">LACP (Link Aggregation Control Protocol, 링크 애그리게이션 컨트롤 프로토콜)<a href="https://dldkffh.github.io/2024/02/06/lag-lacp#lacp-link-aggregation-control-protocol-%EB%A7%81%ED%81%AC-%EC%95%A0%EA%B7%B8%EB%A6%AC%EA%B2%8C%EC%9D%B4%EC%85%98-%EC%BB%A8%ED%8A%B8%EB%A1%A4-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C" class="hash-link" aria-label="LACP (Link Aggregation Control Protocol, 링크 애그리게이션 컨트롤 프로토콜)에 대한 ��직접 링크" title="LACP (Link Aggregation Control Protocol, 링크 애그리게이션 컨트롤 프로토콜)에 대한 직접 링크">​</a></h4>
 <ul>
 <li>IEEE 링크 애그리게이션 표준화 작업</li>
 <li>IEEE 802.3 그룹은 스터디 그룹을 구성하여 1997년 11월 미팅에서 상호 운용 가능한 링크 계층 표준을 만듦<!-- -->
@@ -1796,7 +1879,7 @@
 <li>디바이스들은 전체 인터넷에 연결되지 않고 동일한 네트워크에서 서로 통신</li>
 <li>개인 IP 주소는 특정 네트워크 내에서 더 많은 보안을 제공</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="출처">출처<a href="https://dldkffh.github.io/2024/02/06/private-ipv4#%EC%B6%9C%EC%B2%98" class="hash-link" aria-label="출처에 대한 직접 링크" title="출처에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="출처">출처<a href="https://dldkffh.github.io/2024/02/06/private-ipv4#%EC%B6%9C%EC%B2%98" class="hash-link" aria-label="��출처에 대한 직접 링크" title="출처에 대한 직접 링크">​</a></h3>
 <ul>
 <li><a href="https://ko.m.wikipedia.org/wiki/%EC%82%AC%EC%84%A4%EB%A7%9D" target="_blank" rel="noopener noreferrer">https://ko.m.wikipedia.org/wiki/사설망</a></li>
 <li><a href="https://www.geeksforgeeks.org/private-ip-addresses-in-networking/" target="_blank" rel="noopener noreferrer">https://www.geeksforgeeks.org/private-ip-addresses-in-networking/</a></li>
@@ -1971,46 +2054,6 @@
         <category label="multicast" term="multicast"/>
         <category label="anycast" term="anycast"/>
         <category label="eui-64" term="eui-64"/>
-        <category label="네트워크" term="네트워크"/>
-        <category label="개념" term="개념"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Flooding(플러딩)]]></title>
-        <id>https://dldkffh.github.io/2024/01/31/flooding</id>
-        <link href="https://dldkffh.github.io/2024/01/31/flooding"/>
-        <updated>2024-01-31T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Flooding(플러딩, 홍수)]]></summary>
-        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="flooding플러딩-홍수">Flooding(플러딩, 홍수)<a href="https://dldkffh.github.io/2024/01/31/flooding#flooding%ED%94%8C%EB%9F%AC%EB%94%A9-%ED%99%8D%EC%88%98" class="hash-link" aria-label="Flooding(플러딩, 홍수)에 대한 직접 링크" title="Flooding(플러딩, 홍수)에 대한 직접 링크">​</a></h3>
-<ul>
-<li>수신되는 링크 만을 제외하고 나머지 모든 링크에 패킷을 단순히 복사 전송<!-- -->
-<ul>
-<li>무제어 포트 배정</li>
-</ul>
-</li>
-<li>MAC Flooding (MAC 플러딩)<!-- -->
-<ul>
-<li>목적지 주소가 멀티캐스트 또는 브로드캐스트 형태일 경우</li>
-<li>목적지 주소가 자신의 MAC 주소 테이블에 존재하지 않은 경우</li>
-<li>미인식 프로토콜</li>
-<li>프레임 버퍼 메모리가 가득찬 경우</li>
-<li>수신 포트를 제외한 나머지 모든 포트로 전달<!-- -->
-<ul>
-<li>폭주 위험</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="출처">출처<a href="https://dldkffh.github.io/2024/01/31/flooding#%EC%B6%9C%EC%B2%98" class="hash-link" aria-label="출처에 대한 직접 링크" title="출처에 대한 직접 링크">​</a></h3>
-<ul>
-<li><a href="http://www.ktword.co.kr/test/view/view.php?m_temp1=1362&amp;id=851" target="_blank" rel="noopener noreferrer">정보통신기술용어해설 - Flooding, Flood Routing, Flooding Algorithm 플러딩, 홍수 라우팅, 플러딩 알고리즘</a></li>
-</ul>]]></content>
-        <author>
-            <name>dldkffh</name>
-            <uri>https://github.com/dldkffh</uri>
-        </author>
-        <category label="flooding" term="flooding"/>
-        <category label="플러딩" term="플러딩"/>
         <category label="네트워크" term="네트워크"/>
         <category label="개념" term="개념"/>
     </entry>
