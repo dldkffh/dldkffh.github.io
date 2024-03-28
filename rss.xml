@@ -105,7 +105,6 @@
             <description><![CDATA[| 종류          | 로그 | 설명                               |]]></description>
             <content:encoded><![CDATA[<table><thead><tr><th>종류</th><th>로그</th><th>설명</th></tr></thead><tbody><tr><td>Emergency</td><td>0</td><td>System is unusable.</td></tr><tr><td>Alert</td><td>1</td><td>Action must be taken immediately.</td></tr><tr><td>Critical</td><td>2</td><td>Critical conditions.</td></tr><tr><td>Error</td><td>3</td><td>Error conditions.</td></tr><tr><td>Warning</td><td>4</td><td>Warning conditions.</td></tr><tr><td>Notice</td><td>5</td><td>Normal but significant conditions.</td></tr><tr><td>Informational</td><td>6</td><td>Informational messages.</td></tr><tr><td>Debugging</td><td>7</td><td>Debugging messages.</td></tr></tbody></table>]]></content:encoded>
             <category>Log Level</category>
-            <category>Administrative Distance</category>
             <category>네트워크</category>
             <category>개념</category>
         </item>
