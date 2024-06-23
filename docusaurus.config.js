@@ -147,6 +147,38 @@ const config = {
       ],
 
       footer: {
+        links: [
+          {
+            title: 'Main Menu',
+            items: [
+              {
+                label: 'Home',
+                to: '/',
+              },
+              {
+                label: 'Tags',
+                to: 'tags/',
+              },
+              {
+                label: 'Archive',
+                to: 'archive/',
+              },
+              {
+                label: 'Guestbook',
+                to: '1969/10/29/guestbook/',
+              },
+            ],
+          },
+          {
+            title: 'Out Link',
+            items: [
+              {
+                label: 'Github',
+                href: 'https://github.com/dldkffh',
+              },
+            ],
+          },
+        ],
         copyright: `Copyright © ${new Date().getFullYear()} dldkffh. Built with Docusaurus.`,
       },
     }),
