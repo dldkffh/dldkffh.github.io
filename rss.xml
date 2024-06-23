@@ -43,7 +43,7 @@
 </ul>
 </li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="광케이블의-특성-및-장단점">광케이블의 특성 및 장단점:<a class="hash-link" aria-label="광케이블의 특성 및 장단점:에 대한 직접 링크" title="광케이블의 특성 및 장단점:에 대한 직접 링크" href="https://dldkffh.github.io/2024/06/24/optical-cable#%EA%B4%91%EC%BC%80%EC%9D%B4%EB%B8%94%EC%9D%98-%ED%8A%B9%EC%84%B1-%EB%B0%8F-%EC%9E%A5%EB%8B%A8%EC%A0%90">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="광케이블의-특성-및-장단점">광케이블의 특성 및 장단점<a class="hash-link" aria-label="광케이블의 특성 및 장단점에 대한 직접 �링크" title="광케이블의 특성 및 장단점에 대한 직접 링크" href="https://dldkffh.github.io/2024/06/24/optical-cable#%EA%B4%91%EC%BC%80%EC%9D%B4%EB%B8%94%EC%9D%98-%ED%8A%B9%EC%84%B1-%EB%B0%8F-%EC%9E%A5%EB%8B%A8%EC%A0%90">​</a></h3>
 <ul>
 <li>전자기 간섭에 영향을 받지 않기 때문에 안정적인 통신이 가능합니다.</li>
 <li>장거리 데이터 전송에 유리하며 속도 저하가 거의 없습니다.</li>
@@ -64,7 +64,7 @@
 <li>멀티모드 10G 광케이블을 필요로 할 경우 ASCOM3 케이블을 추천하며, 이는 LC 커넥터를 사용합니다.</li>
 <li>싱글 모드 케이블을 선택할 경우 BAEHSEIN의 LCS 케이블을 사용하며, 이는 SC 커넥터를 사용합니다.</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="광케이��블의-통신-방식">광케이블의 통신 방식<a class="hash-link" aria-label="광케이블의 통신 방식에 대한 직접 링크" title="광케이블의 통신 방식에 대한 직접 링크" href="https://dldkffh.github.io/2024/06/24/optical-cable#%EA%B4%91%EC%BC%80%EC%9D%B4%EB%B8%94%EC%9D%98-%ED%86%B5%EC%8B%A0-%EB%B0%A9%EC%8B%9D">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="광케이블�의-통신-방식">광케이블의 통신 방식<a class="hash-link" aria-label="광케이블의 통신 방식에 대한 직접 링크" title="광케이블의 통신 방식에 대한 직접 링크" href="https://dldkffh.github.io/2024/06/24/optical-cable#%EA%B4%91%EC%BC%80%EC%9D%B4%EB%B8%94%EC%9D%98-%ED%86%B5%EC%8B%A0-%EB%B0%A9%EC%8B%9D">​</a></h3>
 <ul>
 <li>광케이블은 일반적으로 두 가닥의 광섬유를 사용하여 데이터를 전송합니다.</li>
 <li>한 가닥은 수신(rx), 다른 가닥은 송신(tx)을 담당합니다.</li>
