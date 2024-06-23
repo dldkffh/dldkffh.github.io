@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdldkffh_github_io=self.webpackChunkdldkffh_github_io||[]).push([[3871],{5732:s=>{s.exports=JSON.parse('{"label":"OSI","permalink":"/tags/osi","allTagsPath":"/tags","count":1,"unlisted":false}')}}]);

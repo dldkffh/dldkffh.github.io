@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdldkffh_github_io=self.webpackChunkdldkffh_github_io||[]).push([[3913],{8191:s=>{s.exports=JSON.parse('{"label":"UDP","permalink":"/tags/udp","allTagsPath":"/tags","count":1,"unlisted":false}')}}]);

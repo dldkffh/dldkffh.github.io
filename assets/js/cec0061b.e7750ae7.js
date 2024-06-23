@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdldkffh_github_io=self.webpackChunkdldkffh_github_io||[]).push([[2267],{1827:e=>{e.exports=JSON.parse('{"label":"IKE","permalink":"/tags/ike","allTagsPath":"/tags","count":1,"unlisted":false}')}}]);

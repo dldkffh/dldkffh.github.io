@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdldkffh_github_io=self.webpackChunkdldkffh_github_io||[]).push([[3666],{1457:e=>{e.exports=JSON.parse('{"label":"endpoint","permalink":"/tags/endpoint","allTagsPath":"/tags","count":1,"unlisted":false}')}}]);

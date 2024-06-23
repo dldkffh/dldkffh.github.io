@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdldkffh_github_io=self.webpackChunkdldkffh_github_io||[]).push([[9155],{9703:s=>{s.exports=JSON.parse('{"label":"NTP","permalink":"/tags/ntp","allTagsPath":"/tags","count":1,"unlisted":false}')}}]);

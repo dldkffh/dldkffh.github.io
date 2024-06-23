@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdldkffh_github_io=self.webpackChunkdldkffh_github_io||[]).push([[8324],{9952:s=>{s.exports=JSON.parse('{"label":"IPv4","permalink":"/tags/i-pv-4","allTagsPath":"/tags","count":1,"unlisted":false}')}}]);
