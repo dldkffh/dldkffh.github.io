@@ -14,6 +14,8 @@ enableComments: true # for Gisqus
 - Max. Distance : 10km 
 - 가격이 낮음
 
+<!--truncate-->
+
 ### loose tube OS2
 
 - 광손실이 낮고 E-band 파장대역(1300nm대역)에서 Low-Water Peak 특징을 가짐 
