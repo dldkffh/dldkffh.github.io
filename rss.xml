@@ -9,41 +9,136 @@
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
         <item>
+            <title><![CDATA[정규화]]></title>
+            <link>https://dldkffh.github.io/2024/06/30/normalization</link>
+            <guid>https://dldkffh.github.io/2024/06/30/normalization</guid>
+            <pubDate>Sun, 30 Jun 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[정규화]]></description>
+            <content:encoded><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="정규화">정규화<a class="hash-link" aria-label="정규화에 대한 직접 링크" title="정규화에 대한 직접 링크" href="https://dldkffh.github.io/2024/06/30/normalization#%EC%A0%95%EA%B7%9C%ED%99%94">​</a></h3>
+<ul>
+<li>비정규 릴레이션</li>
+<li>원자 값이 아닌 도메인 분해
+-&gt; 1NF</li>
+<li>부분적 함수 종속 제거
+-&gt; 2NF</li>
+<li>이행적 함수 종속 제거
+-&gt; 3NF</li>
+<li>결정자이면서 후보키가 아닌 것 제거
+-&gt; BCNF</li>
+<li>다치 종속 제거
+-&gt; 4NF</li>
+<li>조인 종속성 이용
+-&gt; 5NF</li>
+</ul>]]></content:encoded>
+            <category>정규화</category>
+            <category>정보처리기사</category>
+            <category>개념</category>
+        </item>
+        <item>
+            <title><![CDATA[병행제어]]></title>
+            <link>https://dldkffh.github.io/2024/06/30/parallel-control</link>
+            <guid>https://dldkffh.github.io/2024/06/30/parallel-control</guid>
+            <pubDate>Sun, 30 Jun 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[병행제어 목적]]></description>
+            <content:encoded><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="병행제어-목적">병행제어 목적<a class="hash-link" aria-label="병행제어 목적에 대한 직접 링크" title="병행제어 목적에 대한 직접 링크" href="https://dldkffh.github.io/2024/06/30/parallel-control#%EB%B3%91%ED%96%89%EC%A0%9C%EC%96%B4-%EB%AA%A9%EC%A0%81">​</a></h3>
+<ul>
+<li>데이터베이스 일관성</li>
+<li>일관성을 유지하면서...<!-- -->
+<ul>
+<li>데이터 베이스 공유 최대화!</li>
+<li>시스템 활용도 최대화!</li>
+<li>사용자 응답시간 최소화</li>
+</ul>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="병행제어-실패-현상">병행제어 실패 현상<a class="hash-link" aria-label="병행제어 실패 현상에 대한 직접 링크" title="병행제어 실패 현상에 대한 직접 링크" href="https://dldkffh.github.io/2024/06/30/parallel-control#%EB%B3%91%ED%96%89%EC%A0%9C%EC%96%B4-%EC%8B%A4%ED%8C%A8-%ED%98%84%EC%83%81">​</a></h4>
+<ul>
+<li>Dirty Wirte 갱신분실<!-- -->
+<ul>
+<li>같은 데이터에 동시에 두개 이상의 트랜젝션이 값을 바꾸자고 함</li>
+</ul>
+</li>
+<li>Dirty Read 비완료 의존성<!-- -->
+<ul>
+<li>아직 commit되지 않은 트랜잭션의 내용을 읽으려고 함</li>
+</ul>
+</li>
+<li>Non-repeatable Read 모순성<!-- -->
+<ul>
+<li>동일 트랜젝션에서 동일한 대상을 여러번 읽을 때 그 사이에 수정 또는 삭제가 반영되어 값이 변경됨</li>
+</ul>
+</li>
+<li>Phantom Read<!-- -->
+<ul>
+<li>동일 트랜젝션에서 동일한 대상을 여러번 읽을 때 그 사이에 새로운 값(Phantom Tuple) 이 삽입되어 갑싱 변경됨</li>
+</ul>
+</li>
+<li>Cascade Roolback 연쇄 복귀<!-- -->
+<ul>
+<li>두개 이상의 Transaction이 수행되던 중 한개의 Transaction이 취소 될 떄 나머지 다른 Transaction도 연쇄적으로 취소되는 현상</li>
+</ul>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="병행제어-기법">병행제어 기법<a class="hash-link" aria-label="병행제어 기법에 대한 직접 링크" title="병행제어 기법에 대한 직접 링크" href="https://dldkffh.github.io/2024/06/30/parallel-control#%EB%B3%91%ED%96%89%EC%A0%9C%EC%96%B4-%EA%B8%B0%EB%B2%95">​</a></h4>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="locking-로킹">Locking 로킹<a class="hash-link" aria-label="Locking 로킹에 대한 직접 링크" title="Locking 로킹에 대한 직접 링크" href="https://dldkffh.github.io/2024/06/30/parallel-control#locking-%EB%A1%9C%ED%82%B9">​</a></h5>
+<ul>
+<li>트랜잭션이 어떤 데이터에 접근하고자 할 때 로킹 수행</li>
+<li>로킹이 되어 있는 데이터에는 다른 트랜잭션이 접근할 수 없음</li>
+<li>트랜잭션은 로킹이 된 데이터에 대해서만 연산 수행</li>
+<li>로킹 단위: 필드, 레코드, 파일, 데이터베이스 모두 로킹 단위가 될 수 있음</li>
+<li><strong>로킹 단위가 크면</strong> : 관리하기 용이(로킹 오버헤드 감소)하지만 병행성 수준(동시성 수준) 낮아짐</li>
+<li><strong>로킹 단위가 작으면</strong> : 병행성(동시성 수준)이 높아지지만 관리가 까다로움(로킹 오버헤드 증가)</li>
+</ul>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="타임스탬프">타임스탬프<a class="hash-link" aria-label="타임스탬프에 대한 직접 링크" title="타임스탬프에 대한 직접 링크" href="https://dldkffh.github.io/2024/06/30/parallel-control#%ED%83%80%EC%9E%84%EC%8A%A4%ED%83%AC%ED%94%84">​</a></h5>
+<p>데이터에 접근하는 시간을 미리 정하여서 정해진 시간(Time Stamp)의 순서대로 데이터에 접근 하여 수행</p>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="낙관적-병행제어">낙관적 병행제어<a class="hash-link" aria-label="낙관적 병행제어에 대한 직접 링크" title="낙관적 병행제어에 대한 직접 링크" href="https://dldkffh.github.io/2024/06/30/parallel-control#%EB%82%99%EA%B4%80%EC%A0%81-%EB%B3%91%ED%96%89%EC%A0%9C%EC%96%B4">​</a></h5>
+<p>트랜잭션 수행 동안은 어떠한 검사도 하지 않고, 트랜잭션 종료 시에 일괄적으로 검사</p>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="다중-버전-병행제어">다중 버전 병행제어<a class="hash-link" aria-label="다중 버전 병행제어에 대한 직접 링크" title="다중 버전 병행제어에 대한 직접 링크" href="https://dldkffh.github.io/2024/06/30/parallel-control#%EB%8B%A4%EC%A4%91-%EB%B2%84%EC%A0%84-%EB%B3%91%ED%96%89%EC%A0%9C%EC%96%B4">​</a></h5>
+<p>여러 버전의 타임스탬프를 비교하여 스케줄상 직렬가능성이 보장되는 타임스탬프를 선택</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="출처">출처<a class="hash-link" aria-label="출처에 대한 직접 링크" title="출처에 대한 직접 링크" href="https://dldkffh.github.io/2024/06/30/parallel-control#%EC%B6%9C%EC%B2%98">​</a></h3>
+<ul>
+<li><a href="https://raisonde.tistory.com/entry/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EB%B3%91%ED%96%89%EC%A0%9C%EC%96%B4-%EA%B8%B0%EB%B2%95-%EC%A0%95%EB%A6%AC" target="_blank" rel="noopener noreferrer">지식잡식 - 데이터베이스 병행제어 기법 정리</a></li>
+</ul>]]></content:encoded>
+            <category>병행제어</category>
+            <category>정보처리기사</category>
+            <category>개념</category>
+        </item>
+        <item>
             <title><![CDATA[병렬 데이터베이스]]></title>
-            <link>https://dldkffh.github.io/2024/06/30/pmp copy</link>
-            <guid>https://dldkffh.github.io/2024/06/30/pmp copy</guid>
+            <link>https://dldkffh.github.io/2024/06/30/parallel-database</link>
+            <guid>https://dldkffh.github.io/2024/06/30/parallel-database</guid>
             <pubDate>Sun, 30 Jun 2024 00:00:00 GMT</pubDate>
             <description><![CDATA[병령 데이터베이스란?]]></description>
-            <content:encoded><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="병령-데이터베이스란">병령 데이터베이스란?<a class="hash-link" aria-label="병령 데이터베이스란?에 대한 직접 링크" title="병령 데이터베이스란?에 대한 직접 링크" href="https://dldkffh.github.io/2024/06/30/pmp%20copy#%EB%B3%91%EB%A0%B9-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4%EB%9E%80">​</a></h3>
+            <content:encoded><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="병령-데이터베이스란">병령 데이터베이스란?<a class="hash-link" aria-label="병령 데이터베이스란?에 대한 직접 링크" title="병령 데이터베이스란?에 대한 직접 링크" href="https://dldkffh.github.io/2024/06/30/parallel-database#%EB%B3%91%EB%A0%B9-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4%EB%9E%80">​</a></h3>
 <p>성능 개선을 목적으로 병렬 컴퓨팅을 통해 데이터 적재, 색인 빌드, 쿼리 평가 등의 데이터베이스 기능들을 수행</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="특징">특징<a class="hash-link" aria-label="특징에 대한 직접 링크" title="특징에 대한 직접 링크" href="https://dldkffh.github.io/2024/06/30/pmp%20copy#%ED%8A%B9%EC%A7%95">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="특징">특징<a class="hash-link" aria-label="특징에 대한 직접 링크" title="특징에 대한 직접 링크" href="https://dldkffh.github.io/2024/06/30/parallel-database#%ED%8A%B9%EC%A7%95">​</a></h3>
 <ul>
 <li>다수의 마이크로프로세서를 동시에 사용하여 데이터 처리를 고속으로 수행</li>
 <li>주로 멀티프로세서 구조를 통한 병령 처리</li>
 <li>그외에 공유 메모리 구조, 공유 디스크 구조, 비공유 구조 등</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="수평-분할">수평 분할<a class="hash-link" aria-label="수평 분할에 대한 직접 링크" title="수평 분할에 대한 직접 링크" href="https://dldkffh.github.io/2024/06/30/pmp%20copy#%EC%88%98%ED%8F%89-%EB%B6%84%ED%95%A0">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="수평-분할">수평 분할<a class="hash-link" aria-label="수평 분할에 대한 직접 링크" title="수평 분할에 대한 직접 링크" href="https://dldkffh.github.io/2024/06/30/parallel-database#%EC%88%98%ED%8F%89-%EB%B6%84%ED%95%A0">​</a></h3>
 <ul>
 <li>행을 다른 테이블에 분산</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="수직-분할">수직 분할<a class="hash-link" aria-label="수직 분할에 대한 직접 링크" title="수직 분할에 대한 직접 링크" href="https://dldkffh.github.io/2024/06/30/pmp%20copy#%EC%88%98%EC%A7%81-%EB%B6%84%ED%95%A0">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="수직-분할">수직 분할<a class="hash-link" aria-label="수직 분할에 대한 직접 링크" title="수직 분할에 대한 직접 링크" href="https://dldkffh.github.io/2024/06/30/parallel-database#%EC%88%98%EC%A7%81-%EB%B6%84%ED%95%A0">​</a></h3>
 <ul>
 <li>열을 빼내는 형태로 분할</li>
 <li>관계의 정규화는 본질적으로 수직 분할에 관련된 과정</li>
 <li>수직 분할에는 여러 저장 장치를 사용할 수도 있음</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="종류">종류<a class="hash-link" aria-label="종류에 대한 직접 링크" title="종류에 대한 직접 링크" href="https://dldkffh.github.io/2024/06/30/pmp%20copy#%EC%A2%85%EB%A5%98">​</a></h3>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="범위-분할">범위 분할<a class="hash-link" aria-label="범위 분할에 대한 직접 링크" title="범위 분할에 대한 직접 링크" href="https://dldkffh.github.io/2024/06/30/pmp%20copy#%EB%B2%94%EC%9C%84-%EB%B6%84%ED%95%A0">​</a></h4>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="종류">종류<a class="hash-link" aria-label="종류에 대한 직접 링크" title="종류에 대한 직접 링크" href="https://dldkffh.github.io/2024/06/30/parallel-database#%EC%A2%85%EB%A5%98">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="범위-분할">범위 분할<a class="hash-link" aria-label="범위 분할에 대한 직접 링크" title="범위 분할에 대한 직접 링크" href="https://dldkffh.github.io/2024/06/30/parallel-database#%EB%B2%94%EC%9C%84-%EB%B6%84%ED%95%A0">​</a></h4>
 <p>분할 키 값이 범위 내에 있는지 여부로 구분우편 번호를 분할키로 수평 분할 하는 경우</p>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="목록-분할">목록 분할<a class="hash-link" aria-label="목록 분할에 대한 직접 링크" title="목록 분할에 대한 직접 링크" href="https://dldkffh.github.io/2024/06/30/pmp%20copy#%EB%AA%A9%EB%A1%9D-%EB%B6%84%ED%95%A0">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="목록-분할">목록 분할<a class="hash-link" aria-label="목록 분할에 대한 직접 링크" title="목록 분할에 대한 직접 링크" href="https://dldkffh.github.io/2024/06/30/parallel-database#%EB%AA%A9%EB%A1%9D-%EB%B6%84%ED%95%A0">​</a></h4>
 <p>특정 컬럼의 특징 값을 기준으로 파티셔닝을 하는 방식</p>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="해시-분할">해시 분할<a class="hash-link" aria-label="해시 분할에 대한 직접 링크" title="해시 분할에 대한 직접 링크" href="https://dldkffh.github.io/2024/06/30/pmp%20copy#%ED%95%B4%EC%8B%9C-%EB%B6%84%ED%95%A0">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="해시-분할">해시 분할<a class="hash-link" aria-label="해시 분할에 대한 직접 링크" title="해시 분할에 대한 직접 링크" href="https://dldkffh.github.io/2024/06/30/parallel-database#%ED%95%B4%EC%8B%9C-%EB%B6%84%ED%95%A0">​</a></h4>
 <p>특정 컬럼 값에 해시 함수를 적용하여 분할 하는 방식데이터 관리보다는 성능 향상에 목적</p>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="합성-분할">합성 분할<a class="hash-link" aria-label="합성 분할에 대한 직접 링크" title="합성 분할에 대한 직접 링크" href="https://dldkffh.github.io/2024/06/30/pmp%20copy#%ED%95%A9%EC%84%B1-%EB%B6%84%ED%95%A0">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="합성-분할">합성 분할<a class="hash-link" aria-label="합성 분할에 대한 직접 링크" title="합성 분할에 대한 직접 링크" href="https://dldkffh.github.io/2024/06/30/parallel-database#%ED%95%A9%EC%84%B1-%EB%B6%84%ED%95%A0">​</a></h4>
 <p>여러 분할 방법을 합친 방법</p>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="라운도-로빈-분할">라운도 로빈 분할<a class="hash-link" aria-label="라운도 로빈 분할에 대한 직접 링크" title="라운도 로빈 분할에 대한 직접 링크" href="https://dldkffh.github.io/2024/06/30/pmp%20copy#%EB%9D%BC%EC%9A%B4%EB%8F%84-%EB%A1%9C%EB%B9%88-%EB%B6%84%ED%95%A0">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="라운도-로빈-분할">라운도 로빈 분할<a class="hash-link" aria-label="라운도 로빈 분할에 대한 직접 링크" title="라운도 로빈 분할에 대한 직접 링크" href="https://dldkffh.github.io/2024/06/30/parallel-database#%EB%9D%BC%EC%9A%B4%EB%8F%84-%EB%A1%9C%EB%B9%88-%EB%B6%84%ED%95%A0">​</a></h4>
 <p>파티션에 행의 고른 분포를 원할 때 사용</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="출처">출처<a class="hash-link" aria-label="출처에 대한 직접 링크" title="출처에 대한 직접 링크" href="https://dldkffh.github.io/2024/06/30/pmp%20copy#%EC%B6%9C%EC%B2%98">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="출처">출처<a class="hash-link" aria-label="출처에 대한 직접 링크" title="출처에 대한 직접 링크" href="https://dldkffh.github.io/2024/06/30/parallel-database#%EC%B6%9C%EC%B2%98">​</a></h3>
 <ul>
 <li><a href="https://devgraphy.tistory.com/entry/%EB%B3%91%EB%A0%AC-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4%EC%9D%98-%EB%B6%84%ED%95%A0-%EA%B8%B0%EB%B2%95" target="_blank" rel="noopener noreferrer">devgraphy - 병령데이터 베이스의 병렬 기법</a></li>
 </ul>]]></content:encoded>
@@ -103,7 +198,7 @@
 <li>다양한 목적(전화, 영상 신호 전송, 컴퓨터 데이터 전송 등)으로 사용됩니다.</li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="광케이블의-종류">광케이블의 종류<a class="hash-link" aria-label="광케이블의 종류에 대한 직접 링크" title="광케이블의 종류에 대한 직접 링크" href="https://dldkffh.github.io/2024/06/24/optical-cable#%EA%B4%91%EC%BC%80%EC%9D%B4%EB%B8%94%EC%9D%98-%EC%A2%85%EB%A5%98">​</a></h3>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="싱글-모드single-mode-케이블">싱글 모드(Single Mode) 케이블<a class="hash-link" aria-label="싱글 모드(Single Mode) 케이블에 대한 직접 링크" title="싱글 모드(Single Mode) 케이블에 대한 직접 링크" href="https://dldkffh.github.io/2024/06/24/optical-cable#%EC%8B%B1%EA%B8%80-%EB%AA%A8%EB%93%9Csingle-mode-%EC%BC%80%EC%9D%B4%EB%B8%94">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="싱��글-모드single-mode-케이블">싱글 모드(Single Mode) 케이블<a class="hash-link" aria-label="싱글 모드(Single Mode) 케이블에 대한 직접 링크" title="싱글 모드(Single Mode) 케이블에 대한 직접 링크" href="https://dldkffh.github.io/2024/06/24/optical-cable#%EC%8B%B1%EA%B8%80-%EB%AA%A8%EB%93%9Csingle-mode-%EC%BC%80%EC%9D%B4%EB%B8%94">​</a></h4>
 <ul>
 <li>단일 파장(모드)을 사용하여 데이터를 전송.</li>
 <li>긴 거리 전송에 유리합니다.</li>
@@ -810,7 +905,7 @@
 </ul>
 </li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="bpdu-필드">BPDU 필드<a class="hash-link" aria-label="BPDU 필드에 대한 직접 링크" title="BPDU 필드에 대한 직접 링크" href="https://dldkffh.github.io/2024/02/19/stp-bpdus#bpdu-%ED%95%84%EB%93%9C">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="bpdu-필드">BPDU 필드<a class="hash-link" aria-label="BPDU 필드에 대한 직접 링크" title="BPDU 필드에 대한 직접 링크" href="https://dldkffh.github.io/2024/02/19/stp-bpdus#bpdu-%EF%BF%BD%ED%95%84%EB%93%9C">​</a></h4>
 <ul>
 <li>브리지 ID 또는 BID가 BPDU 패킷의 하나의 필드로 들어가며 8바이트</li>
 <li>최초 2바이트는 브리지 우선순위이며 0-65535의 unsigned integer(비부호 정수)</li>
@@ -850,218 +945,12 @@
 </ul>
 </li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="출처">출처<a class="hash-link" aria-label="출처에 대한 직접 링크" title="출처에 대한 직접 링크" href="https://dldkffh.github.io/2024/02/19/stp-bpdus#%EC%B6%9C%EC%B2%98">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="출처">출처<a class="hash-link" aria-label="출처에 대한 직접 링크" title="출처에 ��대한 직접 링크" href="https://dldkffh.github.io/2024/02/19/stp-bpdus#%EC%B6%9C%EC%B2%98">​</a></h3>
 <ul>
 <li><a href="https://ko.m.wikipedia.org/wiki/%EC%8B%A0%EC%9E%A5_%ED%8A%B8%EB%A6%AC_%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C" target="_blank" rel="noopener noreferrer">https://ko.m.wikipedia.org/wiki/%EC%8B%A0%EC%9E%A5_%ED%8A%B8%EB%A6%AC_%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C</a></li>
 </ul>]]></content:encoded>
             <category>STP</category>
             <category>BPDUs</category>
-            <category>네트워크</category>
-            <category>개념</category>
-        </item>
-        <item>
-            <title><![CDATA[VLAN]]></title>
-            <link>https://dldkffh.github.io/2024/02/19/vlan</link>
-            <guid>https://dldkffh.github.io/2024/02/19/vlan</guid>
-            <pubDate>Mon, 19 Feb 2024 00:00:00 GMT</pubDate>
-            <description><![CDATA[VLAN (Virtual LAN, 가상랜, Virtual Local Area Network, 가상 근거리 통신망)]]></description>
-            <content:encoded><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="vlan-virtual-lan-가상랜-virtual-local-area-network-가상-근거리-통신망">VLAN (Virtual LAN, 가상랜, Virtual Local Area Network, 가상 근거리 통신망)<a class="hash-link" aria-label="VLAN (Virtual LAN, 가상랜, Virtual Local Area Network, 가상 근거리 통신망)에 대한 직접 링크" title="VLAN (Virtual LAN, 가상랜, Virtual Local Area Network, 가상 근거리 통신망)에 대한 직접 링크" href="https://dldkffh.github.io/2024/02/19/vlan#vlan-virtual-lan-%EA%B0%80%EC%83%81%EB%9E%9C-virtual-local-area-network-%EA%B0%80%EC%83%81-%EA%B7%BC%EA%B1%B0%EB%A6%AC-%ED%86%B5%EC%8B%A0%EB%A7%9D">​</a></h3>
-<ul>
-<li>물리적으로 분할할 필요 없이 논리적으로 네트워크를 분할</li>
-<li>VLAN ID가 포함된 VLAN 헤더로 이더넷 프레임을 캡슐화<!-- -->
-<ul>
-<li>ID는 어떤 장치가 어떤 VLAN에 있는지 식별하는 데 사용</li>
-</ul>
-</li>
-<li>특정 VLAN에 스위치 포트를 추가하여 생성</li>
-<li>동일한 VLAN에 있는 장치는 라우터 없이도 서로 통신<!-- -->
-<ul>
-<li>VLAN을 매우 효율적이고 관리하기 쉽게 만듦</li>
-<li>VLAN을 장치 간에 격리를 제공하는 가상 스위치로 생각</li>
-</ul>
-</li>
-<li>종종 음성, 비디오 및 데이터와 같은 다양한 유형의 트래픽을 분리하는 데 사용<!-- -->
-<ul>
-<li>데이터 트래픽은 일반적으로 자체 VLAN으로 분리됨<!-- -->
-<ul>
-<li>음성 및 비디오와 같은 실시간 트래픽을 방해하지 않음</li>
-</ul>
-</li>
-<li>음성 트래픽은 일반적으로 네트워크에서 우선 순위가 부여<!-- -->
-<ul>
-<li>지연이나 패킷 손실이 발생하지 않음</li>
-</ul>
-</li>
-<li>비디오 트래픽도 네트워크에서 우선 순위를 부여받아 중단 없이 원활하게 스트리밍</li>
-</ul>
-</li>
-</ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="vlan을-사용하는-이유">VLAN을 사용하는 이유<a class="hash-link" aria-label="VLAN을 사용하는 이유에 대한 직접 링크" title="VLAN을 사용하는 이유에 대한 직접 링크" href="https://dldkffh.github.io/2024/02/19/vlan#vlan%EC%9D%84-%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94-%EC%9D%B4%EC%9C%A0">​</a></h4>
-<ul>
-<li>네트워크를 더 작고 관리하기 쉬운 섹션으로 분할</li>
-<li>트래픽을 격리하고 다른 유형의 트래픽과 분리하여 보안을 향상</li>
-<li>브로드캐스트 트래픽 및 충돌 도메인을 줄여 성능을 향상</li>
-<li>가상 네트워크를 만드는 데 사용<!-- -->
-<ul>
-<li>테스트 또는 교육 목적으로 유용</li>
-</ul>
-</li>
-</ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="작동-방식">작동 방식<a class="hash-link" aria-label="작동 방식에 대한 직접 링크" title="작동 방식에 대한 직접 링크" href="https://dldkffh.github.io/2024/02/19/vlan#%EC%9E%91%EB%8F%99-%EB%B0%A9%EC%8B%9D">​</a></h4>
-<ul>
-<li>가상 LAN(VLAN)은 스위치에 의해 생성된 논리적 네트워크</li>
-<li>VLAN에는 VLAN에 할당되고 VLAN ID라는 고유 식별자가 있는 스위치 포트가 포함되어 있음</li>
-<li>대부분의 경우 단일 물리적 스위치에 여러 VLAN이 구성<!-- -->
-<ul>
-<li>네트워크의 트래픽을 더 잘 구성하고 보안도 향상</li>
-</ul>
-</li>
-<li>장치가 네트워크로 데이터를 보낼 때 데이터를 보낼 VLAN을 식별하는 태그라는 필드가 포함<!-- -->
-<ul>
-<li>스위치는 이 태그를 확인한 다음 해당 VLAN의 모든 장치에 데이터를 전달</li>
-</ul>
-</li>
-<li>VLAN 사용의 한 가지 이점은 네트워크에서 브로드캐스트 트래픽을 줄이는 데 도움이 된다는 것</li>
-<li>장치를 서로 다른 VLAN으로 분리하면 각 장치가 수신하는 브로드캐스트를 제어<!-- -->
-<ul>
-<li>네트워크 성능을 개선하는 데 도움이 됨</li>
-</ul>
-</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="vlan-유형">VLAN 유형<a class="hash-link" aria-label="VLAN 유형에 대한 직접 링크" title="VLAN 유형에 대한 직접 링크" href="https://dldkffh.github.io/2024/02/19/vlan#vlan-%EC%9C%A0%ED%98%95">​</a></h3>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="data-vlan">Data VLAN<a class="hash-link" aria-label="Data VLAN에 대한 직접 링크" title="Data VLAN에 대한 직접 링크" href="https://dldkffh.github.io/2024/02/19/vlan#data-vlan">​</a></h4>
-<ul>
-<li>사용자 데이터 트래픽을 전달</li>
-<li>사용자 VLAN이라고도 함</li>
-<li>Data VLAN의 구성원인 모든 스위치 포트에는 동일한 VLAN ID가 할당</li>
-</ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="voice-vlan">Voice VLAN<a class="hash-link" aria-label="Voice VLAN에 대한 직접 링크" title="Voice VLAN에 대한 직접 링크" href="https://dldkffh.github.io/2024/02/19/vlan#voice-vlan">​</a></h4>
-<ul>
-<li>실시간 Voice 트래픽을 전달하도록 구성된 특수한 유형의 데이터 VLAN</li>
-<li>다른 유형의 트래픽보다 Voice 트래픽에 우선 순위를 부여<!-- -->
-<ul>
-<li>Voice VLAN의 구성원인 모든 스위치 포트에는 동일한 Voice CoS(서비스 등급) 값이 할당</li>
-</ul>
-</li>
-</ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="surveillance감시-vlan">Surveillance(감시) VLAN<a class="hash-link" aria-label="Surveillance(감시) VLAN에 대한 직접 링크" title="Surveillance(감시) VLAN에 대한 직접 링크" href="https://dldkffh.github.io/2024/02/19/vlan#surveillance%EA%B0%90%EC%8B%9C-vlan">​</a></h4>
-<ul>
-<li>실시간 비디오 트래픽을 전달하도록 구성된 특수한 유형의 데이터 VLAN</li>
-<li>다른 유형의 트래픽보다 Voice 트래픽에 우선 순위를 부여<!-- -->
-<ul>
-<li>Surveillance VLAN의 구성원인 모든 스위치 포트에는 동일한 Voice CoS(서비스 등급) 값이 할당</li>
-</ul>
-</li>
-</ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="management-vlan">Management VLAN<a class="hash-link" aria-label="Management VLAN에 대한 직접 링크" title="Management VLAN에 대한 직접 링크" href="https://dldkffh.github.io/2024/02/19/vlan#management-vlan">​</a></h4>
-<ul>
-<li>스위치, 라우터 및 방화벽과 같은 네트워크의 장치에 대한 대역 외 관리 트래픽을 수행하는 데 사용되는 특수 유형의 데이터 VLAN</li>
-<li>일반적으로 공용 인터넷에서 라우팅할 수 없는 IP 주소 사용</li>
-</ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="default-vlan">Default VLAN<a class="hash-link" aria-label="Default VLAN에 대한 직접 링크" title="Default VLAN에 대한 직접 링크" href="https://dldkffh.github.io/2024/02/19/vlan#default-vlan">​</a></h4>
-<ul>
-<li>모든 포트가 단일 VLAN에 할당되는 네트워크 스위치 구성</li>
-<li>별도의 VLAN을 구성할 필요 없이 동일한 VLAN의 모든 장치가 서로 통신할 수 있도록 하여 스위치 관리를 단순화<!-- -->
-<ul>
-<li>승인되지 않은 장치가 중요한 데이터에 액세스하도록 허용하여 보안 위험을 초래할 수도 있음</li>
-</ul>
-</li>
-</ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="native-vlan">Native VLAN<a class="hash-link" aria-label="Native VLAN에 대한 직접 링크" title="Native VLAN에 대한 직접 링크" href="https://dldkffh.github.io/2024/02/19/vlan#native-vlan">​</a></h4>
-<ul>
-<li>태그가 지정되지 않은 트래픽을 전달하는 VLAN</li>
-<li>일반적으로 스위치의 새 포트에 대한 기본 VLAN 상태</li>
-<li>Native VLAN의 모든 장치는 트래픽에 태그를 지정하지 않고 서로 통신</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="포트-기반-vlan과-태그-기반-vlan의-차이점">포트 기반 VLAN과 태그 기반 VLAN의 차이점<a class="hash-link" aria-label="포트 기반 VLAN과 태그 기반 VLAN의 차이점에 대한 직접 링크" title="포트 기반 VLAN과 태그 기반 VLAN의 차이점에 대한 직접 링크" href="https://dldkffh.github.io/2024/02/19/vlan#%ED%8F%AC%ED%8A%B8-%EA%B8%B0%EB%B0%98-vlan%EA%B3%BC-%ED%83%9C%EA%B7%B8-%EA%B8%B0%EB%B0%98-vlan%EC%9D%98-%EC%B0%A8%EC%9D%B4%EC%A0%90">​</a></h3>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="포트-기반-vlan">포트 기반 VLAN<a class="hash-link" aria-label="포트 기반 VLAN에 대한 직접 링크" title="포트 기반 VLAN에 대한 직접 링크" href="https://dldkffh.github.io/2024/02/19/vlan#%ED%8F%AC%ED%8A%B8-%EA%B8%B0%EB%B0%98-vlan">​</a></h4>
-<ul>
-<li>VLAN에서 각 포트는 특정 VLAN에 할당<!-- -->
-<ul>
-<li>서로 다른 VLAN 간에 트래픽을 격리</li>
-</ul>
-</li>
-<li>네트워크 스위치의 각 포트가 특정 VLAN에 할당되는 가장 일반적인 유형</li>
-<li>소규모 사무실/홈 오피스(SOHO) 네트워크에서 사용</li>
-</ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="tag-기반-vlan">TAG 기반 VLAN<a class="hash-link" aria-label="TAG 기반 VLAN에 대한 직접 링크" title="TAG 기반 VLAN에 대한 직접 링크" href="https://dldkffh.github.io/2024/02/19/vlan#tag-%EA%B8%B0%EB%B0%98-vlan">​</a></h4>
-<ul>
-<li>태그를 사용하여 어떤 패킷이 어떤 VLAN에 속하는지 식별<!-- -->
-<ul>
-<li>여러 VLAN을 단일 포트에 할당</li>
-</ul>
-</li>
-<li>특수 태그를 사용하여 다른 VLAN에 속하는 패킷을 식별</li>
-<li>포트 기반 VLAN보다 유연</li>
-<li>엔터프라이즈 네트워크에서 사용</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="vtp-vlan-트렁킹">VTP (VLAN 트렁킹)<a class="hash-link" aria-label="VTP (VLAN 트렁킹)에 대한 직접 링크" title="VTP (VLAN 트렁킹)에 대한 직접 링크" href="https://dldkffh.github.io/2024/02/19/vlan#vtp-vlan-%ED%8A%B8%EB%A0%81%ED%82%B9">​</a></h3>
-<ul>
-<li>VLAN 트렁킹은 단일 물리적 링크를 통해 여러 VLAN에서 트래픽을 전송하는 프로세스<!-- -->
-<ul>
-<li>네트워크 장치를 구성할 때 유연성과 효율성이 향상</li>
-</ul>
-</li>
-<li>대부분의 경우 각 VLAN에는 고유한 식별자(ID)가 할당</li>
-<li>VLAN 트렁킹을 구성할 때 ID는 트렁크 링크를 통해 전송되어야 하는 트래픽을 지정하는 데 사용</li>
-</ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="vlan-트렁킹을-사용시-주요-이점">VLAN 트렁킹을 사용시 주요 이점<a class="hash-link" aria-label="VLAN 트렁킹을 사용시 주요 이점에 대한 직접 링크" title="VLAN 트렁킹을 사용시 주요 이점에 대한 직접 링크" href="https://dldkffh.github.io/2024/02/19/vlan#vlan-%ED%8A%B8%EB%A0%81%ED%82%B9%EC%9D%84-%EC%82%AC%EC%9A%A9%EC%8B%9C-%EC%A3%BC%EC%9A%94-%EC%9D%B4%EC%A0%90">​</a></h4>
-<ul>
-<li>네트워크의 혼잡을 줄임으로써 네트워크 성능을 향상</li>
-<li>서로 다른 VLAN의 트래픽을 격리하여 더 큰 보안을 제공<!-- -->
-<ul>
-<li>중요한 데이터에 대한 무단 액세스를 방지</li>
-</ul>
-</li>
-</ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="구성시-염두에-두어야-사항">구성시 염두에 두어야 사항<a class="hash-link" aria-label="구성시 염두에 두어야 사항에 대한 직접 링크" title="구성시 염두에 두어야 사항에 대한 직접 링크" href="https://dldkffh.github.io/2024/02/19/vlan#%EA%B5%AC%EC%84%B1%EC%8B%9C-%EC%97%BC%EB%91%90%EC%97%90-%EB%91%90%EC%96%B4%EC%95%BC-%EC%82%AC%ED%95%AD">​</a></h4>
-<ul>
-<li>스위치 포트가 올바르게 구성되었는지 확인</li>
-<li>각 VLAN의 ID는 고유해야 하며 네트워크의 다른 부분에서 재사용해서는 안 됨</li>
-<li>프로덕션 환경에 배포하기 전에 구성을 테스트하는 것이 중요</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="출처">출처<a class="hash-link" aria-label="출처에 대한 직접 링크" title="출처에 대한 직접 링크" href="https://dldkffh.github.io/2024/02/19/vlan#%EC%B6%9C%EC%B2%98">​</a></h3>
-<ul>
-<li><a href="https://fiberroad.com/ko/resources/glossary/vlan-explained-what-is-vlan-how-does-it-work/" target="_blank" rel="noopener noreferrer">https://fiberroad.com/ko/resources/glossary/vlan-explained-what-is-vlan-how-does-it-work/</a></li>
-<li><a href="http://www.ktword.co.kr/test/view/view.php?no=2022" target="_blank" rel="noopener noreferrer">http://www.ktword.co.kr/test/view/view.php?no=2022</a></li>
-<li><a href="https://www.fibermall.com/ko/blog/what-is-vlan-and-how-it-work.htm" target="_blank" rel="noopener noreferrer">https://www.fibermall.com/ko/blog/what-is-vlan-and-how-it-work.htm</a></li>
-</ul>]]></content:encoded>
-            <category>VLAN</category>
-            <category>TAG</category>
-            <category>VTP</category>
-            <category>네트워크</category>
-            <category>개념</category>
-        </item>
-        <item>
-            <title><![CDATA[WLAN]]></title>
-            <link>https://dldkffh.github.io/2024/02/19/wlan</link>
-            <guid>https://dldkffh.github.io/2024/02/19/wlan</guid>
-            <pubDate>Mon, 19 Feb 2024 00:00:00 GMT</pubDate>
-            <description><![CDATA[WLAN (Wireless LAN, 무선랜, 無線 LAN)]]></description>
-            <content:encoded><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="wlan-wireless-lan-무선랜-無線-lan">WLAN (Wireless LAN, 무선랜, 無線 LAN)<a class="hash-link" aria-label="WLAN (Wireless LAN, 무선랜, 無線 LAN)에 대한 직접 링크" title="WLAN (Wireless LAN, 무선랜, 無線 LAN)에 대한 직접 링크" href="https://dldkffh.github.io/2024/02/19/wlan#wlan-wireless-lan-%EB%AC%B4%EC%84%A0%EB%9E%9C-%E7%84%A1%E7%B7%9A-lan">​</a></h3>
-<ul>
-<li>무선 신호 전달 방식(일반적으로 확산 대역 또는 직교주파수분할다중화 방식)을 이용하여 두 대 이상의 장치를 연결하는 기술<!-- -->
-<ul>
-<li>사용자는 근거리 지역에서 이동하면서도 지속적으로 네트워크에 접근 가능</li>
-</ul>
-</li>
-<li>오늘날 대부분의 무선랜 기술은 IEEE 802.11 표준에 기반</li>
-<li>와이파이라는 마케팅 네임으로 잘 알려짐</li>
-<li>무선랜은 한때 미국 국방부에 의해 LAWN (Local Area Wireless Network)라고 불리기도 했음</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="무선랜의-종류">무선랜의 종류<a class="hash-link" aria-label="무선랜의 종류에 대한 직접 링크" title="무선랜의 종류에 대한 직접 링크" href="https://dldkffh.github.io/2024/02/19/wlan#%EB%AC%B4%EC%84%A0%EB%9E%9C%EC%9D%98-%EC%A2%85%EB%A5%98">​</a></h3>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="p2p-피어-투-피어">P2P (피어 투 피어)<a class="hash-link" aria-label="P2P (피어 투 피어)에 대한 직접 링크" title="P2P (피어 투 피어)에 대한 직접 링크" href="https://dldkffh.github.io/2024/02/19/wlan#p2p-%ED%94%BC%EC%96%B4-%ED%88%AC-%ED%94%BC%EC%96%B4">​</a></h4>
-<ul>
-<li>무선 장치가 직접 다른 컴퓨터와 통신할 수 있게 도와 줌</li>
-</ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="브리지">브리지<a class="hash-link" aria-label="브리지에 대한 직접 링크" title="브리지에 대한 직접 링크" href="https://dldkffh.github.io/2024/02/19/wlan#%EB%B8%8C%EB%A6%AC%EC%A7%80">​</a></h4>
-<ul>
-<li>보통 다른 종류의 네트워크를 연결하는 데 쓰임</li>
-<li>무선랜의 접속 포인트 역할</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="출처">출처<a class="hash-link" aria-label="출처에 대한 직접 링크" title="출처에 대한 직접 링크" href="https://dldkffh.github.io/2024/02/19/wlan#%EC%B6%9C%EC%B2%98">​</a></h3>
-<p><a href="https://en.m.wikipedia.org/wiki/Wireless_LAN" target="_blank" rel="noopener noreferrer">https://en.m.wikipedia.org/wiki/Wireless_LAN</a> <a href="https://ko.m.wikipedia.org/wiki/%EB%AC%B4%EC%84%A0%EB%9E%9C" target="_blank" rel="noopener noreferrer">https://ko.m.wikipedia.org/wiki/%EB%AC%B4%EC%84%A0%EB%9E%9C</a></p>]]></content:encoded>
-            <category>WLAN</category>
             <category>네트워크</category>
             <category>개념</category>
         </item>
