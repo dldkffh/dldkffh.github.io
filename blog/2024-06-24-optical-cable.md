@@ -19,6 +19,15 @@ enableComments: true # for Gisqus
 - 표기는 'SM' 또는 'OS1/OS2'로 합니다.
 - 노란색으로 표시됩니다.
 
+<!--truncate-->
+
+##### Single Mode 광케이블 (OS1, OS2 차이점)
+
+| 구분 | 규격 | 심선구조 | 활용 | 손실값 | 전송거리 |
+| --- | --- | --- | --- | --- | --- |
+| OS1 | ITU-T G.652A/B/C/D | Tight buffered | 실내용 (Indoor) | 1.0db/km | 2 km |
+| OS2 | ITU-T G.652C/D | Loose tube | 실외용(Outdoor) | 0.4db/km | 10 km |
+
 #### 멀티 모드(Multi Mode) 케이블
 
 - 여러 파장(모드)을 사용하여 데이터를 전송.
@@ -26,13 +35,38 @@ enableComments: true # for Gisqus
 - 표기는 'MM' 또는 'OM1/OM2/OM3/OM4/OM5'로 합니다.
 - 주황색, 하늘색, 민트그린 등 다양한 색상으로 표시됩니다.
 
-<!--truncate-->
+| 비교 항목     | 멀티모드(MM)  | 싱글모드(SM) |
+| ------------- | ------------- | ------------ |
+| 코어 직경     | 50um / 62.5um | 8~10um       |
+| 클래딩 직경   | 125um         | 125um        |
+| 광전송로 모드 | 복수          | 하나         |
+| 모드 분산     | 있음          | 없음         |
+| 전송 손실     | 적다          | 훨씬 적다    |
+| 전송 거리     | ~550m         | 70Km         |
+| 케이블 취급   | 다소 어렵다   | 훨씬 어렵다  |
+| 비용          | 고가          | 훨씬 고가    |
 
 ### 케이블 표기 방법
 
 - 표기 상으로 멀티 모드는 'MM' 또는 'OM1/OM2/OM3/OM4/OM5'로, 싱글 모드는 'SM' 또는 'OS1/OS2'로 구분됩니다.
 - 색상으로도 구분 가능합니다
   - 멀티 모드는 주황색(OM1/OM2), 하늘색(OM3), 민트그린(OM5), 싱글 모드는 노란색.
+
+| MMF Cable Type | Diameter | Jacket Color (자켓 색상) | Optical Source (광원) | Bandwidth (대역폭) |
+| --- | --- | --- | --- | --- |
+| OM1 | 62.5/125µm | Orange | LED | 200MHz\*km |
+| OM2 | 50/125µm | Orange/Gray | LED | 500MHz\*km |
+| OM3 | 50/125µm | Aqua | VSCEL | 2000MHz\*km |
+| OM4 | 50/125µm | Aqua/Purple | VSCEL | 4700MHz\*km |
+| OM5 | 50/125µm | Lime Green | VSCEL | 28000MHz\*km |
+
+| MMF Category | Fast Ethernet | 1GbE | 10GbE | 40GbE | 100GbE |
+| ------------ | ------------- | ---- | ----- | ----- | ------ |
+| OM1          | 2000m         | 275m | 33m   | /     | /      |
+| OM2          | 2000m         | 550m | 82m   | /     | /      |
+| OM3          | 2000m         | /    | 300m  | 100m  | 70m    |
+| OM4          | 2000m         | /    | 550m  | 150m  | 150m   |
+| OM5          | /             | /    | 550m  | 150m  | 150m   |
 
 ### 광케이블의 특성 및 장단점
 
@@ -47,9 +81,6 @@ enableComments: true # for Gisqus
 - 광케이블의 커넥터 부분은 항상 청결하게 유지해야 합니다.
 - 대부분의 네트워크 설치에서는 멀티 모드 케이블(OM4, OM5)을 사용하지만, 장거리 전송이 필요할 경우 싱글 모드 케이블을 사용합니다.
 
-<br/>
-<br/>
-
 ### 광커넥터 종류 및 선택
 
 - 광케이블의 커넥터는 사용하는 광케이블 종류에 따라 다양합니다.
@@ -62,6 +93,11 @@ enableComments: true # for Gisqus
 - 한 가닥은 수신(rx), 다른 가닥은 송신(tx)을 담당합니다.
 - 이러한 구조로 인해 데이터의 신속하고 정확한 전달이 가능합니다.
 
+| 구 분   | 싱글 모드   | 멀티 모드   |
+| ------- | ----------- | ----------- |
+| 1.0Gbps | 1000BASE-LX | 1000BASE-SX |
+| 10GGbps | 10GBASE-LR  | 10GBASE-SR  |
+
 ### 광케이블과 관련된 추가 정보
 
 - 패치 코드나 점퍼 코드는 청색과 적색 선으로 구분되어 있으며, 한쪽에 적색을 연결하면 반대쪽에는 청색을 연결해야 합니다.
@@ -73,7 +109,38 @@ enableComments: true # for Gisqus
 - 장비의 스펙에 따라서는 10기가 또는 100기가까지의 데이터 전송 속도를 지원할 수 있습니다.
 - SFP 모듈을 사용하여 광케이블을 연결할 때는 포트의 손상을 막기 위해 조심스럽게 삽입해야 합니다.
 
+### GBIC의 기능과 모듈 종류
+
+- 네트워크 장치들을 파이버채널이나, 기가비트 이더넷과 같은 광섬유 기반의 전송 시스템이 부탁하기 위한 인터페이스
+- 직렬 전기 신호들을 직렬 광학신호들로 변환하며, 그 반대로도 변환
+- 데이터 전송 속도는 대게 1Gbps 이상부터 시작
+- 시스템 가동 중에도 교체가 가능
+- 일반적인 커넥터의 형태는 SC와 LC
+- 네트워크 장치의 능력을 결정하기 위해 스위치가 사용할 수 있는 ID와 시스템 정보를 가짐
+
+#### GBIC의 모듈 종류
+ 
+- SFP (Small Form-factor Pluggable) : 광 모듈 트랜시버에 사용되며 이 모듈은 광/디지털 변환기인 소형 GBIC이라고 부른다.
+- GBIC (GigaBit Interface Converter) : 광 인터페이스 트랜시버 (기가비트 인터페이스에 사용하는 모듈)
+
+#### GBIC 거리에 따른 종류
+
+- 1000Base-T : UTP 케이블 (거리제안 100m)
+- 1000Base-SX : 근거리 (약 2~300m, 멀티모드 광케이블)
+- 1000Base-LXX : 중거리 (멀티모드 약 500m, 싱글모드 10km)
+- 1000Base-ZX : 장거리 (수십 km 이상)
+
+#### SFP 색상으로 싱글과 멀티모드 구분
+
+- Mulit Mode : 검정
+- Single Mode : 초록, 파랑
+
+
 ### 출처
 
 - [씨읽남 - 광케이블 이야기 1편 - 종류와 구분법, 특징에 대하여! (광케이블의 종류, 싱글 모드, 멀티 모드)](https://www.youtube.com/watch?v=ev6p3SBZe68)
 - [씨읽남 - 광케이블 이야기 2편 - 커넥터와 스위치(커넥터,스위치,통신,네트워크카드,SFP모듈)](https://www.youtube.com/watch?v=LpuLnvVX7NQ)
+- [hanoolee - 광케이블 - OM3 vs. OM4 비교 및 규격(3)](https://blog.naver.com/hanoolee/222504021166)
+- [엘넷컴퍼니-쇼핑몰 오픈 www.elnet.co.kr - 광케이블의 종류와 규격](https://blog.naver.com/elnetmall/221534998202)
+- [통합배선과 계측기 - 광케이블 참고자료(OS1, OS2, OM1, OM2, OM3, OM4)](https://blog.naver.com/road111/221543068267)
+- [하늘땅별땅 - Fiber 케이블 종류 및 Gbic Type 분류](https://blog.naver.com/PostView.naver?blogId=hymne&logNo=221259561018)
