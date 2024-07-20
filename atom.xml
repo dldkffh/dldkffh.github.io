@@ -55,7 +55,7 @@
 <li>서비스 혹은 시스템이 정상적으로 동작 가능한 상태를 유지하는 원칙</li>
 <li>외부의 공격과 침입에 대비하여 서비스 혹은 시스템을 보호하는 원칙</li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="대응-개념-2">대응 개념<a class="hash-link" aria-label="대응 개념에 대한 직접 링크" title="대응 개념에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-1-security#%EB%8C%80%EC%9D%91-%EA%B0%9C%EB%85%90-2">​</a></h4>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="대응-개념-2">대응 개념<a class="hash-link" aria-label="대응 개념에 대한 직접 링크" title="대응 개념에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-1-security#%EB%8C%80%EC%9D%91-%EA%B0%9C%EB%85%90-2">​</a></h5>
 <ul>
 <li>해킹(DDOS, XSS)의 방지</li>
 <li>보안 그룹 / NACL</li>
