@@ -2,11 +2,505 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://dldkffh.github.io</id>
     <title>dldkffh Blog</title>
-    <updated>2024-06-30T00:00:00.000Z</updated>
+    <updated>2024-07-20T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://dldkffh.github.io"/>
     <subtitle>dldkffh Blog</subtitle>
     <icon>https://dldkffh.github.io/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[AWS와 보안 - CIA, AAA, AWS 보안]]></title>
+        <id>https://dldkffh.github.io/2024/07/20/aws-1-security</id>
+        <link href="https://dldkffh.github.io/2024/07/20/aws-1-security"/>
+        <updated>2024-07-20T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[보안이란?]]></summary>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="보안이란">보안이란?<a class="hash-link" aria-label="보안이란?에 대한 직접 링크" title="보안이란?에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-1-security#%EB%B3%B4%EC%95%88%EC%9D%B4%EB%9E%80">​</a></h3>
+<p>시스템, 네트워크, 데이터, 애플리케이션 등의 정보기술의 무결성을 유지하고 외부의 공격으로부터 보호하는 관리적, 기술적 방법</p>
+<br>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="cia-모델">CIA 모델<a class="hash-link" aria-label="CIA 모델에 대한 직접 링크" title="CIA 모델에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-1-security#cia-%EB%AA%A8%EB%8D%B8">​</a></h3>
+<ul>
+<li>Confidentiality 기밀성</li>
+<li>Intearity 무결성</li>
+<li>Availability 가용성</li>
+</ul>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="위-세가지를-중심으로-한-보안-모델">위 세가지를 중심으로 한 보안 모델<a class="hash-link" aria-label="위 세가지를 중심으로 한 보안 모델에 대한 직접 링크" title="위 세가지를 중심으로 한 보안 모델에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-1-security#%EC%9C%84-%EC%84%B8%EA%B0%80%EC%A7%80%EB%A5%BC-%EC%A4%91%EC%8B%AC%EC%9C%BC%EB%A1%9C-%ED%95%9C-%EB%B3%B4%EC%95%88-%EB%AA%A8%EB%8D%B8">​</a></h5>
+<p>-&gt; 이 모델을 통해 다른 카테고리를 추가 / 보안하여 모델 적용</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="confidentiality-기밀성">Confidentiality 기밀성<a class="hash-link" aria-label="Confidentiality 기밀성에 대한 직접 링크" title="Confidentiality 기밀성에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-1-security#confidentiality-%EA%B8%B0%EB%B0%80%EC%84%B1">​</a></h4>
+<ul>
+<li>검증되거나 허용되지 않는 주체에게는 정보 및 데이터 미공개 원칙</li>
+<li>정보 및 데이터는 허용된 주체에게는 공개될 수 있어야 함<!-- -->
+<ul>
+<li>ex : 개인정보, 은행 계좌의 잔액, 신용카드 번호, 주민등록 번호</li>
+</ul>
+</li>
+<li>권한 검증 -&gt; 데이터 공개의 순서로 진행검증/허용된 주체인지 판단하는 프로세스(Identification) 필요</li>
+</ul>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="대응-개념">대응 개념<a class="hash-link" aria-label="대응 개념에 대한 직접 링크" title="대응 개념에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-1-security#%EB%8C%80%EC%9D%91-%EA%B0%9C%EB%85%90">​</a></h5>
+<ul>
+<li>암호화 : SSL, TLS, HTTPS</li>
+<li>IAM : 자격증명, MFA 인증 등</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="intearity-무결성">Intearity 무결성<a class="hash-link" aria-label="Intearity 무결성에 대한 직접 링크" title="Intearity 무결성에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-1-security#intearity-%EB%AC%B4%EA%B2%B0%EC%84%B1">​</a></h4>
+<ul>
+<li>검증되거나 허용되지 않은 주체가 데이터를 변경할 수 없다는 원칙</li>
+<li>데이터와 정보의 무결성을 유지하기 위한 원칙</li>
+</ul>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="대응-개념-1">대응 개념<a class="hash-link" aria-label="대응 개념에 대한 직접 링크" title="대응 개념에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-1-security#%EB%8C%80%EC%9D%91-%EA%B0%9C%EB%85%90-1">​</a></h5>
+<ul>
+<li>S3의 객체 권한 : ACL/Bucket Policy / 버저닝</li>
+<li>원장(장부)(Ledger) DB : Amazon QLDB</li>
+<li>S3 / CloudWatch 로그의 다중 계정 보관</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="availability-가용성">Availability 가용성<a class="hash-link" aria-label="Availability 가용성에 대한 직접 링크" title="Availability 가용성에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-1-security#availability-%EA%B0%80%EC%9A%A9%EC%84%B1">​</a></h4>
+<ul>
+<li>서비스 혹은 시스템이 정상적으로 동작 가능한 상태를 유지하는 원칙</li>
+<li>외부의 공격과 침입에 대비하여 서비스 혹은 시스템을 보호하는 원칙</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="대응-개념-2">대응 개념<a class="hash-link" aria-label="대응 개념에 대한 직접 링크" title="대응 개념에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-1-security#%EB%8C%80%EC%9D%91-%EA%B0%9C%EB%85%90-2">​</a></h4>
+<ul>
+<li>해킹(DDOS, XSS)의 방지</li>
+<li>보안 그룹 / NACL</li>
+<li>AWS WAF / AWS Shield</li>
+<li>고가용성 / 장애내구성의 확보</li>
+<li>인시던트 매니징 (AWS Config 등)</li>
+</ul>
+<br>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="aaa-모델">AAA 모델<a class="hash-link" aria-label="AAA 모델에 대한 직접 링크" title="AAA 모델에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-1-security#aaa-%EB%AA%A8%EB%8D%B8">​</a></h3>
+<ul>
+<li>Authentication(인증), Authorization(인가or권한 부여), Accounting(계정 관리) 세가지를 중심으로 한 보안</li>
+<li>모델 -&gt; 대부분 CIA 모델에 다른 카테고리를 추가 / 보안하여 모델 적용</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="authentication인증">Authentication(인증)<a class="hash-link" aria-label="Authentication(인증)에 대한 직접 링크" title="Authentication(인증)에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-1-security#authentication%EC%9D%B8%EC%A6%9D">​</a></h4>
+<ul>
+<li>정보에 접근하는 주체 증명</li>
+<li>다양한 Factor 기반으로 자신을 증명</li>
+<li>다양한 주체에서 인증을 담당 가능<!-- -->
+<ul>
+<li>ex : Facebook으로 로그인하기, 구글로 로그인 하기 등</li>
+</ul>
+</li>
+<li>AWS의 대응 개념<!-- -->
+<ul>
+<li>ex : AWS SSO, AWS Active Directory 등</li>
+</ul>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="authorization인가or권한-부여">Authorization(인가or권한 부여)<a class="hash-link" aria-label="Authorization(인가or권한 부여)에 대한 직접 링크" title="Authorization(인가or권한 부여)에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-1-security#authorization%EC%9D%B8%EA%B0%80or%EA%B6%8C%ED%95%9C-%EB%B6%80%EC%97%AC">​</a></h4>
+<ul>
+<li>인증된 대상에 대해서 역할을 수행하기 위한 궈난을 부여하는 과정</li>
+<li>부여된 권한 밖의 행동에 대해 허용하지 않는 과정 포함</li>
+<li>상황별, 조건별로 다른 권한을 부여할 수도 있음</li>
+<li>AWS의 대응 개념 IAM 역할, IAM 정책</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="accounting계정-관리">Accounting(계정 관리)<a class="hash-link" aria-label="Accounting(계정 관리)에 대한 직접 링크" title="Accounting(계정 관리)에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-1-security#accounting%EA%B3%84%EC%A0%95-%EA%B4%80%EB%A6%AC">​</a></h4>
+<ul>
+<li>계정의 활동을 기록하고 감사할 수 있어야 한다는 원칙</li>
+<li>보안 사고 발생시, 인지할 수 있어야 함</li>
+<li>보안 사고 발생시, 해당 사고의 내역을 추적할 수 있어야 함</li>
+<li>AWS의 대응 개념 Amazon Cloud Watch, Amazon CloudTrail</li>
+</ul>
+<br>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="클라우드-보안-사고-사례">클라우드 보안 사고 사례<a class="hash-link" aria-label="클라우드 보안 ��사고 사례에 대한 직접 링크" title="클라우드 보안 사고 사례에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-1-security#%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EB%B3%B4%EC%95%88-%EC%82%AC%EA%B3%A0-%EC%82%AC%EB%A1%80">​</a></h3>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="95-고객-실수">95% 고객 실수<a class="hash-link" aria-label="95% 고객 실수에 대한 직접 링크" title="95% 고객 실수에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-1-security#95-%EA%B3%A0%EA%B0%9D-%EC%8B%A4%EC%88%98">​</a></h5>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="자격-증명-유출">자격 증명 유출<a class="hash-link" aria-label="자격 증명 유출에 대한 직접 링크" title="자격 증명 유출에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-1-security#%EC%9E%90%EA%B2%A9-%EC%A6%9D%EB%AA%85-%EC%9C%A0%EC%B6%9C">​</a></h4>
+<ul>
+<li>클라우드 인프라를 접근/관리하기 위한 자격증명의 유출</li>
+<li>Git/Docker Hub의 도커 파일 등 공개된 저장소에 자격증명의 유출</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="클라우드-환경의-데이터-유출">클라우드 환경의 데이터 유출<a class="hash-link" aria-label="클라우드 환경의 데이터 유출에 대한 직접 링크" title="클라우드 환경의 데이터 유출에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-1-security#%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%ED%99%98%EA%B2%BD%EC%9D%98-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%9C%A0%EC%B6%9C">​</a></h4>
+<ul>
+<li>클라우드 환경의 스토리지 보안 정책의 미비로 인한 데이터 유출</li>
+</ul>
+<br>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="aws-보안-기초">AWS 보안 기초<a class="hash-link" aria-label="AWS 보안 기초에 대한 직접 링크" title="AWS 보안 기초에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-1-security#aws-%EB%B3%B4%EC%95%88-%EA%B8%B0%EC%B4%88">​</a></h3>
+<p>방지, 탐지, 대처, 해결</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="방지">방지<a class="hash-link" aria-label="방지에 대한 직접 링크" title="방지에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-1-security#%EB%B0%A9%EC%A7%80">​</a></h4>
+<ul>
+<li>데이터의 유출과 침입 등의 보안 사고를 방지</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="탐지">탐지<a class="hash-link" aria-label="탐지에 대한 직접 링크" title="탐지에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-1-security#%ED%83%90%EC%A7%80">​</a></h4>
+<ul>
+<li>로깅, 모니터링을 통해 AWS 인프라 및 조직의 보안 상태를 파악</li>
+<li>보안 관련 히스토리 파악</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="대처">대처<a class="hash-link" aria-label="대처에 대한 직접 링크" title="대처에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-1-security#%EB%8C%80%EC%B2%98">​</a></h4>
+<ul>
+<li>자동화된 인시던트 응답, 복구를 통해 문제 해결 및 원인 분석</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="해결">해결<a class="hash-link" aria-label="해결에 대한 직접 링크" title="해결에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-1-security#%ED%95%B4%EA%B2%B0">​</a></h4>
+<ul>
+<li>이벤트 기반 자동화를 활용하여 실시간, 신속하게 문제 해결</li>
+<li>인프라 보호</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="aws의-보안-관련-서비스">AWS의 보안 관련 서비스<a class="hash-link" aria-label="AWS의 보안 관련 서비스에 대한 직접 링크" title="AWS의 보안 관련 서비스에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-1-security#aws%EC%9D%98-%EB%B3%B4%EC%95%88-%EA%B4%80%EB%A0%A8-%EC%84%9C%EB%B9%84%EC%8A%A4">​</a></h4>
+<ul>
+<li>장애 인지 / 파악 : AWS CloudWatch, AWS Config</li>
+<li>활동 감사 : AWS CloudTrail</li>
+<li>데이터 암호화 및 키 관리 : AWS KMS, AWS CloudHSM, AWS Secrets Manager, AWS Certification Manager</li>
+<li>권한 관리 : AWS IAM</li>
+<li>기타 보안 관련 서비스 : Amazon Inspector, Detective, Macie, AWS WAF, Shield, GuardDuty, Security Hub 등</li>
+</ul>
+<br>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="aws-규정-준수">AWS 규정 준수<a class="hash-link" aria-label="AWS 규정 준수에 대한 직접 링크" title="AWS 규정 준수에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-1-security#aws-%EA%B7%9C%EF%BF%BD%EF%BF%BD%EC%A0%95-%EC%A4%80%EC%88%98">​</a></h3>
+<ul>
+<li>클라우드를 활용할 경우, 고객에게 납품할 경우, 클라우드를 활용한 인증을 받을 경우 등 AWS가 어떤 규정을 준수하는가를 아는 것이 중요</li>
+<li>AWS에서는 다양한 규정을 준수하고 있으며 각 서비스별 준수 정도가 다름</li>
+<li>규정 준수를 위해서는 규정을 준수하고 있는 서비스를 이용하는 것이 중요</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="aws-artifact">AWS Artifact<a class="hash-link" aria-label="AWS Artifact에 대한 직접 링크" title="AWS Artifact에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-1-security#aws-artifact">​</a></h4>
+<ul>
+<li>규정 준수와 관련된 정보를 제공하는 신로할 수 있는 리소스</li>
+</ul>
+<br>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="aws의-공동-책임-모델">AWS의 공동 책임 모델<a class="hash-link" aria-label="AWS의 공동 책임 모델에 대한 직접 링크" title="AWS의 공동 책임 모델에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-1-security#aws%EC%9D%98-%EA%B3%B5%EB%8F%99-%EC%B1%85%EC%9E%84-%EB%AA%A8%EB%8D%B8">​</a></h3>
+<ul>
+<li>AWS는 클라우드의 보안을 책임지고, 고객은 클라우드에서의 보안 책임을 준수한다.</li>
+<li>AWS 책임 : 하드웨어, 소프트웨어, 시설 운영</li>
+<li>고객 책임 : OS 패칭(일부 서비스 제외), 애플리케이션 보안 데이터 암호화, SSH, HTTPS, IAM</li>
+</ul>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="고객이-할-수-있는-것은-고객-책임이고-고객이-할-수-없는-것은-aws-책임이다">고객이 할 수 있는 것은 고객 책임이고, 고객이 할 수 없는 것은 AWS 책임이다.<a class="hash-link" aria-label="고객이 할 수 있는 것은 고객 책임이고, 고객이 할 수 없는 것은 AWS 책임이다.에 대한 직접 링크" title="고객이 할 수 있는 것은 고객 책임이고, 고객이 할 수 없는 것은 AWS 책임이다.에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-1-security#%EA%B3%A0%EA%B0%9D%EC%9D%B4-%EF%BF%BD%EF%BF%BD%ED%95%A0-%EC%88%98-%EC%9E%88%EB%8A%94-%EA%B2%83%EC%9D%80-%EA%B3%A0%EA%B0%9D-%EC%B1%85%EC%9E%84%EC%9D%B4%EA%B3%A0-%EA%B3%A0%EA%B0%9D%EC%9D%B4-%ED%95%A0-%EC%88%98-%EC%97%86%EB%8A%94-%EA%B2%83%EC%9D%80-aws-%EC%B1%85%EC%9E%84%EC%9D%B4%EB%8B%A4">​</a></h5>
+<br>]]></content>
+        <author>
+            <name>dldkffh</name>
+            <uri>https://github.com/dldkffh</uri>
+        </author>
+        <category label="AWS" term="AWS"/>
+        <category label="CIA" term="CIA"/>
+        <category label="AAA" term="AAA"/>
+        <category label="보안" term="보안"/>
+        <category label="클라우드" term="클라우드"/>
+        <category label="개념" term="개념"/>
+        <category label="차이를 만드는 AWS 클라우드 보안 첫걸음" term="차이를 만드는 AWS 클라우드 보안 첫걸음"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[AWS와 클라우드 컴퓨팅 - 클라우드 컴퓨팅, 리전 선택시 고려사항, AWS 계정]]></title>
+        <id>https://dldkffh.github.io/2024/07/20/aws-2-cloud-computing</id>
+        <link href="https://dldkffh.github.io/2024/07/20/aws-2-cloud-computing"/>
+        <updated>2024-07-20T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[클라우드 컴퓨팅 개념]]></summary>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="클라우드-컴퓨팅-개념">클라우드 컴퓨팅 개념<a class="hash-link" aria-label="클라우드 컴퓨팅 개념에 대한 직접 링크" title="클라우드 컴퓨팅 개념에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-2-cloud-computing#%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%BB%B4%ED%93%A8%ED%8C%85-%EA%B0%9C%EB%85%90">​</a></h3>
+<p>클라우드 컴퓨팅은 IT 리소스를 인터넷을 통해 온디맨드로 제공하고 사용한 만큼만 비용을 지불하는 것</p>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="클라우드--빌려쓰기">클라우드 = 빌려쓰기<a class="hash-link" aria-label="클라우드 = 빌려쓰기에 대한 직접 링크" title="클라우드 = 빌려쓰기에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-2-cloud-computing#%ED%81%B4%EF%BF%BD%EF%BF%BD%EB%9D%BC%EC%9A%B0%EB%93%9C--%EB%B9%8C%EB%A0%A4%EC%93%B0%EA%B8%B0">​</a></h5>
+<br>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="aws-인프라-구성">AWS 인프라 구성<a class="hash-link" aria-label="AWS 인프라 구성에 대한 직접 링크" title="AWS 인프라 구성에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-2-cloud-computing#aws-%EC%9D%B8%ED%94%84%EB%9D%BC-%EA%B5%AC%EC%84%B1">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="aws의-리전region">AWS의 리전(Region)<a class="hash-link" aria-label="AWS의 리전(Region)에 대한 직접 링크" title="AWS의 리전(Region)에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-2-cloud-computing#aws%EC%9D%98-%EB%A6%AC%EC%A0%84region">​</a></h4>
+<ul>
+<li>각 리전에는 고유의 코드가 부여됨</li>
+<li>리전별로 가능한 서비스가 다름</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="리전-선택시-고려사항">리전 선택시 고려사항<a class="hash-link" aria-label="리전 선택시 고려사항에 대한 직접 링크" title="리전 선택시 고려사항에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-2-cloud-computing#%EB%A6%AC%EC%A0%84-%EC%84%A0%ED%83%9D%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="지연-속도">지연 속도<a class="hash-link" aria-label="지연 속도에 대한 직접 링크" title="지연 속도에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-2-cloud-computing#%EC%A7%80%EC%97%B0-%EC%86%8D%EB%8F%84">​</a></h4>
+<ul>
+<li>사용자들이 가장 빠르게 이용할 수 있는 리전 사용<!-- -->
+<ul>
+<li>ex : 우리나라에 서비스하는 서버는 서울 리전에 둠</li>
+</ul>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="법률데이터-서비스-제공-관련">법률(데이터, 서비스 제공 관련)<a class="hash-link" aria-label="법률(데이터, 서비스 제공 관련)에 대한 직접 링크" title="법률(데이터, 서비스 제공 관련)에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-2-cloud-computing#%EB%B2%95%EB%A5%A0%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%A0%9C%EA%B3%B5-%EA%B4%80%EB%A0%A8">​</a></h4>
+<ul>
+<li>ex : 유저들의 데이터가 나라에 종속이 되거나 보관되어야 하는 여부 등</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="사용-가능한-aws-서비스">사용 가능한 AWS 서비스<a class="hash-link" aria-label="사용 가능한 AWS 서비스에 대한 직접 링크" title="사용 가능한 AWS 서비스에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-2-cloud-computing#%EC%82%AC%EC%9A%A9-%EA%B0%80%EB%8A%A5%ED%95%9C-aws-%EC%84%9C%EB%B9%84%EC%8A%A4">​</a></h4>
+<ul>
+<li>특정 리전에서만 사용 가능한 서비스가 있음</li>
+<li>가용 영역(Availability Zone) 리전의 하부 단위로 하난의 리전은 반드시 2개 이상의 가용영역으로 구성됨줄여서 AZ라고 함</li>
+<li>하나 이상의 데이터 센터로 구성</li>
+<li>AZ 간의 연결은 매우 빠른 전용 네트워크로 연결</li>
+<li>반드시 물리적으로 일정 거리(몇 km 이상) 떨어져 있음<!-- -->
+<ul>
+<li>여러 재해에 대한 대비 및 보안, 단 모든 AZ는 서로 100km 이내의 거리에 위치</li>
+</ul>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="엣지-로케이션edge-location">엣지 로케이션(Edge Location)<a class="hash-link" aria-label="엣지 로케이션(Edge Location)에 대한 직접 링크" title="엣지 로케이션(Edge Location)에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-2-cloud-computing#%EC%97%A3%EC%A7%80-%EB%A1%9C%EC%BC%80%EC%9D%B4%EC%85%98edge-location">​</a></h4>
+<ul>
+<li>AWS의 CloudFront(CDN) 등의 여러 서비스들을 가장 빠른 속도로 제공(캐싱)하기 위한 거점</li>
+<li>Global Accelerator와 유저를 연결하는 거점</li>
+<li>전 세계에 여러 장소에 흩어져 있음</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="cdn과-엣지로케이션">CDN과 엣지로케이션<a class="hash-link" aria-label="CDN과 엣지로케이션에 대한 직접 링크" title="CDN과 엣지로케이션에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-2-cloud-computing#cdn%EA%B3%BC-%EC%97%A3%EC%A7%80%EB%A1%9C%EC%BC%80%EC%9D%B4%EC%85%98">​</a></h4>
+<ul>
+<li>CDN은 전세계에 거점을 두고 데이터를 미리 저장하는 것<!-- -->
+<ul>
+<li>자신과 가장 가까운 엣지 로케이션(거점)에서 데이터 다운로드</li>
+</ul>
+</li>
+<li>서버의 과도한 부하를 방지</li>
+<li>엣지로케이션을 이런 CDN을 위한 거점</li>
+</ul>
+<br>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="aws-계정-및-설정">AWS 계정 및 설정<a class="hash-link" aria-label="AWS 계정 및 설정에 대한 직접 링크" title="AWS 계정 및 설정에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-2-cloud-computing#aws-%EA%B3%84%EC%A0%95-%EB%B0%8F-%EC%84%A4%EC%A0%95">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="계정-생성시-확인-사항">계정 생성시 확인 사항<a class="hash-link" aria-label="계정 생성시 확인 사항에 대한 직접 링크" title="계정 생성시 확인 사항에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-2-cloud-computing#%EA%B3%84%EC%A0%95-%EC%83%9D%EC%84%B1%EC%8B%9C-%ED%99%95%EC%9D%B8-%EC%82%AC%ED%95%AD">​</a></h4>
+<ul>
+<li>처음 생성시 사용자(법인)명으의 신용카드 필요</li>
+<li>AWS 계정을 처음 생성하면 루트 사용자와 기본 리소스(기본 VPC) 등의 생성됨</li>
+<li>AWS 계정 아이디가 부여됨(숫자) 로그인시 해당 숫자 필요 AWS 계정에 별명 지정 가능(문자)</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="루트-사용자">루트 사용자<a class="hash-link" aria-label="루트 사용자에 대한 직접 링크" title="루트 사용자에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-2-cloud-computing#%EB%A3%A8%ED%8A%B8-%EC%82%AC%EC%9A%A9%EC%9E%90">​</a></h4>
+<ul>
+<li>생성한 계정의 모든 권한을 가지고 있는 유일한 유저</li>
+<li>생성 시 만든 이메일 주소로 로그인</li>
+<li>탈취당했을 때 복구가 매우 힘듦 : 사용을 자제하고 MFA 설정 필요</li>
+<li>루트 사용자는 관리용으로만 이용 권장 : 계정 설정, 변경, 빌링 등</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="iam-사용자">IAM 사용자<a class="hash-link" aria-label="IAM 사용자에 대한 직접 링크" title="IAM 사용자에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-2-cloud-computing#iam-%EC%82%AC%EC%9A%A9%EC%9E%90">​</a></h4>
+<ul>
+<li>IAM(Identity and Access Management)을 통해 생성한 사용자</li>
+<li>만들 떄 주어진 아이디로 로그인</li>
+<li>기본 권한 없음 : 따로 권한을 부여해야 함<!-- -->
+<ul>
+<li>ex : 관리자 IAM 사용자, 개발자 IAM 사용자, 디자이너 IAM 사용자, 회계팀 IAM 사용자</li>
+</ul>
+</li>
+<li>빌링 관련 권한은 루트 사용자가 허용해야 하며, IAM 유저가 탈취당할 경우 권한을 회수하여 사고 방지가 가능</li>
+<li>사람이 아닌 어플리케이션 등의 가상의 주체 대표 가능</li>
+<li>AWS의 관리를 제외한 모든 작업은 IAM 사용자를 만들어 사용 권장</li>
+</ul>
+<br>]]></content>
+        <author>
+            <name>dldkffh</name>
+            <uri>https://github.com/dldkffh</uri>
+        </author>
+        <category label="AWS" term="AWS"/>
+        <category label="클라우드" term="클라우드"/>
+        <category label="개념" term="개념"/>
+        <category label="차이를 만드는 AWS 클라우드 보안 첫걸음" term="차이를 만드는 AWS 클라우드 보안 첫걸음"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[AWS와 계정과 EC2 - IAM, Root, EC2]]></title>
+        <id>https://dldkffh.github.io/2024/07/20/aws-3-4-iam-ec2</id>
+        <link href="https://dldkffh.github.io/2024/07/20/aws-3-4-iam-ec2"/>
+        <updated>2024-07-20T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[IAM의 개념]]></summary>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="iam의-개념">IAM의 개념<a class="hash-link" aria-label="IAM의 개념에 대한 직접 링크" title="IAM의 개념에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-3-4-iam-ec2#iam%EC%9D%98-%EA%B0%9C%EB%85%90">​</a></h3>
+<p>AWS Identity and Access Management(IAM)를 사용하면 AWS 서비스와 리소스에 대한 액세스를 안전하게 관리할 수 있습니다. 또한, AWS 사용자 및 그룹을 만들고 관리하며 AWS 리소스에 대한 액세스를 허용 및 거부할 수 있습니다.</p>
+<ul>
+<li>AWS의 보안 및 관리를 담당하는 글로벌 서비스</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="주요-기능">주요 기능<a class="hash-link" aria-label="주요 기능에 대한 직접 링크" title="주요 기능에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-3-4-iam-ec2#%EC%A3%BC%EC%9A%94-%EA%B8%B0%EB%8A%A5">​</a></h4>
+<ul>
+<li>AWS 어카운트 관리 및 리소스 / 사용자 / 서비스의 권한 제어</li>
+<li>사용자의 생성, 관리, 계정의 보안</li>
+<li>다른 계정과의 리소스 공유</li>
+<li>Identity Federation(Facebook 로그인, 구글 로그인 등)</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="iam-구성">IAM 구성<a class="hash-link" aria-label="IAM 구성에 대한 직접 링크" title="IAM 구성에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-3-4-iam-ec2#iam-%EA%B5%AC%EC%84%B1">​</a></h4>
+<ul>
+<li>사용자 : 실제 AWS의 사용자 혹은 어플리케이션을 의미</li>
+<li>그룹 : 사용자의 집합, 그룹에 속한 사용자는 그룹에 부여된 권한을 행사</li>
+<li>정책(Policy) : 사용자와 그룹, 자격에 대한 권한을 정의한 문서, JSON형식으로 정의</li>
+<li>역할(Role) : AWS의 권한의 집합, 특정 사용자나 그룹에 연결되어 있지 않음, 다양한 어플리케이션, 서비스, IAM 사용자가 역할을 받아 사용</li>
+</ul>
+<br>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="aws-사용자">AWS 사용자<a class="hash-link" aria-label="AWS 사용자에 대한 직접 링크" title="AWS 사용자에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-3-4-iam-ec2#aws-%EC%82%AC%EC%9A%A9%EC%9E%90">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="root-사용자">Root 사용자<a class="hash-link" aria-label="Root 사용자에 대한 직접 링크" title="Root 사용자에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-3-4-iam-ec2#root-%EC%82%AC%EC%9A%A9%EC%9E%90">​</a></h4>
+<ul>
+<li>계정을 생성할 때 같이 생성되는 사용자</li>
+<li>계정의 모든 권한을 가지고 있으며 계정 권한을 제한할 방법이 없음, 탈취당했을 때 복구가 매우 어려워 MFA 설정을 필수로 하기</li>
+<li>자격증명 부여 가능</li>
+</ul>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="root-사용자만-가능한-작업">Root 사용자만 가능한 작업<a class="hash-link" aria-label="Root 사용자만 가능한 작업에 대한 직접 링크" title="Root 사용자만 가능한 작업에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-3-4-iam-ec2#root-%EC%82%AC%EC%9A%A9%EC%9E%90%EB%A7%8C-%EA%B0%80%EB%8A%A5%ED%95%9C-%EC%9E%91%EC%97%85">​</a></h5>
+<ul>
+<li>AWS 계정 설정 변경 (메인 이메일 주소, 계정 이름, 연락처 정보 등)</li>
+<li>요금 관련 설정 (IAM 유저에게 위임 가능)</li>
+<li>AWS Support Plan(지원 플랜) 구독, 변경, 취소</li>
+<li>AWS 계정 삭제 ==&gt; 이 이외에는 IAM 사용자를 사용하기</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="iam-사용자">IAM 사용자<a class="hash-link" aria-label="IAM 사용자에 대한 직접 링크" title="IAM 사용자에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-3-4-iam-ec2#iam-%EC%82%AC%EC%9A%A9%EC%9E%90">​</a></h4>
+<ul>
+<li>IAM을 통해 생성한 사용자</li>
+<li>생성 시 권한이 따로 부여되어 있지 안으며, 정책 혹은 그룹을 통해 권한을 부여 받아 활동</li>
+<li>자격 증며 부여 가능(Optional)</li>
+<li>콘솔 로그인 가능(Optional)</li>
+</ul>
+<br>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="aws-사용과-인증">AWS 사용과 인증<a class="hash-link" aria-label="AWS 사용과 인증에 대한 직접 링크" title="AWS 사용과 인증에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-3-4-iam-ec2#aws-%EC%82%AC%EC%9A%A9%EA%B3%BC-%EC%9D%B8%EC%A6%9D">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="aws-인증-방법">AWS 인증 방법<a class="hash-link" aria-label="AWS 인증 방법에 대한 직접 링크" title="AWS 인증 방법에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-3-4-iam-ec2#aws-%EC%9D%B8%EC%A6%9D-%EB%B0%A9%EB%B2%95">​</a></h4>
+<ul>
+<li>AWS 웹 콘솔<!-- -->
+<ul>
+<li>웹 기반의 콘솔에 로그인하여 AWS를 사용</li>
+<li>콘솔 액세스 자격 증명을 사용하여 인증</li>
+</ul>
+</li>
+<li>프로그래밍 액세스 방식<!-- -->
+<ul>
+<li>Command Line Interface(CLI)</li>
+<li>Software Development Kit(SDK)</li>
+<li>프로그램 방식 액세스 자격 증명을 사용하여 인증</li>
+</ul>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="콘솔-액세스-자격-증명">콘솔 액세스 자격 증명<a class="hash-link" aria-label="콘솔 액세스 자격 증명에 대한 직접 링크" title="콘솔 액세스 자격 증명에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-3-4-iam-ec2#%EC%BD%98%EC%86%94-%EC%95%A1%EC%84%B8%EC%8A%A4-%EC%9E%90%EA%B2%A9-%EC%A6%9D%EB%AA%85">​</a></h4>
+<ul>
+<li>콘솔 로그인을 위해 필요<!-- -->
+<ul>
+<li>Root Email/Password : 루트 사용자 로그인을 위해 사용</li>
+<li>IAM 사용자 이름/Password : IAM 사용자가 로그인 하기 위해 사용</li>
+<li>Mulit-Factor authentication(MFA) : 다른 자격 증명에 보안을 강화하기 위한 임시 비밀번호</li>
+</ul>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="프로그램-방식-액세스-자격-증명">프로그램 방식 액세스 자격 증명<a class="hash-link" aria-label="프로그램 방식 액세스 자격 증명에 대한 직접 링크" title="프로그램 방식 액세스 자격 증명에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-3-4-iam-ec2#%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8-%EB%B0%A9%EC%8B%9D-%EC%95%A1%EC%84%B8%EC%8A%A4-%EC%9E%90%EA%B2%A9-%EC%A6%9D%EB%AA%85">​</a></h4>
+<ul>
+<li>AWS의 CLI혹은 SDK를 사용할 때 필요한 자격 증명</li>
+<li>Access Key의 구성<!-- -->
+<ul>
+<li>Access Key ID : 유저 이름에 해당하는 키 (공개되어도 무방함)</li>
+<li>Secret Access Key : 패스워드에 해당하는 키(공개되면 안됨)</li>
+</ul>
+</li>
+<li>하나의 IAM 사용자당 2개의 Access Key 발급 가능</li>
+<li>활성화/비활서와 가능</li>
+<li>Secret Access Key의 경우 발급 시점 이외에 다시 확인 불가능</li>
+<li>생성한 IAM 사용자의 권한을 행사 가능</li>
+<li>IAM 사용자를 서버/프로그램 별로 생성하여 Access Key를 전달하여 CLI/SDK 사용</li>
+</ul>
+<br>
+<br>
+<br>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="amazon-elastic-compute-cloud">Amazon Elastic Compute Cloud<a class="hash-link" aria-label="Amazon Elastic Compute Cloud에 대한 직접 링크" title="Amazon Elastic Compute Cloud에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-3-4-iam-ec2#amazon-elastic-compute-cloud">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="amazon-ec2">Amazon EC2<a class="hash-link" aria-label="Amazon EC2에 대한 직접 링크" title="Amazon EC2에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-3-4-iam-ec2#amazon-ec2">​</a></h4>
+<ul>
+<li>안전하고 크기 조정이 가능한 컴퓨팅 파워를 클라우드에서 제공하는 웹 서비스</li>
+<li>개바자가 더 쉽게 웹 규모의 클라우드 컴퓨팅 작업을 할 수 있도록 설계됨</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="amazon-ec2의-장점">Amazon EC2의 장점<a class="hash-link" aria-label="Amazon EC2의 장점에 대한 직접 링크" title="Amazon EC2의 장점에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-3-4-iam-ec2#amazon-ec2%EC%9D%98-%EC%9E%A5%EC%A0%90">​</a></h4>
+<ul>
+<li>초 단위 온디맨드 가격 모델</li>
+<li>빠른 구축 속도와 확장성</li>
+<li>다양한 구성방법 지원</li>
+<li>여러 AWS 서비스와 연동</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="amazon-ec2의-가격정책">Amazon EC2의 가격정책<a class="hash-link" aria-label="Amazon EC2의 가격정책에 대한 직접 링크" title="Amazon EC2의 가격정책에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-3-4-iam-ec2#amazon-ec2%EC%9D%98-%EA%B0%80%EA%B2%A9%EC%A0%95%EC%B1%85">​</a></h4>
+<ul>
+<li>On-Demand : 실행하는 인스턴스에 따라 시간 또는 초당 컴퓨팅 파워로 측정된 가격 지불</li>
+<li>스팟 인스턴스 : 경매 형식으로 시장에 남는 인스턴스를 저렴하게 구매해서 사용</li>
+<li>예약 인스턴스 : 미리 일정 기간(1~3년) 약정해서 사용</li>
+<li>전용 호스트 : 실제 물리적인 서버를 임대받아 사용</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="서브넷의-종류">서브넷의 종류<a class="hash-link" aria-label="서브넷의 종류에 대한 직접 링크" title="서브넷의 종류에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-3-4-iam-ec2#%EC%84%9C%EB%B8%8C%EB%84%B7%EC%9D%98-%EC%A2%85%EB%A5%98">​</a></h4>
+<ul>
+<li>퍼블릭 서브넷 : 외부에서 인터넷을 통해 연결할 수 있는 서브넷</li>
+<li>프라이빗 서브넷 : 외부에서 인터넷을 통해 연결할 수 없는 서브넷으로 보안이 뛰어남</li>
+</ul>
+<br>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="ec2-연결-방법">EC2 연결 방법<a class="hash-link" aria-label="EC2 연결 방법에 대한 직접 링크" title="EC2 연결 방법에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-3-4-iam-ec2#ec2-%EC%97%B0%EA%B2%B0-%EB%B0%A9%EB%B2%95">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="ec2-연결하는-4가지-방법">EC2 연결하는 4가지 방법<a class="hash-link" aria-label="EC2 연결하는 4가지 방법에 대한 직접 링크" title="EC2 연결하는 4가지 방법에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-3-4-iam-ec2#ec2-%EC%97%B0%EA%B2%B0%ED%95%98%EB%8A%94-4%EA%B0%80%EC%A7%80-%EB%B0%A9%EB%B2%95">​</a></h4>
+<ul>
+<li>SSH/RDP 연결</li>
+<li>EC2 인스턴스 연결</li>
+<li>Systems Manager / Session Manager</li>
+<li>EC2 직렬 콘솔</li>
+</ul>
+<br>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="ec2-권한-부여">EC2 권한 부여<a class="hash-link" aria-label="EC2 권한 부여에 대한 직접 링크" title="EC2 권한 부여에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-3-4-iam-ec2#ec2-%EA%B6%8C%ED%95%9C-%EB%B6%80%EC%97%AC">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="프로그램-방식-access-자격-증명-활용">프로그램 방식 Access 자격 증명 활용<a class="hash-link" aria-label="프로그램 방식 Access 자격 증명 활용에 대한 직접 링크" title="프로그램 방식 Access 자격 증명 활용에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-3-4-iam-ec2#%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8-%EB%B0%A9%EC%8B%9D-access-%EC%9E%90%EA%B2%A9-%EC%A6%9D%EB%AA%85-%ED%99%9C%EC%9A%A9">​</a></h4>
+<ul>
+<li>IAM 사용자를 서버/프로그램 별로 생성하여 Access Key를 전달하여 CLI/SDK 사용</li>
+<li>AWS CLI : 서버의 별도 파일에 자격 증명을 저장하여 인증</li>
+<li>AWS SDK : 별도 파일에 자격증명을 저장하거나 런타임에 자격증명을 명시해서 인증</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="iam-자격-증명-등록">IAM 자격 증명 등록<a class="hash-link" aria-label="IAM 자격 증명 등록에 대한 직접 링크" title="IAM 자격 증명 등록에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-3-4-iam-ec2#iam-%EC%9E%90%EA%B2%A9-%EC%A6%9D%EB%AA%85-%EB%93%B1%EB%A1%9D">​</a></h4>
+<ul>
+<li>IAM 사용자 생성, IAM 자격증명을 발급받아 EC2에 등록</li>
+<li>AWS Configure를 통해 자격 증명을 파일로 등록</li>
+<li>이 권한을 가지고 있으면 누구나 가지고 갈 수 있음</li>
+<li>보안이 강력하지 않으며, 관리가 어렵고 바꾸기 힘듦</li>
+</ul>
+<br>]]></content>
+        <author>
+            <name>dldkffh</name>
+            <uri>https://github.com/dldkffh</uri>
+        </author>
+        <category label="AWS" term="AWS"/>
+        <category label="클라우드" term="클라우드"/>
+        <category label="IAM" term="IAM"/>
+        <category label="Root" term="Root"/>
+        <category label="EC2" term="EC2"/>
+        <category label="개념" term="개념"/>
+        <category label="차이를 만드는 AWS 클라우드 보안 첫걸음" term="차이를 만드는 AWS 클라우드 보안 첫걸음"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[AWS와 VPC와 NAT]]></title>
+        <id>https://dldkffh.github.io/2024/07/20/aws-5-vpc-nat</id>
+        <link href="https://dldkffh.github.io/2024/07/20/aws-5-vpc-nat"/>
+        <updated>2024-07-20T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[VPC (Virtual Private Cloud)]]></summary>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="vpc-virtual-private-cloud">VPC (Virtual Private Cloud)<a class="hash-link" aria-label="VPC (Virtual Private Cloud)에 대한 직접 링크" title="VPC (Virtual Private Cloud)에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-5-vpc-nat#vpc-virtual-private-cloud">​</a></h3>
+<ol>
+<li>VPC란?</li>
+</ol>
+<ul>
+<li>사용자의 AWS 계정 전용 가상 네트워크</li>
+<li>원하는 대로 사설망 구축 가능<!-- -->
+<ul>
+<li>부여된 IP 대역을 분할하여 사용 가능</li>
+</ul>
+</li>
+<li>리전 단위</li>
+</ul>
+<ol start="2">
+<li>VPC 활용</li>
+</ol>
+<ul>
+<li>EC2, RDS, Lambda 등의 AWS 컴퓨팅 서비스 실행</li>
+<li>다양한 서브넷 구성</li>
+<li>보안 설정(IP, Block, 인터넷에 노출되지 않는 EC2 등 구성)</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="vpc-구성-요소">VPC 구성 요소<a class="hash-link" aria-label="VPC 구성 요소에 대한 직접 링크" title="VPC 구성 요소에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-5-vpc-nat#vpc-%EA%B5%AC%EC%84%B1-%EC%9A%94%EC%86%8C">​</a></h4>
+<ul>
+<li>서브넷</li>
+<li>인터넷 게이트웨이</li>
+<li>NACL/보안그룹</li>
+<li>라우팅 테이블</li>
+<li>NAT Instance/NAT Gateway</li>
+<li>Bastion Host</li>
+<li>VPC Endpoint</li>
+</ul>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="서브넷">서브넷<a class="hash-link" aria-label="서브넷에 대한 직접 링크" title="서브넷에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-5-vpc-nat#%EC%84%9C%EB%B8%8C%EB%84%B7">​</a></h5>
+<ul>
+<li>VPC의 하위 단위</li>
+<li>VPC에 할당된 IP를 더 작은 단위로 분할한 개념</li>
+<li>하나의 서브넷은 하나의 가용영역(AZ) 안에 위치</li>
+<li>별도의 설정이 없다면 동일한 서브넷 IP끼리만 통신 가능</li>
+</ul>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="라우팅-테이블">라우팅 테이블<a class="hash-link" aria-label="라우팅 테이블에 대한 직접 링크" title="라우팅 테이블에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-5-vpc-nat#%EB%9D%BC%EC%9A%B0%ED%8C%85-%ED%85%8C%EC%9D%B4%EB%B8%94">​</a></h5>
+<ul>
+<li>어디로 가야 되는지 알려주는 이정표</li>
+<li>트래픽이 어디를 통해 가면 되는지가 테이블에 작성됨</li>
+</ul>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="인터넷-게이트웨이">인터넷 게이트웨이<a class="hash-link" aria-label="인터넷 게이트웨이에 대한 직접 링크" title="인터넷 게이트웨이에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-5-vpc-nat#%EC%9D%B8%ED%84%B0%EB%84%B7-%EA%B2%8C%EC%9D%B4%ED%8A%B8%EC%9B%A8%EC%9D%B4">​</a></h5>
+<ul>
+<li>VPC가 외부의 인터넷과 통신할 수 있도록 경로를 만들어 주는 리소스</li>
+<li>기본적으로 확장성과 고가용성이 확보되어 있음</li>
+<li>무료</li>
+</ul>
+<br>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="nat-gateway와-bastion-host">NAT Gateway와 Bastion Host<a class="hash-link" aria-label="NAT Gateway와 Bastion Host에 대한 직접 링크" title="NAT Gateway와 Bastion Host에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-5-vpc-nat#nat-gateway%EC%99%80-bastion-host">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="nat-gateway">NAT Gateway<a class="hash-link" aria-label="NAT Gateway에 대한 직접 링크" title="NAT Gateway에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-5-vpc-nat#nat-gateway">​</a></h4>
+<ul>
+<li>Amazon Virtual Private Cloud(Amazon VPC)의 프라이빗 서브넷에 있는 인스턴스에서 인터넷에 쉽게 연결할 수 있도록 지원하는 가용성이 높은 AWS 관리형 서비스</li>
+<li>Private 인스턴스가 외부의 인터넷과 통신하기 위한 통로</li>
+<li>NAT Gateway / 인스턴스 모두 서브넷 단위</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="bastion-host">Bastion Host<a class="hash-link" aria-label="Bastion Host에 대한 직접 링크" title="Bastion Host에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-5-vpc-nat#bastion-host">​</a></h4>
+<ul>
+<li>외부에서 사설 네트워크에 접속할 수 있도록 경로를 확보해주는 서버</li>
+<li>Private 인스턴스에 접근하기 위한 EC2 인스턴스</li>
+<li>Public 서브넷에 위치해야 함</li>
+</ul>
+<br>]]></content>
+        <author>
+            <name>dldkffh</name>
+            <uri>https://github.com/dldkffh</uri>
+        </author>
+        <category label="AWS" term="AWS"/>
+        <category label="클라우드" term="클라우드"/>
+        <category label="VPC" term="VPC"/>
+        <category label="NAT" term="NAT"/>
+        <category label="차이를 만드는 AWS 클라우드 보안 첫걸음" term="차이를 만드는 AWS 클라우드 보안 첫걸음"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[정규화]]></title>
         <id>https://dldkffh.github.io/2024/06/30/normalization</id>
@@ -213,7 +707,7 @@
 <li>다양한 목적(전화, 영상 신호 전송, 컴퓨터 데이터 전송 등)으로 사용됩니다.</li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="광케이블의-종류">광케이블의 종류<a class="hash-link" aria-label="광케이블의 종류에 대한 직접 링크" title="광케이블의 종류에 대한 직접 링크" href="https://dldkffh.github.io/2024/06/24/optical-cable#%EA%B4%91%EC%BC%80%EC%9D%B4%EB%B8%94%EC%9D%98-%EC%A2%85%EB%A5%98">​</a></h3>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="싱��글-모드single-mode-케이블">싱글 모드(Single Mode) 케이블<a class="hash-link" aria-label="싱글 모드(Single Mode) 케이블에 대한 직접 링크" title="싱글 모드(Single Mode) 케이블에 대한 직접 링크" href="https://dldkffh.github.io/2024/06/24/optical-cable#%EC%8B%B1%EA%B8%80-%EB%AA%A8%EB%93%9Csingle-mode-%EC%BC%80%EC%9D%B4%EB%B8%94">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="싱글-모드single-mode-케이블">싱글 모드(Single Mode) 케이블<a class="hash-link" aria-label="싱글 모드(Single Mode) 케이블에 대한 직접 링크" title="싱글 모드(Single Mode) 케이블에 대한 직접 링크" href="https://dldkffh.github.io/2024/06/24/optical-cable#%EC%8B%B1%EA%B8%80-%EB%AA%A8%EB%93%9Csingle-mode-%EC%BC%80%EC%9D%B4%EB%B8%94">​</a></h4>
 <ul>
 <li>단일 파장(모드)을 사용하여 데이터를 전송.</li>
 <li>긴 거리 전송에 유리합니다.</li>
@@ -566,7 +1060,7 @@
 <li>체계적인 PM 기법을 갖추도록 하자는 취지로 시작</li>
 <li>PM 실무 경력이 4,500시간 이상 되어야 응시할 수 있음</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="출처">출처<a class="hash-link" aria-label="출처에 대한 직접 링크" title="출처에 대한 직접 링크" href="https://dldkffh.github.io/2024/06/23/pmp#%EC%B6%9C%EC%B2%98">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="출처">출처<a class="hash-link" aria-label="출처에 대한 직접 링크" title="출처에 대한 ��직접 링크" href="https://dldkffh.github.io/2024/06/23/pmp#%EC%B6%9C%EC%B2%98">​</a></h3>
 <ul>
 <li><a href="https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%EA%B4%80%EB%A6%AC_%EC%A0%84%EB%AC%B8%EA%B0%80" target="_blank" rel="noopener noreferrer">위키피디아 - 프로젝트 관리 전문가</a></li>
 </ul>]]></content>
@@ -721,315 +1215,6 @@
             <uri>https://github.com/dldkffh</uri>
         </author>
         <category label="Log Level" term="Log Level"/>
-        <category label="네트워크" term="네트워크"/>
-        <category label="개념" term="개념"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[RSA 암호]]></title>
-        <id>https://dldkffh.github.io/2024/03/28/rsa</id>
-        <link href="https://dldkffh.github.io/2024/03/28/rsa"/>
-        <updated>2024-03-28T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[RSA]]></summary>
-        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="rsa">RSA<a class="hash-link" aria-label="RSA에 대한 직접 링크" title="RSA에 대한 직접 링크" href="https://dldkffh.github.io/2024/03/28/rsa#rsa">​</a></h3>
-<ul>
-<li>공개키 암호시스템의 하나</li>
-<li>암호화뿐만 아니라 전자서명이 가능한 최초의 알고리즘</li>
-<li>RSA가 갖는 전자서명 기능은 인증을 요구하는 전자 상거래 등에 RSA의 광범위한 활용을 가능</li>
-<li>공개키 알고리즘은 누구나 어떤 메시지를 암호화할 수 있지만, 그것을 해독하여 열람할 수 있는 사람은 개인키를 지닌 단 한 사람만이 존재한다는 점에서 대칭키 알고리즘과 차이</li>
-</ul>
-<ul>
-<li>1978년 로널드 라이베스트(Ron Rivest), 아디 샤미르(Adi Shamir), 레너드 애들먼(Leonard Adleman)의 연구에 의해 체계화되었으며, RSA라는 이름은 이들 3명의 이름 앞글자를 딴 것</li>
-</ul>]]></content>
-        <author>
-            <name>dldkffh</name>
-            <uri>https://github.com/dldkffh</uri>
-        </author>
-        <category label="RSA" term="RSA"/>
-        <category label="네트워크" term="네트워크"/>
-        <category label="개념" term="개념"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[PoE]]></title>
-        <id>https://dldkffh.github.io/2024/02/20/poe</id>
-        <link href="https://dldkffh.github.io/2024/02/20/poe"/>
-        <updated>2024-02-20T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[PoE (Power over Ethernet, 이더넷 전원 장치)]]></summary>
-        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="poe-power-over-ethernet-이더넷-전원-장치">PoE (Power over Ethernet, 이더넷 전원 장치)<a class="hash-link" aria-label="PoE (Power over Ethernet, 이더넷 전원 장치)에 대한 직접 링크" title="PoE (Power over Ethernet, 이더넷 전원 장치)에 대한 직접 링크" href="https://dldkffh.github.io/2024/02/20/poe#poe-power-over-ethernet-%EC%9D%B4%EB%8D%94%EB%84%B7-%EC%A0%84%EC%9B%90-%EC%9E%A5%EC%B9%98">​</a></h3>
-<ul>
-<li>IEEE 802.3af 및 802.3at 표준에 의해 정의된 네트워킹 기능</li>
-<li>기존 데이터 연결 상에서 이더넷 케이블을 통해 네트워크 장치에 전원을 공급할 가능</li>
-<li>PoE 기능을 사용할 수 있는 장치<!-- -->
-<ul>
-<li>전원을 공급하는 장비(PSE)<!-- -->
-<ul>
-<li>네트워크 스위치</li>
-<li>PoE가 아닌 스위치와 함께 사용하는 PoE 인젝터</li>
-</ul>
-</li>
-<li>전원을 공급받는 장치(PD)<!-- -->
-<ul>
-<li>VoIP 전화</li>
-<li>무선 액세스 포인트</li>
-<li>IP 카메라</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="장점">장점<a class="hash-link" aria-label="장점에 대한 직접 링크" title="장점에 대한 직접 링크" href="https://dldkffh.github.io/2024/02/20/poe#%EC%9E%A5%EC%A0%90">​</a></h4>
-<ul>
-<li>네트워킹 장비와 VoIP 전화를 위한 케이블을 구입하고 관리하는 데 소요되는 비용을 절약<!-- -->
-<ul>
-<li>전력과 데이터 전송에 하나의 케이블만 사용</li>
-</ul>
-</li>
-<li>네트워크 설치와 확장이 간편하고 저렴해짐</li>
-<li>전원을 설치하기에 적합하지 않은 장소에 장치를 장착 가능</li>
-<li>복잡한 장비실 또는 배선실에 필요한 케이블과 전기 콘센트 수가 줄음</li>
-</ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="poe-monitoring--policing">PoE monitoring &amp; policing<a class="hash-link" aria-label="PoE monitoring &amp; policing에 대한 직접 링크" title="PoE monitoring &amp; policing에 대한 직접 링크" href="https://dldkffh.github.io/2024/02/20/poe#poe-monitoring--policing">​</a></h4>
-<ul>
-<li>포트의 전력 소비를 관리 최대값(구성된 최대값 또는 포트의 기본값)과 비교</li>
-<li>모니터링되는 포트의 전력 소비가 관리 최대값을 초과하는 경우 다음 작업이 발생<!-- -->
-<ul>
-<li>syslog 메시지 발생</li>
-<li>모니터링되는 포트 종료 및 오류 비활성화</li>
-<li>할당된 전력 해제</li>
-</ul>
-</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="poe">PoE+<a class="hash-link" aria-label="PoE+에 대한 직접 링크" title="PoE+에 대한 직접 링크" href="https://dldkffh.github.io/2024/02/20/poe#poe">​</a></h3>
-<ul>
-<li>PoE의 최신 버전</li>
-<li>IEEE 802.3at 표준<!-- -->
-<ul>
-<li>802.3af(PoE), 802.3at(PoE+)</li>
-</ul>
-</li>
-<li>PoE와의 주요 차이점은 PoE+ PSE는 이더넷 케이블을 통해 거의 두 배 더 많은 전력을 공급 가능<!-- -->
-<ul>
-<li>PoE+ PD에는 PoE PSE가 제공할 수 있는 양보다 더 많은 전력이 필요</li>
-</ul>
-</li>
-<li>PoE+ PSE는 PoE와 PoE+ PD 모두에 전력을 공급 가능<!-- -->
-<ul>
-<li>PoE PSE는 PoE PD에만 전력을 공급 가능</li>
-</ul>
-</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="출처">출처<a class="hash-link" aria-label="출처에 대한 직접 링크" title="출처에 대한 직접 링크" href="https://dldkffh.github.io/2024/02/20/poe#%EC%B6%9C%EC%B2%98">​</a></h3>
-<ul>
-<li><a href="https://kb.netgear.com/ko/209/PoE%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9E%85%EB%8B%88%EA%B9%8C-%EC%9D%B4%EB%8D%94%EB%84%B7-%EC%A0%84%EC%9B%90-%EC%9E%A5%EC%B9%98-Power-over-Ethernet?language=ko" target="_blank" rel="noopener noreferrer">https://kb.netgear.com/ko/209/PoE%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9E%85%EB%8B%88%EA%B9%8C-%EC%9D%B4%EB%8D%94%EB%84%B7-%EC%A0%84%EC%9B%90-%EC%9E%A5%EC%B9%98-Power-over-Ethernet?language=ko</a></li>
-<li><a href="https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst6500/ios/12-2SX/configuration/guide/book/power_over_ethernet.pdf" target="_blank" rel="noopener noreferrer">https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst6500/ios/12-2SX/configuration/guide/book/power_over_ethernet.pdf</a></li>
-</ul>]]></content>
-        <author>
-            <name>dldkffh</name>
-            <uri>https://github.com/dldkffh</uri>
-        </author>
-        <category label="PoE" term="PoE"/>
-        <category label="네트워크" term="네트워크"/>
-        <category label="인프라" term="인프라"/>
-        <category label="개념" term="개념"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[DTP]]></title>
-        <id>https://dldkffh.github.io/2024/02/19/dtp</id>
-        <link href="https://dldkffh.github.io/2024/02/19/dtp"/>
-        <updated>2024-02-19T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[DTP (Dynamic Trunking Protocol)]]></summary>
-        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="dtp-dynamic-trunking-protocol">DTP (Dynamic Trunking Protocol)<a class="hash-link" aria-label="DTP (Dynamic Trunking Protocol)에 대한 직접 링크" title="DTP (Dynamic Trunking Protocol)에 대한 직접 링크" href="https://dldkffh.github.io/2024/02/19/dtp#dtp-dynamic-trunking-protocol">​</a></h3>
-<ul>
-<li>스위치 간 트렁킹을 협상하는 데 사용</li>
-<li>Cisco 독점 프로토콜</li>
-<li>워크스테이션이 DHCP 주소를 수신하는 것을 막지는 않음<!-- -->
-<ul>
-<li>VLAN 태깅을 다루는 802.1Q는 VLAN 환경에서 DHCP 주소를 수신하지 못하는 워크스테이션과 관련된 문제를 고려할 때 가장 관련성이 높은 옵션</li>
-</ul>
-</li>
-</ul>]]></content>
-        <author>
-            <name>dldkffh</name>
-            <uri>https://github.com/dldkffh</uri>
-        </author>
-        <category label="DTP" term="DTP"/>
-        <category label="프로토콜" term="프로토콜"/>
-        <category label="네트워크" term="네트워크"/>
-        <category label="개념" term="개념"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[STP, BPDUs]]></title>
-        <id>https://dldkffh.github.io/2024/02/19/stp-bpdus</id>
-        <link href="https://dldkffh.github.io/2024/02/19/stp-bpdus"/>
-        <updated>2024-02-19T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[STP (Spanning Tree Protocol, 스패닝 트리 프로토콜, 신장 트리 프로토콜)]]></summary>
-        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="stp-spanning-tree-protocol-스패닝-트리-프로토콜-신장-트리-프로토콜">STP (Spanning Tree Protocol, 스패닝 트리 프로토콜, 신장 트리 프로토콜)<a class="hash-link" aria-label="STP (Spanning Tree Protocol, 스패닝 트리 프로토콜, 신장 트리 프로토콜)에 대한 직접 링크" title="STP (Spanning Tree Protocol, 스패닝 트리 프로토콜, 신장 트리 프로토콜)에 대한 직접 링크" href="https://dldkffh.github.io/2024/02/19/stp-bpdus#stp-spanning-tree-protocol-%EC%8A%A4%ED%8C%A8%EB%8B%9D-%ED%8A%B8%EB%A6%AC-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C-%EC%8B%A0%EC%9E%A5-%ED%8A%B8%EB%A6%AC-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C">​</a></h3>
-<ul>
-<li>래디아 펄먼(Radia Perlman)이 고안한 알고리즘에 기반</li>
-<li>OSI 2계층 프로토콜</li>
-<li>브리지 랜에서 루프 발생을 방지하기 위해 사용</li>
-<li>신장 트리 프로토콜은 IEEE 802.1D에서 정의</li>
-<li>2계층 브리지(이더넷 스위치)를 통해 연결된 매시 네트워크 내에서 신장 트리를 생성</li>
-</ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="stp가-필요한-이유">STP가 필요한 이유<a class="hash-link" aria-label="STP가 필요한 이유에 대한 직접 링크" title="STP가 필요한 이유에 대한 직접 링크" href="https://dldkffh.github.io/2024/02/19/stp-bpdus#stp%EA%B0%80-%ED%95%84%EC%9A%94%ED%95%9C-%EC%9D%B4%EC%9C%A0">​</a></h4>
-<ul>
-<li>두 노드 사이에 활성된 경로가 두 개 이상 존재할 경우 브리지 루프가 발생할 수 있음</li>
-<li>브리지 루프 문제점<!-- -->
-<ul>
-<li>동일 MAC 주소(즉, 동일 호스트)가 여러 포트에서 보이게 되어, 브리지에서 사용하는 MAC 주소 테이블(스위칭 포워딩 테이블)이 실패할 수 있음</li>
-<li>브로드캐스트 스톰(broadcast storm)이 발생<!-- -->
-<ul>
-<li>브로드캐스트 패킷들이 스위치 사이를 무한히 돌게 됨</li>
-<li>브로드캐스트 스톰은 CPU 리소스와 대역폭을 극심히 소모</li>
-<li>STP(신장 트리)는 자동 백업을 지원하는 여분의 링크를 제공하면서 브리지 루프를 방지</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="동작-방식">동작 방식<a class="hash-link" aria-label="동작 방식에 대한 직접 링크" title="동작 방식에 대한 직접 링크" href="https://dldkffh.github.io/2024/02/19/stp-bpdus#%EB%8F%99%EC%9E%91-%EB%B0%A9%EC%8B%9D">​</a></h3>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="1-루트-브리지의-선출">1. 루트 브리지의 선출<a class="hash-link" aria-label="1. 루트 브리지의 선출에 대한 직접 링크" title="1. 루트 브리지의 선출에 대한 직접 링크" href="https://dldkffh.github.io/2024/02/19/stp-bpdus#1-%EB%A3%A8%ED%8A%B8-%EB%B8%8C%EB%A6%AC%EC%A7%80%EC%9D%98-%EC%84%A0%EC%B6%9C">​</a></h4>
-<ul>
-<li>신장 트리의 루트 브리지는 가장 낮은 브리지 ID를 갖는 브리지<!-- -->
-<ul>
-<li>각각의 브리지는 유일한 ID와 설정가능한 우선순위 번호를 갖음</li>
-</ul>
-</li>
-<li>브리지 ID는 이 두 가지를 모두 포함</li>
-<li>두 브리지 ID를 비교할 때, 우선 순위를 먼저 비교<!-- -->
-<ul>
-<li>이 값이 같을 경우 MAC 주소를 비교</li>
-</ul>
-</li>
-<li>망 관리자는 우선 순위 값을 설정하여 특정 브리지를 루트로 삼음</li>
-</ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="2-루트-브리지로의-최소-비용-경로-결정">2. 루트 브리지로의 최소 비용 경로 결정<a class="hash-link" aria-label="2. 루트 브리지로의 최소 비용 경로 결정에 대한 직접 링크" title="2. 루트 브리지로의 최소 비용 경로 결정에 대한 직접 링크" href="https://dldkffh.github.io/2024/02/19/stp-bpdus#2-%EB%A3%A8%ED%8A%B8-%EB%B8%8C%EB%A6%AC%EC%A7%80%EB%A1%9C%EC%9D%98-%EC%B5%9C%EC%86%8C-%EB%B9%84%EC%9A%A9-%EA%B2%BD%EB%A1%9C-%EA%B2%B0%EC%A0%95">​</a></h4>
-<ul>
-<li>신장 트리가 계산되면 망내 장비는 최소 비용으로 루트로의 메시지 전송이 가능</li>
-<li>경로의 비용은 경로 상의 네트워크 세그먼트의 비용의 합<!-- -->
-<ul>
-<li>네트워크 세그먼트의 비용은 각기 다르게 설정될 수 있음</li>
-</ul>
-</li>
-<li>메시지는 항상 최소 비용으로 루트까지 전달</li>
-</ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="3-각-브리지에서의-최소-비용-경로">3. 각 브리지에서의 최소 비용 경로<a class="hash-link" aria-label="3. 각 브리지에서의 최소 비용 경로에 대한 직접 링크" title="3. 각 브리지에서의 최소 비용 경로에 대한 직접 링크" href="https://dldkffh.github.io/2024/02/19/stp-bpdus#3-%EA%B0%81-%EB%B8%8C%EB%A6%AC%EC%A7%80%EC%97%90%EC%84%9C%EC%9D%98-%EC%B5%9C%EC%86%8C-%EB%B9%84%EC%9A%A9-%EA%B2%BD%EB%A1%9C">​</a></h4>
-<ul>
-<li>각각의 브리지는 루트에서 자신으로 연결되는 각각의 경로에 대한 비용을 결정<!-- -->
-<ul>
-<li>그 중 최소 비용의 경로를 선택</li>
-<li>선택된 경로로 연결된 포트가 이 브리지의 루트포트(root port)</li>
-</ul>
-</li>
-</ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="4-각-네트워크-세그먼트에서의-최소-비용-경로">4. 각 네트워크 세그먼트에서의 최소 비용 경로<a class="hash-link" aria-label="4. 각 네트워크 세그먼트에서의 최소 비용 경로에 대한 직접 링크" title="4. 각 네트워크 세그먼트에서의 최소 비용 경로에 대한 직접 링크" href="https://dldkffh.github.io/2024/02/19/stp-bpdus#4-%EA%B0%81-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EC%84%B8%EA%B7%B8%EB%A8%BC%ED%8A%B8%EC%97%90%EC%84%9C%EC%9D%98-%EC%B5%9C%EC%86%8C-%EB%B9%84%EC%9A%A9-%EA%B2%BD%EB%A1%9C">​</a></h4>
-<ul>
-<li>네트워크 세그먼트 상의 브리지들은 해당 네트워크 세그먼트에서 루트로의 최소 비용 경로를 갖는 브리지를 결정<!-- -->
-<ul>
-<li>이 브리지와 해당 네트워크 세그먼트를 연결한 포트가 해당 세그먼트의 지명 포트(designated port)</li>
-</ul>
-</li>
-</ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="5-나머지-경로들의-삭제">5. 나머지 경로들의 삭제.<a class="hash-link" aria-label="5. 나머지 경로들의 삭제.에 대한 직접 링크" title="5. 나머지 경로들의 삭제.에 대한 직접 링크" href="https://dldkffh.github.io/2024/02/19/stp-bpdus#5-%EB%82%98%EB%A8%B8%EC%A7%80-%EA%B2%BD%EB%A1%9C%EB%93%A4%EC%9D%98-%EC%82%AD%EC%A0%9C">​</a></h4>
-<ul>
-<li>루트 포트 혹은 지명 포트를 제외한 모든 포트를 막기</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="bpdus-bridge-protocol-data-units">BPDUs (Bridge Protocol Data Units)<a class="hash-link" aria-label="BPDUs (Bridge Protocol Data Units)에 대한 직접 링크" title="BPDUs (Bridge Protocol Data Units)에 대한 직접 링크" href="https://dldkffh.github.io/2024/02/19/stp-bpdus#bpdus-bridge-protocol-data-units">​</a></h3>
-<ul>
-<li>위의 규칙에 따라 신장 트리를 만들기 위해서는 전체 네트워크에 대한 정보를 알아야 함</li>
-<li>브리지들은 루트 브리지를 결정하고 포트의 역할(루트, 지명, 비사용)을 결정하는 데에 오직 자신이 가지고 있는 정보만을 사용</li>
-<li>각각의 브리지가 충분한 정보를 가질 수 있도록 하기 위해 브리지들은 BPDU라 불리는 특별한 데이터 프레임을 사용<!-- -->
-<ul>
-<li>브리지 ID와 루트 경로 비용에 대한 정보를 교환</li>
-</ul>
-</li>
-<li>브리지는 포트의 발신지 주소로 포트의 MAC 주소를 사용</li>
-<li>목적지 주소로는 STP 멀티캐스트 주소 01:80:C2:00:00:00</li>
-</ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="bpdu-세-가지-형태">BPDU 세 가지 형태<a class="hash-link" aria-label="BPDU 세 가지 형태에 대한 직접 링크" title="BPDU 세 가지 형태에 대한 직접 링크" href="https://dldkffh.github.io/2024/02/19/stp-bpdus#bpdu-%EC%84%B8-%EA%B0%80%EC%A7%80-%ED%98%95%ED%83%9C">​</a></h4>
-<ul>
-<li>CBPDU (Configuration BPDU)<!-- -->
-<ul>
-<li>신장 트리 계산에 사용</li>
-</ul>
-</li>
-<li>TCN (Topology Change Notification)<!-- -->
-<ul>
-<li>BPDU, 망 토폴로지 변경을 알리기 위해 사용</li>
-</ul>
-</li>
-<li>TCA (Topology Change Notification Acknowledgement)</li>
-</ul>
-<ul>
-<li>BPDU는 정기적으로(기본적으로 2초마다) 교환되어 망 변화 감지 및 포트의 포워딩 동작을 제어</li>
-<li>어느 장비가 스위치 포트에 최초 연결되면 이 장비는 바로 데이터를 전송하지 않음<!-- -->
-<ul>
-<li>대신 BPDU가 처리되고 망 토폴로지가 결정될때까지 많은 수의 상태를 넘나듦</li>
-</ul>
-</li>
-<li>컴퓨터, 프린터 또는 서버와 같은 호스트는 비록 상태 정보를 알기까지 30초의 지연이 있지만 항상 포워딩 상태로 감</li>
-<li>상태 정보를 듣고 알기까지의 시간은 포워드 지연(기본적으로 루트 브리지에서 15초로 설정)에 의해 결정 됨<!-- -->
-<ul>
-<li>만일 또다른 스위치가 연결되고 이로 인해 망내에 루프가 발생할 경우 이 포트는 막힘</li>
-</ul>
-</li>
-<li>Topology Change Notification(TCN) BPDU는 포트의 변화를 알리기 위해 사용됨</li>
-<li>TCN은 루트 스위치 이외의 스위치에 의해 망에 퍼지며 루트로 전달됨</li>
-<li>TCN을 수신하면 루트 스위치는 일반 BPDU내에 Topology Change 플래그를 설정<!-- -->
-<ul>
-<li>이 플래그는 다른 모든 스위치로 빠르게 전달되어 다른 스위치의 포워딩 테이블 엔트리를 오래된 것으로 만듦</li>
-</ul>
-</li>
-</ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="bpdu-필드">BPDU 필드<a class="hash-link" aria-label="BPDU 필드에 대한 직접 링크" title="BPDU 필드에 대한 직접 링크" href="https://dldkffh.github.io/2024/02/19/stp-bpdus#bpdu-%EF%BF%BD%ED%95%84%EB%93%9C">​</a></h4>
-<ul>
-<li>브리지 ID 또는 BID가 BPDU 패킷의 하나의 필드로 들어가며 8바이트</li>
-<li>최초 2바이트는 브리지 우선순위이며 0-65535의 unsigned integer(비부호 정수)</li>
-<li>뒤의 6바이트는 스위치에서 제공한 MAC 주소</li>
-<li>MAC 주소 축약(MAC Address Reduction)이 사용될 경우 앞의 2바이트 다르게 사용</li>
-<li>앞의 4비트는 우선순위로 사용</li>
-<li>뒤의 12비트는 VLAN ID나 MSTP 인스턴스 번호의 전달에 사용</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="stp-스위치-포트-상태">STP 스위치 포트 상태<a class="hash-link" aria-label="STP 스위치 포트 상태에 대한 직접 링크" title="STP 스위치 포트 상태에 대한 직접 링크" href="https://dldkffh.github.io/2024/02/19/stp-bpdus#stp-%EC%8A%A4%EC%9C%84%EC%B9%98-%ED%8F%AC%ED%8A%B8-%EC%83%81%ED%83%9C">​</a></h3>
-<ul>
-<li>Disable<!-- -->
-<ul>
-<li>STP에 의한 것이 아닌, 망 관리자에 의해서 특정 포트는 사용을 금지당할 수 있음</li>
-</ul>
-</li>
-<li>Blocking<!-- -->
-<ul>
-<li>스위치 루프를 일으키는 포트</li>
-<li>어떠한 사용자 데이터를 송수신할 수 없음</li>
-<li>단, 다른 링크가 사용불가가 되고 신장 트리 알고리즘에 의해 포워딩 상태가 되면 동작</li>
-<li>BPDU 데이터는 blocking 상태에서도 여전히 받을 수 있음</li>
-</ul>
-</li>
-<li>Listening<!-- -->
-<ul>
-<li>해당 스위치는 BPDU를 처리하고 blocking 상태로 전환케 할 수 있는 정보에 대해 수신을 기다림</li>
-</ul>
-</li>
-<li>Learning<!-- -->
-<ul>
-<li>해당 포트가 프레임을 전달할 수 없는 동안 프레임들의 발신자 주소를 얻어 필터링 DB(스위칭 DB)에 저장</li>
-</ul>
-</li>
-<li>Forwarding<!-- -->
-<ul>
-<li>해당 포트에서 필터링 DB에 저장된 발신자 주소를 기반으로 프레임을 전달하는 상태</li>
-</ul>
-</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="출처">출처<a class="hash-link" aria-label="출처에 대한 직접 링크" title="출처에 ��대한 직접 링크" href="https://dldkffh.github.io/2024/02/19/stp-bpdus#%EC%B6%9C%EC%B2%98">​</a></h3>
-<ul>
-<li><a href="https://ko.m.wikipedia.org/wiki/%EC%8B%A0%EC%9E%A5_%ED%8A%B8%EB%A6%AC_%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C" target="_blank" rel="noopener noreferrer">https://ko.m.wikipedia.org/wiki/%EC%8B%A0%EC%9E%A5_%ED%8A%B8%EB%A6%AC_%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C</a></li>
-</ul>]]></content>
-        <author>
-            <name>dldkffh</name>
-            <uri>https://github.com/dldkffh</uri>
-        </author>
-        <category label="STP" term="STP"/>
-        <category label="BPDUs" term="BPDUs"/>
         <category label="네트워크" term="네트워크"/>
         <category label="개념" term="개념"/>
     </entry>
