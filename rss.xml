@@ -4,10 +4,156 @@
         <title>dldkffh Blog</title>
         <link>https://dldkffh.github.io</link>
         <description>dldkffh Blog</description>
-        <lastBuildDate>Mon, 29 Jul 2024 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 15 Aug 2024 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[네트워크 인프라 백본이란?]]></title>
+            <link>https://dldkffh.github.io/2024/08/15/network-infra-backbone-with-chatgpt</link>
+            <guid>https://dldkffh.github.io/2024/08/15/network-infra-backbone-with-chatgpt</guid>
+            <pubDate>Thu, 15 Aug 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[💡 다음 내용은 chatGPT를 기반으로 작성된 내용으로, 부정확한 정보가 있을 수 있습니다.]]></description>
+            <content:encoded><![CDATA[<br>
+<p>💡 <em>다음 내용은 chatGPT를 기반으로 작성된 내용으로, 부정확한 정보가 있을 수 있습니다.</em></p>
+<br>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="네트워크-인프라-백본backbone이란">네트워크 인프라 백본(backbone)이란?<a class="hash-link" aria-label="네트워크 인프라 백본(backbone)이란?에 대한 직접 링크" title="네트워크 인프라 백본(backbone)이란?에 대한 직접 링크" href="https://dldkffh.github.io/2024/08/15/network-infra-backbone-with-chatgpt#%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EC%9D%B8%ED%94%84%EB%9D%BC-%EB%B0%B1%EB%B3%B8backbone%EC%9D%B4%EB%9E%80">​</a></h3>
+<p>백본은 말 그대로 네트워크의 "뼈대"라고 할 수 있어.<br>
+<!-- -->이 뼈대는 다양한 네트워크 장비와 연결돼 있어서 데이터를 빠르고 효율적으로 전달하는 역할을 해.<br>
+<!-- -->백본이 없다면, 인터넷이나 사내 네트워크가 지금처럼 빠르고 안정적으로 동작하기 힘들 거야.</p>
+<br>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="백본은-무엇으로-어떻게-구성되어-있는거야">백본은 무엇으로 어떻게 구성되어 있는거야?<a class="hash-link" aria-label="백본은 무엇으로 어떻게 구성되어 있는거야?에 대한 직접 링크" title="백본은 무엇으로 어떻게 구성되어 있는거야?에 대한 직접 링크" href="https://dldkffh.github.io/2024/08/15/network-infra-backbone-with-chatgpt#%EB%B0%B1%EB%B3%B8%EC%9D%80-%EB%AC%B4%EC%97%87%EC%9C%BC%EB%A1%9C-%EC%96%B4%EB%96%BB%EA%B2%8C-%EA%B5%AC%EC%84%B1%EB%90%98%EC%96%B4-%EC%9E%88%EB%8A%94%EA%B1%B0%EC%95%BC">​</a></h3>
+<p>네트워크 인프라 백본은 대용량의 데이터를 빠르게 전송하기 위해 만들어진 네트워크의 "중심 뼈대" 역할을 하는 부분이야.
+백본은 크게 하드웨어 장비, 고속 전송 회선, 라우팅 프로토콜 등의 요소로 구성돼.</p>
+<br>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="1-하드웨어-장비">1. 하드웨어 장비<a class="hash-link" aria-label="1. 하드웨어 장비에 대한 직접 링크" title="1. 하드웨어 장비에 대한 직접 링크" href="https://dldkffh.github.io/2024/08/15/network-infra-backbone-with-chatgpt#1-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EC%9E%A5%EB%B9%84">​</a></h4>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="라우터router">라우터(Router)<a class="hash-link" aria-label="라우터(Router)에 대한 직접 링크" title="라우터(Router)에 대한 직접 링크" href="https://dldkffh.github.io/2024/08/15/network-infra-backbone-with-chatgpt#%EB%9D%BC%EC%9A%B0%ED%84%B0router">​</a></h5>
+<p>서로 다른 네트워크 간에 데이터를 전달하는 장비야.<br>
+<!-- -->백본의 핵심 장비 중 하나로, 데이터를 최적의 경로로 보내는 역할을 해.</p>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="스위치switch">스위치(Switch)<a class="hash-link" aria-label="스위치(Switch)에 대한 직접 링크" title="스위치(Switch)에 대한 직접 링크" href="https://dldkffh.github.io/2024/08/15/network-infra-backbone-with-chatgpt#%EC%8A%A4%EC%9C%84%EC%B9%98switch">​</a></h5>
+<p>네트워크 내에서 데이터를 전달하는 장비인데, 주로 동일 네트워크 안에서 사용돼.<br>
+<!-- -->백본에서는 고성능 스위치를 사용해 대량의 데이터를 처리해.</p>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="서버server">서버(Server)<a class="hash-link" aria-label="서버(Server)에 대한 직접 링크" title="서버(Server)에 대한 직접 링크" href="https://dldkffh.github.io/2024/08/15/network-infra-backbone-with-chatgpt#%EC%84%9C%EB%B2%84server">​</a></h5>
+<p>데이터와 애플리케이션을 저장하고 관리하는 컴퓨터들이야.<br>
+<!-- -->백본에 연결된 서버들은 데이터를 처리하고, 필요할 때 사용자에게 제공해.</p>
+<br>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="2-고속-전송-회선">2. 고속 전송 회선<a class="hash-link" aria-label="2. 고속 전송 회선에 대한 직접 링크" title="2. 고속 전송 회선에 대한 직접 링크" href="https://dldkffh.github.io/2024/08/15/network-infra-backbone-with-chatgpt#2-%EA%B3%A0%EC%86%8D-%EC%A0%84%EC%86%A1-%ED%9A%8C%EC%84%A0">​</a></h4>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="광섬유-네트워크">광섬유 네트워크<a class="hash-link" aria-label="광섬유 네트워크에 대한 직접 링크" title="광섬유 네트워크에 대한 직접 링크" href="https://dldkffh.github.io/2024/08/15/network-infra-backbone-with-chatgpt#%EA%B4%91%EC%84%AC%EC%9C%A0-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC">​</a></h5>
+<p>백본은 주로 광섬유 케이블로 구성돼 있어.<br>
+<!-- -->데이터를 빛의 속도로 전달할 수 있는 고속 전송 매체야.<br>
+<!-- -->이 케이블은 빛을 이용해 데이터를 전송하기 때문에, 속도가 매우 빠르고, 데이터 손실이 적어.<br>
+<!-- -->백본의 주된 전송 매체로 사용되며, 매우 빠른 속도와 넓은 대역폭을 제공해.</p>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="전용-회선leased-line">전용 회선(Leased Line)<a class="hash-link" aria-label="전용 회선(Leased Line)에 대한 직접 링크" title="전용 회선(Leased Line)에 대한 직접 링크" href="https://dldkffh.github.io/2024/08/15/network-infra-backbone-with-chatgpt#%EC%A0%84%EC%9A%A9-%ED%9A%8C%EC%84%A0leased-line">​</a></h5>
+<p>네트워크 사업자들이 사용하는 고속 회선으로,<br>
+<!-- -->특정 기업이나 조직이 독점적으로 사용할 수 있어.<br>
+<!-- -->백본 네트워크의 중요한 부분이야.</p>
+<br>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="3-라우팅-프로토콜">3. 라우팅 프로토콜<a class="hash-link" aria-label="3. 라우팅 프로토콜에 대한 직접 링크" title="3. 라우팅 프로토콜에 대한 직접 링크" href="https://dldkffh.github.io/2024/08/15/network-infra-backbone-with-chatgpt#3-%EB%9D%BC%EC%9A%B0%ED%8C%85-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C">​</a></h4>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="bgpborder-gateway-protocol">BGP(Border Gateway Protocol)<a class="hash-link" aria-label="BGP(Border Gateway Protocol)에 대한 직접 링크" title="BGP(Border Gateway Protocol)에 대한 직접 링크" href="https://dldkffh.github.io/2024/08/15/network-infra-backbone-with-chatgpt#bgpborder-gateway-protocol">​</a></h5>
+<p>인터넷에서 주로 사용되는 라우팅 프로토콜이야.<br>
+<!-- -->백본 간의 데이터를 어떻게 최적의 경로로 전달할지를 결정해줘.<br>
+<!-- -->BGP는 네트워크 간의 경로를 효율적으로 관리하고, 안정적인 연결을 유지하게 해.</p>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="ospfopen-shortest-path-first">OSPF(Open Shortest Path First)<a class="hash-link" aria-label="OSPF(Open Shortest Path First)에 대한 직접 링크" title="OSPF(Open Shortest Path First)에 대한 직접 링크" href="https://dldkffh.github.io/2024/08/15/network-infra-backbone-with-chatgpt#ospfopen-shortest-path-first">​</a></h5>
+<p>이 프로토콜은 내부 네트워크에서 최적의 경로를 찾기 위해 사용돼.<br>
+<!-- -->OSPF는 백본 네트워크 내에서 빠르고 효율적인 데이터 전송을 가능하게 해.</p>
+<br>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="어떻게-작동하냐면">어떻게 작동하냐면...<a class="hash-link" aria-label="어떻게 작동하냐면...에 대한 직접 링크" title="어떻게 작동하냐면...에 대한 직접 링크" href="https://dldkffh.github.io/2024/08/15/network-infra-backbone-with-chatgpt#%EC%96%B4%EB%96%BB%EA%B2%8C-%EC%9E%91%EB%8F%99%ED%95%98%EB%83%90%EB%A9%B4">​</a></h4>
+<p>예를 들어, 어떤 사용자가 해외에 있는 웹사이트에 접속할 때,<br>
+<!-- -->이 사용자의 요청은 처음에 가까운 네트워크 노드를 통해 전달돼.<br>
+<!-- -->그리고 나서 백본을 통해 해외 네트워크로 빠르게 전달돼.<br>
+<!-- -->백본이 있기 때문에, 데이터는 최적의 경로로 빠르게 전달되고,<br>
+<!-- -->우리가 인터넷을 사용하면서 빠른 속도를 경험할 수 있는 거야.</p>
+<br>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="백본이라고-해서-다른-네트워크와-크게-다를-건-없구나">백본이라고 해서 다른 네트워크와 크게 다를 건 없구나.<a class="hash-link" aria-label="백본이라고 해서 다른 네트워크와 크게 다를 건 없구나.에 대한 직접 링크" title="백본이라고 해서 다른 네트워크와 크게 다를 건 없구나.에 대한 직접 링크" href="https://dldkffh.github.io/2024/08/15/network-infra-backbone-with-chatgpt#%EB%B0%B1%EB%B3%B8%EC%9D%B4%EB%9D%BC%EA%B3%A0-%ED%95%B4%EC%84%9C-%EB%8B%A4%EB%A5%B8-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%EC%99%80-%ED%81%AC%EA%B2%8C-%EB%8B%A4%EB%A5%BC-%EA%B1%B4-%EC%97%86%EA%B5%AC%EB%82%98">​</a></h3>
+<p>맞아, 백본이라고 해서 완전히 다른 네트워크라기보다는, 규모와 역할이 다를 뿐, 기본적인 구성 요소는 다른 네트워크와 비슷해. 백본은 네트워크의 중심이자 고속도로 같은 역할을 하기 때문에 더 높은 성능과 신뢰성을 요구하는 거지.</p>
+<p>비유하자면, 일반 네트워크는 도로 위의 차들이고, 백본은 고속도로야. 고속도로는 많은 차들이 빠르고 효율적으로 이동할 수 있게 만들어져 있고, 더 넓고 튼튼하게 설계된 것처럼, 백본도 많은 데이터를 빠르고 안정적으로 처리할 수 있게 고성능 장비와 고속 회선으로 구성돼 있어.</p>
+<p>그래서 백본 네트워크가 잘 구축돼 있으면, 많은 사용자가 동시에 데이터를 주고받더라도 속도 저하나 연결 문제 없이 원활하게 동작할 수 있어. 다시 말해, 백본은 네트워크의 심장부이자 뼈대인 셈이지!</p>
+<br>]]></content:encoded>
+            <category>네트워크</category>
+            <category>인프라</category>
+            <category>백본</category>
+            <category>chatGPT와 네트워크 인프라 백본 공부하기</category>
+        </item>
+        <item>
+            <title><![CDATA[백본을 운영하는 주체는?]]></title>
+            <link>https://dldkffh.github.io/2024/08/15/network-operator-with-chatgpt</link>
+            <guid>https://dldkffh.github.io/2024/08/15/network-operator-with-chatgpt</guid>
+            <pubDate>Thu, 15 Aug 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[💡 다음 내용은 chatGPT를 기반으로 작성된 내용으로, 부정확한 정보가 있을 수 있습니다.]]></description>
+            <content:encoded><![CDATA[<br>
+<p>💡 <em>다음 내용은 chatGPT를 기반으로 작성된 내용으로, 부정확한 정보가 있을 수 있습니다.</em></p>
+<br>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="백본을-운영하는-주체는-isp-사업자라고-보면되는-거야-백본은-누가-운영하고-관리하는-거야-국가-기업">백본을 운영하는 주체는 ISP 사업자라고 보면되는 거야? 백본은 누가 운영하고 관리하는 거야? 국가? 기업?<a class="hash-link" aria-label="백본을 운영하는 주체는 ISP 사업자라고 보면되는 거야? 백본은 누가 운영하고 관리하는 거야? 국가? 기업?에 대한 직접 링크" title="백본을 운영하는 주체는 ISP 사업자라고 보면되는 거야? 백본은 누가 운영하고 관리하는 거야? 국가? 기업?에 대한 직접 링크" href="https://dldkffh.github.io/2024/08/15/network-operator-with-chatgpt#%EB%B0%B1%EB%B3%B8%EC%9D%84-%EC%9A%B4%EC%98%81%ED%95%98%EB%8A%94-%EC%A3%BC%EC%B2%B4%EB%8A%94-isp-%EC%82%AC%EC%97%85%EC%9E%90%EB%9D%BC%EA%B3%A0-%EB%B3%B4%EB%A9%B4%EB%90%98%EB%8A%94-%EA%B1%B0%EC%95%BC-%EB%B0%B1%EB%B3%B8%EC%9D%80-%EB%88%84%EA%B0%80-%EC%9A%B4%EC%98%81%ED%95%98%EA%B3%A0-%EA%B4%80%EB%A6%AC%ED%95%98%EB%8A%94-%EA%B1%B0%EC%95%BC-%EA%B5%AD%EA%B0%80-%EA%B8%B0%EC%97%85">​</a></h3>
+<p>백본을 운영하고 관리하는 주체는 주로 **ISP(인터넷 서비스 제공자, Internet Service Provider)**들이야. 하지만 상황에 따라 국가나 다른 대규모 조직도 백본을 관리할 수 있어. 구체적으로는 다음과 같아.</p>
+<br>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="1-isp-인터넷-서비스-제공자">1. ISP (인터넷 서비스 제공자)<a class="hash-link" aria-label="1. ISP (인터넷 서비스 제공자)에 대한 직접 링크" title="1. ISP (인터넷 서비스 제공자)에 대한 직접 링크" href="https://dldkffh.github.io/2024/08/15/network-operator-with-chatgpt#1-isp-%EC%9D%B8%ED%84%B0%EB%84%B7-%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%A0%9C%EA%B3%B5%EC%9E%90">​</a></h4>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="주요-백본-제공자">주요 백본 제공자<a class="hash-link" aria-label="주요 백본 제공자에 대한 직접 링크" title="주요 백본 제공자에 대한 직접 링크" href="https://dldkffh.github.io/2024/08/15/network-operator-with-chatgpt#%EC%A3%BC%EC%9A%94-%EB%B0%B1%EB%B3%B8-%EC%A0%9C%EA%B3%B5%EC%9E%90">​</a></h5>
+<p>대형 ISP들은 자사 네트워크를 통해 지역 및 국가 간의 데이터를 전송하는 데 사용되는 백본 네트워크를 운영해. 예를 들어, AT&amp;T, Verizon, NTT 같은 글로벌 통신사들이 있어. 이들 기업은 국제적인 네트워크 인프라를 가지고 있고, 전 세계에 분포된 데이터센터와 고속 회선으로 백본을 운영해.</p>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="소규모-isp와의-연결">소규모 ISP와의 연결<a class="hash-link" aria-label="소규모 ISP와의 연결에 대한 직접 링크" title="소규모 ISP와의 연결에 대한 직접 링크" href="https://dldkffh.github.io/2024/08/15/network-operator-with-chatgpt#%EC%86%8C%EA%B7%9C%EB%AA%A8-isp%EC%99%80%EC%9D%98-%EC%97%B0%EA%B2%B0">​</a></h5>
+<p>중소형 ISP들도 있지만, 이들은 대부분 대형 ISP의 백본을 임대해 사용하는 경우가 많아. 즉, 소규모 ISP는 대형 ISP의 백본 네트워크에 연결되어 최종 사용자에게 인터넷 서비스를 제공하는 거지.</p>
+<br>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="2-국가-및-공공기관">2. 국가 및 공공기관<a class="hash-link" aria-label="2. 국가 및 공공기관에 대한 직접 링크" title="2. 국가 및 공공기관에 대한 직접 링크" href="https://dldkffh.github.io/2024/08/15/network-operator-with-chatgpt#2-%EA%B5%AD%EA%B0%80-%EB%B0%8F-%EA%B3%B5%EA%B3%B5%EA%B8%B0%EA%B4%80">​</a></h4>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="국가가-운영하는-백본">국가가 운영하는 백본<a class="hash-link" aria-label="국가가 운영하는 백본에 대한 직접 링크" title="국가가 운영하는 백본에 대한 직접 링크" href="https://dldkffh.github.io/2024/08/15/network-operator-with-chatgpt#%EA%B5%AD%EA%B0%80%EA%B0%80-%EC%9A%B4%EC%98%81%ED%95%98%EB%8A%94-%EB%B0%B1%EB%B3%B8">​</a></h5>
+<p>일부 국가에서는 국가가 직접 주요 백본 네트워크를 운영하거나 관리할 수 있어. 특히, 국가 안보나 공공 서비스 제공을 위해 필요할 경우, 국가가 주요 인프라를 소유하거나 관리할 수 있어. 이런 경우, 공공기관이나 국영 통신사가 운영을 맡아.</p>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="국가-간-연결">국가 간 연결<a class="hash-link" aria-label="국가 간 연결에 대한 직접 링크" title="국가 간 연결에 대한 직접 링크" href="https://dldkffh.github.io/2024/08/15/network-operator-with-chatgpt#%EA%B5%AD%EA%B0%80-%EA%B0%84-%EC%97%B0%EA%B2%B0">​</a></h5>
+<p>국가 간 인터넷 연결을 위해서는 여러 나라가 협력해 고속 해저 케이블이나 위성 통신을 통해 데이터를 주고받는 백본을 구축하고 운영해.</p>
+<br>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="3-대기업">3. 대기업<a class="hash-link" aria-label="3. 대기업에 대한 직접 링크" title="3. 대기업에 대한 직접 링크" href="https://dldkffh.github.io/2024/08/15/network-operator-with-chatgpt#3-%EB%8C%80%EA%B8%B0%EC%97%85">​</a></h4>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="자체-백본-운영">자체 백본 운영<a class="hash-link" aria-label="자체 백본 운영에 대한 직접 링크" title="자체 백본 운영에 대한 직접 링크" href="https://dldkffh.github.io/2024/08/15/network-operator-with-chatgpt#%EC%9E%90%EC%B2%B4-%EB%B0%B1%EB%B3%B8-%EC%9A%B4%EC%98%81">​</a></h5>
+<p>구글, 페이스북, 마이크로소프트 같은 글로벌 대기업들은 자체적으로 백본 네트워크를 운영하기도 해. 이들은 전 세계에 분포된 데이터센터를 연결하는 고속 네트워크를 구축해, 자사 서비스(예: 구글 검색, 유튜브, 클라우드 서비스 등)를 빠르게 제공할 수 있도록 하고 있어.</p>
+<br>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="4-ixp-인터넷-교환-센터-internet-exchange-point">4. IXP (인터넷 교환 센터, Internet Exchange Point)<a class="hash-link" aria-label="4. IXP (인터넷 교환 센터, Internet Exchange Point)에 대한 직접 링크" title="4. IXP (인터넷 교환 센터, Internet Exchange Point)에 대한 직접 링크" href="https://dldkffh.github.io/2024/08/15/network-operator-with-chatgpt#4-ixp-%EC%9D%B8%ED%84%B0%EB%84%B7-%EA%B5%90%ED%99%98-%EC%84%BC%ED%84%B0-internet-exchange-point">​</a></h4>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="백본의-연결-지점">백본의 연결 지점<a class="hash-link" aria-label="백본의 연결 지점에 대한 직접 링크" title="백본의 연결 지점에 대한 직접 링크" href="https://dldkffh.github.io/2024/08/15/network-operator-with-chatgpt#%EB%B0%B1%EB%B3%B8%EC%9D%98-%EC%97%B0%EA%B2%B0-%EC%A7%80%EC%A0%90">​</a></h5>
+<p>IXP는 여러 ISP와 대기업이 서로 데이터를 주고받을 수 있도록 해주는 네트워크의 연결 지점이야. IXP는 특정 조직이 운영할 수도 있지만, 주로 여러 ISP와 기업들이 협력해서 관리하는 경우가 많아.</p>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="종합적으로-보면">종합적으로 보면<a class="hash-link" aria-label="종합적으로 보면에 대한 직접 링크" title="종합적으로 보면에 대한 직접 링크" href="https://dldkffh.github.io/2024/08/15/network-operator-with-chatgpt#%EC%A2%85%ED%95%A9%EC%A0%81%EC%9C%BC%EB%A1%9C-%EB%B3%B4%EB%A9%B4">​</a></h5>
+<p>대부분의 백본 네트워크는 대형 ISP가 소유하고 운영해. 이들은 글로벌 또는 국가 단위로 데이터를 전송하는 역할을 해. 국가나 공공기관은 특정 목적(예: 국가 안보, 공공 서비스 등)으로 백본을 운영하거나 관리할 수 있어. 글로벌 대기업들은 자신의 서비스 품질을 보장하기 위해 자체적인 백본 네트워크를 구축하고 운영하기도 해. 그래서 백본은 주로 ISP가 운영하지만, 경우에 따라 국가나 대기업도 운영에 참여할 수 있어.</p>
+<br>]]></content:encoded>
+            <category>네트워크</category>
+            <category>인프라</category>
+            <category>백본</category>
+            <category>chatGPT와 네트워크 인프라 백본 공부하기</category>
+        </item>
+        <item>
+            <title><![CDATA[백본망의 종류]]></title>
+            <link>https://dldkffh.github.io/2024/08/15/types-of-backbone-networks-with-chatgpt</link>
+            <guid>https://dldkffh.github.io/2024/08/15/types-of-backbone-networks-with-chatgpt</guid>
+            <pubDate>Thu, 15 Aug 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[💡 다음 내용은 chatGPT를 기반으로 작성된 내용으로, 부정확한 정보가 있을 수 있습니다.]]></description>
+            <content:encoded><![CDATA[<br>
+<p>💡 <em>다음 내용은 chatGPT를 기반으로 작성된 내용으로, 부정확한 정보가 있을 수 있습니다.</em></p>
+<br>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="백본망의-종류는-다양한-것-같더라-그냥-용어로-isp-ipb-grx-tms-되어-있는데-무슨-뜻이야">백본망의 종류는 다양한 것 같더라... 그냥 용어로 ISP, IPB, GRX, TMS 되어 있는데 무슨 뜻이야?<a class="hash-link" aria-label="백본망의 종류는 다양한 것 같더라... 그냥 용어로 ISP, IPB, GRX, TMS 되어 있는데 무슨 뜻이야?에 대한 직접 링크" title="백본망의 종류는 다양한 것 같더라... 그냥 용어로 ISP, IPB, GRX, TMS 되어 있는데 무슨 뜻이야?에 대한 직접 링크" href="https://dldkffh.github.io/2024/08/15/types-of-backbone-networks-with-chatgpt#%EB%B0%B1%EB%B3%B8%EB%A7%9D%EC%9D%98-%EC%A2%85%EB%A5%98%EB%8A%94-%EB%8B%A4%EC%96%91%ED%95%9C-%EA%B2%83-%EA%B0%99%EB%8D%94%EB%9D%BC-%EA%B7%B8%EB%83%A5-%EC%9A%A9%EC%96%B4%EB%A1%9C-isp-ipb-grx-tms-%EB%90%98%EC%96%B4-%EC%9E%88%EB%8A%94%EB%8D%B0-%EB%AC%B4%EC%8A%A8-%EB%9C%BB%EC%9D%B4%EC%95%BC">​</a></h3>
+<p>네트워크 백본망에는 여러 종류가 있는데, 각각의 용어는 그 망의 기능이나 역할에 따라 구분돼. 질문해준 ISP, IPB, GRX, TMS 같은 용어들을 하나씩 설명해볼게.</p>
+<br>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="1-isp-internet-service-provider">1. ISP (Internet Service Provider)<a class="hash-link" aria-label="1. ISP (Internet Service Provider)에 대한 직접 링크" title="1. ISP (Internet Service Provider)에 대한 직접 링크" href="https://dldkffh.github.io/2024/08/15/types-of-backbone-networks-with-chatgpt#1-isp-internet-service-provider">​</a></h4>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="뜻">뜻<a class="hash-link" aria-label="뜻에 대한 직접 링크" title="뜻에 대한 직접 링크" href="https://dldkffh.github.io/2024/08/15/types-of-backbone-networks-with-chatgpt#%EB%9C%BB">​</a></h5>
+<p>인터넷 서비스 제공자</p>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="설명">설명<a class="hash-link" aria-label="설명에 대한 직접 링크" title="설명에 대한 직접 링크" href="https://dldkffh.github.io/2024/08/15/types-of-backbone-networks-with-chatgpt#%EC%84%A4%EB%AA%85">​</a></h5>
+<p>ISP는 인터넷 접속을 사용자에게 제공하는 회사나 조직을 말해. 우리가 집이나 회사에서 인터넷을 사용할 때, 그 연결을 제공하는 게 ISP야. ISP는 고객의 데이터를 다른 네트워크로 전달하기 위해 백본망을 운영하거나 다른 백본망에 연결돼 있어.</p>
+<br>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="2-ipb-ip-backbone">2. IPB (IP Backbone)<a class="hash-link" aria-label="2. IPB (IP Backbone)에 대한 직접 링크" title="2. IPB (IP Backbone)에 대한 직접 링크" href="https://dldkffh.github.io/2024/08/15/types-of-backbone-networks-with-chatgpt#2-ipb-ip-backbone">​</a></h4>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="뜻-1">뜻<a class="hash-link" aria-label="뜻에 대한 직접 링크" title="뜻에 대한 직접 링크" href="https://dldkffh.github.io/2024/08/15/types-of-backbone-networks-with-chatgpt#%EB%9C%BB-1">​</a></h5>
+<p>인터넷 프로토콜 백본</p>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="설명-1">설명<a class="hash-link" aria-label="설명에 대한 직접 링크" title="설명에 대한 직접 링크" href="https://dldkffh.github.io/2024/08/15/types-of-backbone-networks-with-chatgpt#%EC%84%A4%EB%AA%85-1">​</a></h5>
+<p>IPB는 ISP들이 운영하는 대규모 네트워크의 중추적인 부분을 의미해. 주로 **IP(인터넷 프로토콜)**를 기반으로 데이터를 주고받는 네트워크 망을 말하지. IP 백본은 대량의 데이터를 고속으로 처리하고 전송하는 역할을 하며, 여러 지역과 국가 간의 네트워크 연결을 가능하게 해. 사실, IPB라는 용어는 ISP와 많이 겹치는데, IPB는 주로 네트워크의 기술적 측면, 즉 IP 기반의 백본 자체를 강조할 때 사용돼.</p>
+<br>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="3-grx-gprs-roaming-exchange">3. GRX (GPRS Roaming Exchange)<a class="hash-link" aria-label="3. GRX (GPRS Roaming Exchange)에 대한 직접 링크" title="3. GRX (GPRS Roaming Exchange)에 대한 직접 링크" href="https://dldkffh.github.io/2024/08/15/types-of-backbone-networks-with-chatgpt#3-grx-gprs-roaming-exchange">​</a></h4>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="뜻-2">뜻<a class="hash-link" aria-label="뜻에 대한 직접 링크" title="뜻에 대한 직접 링크" href="https://dldkffh.github.io/2024/08/15/types-of-backbone-networks-with-chatgpt#%EB%9C%BB-2">​</a></h5>
+<p>GPRS 로밍 익스체인지</p>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="설명-2">설명<a class="hash-link" aria-label="설명에 대한 직접 링크" title="설명에 대한 직접 링크" href="https://dldkffh.github.io/2024/08/15/types-of-backbone-networks-with-chatgpt#%EC%84%A4%EB%AA%85-2">​</a></h5>
+<p>GRX는 주로 이동통신사들이 사용하는 백본망이야. GPRS(General Packet Radio Service)는 2G와 3G 네트워크에서 사용되는 데이터 서비스인데, GRX는 이 GPRS 네트워크에서 각기 다른 통신사들이 데이터를 주고받을 수 있게 해주는 백본망이야. 쉽게 말해, 휴대전화 로밍 시 데이터를 전송하는데 중요한 역할을 해. 예를 들어, 사용자가 해외에 나가서도 데이터를 사용할 수 있게 하는 것에 GRX가 관여해.</p>
+<br>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="4-tms-traffic-management-system">4. TMS (Traffic Management System)<a class="hash-link" aria-label="4. TMS (Traffic Management System)에 대한 직접 링크" title="4. TMS (Traffic Management System)에 대한 직접 링크" href="https://dldkffh.github.io/2024/08/15/types-of-backbone-networks-with-chatgpt#4-tms-traffic-management-system">​</a></h4>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="뜻-3">뜻<a class="hash-link" aria-label="뜻에 대한 직접 링크" title="뜻에 대한 직접 링크" href="https://dldkffh.github.io/2024/08/15/types-of-backbone-networks-with-chatgpt#%EB%9C%BB-3">​</a></h5>
+<p>트래픽 관리 시스템</p>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="설명-3">설명<a class="hash-link" aria-label="설명에 대한 직접 링크" title="설명에 대한 직접 링크" href="https://dldkffh.github.io/2024/08/15/types-of-backbone-networks-with-chatgpt#%EC%84%A4%EB%AA%85-3">​</a></h5>
+<p>TMS는 네트워크나 교통 시스템에서 트래픽(데이터 흐름)을 관리하는 시스템을 말해. 네트워크에서는 대량의 데이터를 효율적으로 처리하고, 혼잡을 방지하며, 최적의 경로로 데이터를 전송하는 역할을 해. TMS는 백본망 내에서 데이터 흐름을 최적화하고, 네트워크 성능을 높이기 위해 사용돼.</p>
+<br>]]></content:encoded>
+            <category>네트워크</category>
+            <category>인프라</category>
+            <category>백본</category>
+            <category>chatGPT와 네트워크 인프라 백본 공부하기</category>
+        </item>
         <item>
             <title><![CDATA[AWS IAM]]></title>
             <link>https://dldkffh.github.io/2024/07/29/aws-10-iam-levelup</link>
@@ -266,7 +412,7 @@
 <li><strong>무제한 용량</strong> : 하나의 객체는 0byte에서 5TB의 용량</li>
 <li>내구성 : <strong>99.999999999% 내구성</strong></li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="s3의-보안-설정">S3의 보안 설정<a class="hash-link" aria-label="S3의 ��보안 설정에 대한 직접 링크" title="S3의 보안 설정에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/29/aws-8-s3-security-bucket#s3%EC%9D%98-%EB%B3%B4%EC%95%88-%EC%84%A4%EC%A0%95">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="s3의-보안-설정">S3의 보안 설정<a class="hash-link" aria-label="S3의 보안 설정에 대한 직접 링크" title="S3의 보안 설정에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/29/aws-8-s3-security-bucket#s3%EC%9D%98-%EB%B3%B4%EC%95%88-%EC%84%A4%EC%A0%95">​</a></h4>
 <ul>
 <li>S3 모든 버킷은 새로 생성시 <strong>기본적으로 Private</strong>(비공개)</li>
 <li>보안 설정은 <strong>객체 단위</strong>와 <strong>버킷 단위</strong>로 구성</li>
@@ -360,7 +506,7 @@
 </li>
 <li>암호화 방법 : <strong>대칭키</strong> 암호화, <strong>비대칭키</strong> 암호화</li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="저장된-데이터-��보호">저장된 데이터 보호<a class="hash-link" aria-label="저장된 데이터 보호에 대한 직접 링크" title="저장된 데이터 보호에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/29/aws-9-encryption-kms-acm#%EC%A0%80%EC%9E%A5%EB%90%9C-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%B3%B4%ED%98%B8">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="저장된-데이터-보호">저장된 데이터 보호<a class="hash-link" aria-label="저장된 데이터 보호에 대한 직접 링크" title="저장된 데이터 보호에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/29/aws-9-encryption-kms-acm#%EC%A0%80%EC%9E%A5%EB%90%9C-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%B3%B4%ED%98%B8">​</a></h4>
 <ul>
 <li>데이터를 저장할 때 <strong>암호화</strong>, 필요할 때 <strong>복호화</strong> 하는 방식</li>
 <li>주로 하나의 물리적인 기기에 보안을 적용하기 위해 사용</li>
@@ -451,7 +597,7 @@
 <li>Intearity 무결성</li>
 <li>Availability 가용성</li>
 </ul>
-<h5 class="anchor anchorWithStickyNavbar_LWe7" id="위-세가지를-중심으로-한-보안-모델">위 세가지를 중심으로 한 보안 모델<a class="hash-link" aria-label="위 세가지를 중심으로 한 보안 모델에 대한 직접 링크" title="위 세가지를 중심으로 한 보안 모델에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-1-security#%EC%9C%84-%EC%84%B8%EA%B0%80%EC%A7%80%EB%A5%BC-%EC%A4%91%EC%8B%AC%EC%9C%BC%EB%A1%9C-%ED%95%9C-%EB%B3%B4%EC%95%88-%EB%AA%A8%EB%8D%B8">​</a></h5>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="위-세가지를-중심으로-�한-보안-모델">위 세가지를 중심으로 한 보안 모델<a class="hash-link" aria-label="위 세가지를 중심으로 한 보안 모델에 대한 직접 링크" title="위 세가지를 중심으로 한 보안 모델에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-1-security#%EC%9C%84-%EC%84%B8%EA%B0%80%EC%A7%80%EB%A5%BC-%EC%A4%91%EC%8B%AC%EC%9C%BC%EB%A1%9C-%ED%95%9C-%EB%B3%B4%EC%95%88-%EB%AA%A8%EB%8D%B8">​</a></h5>
 <p>-&gt; 이 모델을 통해 다른 카테고리를 추가 / 보안하여 모델 적용</p>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="confidentiality-기밀성">Confidentiality 기밀성<a class="hash-link" aria-label="Confidentiality 기밀성에 대한 직접 링크" title="Confidentiality 기밀성에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-1-security#confidentiality-%EA%B8%B0%EB%B0%80%EC%84%B1">​</a></h4>
 <ul>
@@ -528,7 +674,7 @@
 <li>AWS의 대응 개념 Amazon Cloud Watch, Amazon CloudTrail</li>
 </ul>
 <br>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="클라우드-보안-사고-사례">클라우드 보안 사고 사례<a class="hash-link" aria-label="클라우드 보안 사고 사례에 대한 직접 링크" title="클라우드 보안 사고 사례에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-1-security#%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EB%B3%B4%EC%95%88-%EC%82%AC%EA%B3%A0-%EC%82%AC%EB%A1%80">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="클라우드-보안-사고-사례">클라우드 보안 사고 사례<a class="hash-link" aria-label="클라우드 보안 사고 사례에 대한 직�접 링크" title="클라우드 보안 사고 사례에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-1-security#%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EB%B3%B4%EC%95%88-%EC%82%AC%EA%B3%A0-%EC%82%AC%EB%A1%80">​</a></h3>
 <h5 class="anchor anchorWithStickyNavbar_LWe7" id="95-고객-실수">95% 고객 실수<a class="hash-link" aria-label="95% 고객 실수에 대한 직접 링크" title="95% 고객 실수에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-1-security#95-%EA%B3%A0%EA%B0%9D-%EC%8B%A4%EC%88%98">​</a></h5>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="자격-증명-유출">자격 증명 유출<a class="hash-link" aria-label="자격 증명 유출에 대한 직접 링크" title="자격 증명 유출에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-1-security#%EC%9E%90%EA%B2%A9-%EC%A6%9D%EB%AA%85-%EC%9C%A0%EC%B6%9C">​</a></h4>
 <ul>
@@ -586,7 +732,7 @@
 <li>AWS 책임 : 하드웨어, 소프트웨어, 시설 운영</li>
 <li>고객 책임 : OS 패칭(일부 서비스 제외), 애플리케이션 보안 데이터 암호화, SSH, HTTPS, IAM</li>
 </ul>
-<h5 class="anchor anchorWithStickyNavbar_LWe7" id="고객이-할-수-있는-것은-고객-책임이고-고객이-할-수-없는-것은-aws-책임이다">고객이 할 수 있는 것은 고객 책임이고, 고객이 할 수 없는 것은 AWS 책임이다.<a class="hash-link" aria-label="고객이 할 수 있는 것은 고객 책임이고, 고객이 할 수 없는 것은 AWS 책임이다.에 대한 직접 링크" title="고객이 할 수 있는 것은 고객 책임이고, 고객이 할 수 없는 것은 AWS 책임이다.에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-1-security#%EA%B3%A0%EA%B0%9D%EC%9D%B4-%ED%95%A0-%EC%88%98-%EC%9E%88%EB%8A%94-%EA%B2%83%EC%9D%80-%EA%B3%A0%EA%B0%9D-%EC%B1%85%EC%9E%84%EC%9D%B4%EA%B3%A0-%EA%B3%A0%EA%B0%9D%EC%9D%B4-%ED%95%A0-%EC%88%98-%EC%97%86%EB%8A%94-%EA%B2%83%EC%9D%80-aws-%EC%B1%85%EC%9E%84%EC%9D%B4%EB%8B%A4">​</a></h5>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="고객이-할-수-있는-것은-고객-책임이고-고객이-할-수-없는-것은-aws-책임이다">고객이 할 수 있는 것은 고객 책임이고, 고객이 할 수 없는 것은 AWS 책임이다.<a class="hash-link" aria-label="고객이 할 수 있는 것은 고객 책임이고, 고객이 할 수 없는 것은 AWS 책임이다.에 대한 직접 링크" title="고객이 할 수 있는 것은 고객 책임이고, 고객이 할 수 없는 것은 AWS 책임이다.에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-1-security#%EA%B3%A0%EA%B0%9D%EC%9D%B4-%ED%95%A0-%EC%88%98-%EC%9E%88%EB%8A%94-%EA%B2%83%EC%9D%80-%EA%B3%A0%EA%B0%9D-%EF%BF%BD%EF%BF%BD%EC%B1%85%EC%9E%84%EC%9D%B4%EA%B3%A0-%EA%B3%A0%EA%B0%9D%EC%9D%B4-%ED%95%A0-%EC%88%98-%EC%97%86%EB%8A%94-%EA%B2%83%EC%9D%80-aws-%EC%B1%85%EC%9E%84%EC%9D%B4%EB%8B%A4">​</a></h5>
 <br>]]></content:encoded>
             <category>AWS</category>
             <category>CIA</category>
@@ -752,7 +898,7 @@
 </ul>
 </li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="콘솔-액세스-자격-증명">콘솔 액세스 자격 증명<a class="hash-link" aria-label="콘솔 액세스 자격 증명에 대한 직접 링크" title="콘솔 액세스 자격 증명에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-3-4-iam-ec2#%EC%BD%98%EC%86%94-%EC%95%A1%EC%84%B8%EC%8A%A4-%EC%9E%90%EA%B2%A9-%EC%A6%9D%EB%AA%85">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="콘솔-�액세스-자격-증명">콘솔 액세스 자격 증명<a class="hash-link" aria-label="콘솔 액세스 자격 증명에 대한 직접 링크" title="콘솔 액세스 자격 증명에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-3-4-iam-ec2#%EC%BD%98%EC%86%94-%EC%95%A1%EC%84%B8%EC%8A%A4-%EC%9E%90%EA%B2%A9-%EC%A6%9D%EB%AA%85">​</a></h4>
 <ul>
 <li>콘솔 로그인을 위해 필요<!-- -->
 <ul>
@@ -822,7 +968,7 @@
 <li>AWS CLI : 서버의 별도 파일에 자격 증명을 저장하여 인증</li>
 <li>AWS SDK : 별도 파일에 자격증명을 저장하거나 런타임에 자격증명을 명시해서 인증</li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="iam-자격-증명-등록">IAM 자격 증명 등록<a class="hash-link" aria-label="IAM 자격 증명 등록에 대한 직접 링크" title="IAM 자격 증명 등록에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-3-4-iam-ec2#iam-%EC%9E%90%EA%B2%A9-%EC%A6%9D%EB%AA%85-%EB%93%B1%EB%A1%9D">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="iam-자격-증명-�등록">IAM 자격 증명 등록<a class="hash-link" aria-label="IAM 자격 증명 등록에 대한 직접 링크" title="IAM 자격 증명 등록에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-3-4-iam-ec2#iam-%EC%9E%90%EA%B2%A9-%EC%A6%9D%EB%AA%85-%EB%93%B1%EB%A1%9D">​</a></h4>
 <ul>
 <li>IAM 사용자 생성, IAM 자격증명을 발급받아 EC2에 등록</li>
 <li>AWS Configure를 통해 자격 증명을 파일로 등록</li>
@@ -894,7 +1040,7 @@
 <li>무료</li>
 </ul>
 <br>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="nat-gateway와-bastion-host">NAT Gateway와 Bastion Host<a class="hash-link" aria-label="NAT Gateway와 Bastion Host에 대한 직접 링크" title="NAT Gateway와 Bastion Host에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-5-vpc-nat#nat-gateway%EC%99%80-bastion-host">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="nat-gateway와-bastion-host">NAT Gateway와 Bastion Host<a class="hash-link" aria-label="NAT Gateway와 Bastion Host에 대한 직접 ��링크" title="NAT Gateway와 Bastion Host에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-5-vpc-nat#nat-gateway%EC%99%80-bastion-host">​</a></h3>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="nat-gateway">NAT Gateway<a class="hash-link" aria-label="NAT Gateway에 대한 직접 링크" title="NAT Gateway에 대한 직접 링크" href="https://dldkffh.github.io/2024/07/20/aws-5-vpc-nat#nat-gateway">​</a></h4>
 <ul>
 <li>Amazon Virtual Private Cloud(Amazon VPC)의 프라이빗 서브넷에 있는 인스턴스에서 인터넷에 쉽게 연결할 수 있도록 지원하는 가용성이 높은 AWS 관리형 서비스</li>
@@ -1145,7 +1291,7 @@
 <li>광케이블의 커넥터 부분은 항상 청결하게 유지해야 합니다.</li>
 <li>대부분의 네트워크 설치에서는 멀티 모드 케이블(OM4, OM5)을 사용하지만, 장거리 전송이 필요할 경우 싱글 모드 케이블을 사용합니다.</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="광커넥터-종류-및-선택">광커넥터 종류 및 선택<a class="hash-link" aria-label="광커넥터 종류 및 선택에 대한 직접 링크" title="광커넥터 종류 및 선택에 대한 직접 링크" href="https://dldkffh.github.io/2024/06/24/optical-cable#%EA%B4%91%EC%BB%A4%EB%84%A5%ED%84%B0-%EC%A2%85%EB%A5%98-%EB%B0%8F-%EC%84%A0%ED%83%9D">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="광�커넥터-종류-및-선택">광커넥터 종류 및 선택<a class="hash-link" aria-label="광커넥터 종류 및 선택에 대한 직접 링크" title="광커넥터 종류 및 선택에 대한 직접 링크" href="https://dldkffh.github.io/2024/06/24/optical-cable#%EA%B4%91%EC%BB%A4%EB%84%A5%ED%84%B0-%EC%A2%85%EB%A5%98-%EB%B0%8F-%EC%84%A0%ED%83%9D">​</a></h3>
 <ul>
 <li>광케이블의 커넥터는 사용하는 광케이블 종류에 따라 다양합니다.</li>
 <li>멀티모드 10G 광케이블을 필요로 할 경우 ASCOM3 케이블을 추천하며, 이는 LC 커넥터를 사용합니다.</li>
@@ -1275,150 +1421,6 @@
             <category>DC</category>
             <category>직류</category>
             <category>DC 전원</category>
-            <category>개념</category>
-        </item>
-        <item>
-            <title><![CDATA[CAPEX VS. OPEX]]></title>
-            <link>https://dldkffh.github.io/2024/06/23/capex-opex</link>
-            <guid>https://dldkffh.github.io/2024/06/23/capex-opex</guid>
-            <pubDate>Sun, 23 Jun 2024 00:00:00 GMT</pubDate>
-            <description><![CDATA[CAPEX (Capital Expenditures)]]></description>
-            <content:encoded><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="capex-capital-expenditures">CAPEX (Capital Expenditures)<a class="hash-link" aria-label="CAPEX (Capital Expenditures)에 대한 직접 링크" title="CAPEX (Capital Expenditures)에 대한 직접 링크" href="https://dldkffh.github.io/2024/06/23/capex-opex#capex-capital-expenditures">​</a></h3>
-<ul>
-<li>자본적 지출</li>
-<li>설비투자비용(유형자산획득)</li>
-<li>미래의 이윤 창출, 가치의 취득을 위해 지출된 투자 과정에서의 비용</li>
-<li>기업이 고정자산을 구매하거나, 유효수명이 당회계년도를 초과하는 기존의 고정자산 투자에 돈이 사용될 때 발생</li>
-<li>회사가 부동산, 산업 건물 또는 장비와 같은 물리적 자산을 취득, 업그레이드 및 유지하는 데 사용하는 자금</li>
-</ul>
-<ul>
-<li>교환기, 기지국 등에 대한 설비 투자 비용</li>
-<li>서버, 스우치, 방화벽 장비를 구매하는데 사용되는 비용</li>
-<li>한번에 큰 금액이 나감</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="opex-operating-expenditure">OPEX (Operating Expenditure)<a class="hash-link" aria-label="OPEX (Operating Expenditure)에 대한 직접 링크" title="OPEX (Operating Expenditure)에 대한 직접 링크" href="https://dldkffh.github.io/2024/06/23/capex-opex#opex-operating-expenditure">​</a></h3>
-<ul>
-<li>업무지출</li>
-<li>운영비용</li>
-<li>유지보수비용</li>
-<li>갖춰진 설비를 운영하는데 드는 제반 비용</li>
-<li>CAPEX로 투자된 설비를 운영하기 위한 지출되는 비용</li>
-<li>인건비, 재료비, 수선유지비와 같은 직접 비용과 제세공과금 등의 간접 비용으로 구성</li>
-<li>매월, 매년 그 즉시 회계 기간에 소진</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="capex-와-opex-관계">CAPEX 와 OPEX 관계<a class="hash-link" aria-label="CAPEX 와 OPEX 관계에 대한 직접 링크" title="CAPEX 와 OPEX 관계에 대한 직접 링크" href="https://dldkffh.github.io/2024/06/23/capex-opex#capex-%EC%99%80-opex-%EA%B4%80%EA%B3%84">​</a></h3>
-<ul>
-<li>CAPEX와 OPEX는 함께 대조적으로 많이 쓰이는 용어</li>
-<li>OPEX가 높다는 것은 기존의 생산설비등이 노후화되었다고 볼 수 있음</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="출처">출처<a class="hash-link" aria-label="출처에 대한 직접 링크" title="출처에 대한 직접 링크" href="https://dldkffh.github.io/2024/06/23/capex-opex#%EC%B6%9C%EC%B2%98">​</a></h3>
-<ul>
-<li><a href="https://www.moef.go.kr/sisa/dictionary/detail?idx=40" target="_blank" rel="noopener noreferrer">시사경제용어사전 - CAPEX</a></li>
-<li><a href="https://www.moef.go.kr/sisa/dictionary/detail?idx=184" target="_blank" rel="noopener noreferrer">시사경제용어사전 - OPEX</a></li>
-<li><a href="https://m.blog.naver.com/gurrl5/222506693471" target="_blank" rel="noopener noreferrer">세일의 탐구생활 - CAPEX와 OPEX란 무엇일까?</a></li>
-<li><a href="https://m.blog.naver.com/snazzy79/70104638937" target="_blank" rel="noopener noreferrer">§ 청명공자's NotePad § - OPEX &amp; CAPEX 차이점</a></li>
-</ul>]]></content:encoded>
-            <category>CAPEX</category>
-            <category>OPEX</category>
-            <category>개념</category>
-        </item>
-        <item>
-            <title><![CDATA[IDP (ID 공급자)]]></title>
-            <link>https://dldkffh.github.io/2024/06/23/idp</link>
-            <guid>https://dldkffh.github.io/2024/06/23/idp</guid>
-            <pubDate>Sun, 23 Jun 2024 00:00:00 GMT</pubDate>
-            <description><![CDATA[ID 공급자(IDP)]]></description>
-            <content:encoded><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="id-공급자idp">ID 공급자(IDP)<a class="hash-link" aria-label="ID 공급자(IDP)에 대한 직접 링크" title="ID 공급자(IDP)에 대한 직접 링크" href="https://dldkffh.github.io/2024/06/23/idp#id-%EA%B3%B5%EA%B8%89%EC%9E%90idp">​</a></h3>
-<ul>
-<li>디지털 ID를 생성, 저장 및 관리하는 시스템</li>
-<li>사용자를 직접 인증하거나 타사 서비스 공급자(앱, 웹사이트 또는 기타 디지털 서비스)에 인증 서비스를 제공 가능</li>
-<li>IdP는 기기를 포함한 모든 엔터티를 인증할 수 있음. IdP의 목적은 이러한 엔터티를 추적하고, 사람이나 기기가 민감한 데이터에 액세스할 수 있는지 여부를 결정하는 주체 ID를 어디에서 어떻게 검색할지 아는 것.</li>
-</ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="예시">예시<a class="hash-link" aria-label="예시에 대한 직접 링크" title="예시에 대한 직접 링크" href="https://dldkffh.github.io/2024/06/23/idp#%EC%98%88%EC%8B%9C">​</a></h4>
-<ul>
-<li>Google 계정 자격 증명을 사용하여 Spotify에 로그인할 수 있음. 여기서 Google 로그인은 IdP이고 Spotify는 서비스 공급자(SP)임.</li>
-</ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="일반적인-작동-순서">일반적인 작동 순서<a class="hash-link" aria-label="일반적인 작동 순서에 대한 직접 링크" title="일반적인 작동 순서에 대한 직접 링크" href="https://dldkffh.github.io/2024/06/23/idp#%EC%9D%BC%EB%B0%98%EC%A0%81%EC%9D%B8-%EC%9E%91%EB%8F%99-%EC%88%9C%EC%84%9C">​</a></h4>
-<ol>
-<li>요청: 사용자는 사용자 이름 및 비밀번호 또는 생체 인증과 같은 특정 형태의 ID를 입력해야 함.</li>
-<li>확인: IdP는 사용자에게 액세스 권한이 있는지 여부와 무엇에 대한 액세스 권한이 있는지 확인함.</li>
-<li>허용: 사용자에게 사용이 승인된 특정 리소스에 대한 액세스 권한이 부여됨. 방문 내역이 기록.</li>
-</ol>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="이점">이점<a class="hash-link" aria-label="이점에 대한 직접 링크" title="이점에 대한 직접 링크" href="https://dldkffh.github.io/2024/06/23/idp#%EC%9D%B4%EC%A0%90">​</a></h4>
-<ul>
-<li>강력한 인증: IdP는 위험 기반 적응형 다중 인증(MFA)과 같이 앱, 웹사이트 및 기타 디지털 플랫폼 전반에서 안전한 액세스를 지원하는 도구와 솔루션을 제공할 수 있음.</li>
-<li>간소화된 사용자 관리: 대부분의 IdP가 제공하는 또 다른 솔루션으로 싱글 사인 온(SSO)이 있으며, 이는 사용자가 여러 사용자 이름과 비밀번호를 만들고 유지 관리하는 번거로움을 덜어줌.</li>
-<li>BYOI(Bring Your Own Identity): BYOI를 사용하면 사용자는 새 자격 증명을 만드는 대신 이미 가지고 있는 ID 자격 증명(예: Google, Outlook 등)으로 서비스에 액세스할 수 있음. 이는 높은 수준의 보안을 유지하면서 사용자 온보딩 및 관리의 효율성을 더욱 높여줌.</li>
-<li>더 나은 가시성: IdP는 모든 액세스 이벤트의 중앙 집중식 감사 추적을 유지 관리하므로 누가 언제 어떤 리소스에 액세스하는지 쉽게 증명할 수 있음.</li>
-<li>ID 관리 부담 감소: ID 관리는 IdP의 책임이 되므로 서비스 공급자(SP)는 사용자 ID를 관리할 필요가 없음.</li>
-</ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="종류">종류<a class="hash-link" aria-label="종류에 대한 직접 링크" title="종류에 대한 직접 링크" href="https://dldkffh.github.io/2024/06/23/idp#%EC%A2%85%EB%A5%98">​</a></h4>
-<h5 class="anchor anchorWithStickyNavbar_LWe7" id="saml-security-assertion-markup-language">SAML (Security Assertion Markup Language)<a class="hash-link" aria-label="SAML (Security Assertion Markup Language)에 대한 직접 링크" title="SAML (Security Assertion Markup Language)에 대한 직접 링크" href="https://dldkffh.github.io/2024/06/23/idp#saml-security-assertion-markup-language">​</a></h5>
-<ul>
-<li>ID 페더레이션을 통한 인증에 사용되는 XML 기반 마크업 언어</li>
-<li>SAML은 Office 365, Salesforce, Webex, ADP 및 Zoom과 같은 다양한 서비스 공급자 애플리케이션에서 지원하는 유비쿼터스 프로토콜</li>
-</ul>
-<h5 class="anchor anchorWithStickyNavbar_LWe7" id="싱글-사인-온">싱글 사인 온<a class="hash-link" aria-label="싱글 사인 온에 대한 직접 링크" title="싱글 사인 온에 대한 직접 링크" href="https://dldkffh.github.io/2024/06/23/idp#%EC%8B%B1%EA%B8%80-%EC%82%AC%EC%9D%B8-%EC%98%A8">​</a></h5>
-<ul>
-<li>사용자가 단일 ID 자격 증명 세트로 여러 계정과 소프트웨어, 시스템, 리소스에 로그인할 수 있도록 하는 액세스 관리 기능</li>
-</ul>
-<h5 class="anchor anchorWithStickyNavbar_LWe7" id="iam-id-및-액세스-관리">IAM (ID 및 액세스 관리)<a class="hash-link" aria-label="IAM (ID 및 액세스 관리)에 대한 직접 링크" title="IAM (ID 및 액세스 관리)에 대한 직접 링크" href="https://dldkffh.github.io/2024/06/23/idp#iam-id-%EB%B0%8F-%EC%95%A1%EC%84%B8%EC%8A%A4-%EA%B4%80%EB%A6%AC">​</a></h5>
-<ul>
-<li>적절한 엔터티가 적시에 적절한 리소스에 액세스할 수 있도록 하는 보안 정책 및 기술의 프레임워크</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="출처">출처<a class="hash-link" aria-label="출처에 대한 직접 링크" title="출처에 대한 직접 링크" href="https://dldkffh.github.io/2024/06/23/idp#%EC%B6%9C%EC%B2%98">​</a></h3>
-<ul>
-<li><a href="https://www.entrust.com/ko/resources/learn/what-is-an-identity-provider" target="_blank" rel="noopener noreferrer">entrust - ID 공급자(IDP)란 무엇인가요?</a></li>
-<li><a href="https://www.okta.com/kr/identity-101/why-your-company-needs-an-identity-provider/" target="_blank" rel="noopener noreferrer">Okta - IdP의 특징 및 아이덴티티 공급업체가 필요한 이유</a></li>
-</ul>]]></content:encoded>
-            <category>IDP</category>
-            <category>개념</category>
-        </item>
-        <item>
-            <title><![CDATA[L4 NAT 관계]]></title>
-            <link>https://dldkffh.github.io/2024/06/23/l4-nat</link>
-            <guid>https://dldkffh.github.io/2024/06/23/l4-nat</guid>
-            <pubDate>Sun, 23 Jun 2024 00:00:00 GMT</pubDate>
-            <description><![CDATA[- 상위 계층일 수록 로드 밸런서가 비쌌으나 점점 가격차이가 줄어드는 추세여서 L7을 주로 사용]]></description>
-            <content:encoded><![CDATA[<ul>
-<li>상위 계층일 수록 로드 밸런서가 비쌌으나 점점 가격차이가 줄어드는 추세여서 L7을 주로 사용</li>
-<li>L4부터 각기 포트번호를 부 여하여 사용가능</li>
-<li>L7부터는 HTTP 헤더, 쿠키 등과 같은 사용자의 요청 기준으로 특정 서버에 트래픽을 분산하는 것이 가능</li>
-</ul>
-<p>L4SW는 NAT를 끊임없이 사용하기 때문에 NAT는 L4SW와 뗄 수 없는 존재</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="nat">NAT<a class="hash-link" aria-label="NAT에 대한 직접 링크" title="NAT에 대한 직접 링크" href="https://dldkffh.github.io/2024/06/23/l4-nat#nat">​</a></h3>
-<ul>
-<li>NAT(Network Address Translation, 네트워크 주소 변환)</li>
-<li>IP 패킷의 TCP/UDP 포트 숫자와 소스 및 목적지의 IP 주소 등을 재기록하면서 라우터를 통해 네트워크 트래픽을 주고 받는 기술</li>
-</ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="nat를-쓰는-이유">NAT를 쓰는 이유<a class="hash-link" aria-label="NAT를 쓰는 이유에 대한 직접 링크" title="NAT를 쓰는 이유에 대한 직접 링크" href="https://dldkffh.github.io/2024/06/23/l4-nat#nat%EB%A5%BC-%EC%93%B0%EB%8A%94-%EC%9D%B4%EC%9C%A0">​</a></h4>
-<p>여러 대의 호스트가 하나의 공인 IP 주소를 사용하여 인터넷에 접속하기 위해</p>
-<p>인터넷 회선을 하나 개통하고 인터넷 공유기를 달아서 여러 PC 를 연결하여 사용 하는데, 이것이 가능한 이유가 인터넷 공유기에 NAT 기능이 탑재되어 있기 때문</p>
-<p>NAT는 내부 네트워크에서 사용하는 IP 주소와 외부에 드러나는 주소를 다르게 유지할 수 있기 때문에 내부 네트워크에 대한 어느 정도의 보안 기능을 함<br> 방화벽과 비슷한 기능</p>
-<p>모든 요청은 L4스위치가 받지만 실제 요청은 서버가 처리<br> 사용자가 서비스 접속을 위해서 L4스위치의 VIP로 접속<br> 실제 IP를 사용하지 않음 <br> 그래서 요청을 처리하기 위해서는 목적지 IP를 실제 서버의 IP로 변경할 필요가 있음</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="로드밸런싱">로드밸런싱<a class="hash-link" aria-label="로드밸런싱에 대한 직접 링크" title="로드밸런싱에 대한 직접 링크" href="https://dldkffh.github.io/2024/06/23/l4-nat#%EB%A1%9C%EB%93%9C%EB%B0%B8%EB%9F%B0%EC%8B%B1">​</a></h3>
-<ul>
-<li>한 서버에 트래픽이 몰리는 현상을 해결하기 위해, 서버에 가해지는 부하를 적절하게 분산하는 역할</li>
-<li>트래픽이 몰리는 서버는 웹서버일 수도 WAS 일수도 있음</li>
-<li>웹서버 일 때 : L4, L7로 로드밸런싱</li>
-<li>WAS 일 때 : 웹서버(Apache, NginX)로 로드밸런싱</li>
-</ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="로드밸런서">로드밸런서<a class="hash-link" aria-label="로드밸런서에 대한 직접 링크" title="로드밸런서에 대한 직접 링크" href="https://dldkffh.github.io/2024/06/23/l4-nat#%EB%A1%9C%EB%93%9C%EB%B0%B8%EB%9F%B0%EC%84%9C">​</a></h4>
-<ul>
-<li>로드밸런싱 작업을 담당하는 장비</li>
-<li>물리적 프로세서 간에 작업을 스케줄링네트워크 로드밸런서사용 가능한 백엔드에서 네트워크 작업을 스케줄링</li>
-</ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="종류">종류<a class="hash-link" aria-label="종류에 대한 직접 링크" title="종류에 대한 직접 링크" href="https://dldkffh.github.io/2024/06/23/l4-nat#%EC%A2%85%EB%A5%98">​</a></h4>
-<p>L2, L3, L4, L7... OSI 7계층 중 어떤 계층을 기준으로 분산작업을 하느냐에 따라 그 타입이 나뉘어짐</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="출처">출처<a class="hash-link" aria-label="출처에 대한 직접 링크" title="출처에 대한 직접 링크" href="https://dldkffh.github.io/2024/06/23/l4-nat#%EC%B6%9C%EC%B2%98">​</a></h3>
-<ul>
-<li><a href="https://velog.io/@been/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-L4L7%EC%9B%B9%EC%84%9C%EB%B2%84Apache-NginxWAS%EB%B0%A9%ED%99%94%EB%B2%BD-%EC%A0%95%EB%A6%AC" target="_blank" rel="noopener noreferrer">been.log - [네트워크] L4/L7/웹서버(Apache, Nginx)/WAS/방화벽 정리</a></li>
-<li><a href="https://chunsubyeong.tistory.com/106" target="_blank" rel="noopener noreferrer">Having</a></li>
-<li><a href="https://namu.wiki/w/NAT" target="_blank" rel="noopener noreferrer">나무위키 - NAT</a></li>
-<li><a href="https://www.stevenjlee.net/2020/07/11/%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-nat-network-address-translation-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EC%A3%BC%EC%86%8C-%EB%B3%80%ED%99%98/#google_vignette" target="_blank" rel="noopener noreferrer">STEVEN J.LEE</a></li>
-</ul>]]></content:encoded>
-            <category>L4</category>
-            <category>NAT</category>
             <category>개념</category>
         </item>
     </channel>
